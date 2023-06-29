@@ -1,0 +1,26 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  transition: background-color 200ms;
+  background-color: transparent;
+}
+
+.navbar--opaque {
+  background-color: #fff;
+}
+
+.navbar > ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto 1fr auto 1fr auto;
+  gap: 64px;
+  padding: 0;
+}
+
+.navbar > ul > li {
+  &:nth-child(2) {
+    justify-self: flex-end;
+  }
+}

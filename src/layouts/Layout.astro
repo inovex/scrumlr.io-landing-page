@@ -19,7 +19,7 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-    <Navbar />
+    <Navbar client:load />
 		<slot />
 	</body>
 </html>
@@ -39,5 +39,11 @@ const { title } = Astro.props;
 
 	html {
 		font-family: 'Raleway', sans-serif;
+    background-color: grey;
+    height: 3900px;
 	}
+  body {
+    margin: 0;
+    padding: 0;
+  }
 </style>
