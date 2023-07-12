@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react';
 import classNames from 'classnames';
 import './Navbar.scss';
+import { Button } from './Button/Button';
 
 export default function Navbar() {
   const [isNavbarTransparent, setIsNavbarTransparent] = useState(true);
@@ -26,10 +27,26 @@ export default function Navbar() {
     <nav className={classNames('navbar', {'navbar--opaque': !isNavbarTransparent})}>
       <ul>
         <li>Scrumlr</li>
-        <li>Startseite</li>
-        <li>Funktionen</li>
-        <li>Über uns</li>
-        <li>Board erstellen +</li>
+        <li>
+          <a href="">
+            Startseite
+          </a>
+        </li>
+        <li>
+          <a href="">
+            Funktionen
+          </a>
+        </li>
+        <li>
+          <a href="">
+            Über uns
+          </a>
+        </li>
+        <li>
+          <Button>
+            Board erstellen +
+          </Button>
+        </li>
       </ul>
     </nav>
   );

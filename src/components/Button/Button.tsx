@@ -9,12 +9,14 @@ type ButtonProps = {
   icon?: ReactNode;
   onClick?: () => void;
   variant?: 'primary' | 'secondary' | 'tertiary';
+  color?: 'pink' | 'blue';
+  size?: 'small' | 'default';
 };
 
 export function Button(props: ButtonProps) {
   return (
     <button 
-      className={classNames('button', `button--${props.variant}`, props.className)}
+      className={classNames('button', `button--${props.variant}`, `button--${props.color}`, `button--${props.size}`, props.className)}
       disabled={props.disabled} 
       onClick={props.onClick}
     >
