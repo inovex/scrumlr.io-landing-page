@@ -21,6 +21,12 @@ const { title } = Astro.props;
 	<body>
     <Navbar client:load />
 		<slot />
+    <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      const theme = localStorage.getItem('theme') || 'default';
+      document.documentElement.setAttribute('theme', theme);
+    });
+  </script>
 	</body>
 </html>
 <style is:global>
@@ -39,6 +45,7 @@ const { title } = Astro.props;
 
 	html {
 		font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
     background-color: grey;
     height: 3900px;
 	}
