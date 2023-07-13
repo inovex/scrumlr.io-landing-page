@@ -28,22 +28,20 @@ export default function Navbar() {
     <nav className={classNames('navbar', {'navbar--opaque': !isNavbarTransparent})}>
       <ul>
         <li>
-          <a href="">
-            <Logo />
-          </a>
+          <Logo />
         </li>
         <li>
-          <a href="">
+          <a href="#home">
             Startseite
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="#functions">
             Funktionen
           </a>
         </li>
         <li>
-          <a href="">
+          <a href="#about">
             Über uns
           </a>
         </li>
