@@ -1,8 +1,8 @@
 import {useState, useEffect} from 'react';
 import classNames from 'classnames';
-import './Navbar.scss';
 import { Button } from './Button/Button';
 import { Logo } from './Logo';
+import './Navbar.scss';
 
 export default function Navbar() {
   const [isNavbarTransparent, setIsNavbarTransparent] = useState(true);
@@ -28,7 +28,9 @@ export default function Navbar() {
     <nav className={classNames('navbar', {'navbar--opaque': !isNavbarTransparent})}>
       <ul>
         <li>
-          <Logo />
+          <a href="">
+            <Logo />
+          </a>
         </li>
         <li>
           <a href="">
@@ -46,8 +48,10 @@ export default function Navbar() {
           </a>
         </li>
         <li>
-          <Button>
-            Board erstellen +
+          <Button
+            icon={<img src="/assets/icons/icon-plus.svg" alt="Plus" />}
+          >
+            Board erstellen
           </Button>
         </li>
       </ul>
