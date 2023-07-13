@@ -17,10 +17,11 @@
   list-style: none;
   align-items: center;
   gap: 32px;
-  padding: 0 64px;
+  padding: 16px 64px;
   width: 100%;
   max-width: 1920px;
   box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .navbar > ul > li:nth-of-type(1) {
