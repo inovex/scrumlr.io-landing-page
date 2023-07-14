@@ -24,6 +24,7 @@ footer {
 .footer__left {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .footer__logo {
@@ -56,6 +57,7 @@ h2 {
   margin: auto 0 0 0;
   padding: 0;
   gap: 24px;
+  align-items: center;
 
   > img {
     width: 32px;
@@ -102,6 +104,10 @@ h2 {
   max-width: 1920px;
   padding: 0 var(--footer-padding-x);
   box-sizing: border-box;
+
+  span {
+    text-align: center;
+  }
 }
 
 .footer__legal-links {
@@ -133,7 +139,10 @@ h2 {
   }
 
   .footer__logo {
+    top: -32px;
     left: -256px;
+    justify-content: center;
+    transform: scale(0.8);
   }
 
   .footer__legal-links a,
@@ -156,13 +165,16 @@ h2 {
   }
 
   .footer__external-links {
-    margin-top: 64px;
+    width: 80%;
+    margin: 64px 0 32px 0;
     justify-content: center;
+    flex-wrap: wrap;
   }
 
   .footer__internal-links {
     justify-content: center;
     flex-direction: column;
+    gap: 16px;
   }
 
   .footer__bottom {
@@ -181,5 +193,6 @@ h2 {
   .footer__legal-links {
     text-align: center;
     flex-direction: column;
+    gap: 16px;
   }
 }
