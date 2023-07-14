@@ -73,18 +73,20 @@ export const Footer = () => {
         </nav>
       </div>
       <nav className="footer__bottom">
-        <ul className="footer__legal-links">
-          <li>
-            <a href="#Data">Datenschutz</a>
-          </li>
-          <li>
-            <a href="#Cookies">Cookie-Richtlinien</a>
-          </li>
-          <li>
-            <a href="#Terms">Geschäftsbedingungen</a>
-          </li>
-        </ul>
-        <span>©2023 inovex GmbH. Alle Rechte vorbehalten.</span>
+        <div className="footer__bottom-content">
+          <ul className="footer__legal-links">
+            <li>
+              <a href="#Data">Datenschutz</a>
+            </li>
+            <li>
+              <a href="#Cookies">Cookie-Richtlinien</a>
+            </li>
+            <li>
+              <a href="#Terms">Geschäftsbedingungen</a>
+            </li>
+          </ul>
+          <span>©2023 inovex GmbH. Alle Rechte vorbehalten.</span>
+        </div>
       </nav>
     </footer>
   );
