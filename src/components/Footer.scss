@@ -27,8 +27,11 @@ footer {
 }
 
 .footer__logo {
+  height: 100%;
+  opacity: 0.1;
+  transform: scale(1.4);
   position: absolute;
-  left: -256px;
+  left: -120px;
   top: 0;
   pointer-events: none;
 }
@@ -53,6 +56,11 @@ h2 {
   margin: auto 0 0 0;
   padding: 0;
   gap: 24px;
+
+  > img {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .footer__internal-links {

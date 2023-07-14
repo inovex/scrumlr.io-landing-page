@@ -4,7 +4,11 @@ export const Footer = () => {
   return (
     <footer>
       <div className="footer__top">
-        <img src="icons/inovex.svg" alt="inovex" className="footer__logo" />
+        <img
+          src="icons/inovex-outline.svg"
+          alt="inovex"
+          className="footer__logo"
+        />
         <div className="footer__left">
           <h2>inovex GmbH</h2>
           <p className="footer__inovex-description">
@@ -12,6 +16,11 @@ export const Footer = () => {
             <br /> Lösungen für die digitale Welt.
           </p>
           <ul className="footer__external-links">
+            <li>
+              <a href="https://inovex.de" target="_blank">
+                <img src="icons/inovex.svg" alt="inovex" />
+              </a>
+            </li>
             <li>
               <a href="https://github.com/inovex" target="_blank">
                 <img src="icons/github.svg" alt="github" />
