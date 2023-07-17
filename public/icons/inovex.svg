@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-  <g id="Gruppe_3760" data-name="Gruppe 3760" transform="translate(-1601 -220)">
-    <path id="Pfad_4043" data-name="Pfad 4043" d="M.33,15.181a1.152,1.152,0,0,0-.322.873v.039L10.7,13.144l.032-.039h0l7.7-2.114-.025-.084L17.168,6.168,15.591.123,15.559,0a1.1,1.1,0,0,0-.738.33Z" transform="translate(1600.998 220)" fill="#fff" style="isolation: isolate"/>
-    <path id="Pfad_4044" data-name="Pfad 4044" d="M27.6,10.7h0l2.114,7.672.09.063,10.86-2.868.045-.063a1.094,1.094,0,0,0-.33-.736L25.533.329A1.154,1.154,0,0,0,24.66.009l1.655,6.006,1.293,4.691h0Z" transform="translate(1592.281 219.998)" fill="#fff" style="isolation: isolate"/>
-    <path id="Pfad_4045" data-name="Pfad 4045" d="M27.97,27.6l-7.64,2.1-.05.013.038.136L23.1,40.481l.063.233a1.1,1.1,0,0,0,.738-.33l14.48-14.851a1.153,1.153,0,0,0,.321-.873L27.977,27.608h0Z" transform="translate(1594.299 211.284)" fill="#fff" style="isolation: isolate"/>
-    <path id="Pfad_4046" data-name="Pfad 4046" d="M0,23.157a1.1,1.1,0,0,0,.33.738l14.848,14.49a1.152,1.152,0,0,0,.873.322L10.989,20.28,0,23.157Z" transform="translate(1601 213.292)" fill="#fff" style="isolation: isolate"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="31.516" height="31.337" viewBox="0 0 31.516 31.337">
+  <g id="Gruppe_3760" data-name="Gruppe 3760" transform="translate(-1601 -220.665)">
+    <path id="Pfad_4043" data-name="Pfad 4043" d="M.308,14.15a1.074,1.074,0,0,0-.3.814V15l9.966-2.749.03-.036h0l7.177-1.97-.023-.078L16,5.749,14.532.115,14.5,0a1.025,1.025,0,0,0-.688.308Z" transform="translate(1600.998 220.665)" fill="#fff" style="isolation: isolate"/>
+    <path id="Pfad_4044" data-name="Pfad 4044" d="M27.408,10h0l1.976,7.171.084.059,10.15-2.681.042-.059a1.023,1.023,0,0,0-.308-.688L25.476.308a1.079,1.079,0,0,0-.816-.3l1.547,5.613,1.208,4.384h0Z" transform="translate(1592.856 220.658)" fill="#fff" style="isolation: isolate"/>
+    <path id="Pfad_4045" data-name="Pfad 4045" d="M27.465,27.407l-7.138,1.962-.047.012.036.127,2.6,9.934.059.218a1.028,1.028,0,0,0,.69-.308L37.193,25.476a1.077,1.077,0,0,0,.3-.816L27.472,27.414h0Z" transform="translate(1595.021 212.341)" fill="#fff" style="isolation: isolate"/>
+    <path id="Pfad_4046" data-name="Pfad 4046" d="M0,22.969a1.028,1.028,0,0,0,.308.69L14.184,37.2a1.077,1.077,0,0,0,.816.3L10.269,20.28Z" transform="translate(1601 214.499)" fill="#fff" style="isolation: isolate"/>
   </g>
 </svg>

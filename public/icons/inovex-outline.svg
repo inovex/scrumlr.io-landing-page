@@ -1,8 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="33" height="33.001" viewBox="0 0 33 33.001">
-  <g id="Gruppe_3760" data-name="Gruppe 3760" transform="translate(-1600.5 -219.5)">
-    <path id="Pfad_4043" data-name="Pfad 4043" d="M.339,15.02a1.117,1.117,0,0,0-.33.864v.038L10.97,13.005,11,12.967h0l7.89-2.092-.026-.083L17.6,6.1,15.982.122,15.95,0a1.145,1.145,0,0,0-.757.326Z" transform="translate(1600.998 220)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1" style="isolation: isolate"/>
-    <path id="Pfad_4044" data-name="Pfad 4044" d="M27.6,10.946h0l2.111,7.849.09.064,10.846-2.934.045-.064a1.132,1.132,0,0,0-.329-.753L25.532.337A1.137,1.137,0,0,0,24.66.009l1.653,6.144,1.291,4.8h0Z" transform="translate(1592.31 219.998)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1" style="isolation: isolate"/>
-    <path id="Pfad_4045" data-name="Pfad 4045" d="M28.035,27.606l-7.7,2.1-.051.013.038.136,2.8,10.645.064.233a1.11,1.11,0,0,0,.744-.33l14.6-14.874a1.15,1.15,0,0,0,.324-.874L28.041,27.613h0Z" transform="translate(1594.143 211.262)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1" style="isolation: isolate"/>
-    <path id="Pfad_4046" data-name="Pfad 4046" d="M0,23.242A1.138,1.138,0,0,0,.335,24l15.1,14.919a1.164,1.164,0,0,0,.888.331L11.178,20.28,0,23.242Z" transform="translate(1601 212.746)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1" style="isolation: isolate"/>
-  </g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" width="626" height="626" viewBox="0 0 626 626">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 8px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="m69.66,300.32c-3.73,3.73-5.41,8.7-5.17,13.59l170.81-45.77h0l122.56-32.84-20.08-74.93-25.69-95.88c-4.28.22-8.51,1.9-11.78,5.17l-230.66,230.66Z"/>
+  <path class="cls-1" d="m390.7,357.86l-122.56,32.84,45.77,170.81c4.28-.22,8.51-1.9,11.78-5.17l230.66-230.66c3.73-3.73,5.41-8.7,5.17-13.59l-170.81,45.77h0Z"/>
+  <path class="cls-1" d="m64.49,313.91c.22,4.28,1.9,8.51,5.17,11.78l230.66,230.66c3.73,3.73,8.7,5.41,13.59,5.17l-78.61-293.37-170.81,45.77Z"/>
+  <path class="cls-1" d="m357.86,235.3h0l32.84,122.56,170.81-45.77c-.22-4.28-1.9-8.51-5.17-11.78l-230.66-230.66c-3.73-3.73-8.7-5.41-13.59-5.17l25.69,95.88,20.08,74.93Z"/>
 </svg>
