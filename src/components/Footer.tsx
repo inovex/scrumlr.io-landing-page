@@ -18,12 +18,12 @@ export const Footer = () => {
           <ul className="footer__external-links">
             <li>
               <a href="https://inovex.de" target="_blank">
-                <img src="icons/inovex.svg" alt="inovex" />
+                <img width="32px" height="32px" src="icons/inovex.svg" alt="inovex" />
               </a>
             </li>
             <li>
               <a href="https://github.com/inovex" target="_blank">
-                <img src="icons/github.svg" alt="github" />
+                <img width="32px" height="32px" src="icons/github.svg" alt="github" />
               </a>
             </li>
             <li>
@@ -31,7 +31,7 @@ export const Footer = () => {
                 href="https://www.linkedin.com/company/inovex/"
                 target="_blank"
               >
-                <img src="icons/linkedin.svg" alt="linkedin" />
+                <img width="32px" height="32px" src="icons/linkedin.svg" alt="linkedin" />
               </a>
             </li>
             <li>
@@ -39,27 +39,27 @@ export const Footer = () => {
                 href="https://www.xing.com/companies/inovexgmbh"
                 target="_blank"
               >
-                <img src="icons/xing.svg" alt="xing" />
+                <img width="32px" height="32px" src="icons/xing.svg" alt="xing" />
               </a>
             </li>
             <li>
               <a href="https://twitter.com/inovexgmbh" target="_blank">
-                <img src="icons/twitter.svg" alt="twitter" />
+                <img width="32px" height="32px" src="icons/twitter.svg" alt="twitter" />
               </a>
             </li>
             <li>
               <a href="https://www.instagram.com/inovexlife/" target="_blank">
-                <img src="icons/instagram.svg" alt="instagram" />
+                <img width="32px" height="32px" src="icons/instagram.svg" alt="instagram" />
               </a>
             </li>
             <li>
               <a href="https://www.facebook.com/inovexde" target="_blank">
-                <img src="icons/facebook.svg" alt="facebook" />
+                <img width="32px" height="32px" src="icons/facebook.svg" alt="facebook" />
               </a>
             </li>
             <li>
               <a href="https://digital-future.podigee.io/" target="_blank">
-                <img src="icons/podcast.svg" alt="podcast" />
+                <img width="32px" height="32px" src="icons/podcast.svg" alt="podcast" />
               </a>
             </li>
           </ul>

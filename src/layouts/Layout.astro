@@ -34,14 +34,16 @@ const { title } = Astro.props;
   @font-face {
     font-family: 'Raleway';
     font-weight: 100 900;
-    src: url('/fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+    src: local('Pacifico Regular'), url('/fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+    font-display: swap;
   }
 
   @font-face {
     font-family: 'Raleway';
     font-style: italic;
     font-weight: 100 900;
-    src: url('/fonts/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
+    src: local('Pacifico Regular'), url('/fonts/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
+    font-display: swap;
   }
 
 	html {

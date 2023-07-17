@@ -58,11 +58,6 @@ h2 {
   padding: 0;
   gap: 24px;
   align-items: center;
-
-  > img {
-    width: 32px;
-    height: 32px;
-  }
 }
 
 .footer__internal-links {
@@ -123,6 +118,16 @@ h2 {
     color: var(--lightmode-blue, #0057ff);
     text-decoration: none;
     font-weight: 600;
+  }
+}
+
+@media (prefers-color-scheme: dark) { 
+  footer {
+    background-color: var(--darkmode-blue, #6B9CFF);
+  }
+
+  .footer__bottom, .footer__legal-links a {
+    color: var(--darkmode-blue, #6B9CFF);
   }
 }
 
