@@ -121,9 +121,20 @@ h2 {
   }
 }
 
+a {
+  transition: all 0.1s ease-in-out;
+  &:hover {
+    color: var(--lightmode-pink, #FF0069);
+  }
+}
+
 @media (prefers-color-scheme: dark) { 
   footer {
     background-color: var(--darkmode-blue, #6B9CFF);
+  }
+
+  a:hover {
+    color: var(--darkmode-pink, #FF80B4);
   }
 
   .footer__bottom, .footer__legal-links a {
