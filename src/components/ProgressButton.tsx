@@ -16,6 +16,7 @@ const ProgressButton = ({
 }: ProgessButtonProps) => {
   return (
     <div className="progress-button">
+      <img src={`icons/icon-${icon}.svg`} alt="" />
       <button
         onClick={onClick}
         className={classNames(

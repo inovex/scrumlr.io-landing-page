@@ -22,10 +22,14 @@ const Choices = () => {
   return (
     <div className="choices" id="Features">
       <h2>Your board - your choices.</h2>
-      <p>Choose any type of retrospective that suits your team. {position}</p>
+      <p>Choose any type of retrospective that suits your team.</p>
       <div className="choices__content">
         <div className="choices__buttons">
-          <ProgressButton onClick={() => setPosition(0)} active={position <= 2}>
+          <ProgressButton
+            icon="edit"
+            onClick={() => setPosition(0)}
+            active={position <= 2}
+          >
             Collaborate on notes
           </ProgressButton>
           <ProgressButton
