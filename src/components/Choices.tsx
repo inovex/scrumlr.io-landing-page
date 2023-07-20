@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./Choices.scss";
+import ProgressButton from "./ProgressButton";
 
 const Choices = () => {
   const [position, setPosition] = useState(0);
@@ -24,11 +25,23 @@ const Choices = () => {
       <p>Choose any type of retrospective that suits your team. {position}</p>
       <div className="choices__content">
         <div className="choices__buttons">
-          <button onClick={() => setPosition(0)}>Collaborate</button>
-          <button onClick={() => setPosition(3)}>Moderate</button>
-          <button onClick={() => setPosition(6)}>Customize</button>
+          <ProgressButton onClick={() => setPosition(0)} active={position <= 2}>
+            Collaborate on notes
+          </ProgressButton>
+          <ProgressButton
+            onClick={() => setPosition(3)}
+            active={position > 2 && position <= 5}
+          >
+            Moderate your session
+          </ProgressButton>
+          <ProgressButton
+            onClick={() => setPosition(6)}
+            active={position > 5 && position <= 8}
+          >
+            Customize your board
+          </ProgressButton>
         </div>
-        <img src={`assets/choices/choices_${position}.svg`} alt="choices_1" />
+        <img src={`assets/choices/choices_${position}.png`} alt="choices_1" />
       </div>
     </div>
   );
