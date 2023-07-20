@@ -30,7 +30,7 @@ const { title } = Astro.props;
   </script>
 	</body>
 </html>
-<style is:global>
+<style is:global lang="scss">
   @font-face {
     font-family: 'Raleway';
     font-weight: 100 900;
@@ -51,6 +51,13 @@ const { title } = Astro.props;
     box-sizing: border-box;
     background-color: white;
     scroll-behavior: smooth;
+
+    --lightmode-white: #ffffff;
+    --lightmode-blue: #0057ff;
+    --lightmode-pink: #ff0069;
+    --lightmode-pink--desaturated: #ffe6f0;
+    --darkmode-blue: #6b9cff;
+    --darkmode-pink: #ff80b4;
 	}
   body {
     margin: 0;

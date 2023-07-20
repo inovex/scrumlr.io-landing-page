@@ -2,7 +2,7 @@ footer {
   position: relative;
   height: 557px;
   width: 100vw;
-  background-color: var(--lightmode-blue, #0057ff);
+  background-color: var(--lightmode-blue);
 
   --footer-padding-x: 256px;
 }
@@ -13,7 +13,7 @@ footer {
   margin: 0 auto;
   height: 427px;
   padding: 100px var(--footer-padding-x);
-  color: var(--lightmode-white, #ffffff);
+  color: var(--lightmode-white);
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -69,7 +69,7 @@ h2 {
   gap: 32px;
 
   a {
-    color: var(--white, #ffffff);
+    color: var(--lightmode-white);
     text-decoration: none;
     font-weight: 700;
     line-height: 34px;
@@ -85,8 +85,8 @@ h2 {
   align-items: center;
   width: 100%;
   height: 130px;
-  background-color: var(--white, #ffffff);
-  color: var(--lightmode-blue, #0057ff);
+  background-color: var(--lightmode-white);
+  color: var(--lightmode-blue);
   margin: 0 auto;
 }
 
@@ -115,7 +115,7 @@ h2 {
   align-self: center;
 
   a {
-    color: var(--lightmode-blue, #0057ff);
+    color: var(--lightmode-blue);
     text-decoration: none;
     font-weight: 600;
   }
@@ -124,21 +124,22 @@ h2 {
 a {
   transition: all 0.1s ease-in-out;
   &:hover {
-    color: var(--lightmode-pink, #FF0069);
+    color: var(--lightmode-pink);
   }
 }
 
-@media (prefers-color-scheme: dark) { 
+@media (prefers-color-scheme: dark) {
   footer {
-    background-color: var(--darkmode-blue, #6B9CFF);
+    background-color: var(--darkmode-blue);
   }
 
   a:hover {
-    color: var(--darkmode-pink, #FF80B4);
+    color: var(--darkmode-pink);
   }
 
-  .footer__bottom, .footer__legal-links a {
-    color: var(--darkmode-blue, #6B9CFF);
+  .footer__bottom,
+  .footer__legal-links a {
+    color: var(--darkmode-blue);
   }
 }
 
@@ -163,7 +164,7 @@ a {
 
   .footer__legal-links a,
   .footer__internal-links a {
-    color: var(--white, #ffffff);
+    color: var(--lightmode-white);
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -190,7 +191,7 @@ a {
     justify-content: center;
     flex-wrap: wrap;
 
-     img {
+    img {
       width: 32px;
       height: 32px;
     }
@@ -204,7 +205,7 @@ a {
 
   .footer__bottom {
     background: none;
-    color: var(--white, #ffffff);
+    color: var(--lightmode-white);
     height: 250px;
   }
 
