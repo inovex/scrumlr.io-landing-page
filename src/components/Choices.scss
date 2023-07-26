@@ -1,5 +1,5 @@
 .choices {
-  min-height: 100vh;
+  height: fit-content;
   width: 100%;
   box-sizing: border-box;
   padding: 5% 0 0 0;
@@ -11,8 +11,9 @@
 
 .choices__content {
   background-image: url("../assets/background_cloud_blue.svg");
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
   height: fit-content;
   display: flex;
@@ -23,8 +24,8 @@
   gap: 48px;
 
   img {
-    max-height: 600px;
-    max-width: 70%;
+    max-height: 560px;
+    max-width: min(80%, 1320px);
     box-shadow: var(--lightmode-shadow);
   }
 }
