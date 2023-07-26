@@ -11,14 +11,14 @@ const Edit = () => (
       stroke="currentColor"
       stroke-width="1.5"
       stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinejoin="round"
     />
     <path
       d="M18.7197 7.03091C17.6197 8.10591 15.2047 10.4869 12.9997 12.6369L6.82366 18.5939L1.34766 19.8449L2.63766 14.5309L4.18766 13.0309L14.3757 3.14491L15.4967 2.05391C16.6527 0.932908 18.2297 1.22491 19.3867 2.34491C19.8475 2.7705 20.1803 3.31633 20.3477 3.92091"
       stroke="currentColor"
       stroke-width="1.5"
       stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinejoin="round"
     />
   </svg>
 );
