@@ -1,9 +1,10 @@
 import classNames from "classnames";
 import "./ProgressButton.scss";
+import Icon from "./Icon";
 
 type ProgessButtonProps = {
   children: string;
-  icon?: string;
+  icon: string;
   onClick: () => void;
   active: boolean;
 };
@@ -15,14 +16,15 @@ const ProgressButton = ({
   active,
 }: ProgessButtonProps) => {
   return (
-    <div className="progress-button">
-      <img src={`icons/icon-${icon}.svg`} alt="" />
+    <div className={classNames(
+          "progress-button",
+          active && "progress-button--active"
+        )}>
+      <Icon name={icon} />
       <button
         onClick={onClick}
-        className={classNames(
-          "progress-button__button",
-          active && "progress-button__button--active"
-        )}
+        className=
+          "progress-button__button"
       >
         {children}
       </button>

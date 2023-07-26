@@ -2,17 +2,25 @@
   position: relative;
   cursor: pointer;
   padding: 4px 8px;
-}
-
-.progress-button__button {
-  all: unset;
+  display: flex;
+  align-items: center;
 
   transition: all 0.1s ease-in-out;
+
+  svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
 
   &--active,
   &:hover {
     color: var(--lightmode-pink);
   }
+}
+
+.progress-button__button {
+  all: unset;
 }
 
 .progress-button__progress {

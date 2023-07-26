@@ -26,19 +26,21 @@ const Choices = () => {
       <div className="choices__content">
         <div className="choices__buttons">
           <ProgressButton
-            icon="edit"
+            icon="Edit"
             onClick={() => setPosition(0)}
             active={position <= 2}
           >
             Collaborate on notes
           </ProgressButton>
           <ProgressButton
+            icon="Vote"
             onClick={() => setPosition(3)}
             active={position > 2 && position <= 5}
           >
             Moderate your session
           </ProgressButton>
           <ProgressButton
+            icon="Columns"
             onClick={() => setPosition(6)}
             active={position > 5 && position <= 8}
           >
