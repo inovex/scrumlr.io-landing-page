@@ -1,5 +1,5 @@
 .choices {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   box-sizing: border-box;
   padding: 5% 0 0 0;
@@ -23,8 +23,8 @@
   gap: 48px;
 
   img {
-    max-height: 700px;
-    max-width: 80%;
+    max-height: 600px;
+    max-width: 70%;
     box-shadow: var(--lightmode-shadow);
   }
 }
@@ -35,4 +35,12 @@
   justify-content: center;
   align-items: center;
   gap: 32px;
+}
+
+[theme="dark"] .choices__content {
+  background-image: url("../assets/bg_cloud_dark.svg");
+
+  img {
+    box-shadow: var(--darkmode-shadow);
+  }
 }

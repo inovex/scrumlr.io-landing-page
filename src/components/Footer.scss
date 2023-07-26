@@ -13,7 +13,7 @@ footer {
   margin: 0 auto;
   height: 427px;
   padding: 100px var(--footer-padding-x);
-  color: var(--lightmode-white);
+  color: var(--white);
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -69,7 +69,7 @@ h2 {
   gap: 32px;
 
   a {
-    color: var(--lightmode-white);
+    color: var(--white);
     text-decoration: none;
     font-weight: 700;
     line-height: 34px;
@@ -85,7 +85,7 @@ h2 {
   align-items: center;
   width: 100%;
   height: 130px;
-  background-color: var(--lightmode-white);
+  background-color: var(--white);
   color: var(--lightmode-blue);
   margin: 0 auto;
 }
@@ -128,7 +128,7 @@ a {
   }
 }
 
-@media (prefers-color-scheme: dark) {
+[theme="dark"] {
   footer {
     background-color: var(--darkmode-blue);
   }
@@ -164,7 +164,7 @@ a {
 
   .footer__legal-links a,
   .footer__internal-links a {
-    color: var(--lightmode-white);
+    color: var(--white);
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -205,7 +205,7 @@ a {
 
   .footer__bottom {
     background: none;
-    color: var(--lightmode-white);
+    color: var(--white);
     height: 250px;
   }
 

@@ -4,6 +4,14 @@ import ProgressButton from "./ProgressButton";
 
 const Choices = () => {
   const [position, setPosition] = useState(0);
+  const [theme, setTheme] = useState("dark");
+
+  useEffect(() => {
+    const theme = document.documentElement.getAttribute("theme");
+    if (theme) {
+      setTheme(theme);
+    }
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -47,7 +55,10 @@ const Choices = () => {
             Customize your board
           </ProgressButton>
         </div>
-        <img src={`assets/choices/choices_${position}.png`} alt="choices_1" />
+        <img
+          src={`assets/choices/choices_${theme}_${position}.png`}
+          alt={`scrumlr screenshot ${position + 1}`}
+        />
       </div>
     </div>
   );

@@ -25,23 +25,37 @@
 
 .progress-button__progress {
   position: absolute;
-  bottom: -4px;
-  left: 0px;
-  width: 100%;
+  bottom: -8px;
+  right: 4px;
+  width: calc(100% - 8px);
   height: 4px;
   background-color: var(--lightmode-pink--desaturated);
   border-radius: 4px;
-  margin-top: 4px;
 }
 
 .progress-button__progress-bar {
   position: absolute;
-  top: -4px;
   height: 4px;
   background-color: var(--lightmode-pink);
   border-radius: 4px;
-  margin-top: 4px;
   animation: progress 12s linear forwards;
+}
+
+[theme="dark"] {
+  .progress-button {
+    &--active,
+    &:hover {
+      color: var(--darkmode-pink);
+    }
+  }
+
+  .progress-button__progress {
+    background-color: var(--darkmode-pink--desaturated);
+  }
+
+  .progress-button__progress-bar {
+    background-color: var(--darkmode-pink);
+  }
 }
 
 @keyframes progress {
