@@ -38,7 +38,6 @@
   height: 4px;
   background-color: var(--lightmode-pink);
   border-radius: 4px;
-  animation: progress 12s linear forwards;
 }
 
 [theme="dark"] {
@@ -64,5 +63,13 @@
   }
   to {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .progress-button {
+    &:not(.progress-button--active) {
+      display: none;
+    }
   }
 }

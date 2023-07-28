@@ -7,6 +7,7 @@ type ProgessButtonProps = {
   icon: string;
   onClick: () => void;
   active: boolean;
+  duration: number;
 };
 
 const ProgressButton = ({
@@ -14,23 +15,27 @@ const ProgressButton = ({
   icon,
   onClick,
   active,
+  duration,
 }: ProgessButtonProps) => {
   return (
-    <div className={classNames(
-          "progress-button",
-          active && "progress-button--active"
-        )}>
+    <div
+      className={classNames(
+        "progress-button",
+        active && "progress-button--active"
+      )}
+    >
       <Icon name={icon} />
-      <button
-        onClick={onClick}
-        className=
-          "progress-button__button"
-      >
+      <button onClick={onClick} className="progress-button__button">
         {children}
       </button>
       {active && (
         <div className="progress-button__progress">
-          <div className="progress-button__progress-bar" />
+          <div
+            className="progress-button__progress-bar"
+            style={{
+              animation: `progress ${duration}ms linear forwards`,
+            }}
+          />
         </div>
       )}
     </div>
