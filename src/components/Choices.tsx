@@ -97,6 +97,30 @@ const Choices = () => {
             >
               <Icon name="Chevron" />
             </button>
+            <ul className="choices__video-position-buttons">
+              <li>
+                <button
+                  className="choices__video-position-button--0"
+                  disabled={position === 0}
+                  onClick={() => setPosition(0)}
+                />
+              </li>
+
+              <li>
+                <button
+                  className="choices__video-position-button--1"
+                  disabled={position === 1}
+                  onClick={() => setPosition(1)}
+                />
+              </li>
+              <li>
+                <button
+                  className="choices__video-position-button--2"
+                  disabled={position === 2}
+                  onClick={() => setPosition(2)}
+                />
+              </li>
+            </ul>
           </div>
         )}
       </div>
