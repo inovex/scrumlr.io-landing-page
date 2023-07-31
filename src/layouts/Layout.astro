@@ -13,12 +13,13 @@ const { title } = Astro.props;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description">
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1 viewport-fit=cover" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
 	<body>
+    <div class="body_wrapper">
     <nav>hallo Manu {"<3"}</nav>
 		<slot />
     <Footer client:visible />
@@ -28,6 +29,7 @@ const { title } = Astro.props;
       document.documentElement.setAttribute('theme', theme);
     });
   </script>
+  </div>
 	</body>
 </html>
 <style is:global lang="scss">
@@ -73,10 +75,14 @@ const { title } = Astro.props;
   body {
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+  }
+
+  .body_wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
+    overflow-x: hidden;
   }
 
   [theme="dark"] {
