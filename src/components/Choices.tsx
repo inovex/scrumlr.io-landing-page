@@ -3,6 +3,7 @@ import "./Choices.scss";
 import ProgressButton from "./ProgressButton";
 import useMediaQuery from "../hooks/useMediaQuery";
 import Video from "./Video";
+import Icon from "./Icon";
 
 const Choices = () => {
   const [position, setPosition] = useState(0);
@@ -76,11 +77,27 @@ const Choices = () => {
             alt={`scrumlr screenshot ${position + 1}`}
           />
         ) : (
-          <Video
-            className="choices__video"
-            video={`assets/choices/videos/choices_${theme}_${position}.mp4`}
-            handleLoadedMetadata={setVideoDuration}
-          />
+          <div className="choices__video-wrapper">
+            <button
+              className="choices__video-button choices__video-button--left"
+              disabled={position === 0}
+              onClick={() => setPosition(position - 1)}
+            >
+              <Icon name="Chevron" />
+            </button>
+            <Video
+              className="choices__video"
+              video={`assets/choices/videos/choices_${theme}_${position}.mp4`}
+              handleLoadedMetadata={setVideoDuration}
+            />
+            <button
+              className="choices__video-button choices__video-button--right"
+              disabled={position === 2}
+              onClick={() => setPosition(position + 1)}
+            >
+              <Icon name="Chevron" />
+            </button>
+          </div>
         )}
       </div>
     </div>
