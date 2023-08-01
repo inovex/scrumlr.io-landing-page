@@ -72,10 +72,16 @@ const Choices = () => {
           </ProgressButton>
         </div>
         {!isMobile ? (
-          <img
-            src={`assets/choices/choices_${theme}_${position}.png`}
-            alt={`scrumlr screenshot ${position + 1}`}
-          />
+          <picture>
+            <source
+              srcSet={`assets/choices/choices_${theme}_${position}.webp`}
+              type="image/webp"
+            />
+            <img
+              src={`assets/choices/choices_${theme}_${position}.png`}
+              alt={`scrumlr screenshot ${position + 1}`}
+            />
+          </picture>
         ) : (
           <div className="choices__video-wrapper">
             <button
