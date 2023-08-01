@@ -31,7 +31,6 @@ export default function Video({
       muted
       playsInline
       onLoadedMetadata={() => {
-        console.log("loaded metadata");
         if (videoRef.current && handleLoadedMetadata)
           handleLoadedMetadata(videoRef.current.duration);
       }}

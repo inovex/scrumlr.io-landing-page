@@ -6,7 +6,7 @@
     "dev": "astro dev",
     "start": "astro dev --host",
     "build": "astro build",
-    "preview": "astro preview",
+    "preview": "astro preview --host",
     "astro": "astro",
     "lint": "eslint . --ext .js,.ts,.astro"
   },

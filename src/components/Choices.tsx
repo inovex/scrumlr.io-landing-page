@@ -82,6 +82,7 @@ const Choices = () => {
               className="choices__video-button choices__video-button--left"
               disabled={position === 0}
               onClick={() => setPosition(position - 1)}
+              aria-label="Vorheriges Video"
             >
               <Icon name="Chevron" />
             </button>
@@ -94,6 +95,7 @@ const Choices = () => {
               className="choices__video-button choices__video-button--right"
               disabled={position === 2}
               onClick={() => setPosition(position + 1)}
+              aria-label="Nächstes Video"
             >
               <Icon name="Chevron" />
             </button>
@@ -103,6 +105,7 @@ const Choices = () => {
                   className="choices__video-position-button--0"
                   disabled={position === 0}
                   onClick={() => setPosition(0)}
+                  aria-label="Erstes Video"
                 />
               </li>
 
@@ -111,6 +114,7 @@ const Choices = () => {
                   className="choices__video-position-button--1"
                   disabled={position === 1}
                   onClick={() => setPosition(1)}
+                  aria-label="Zweites Video"
                 />
               </li>
               <li>
@@ -118,6 +122,7 @@ const Choices = () => {
                   className="choices__video-position-button--2"
                   disabled={position === 2}
                   onClick={() => setPosition(2)}
+                  aria-label="Drittes Video"
                 />
               </li>
             </ul>

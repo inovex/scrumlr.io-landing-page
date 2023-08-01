@@ -129,7 +129,7 @@
 
 @media screen and (max-width: 850px) {
   .choices p {
-    margin: 8px 32px;
+    margin: 0 32px;
   }
 
   .choices__content {
@@ -142,7 +142,8 @@
 
     .choices__video {
       display: initial;
-      height: 500px;
+      max-width: 75%;
+      height: 400px;
     }
   }
 }
