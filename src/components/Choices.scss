@@ -38,8 +38,8 @@
   img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    box-shadow: var(--lightmode-shadow);
+    object-fit: contain;
+    filter: var(--shadow);
   }
 
   .choices__video {
@@ -119,10 +119,6 @@
 
 [theme="dark"] .choices__content {
   background-image: url("../assets/bg_cloud_dark.svg");
-
-  picture {
-    box-shadow: var(--darkmode-shadow);
-  }
 
   .choices__video-button {
     background: var(--darkmode-blue);
