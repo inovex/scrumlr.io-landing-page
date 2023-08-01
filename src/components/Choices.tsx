@@ -71,7 +71,7 @@ const Choices = () => {
             Customize your board
           </ProgressButton>
         </div>
-        {!isMobile ? (
+        <div className="choices__image-wrapper">
           <picture>
             <source
               srcSet={`assets/choices/choices_${theme}_${position}.webp`}
@@ -79,61 +79,62 @@ const Choices = () => {
             />
             <img
               src={`assets/choices/choices_${theme}_${position}.png`}
+              height="290"
+              width="680"
               alt={`scrumlr screenshot ${position + 1}`}
             />
           </picture>
-        ) : (
-          <div className="choices__video-wrapper">
-            <button
-              className="choices__video-button choices__video-button--left"
-              disabled={position === 0}
-              onClick={() => setPosition(position - 1)}
-              aria-label="Vorheriges Video"
-            >
-              <Icon name="Chevron" />
-            </button>
-            <Video
-              className="choices__video"
-              video={`assets/choices/videos/choices_${theme}_${position}.mp4`}
-              handleLoadedMetadata={setVideoDuration}
-            />
-            <button
-              className="choices__video-button choices__video-button--right"
-              disabled={position === 2}
-              onClick={() => setPosition(position + 1)}
-              aria-label="Nächstes Video"
-            >
-              <Icon name="Chevron" />
-            </button>
-            <ul className="choices__video-position-buttons">
-              <li>
-                <button
-                  className="choices__video-position-button--0"
-                  disabled={position === 0}
-                  onClick={() => setPosition(0)}
-                  aria-label="Erstes Video"
-                />
-              </li>
+        </div>
+        <div className="choices__video-wrapper">
+          <button
+            className="choices__video-button choices__video-button--left"
+            disabled={position === 0}
+            onClick={() => setPosition(position - 1)}
+            aria-label="Vorheriges Video"
+          >
+            <Icon name="Chevron" />
+          </button>
+          <Video
+            className="choices__video"
+            video={`assets/choices/videos/choices_${theme}_${position}`}
+            handleLoadedMetadata={setVideoDuration}
+          />
+          <button
+            className="choices__video-button choices__video-button--right"
+            disabled={position === 2}
+            onClick={() => setPosition(position + 1)}
+            aria-label="Nächstes Video"
+          >
+            <Icon name="Chevron" />
+          </button>
+          <ul className="choices__video-position-buttons">
+            <li>
+              <button
+                className="choices__video-position-button--0"
+                disabled={position === 0}
+                onClick={() => setPosition(0)}
+                aria-label="Erstes Video"
+              />
+            </li>
 
-              <li>
-                <button
-                  className="choices__video-position-button--1"
-                  disabled={position === 1}
-                  onClick={() => setPosition(1)}
-                  aria-label="Zweites Video"
-                />
-              </li>
-              <li>
-                <button
-                  className="choices__video-position-button--2"
-                  disabled={position === 2}
-                  onClick={() => setPosition(2)}
-                  aria-label="Drittes Video"
-                />
-              </li>
-            </ul>
-          </div>
-        )}
+            <li>
+              <button
+                className="choices__video-position-button--1"
+                disabled={position === 1}
+                onClick={() => setPosition(1)}
+                aria-label="Zweites Video"
+              />
+            </li>
+            <li>
+              <button
+                className="choices__video-position-button--2"
+                disabled={position === 2}
+                onClick={() => setPosition(2)}
+                aria-label="Drittes Video"
+              />
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );

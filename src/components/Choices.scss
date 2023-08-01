@@ -30,9 +30,15 @@
   padding: 64px 0 128px 0;
   gap: 32px;
 
-  img {
-    max-height: 560px;
+  .choices__image-wrapper {
+    height: min(34vw, 450px);
     max-width: min(80%, 1320px);
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     box-shadow: var(--lightmode-shadow);
   }
 
@@ -51,8 +57,10 @@
 }
 
 .choices__video-wrapper {
+  display: none;
   position: relative;
   width: 100%;
+  height: fit-content;
 }
 
 .choices__video-button {
@@ -112,7 +120,7 @@
 [theme="dark"] .choices__content {
   background-image: url("../assets/bg_cloud_dark.svg");
 
-  img {
+  picture {
     box-shadow: var(--darkmode-shadow);
   }
 
@@ -136,13 +144,16 @@
     background-image: none;
     padding: 16px 0;
 
-    img {
+    .choices__image-wrapper {
       display: none;
+    }
+
+    .choices__video-wrapper {
+      display: initial;
     }
 
     .choices__video {
       display: initial;
-      max-width: 75%;
       height: 400px;
     }
   }
