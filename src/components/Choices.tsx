@@ -72,18 +72,20 @@ const Choices = () => {
           </ProgressButton>
         </div>
         <div className="choices__image-wrapper">
-          <picture>
-            <source
-              srcSet={`assets/choices/choices_${theme}_${position}.webp`}
-              type="image/webp"
-            />
-            <img
-              src={`assets/choices/choices_${theme}_${position}.png`}
-              height="290"
-              width="680"
-              alt={`scrumlr screenshot ${position + 1}`}
-            />
-          </picture>
+          {!isMobile && (
+            <picture>
+              <source
+                srcSet={`assets/choices/choices_${theme}_${position}.webp`}
+                type="image/webp"
+              />
+              <img
+                src={`assets/choices/choices_${theme}_${position}.png`}
+                height="290"
+                width="680"
+                alt={`scrumlr screenshot ${position + 1}`}
+              />
+            </picture>
+          )}
         </div>
         <div className="choices__video-wrapper">
           <button
@@ -94,11 +96,13 @@ const Choices = () => {
           >
             <Icon name="Chevron" />
           </button>
-          <Video
-            className="choices__video"
-            video={`assets/choices/videos/choices_${theme}_${position}`}
-            handleLoadedMetadata={setVideoDuration}
-          />
+          {isMobile && (
+            <Video
+              className="choices__video"
+              video={`assets/choices/videos/choices_${theme}_${position}`}
+              handleLoadedMetadata={setVideoDuration}
+            />
+          )}
           <button
             className="choices__video-button choices__video-button--right"
             disabled={position === 2}
