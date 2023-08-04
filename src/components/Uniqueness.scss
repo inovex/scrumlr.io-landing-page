@@ -1,4 +1,56 @@
 .uniqueness__wrapper {
+  min-width: 100vw;
   display: flex;
   flex-direction: column;
+  text-align: center;
+}
+
+.uniqueness__section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  &:first-of-type {
+    margin-top: 100px;
+  }
+
+  > div {
+    height: 750px;
+    width: 50%;
+    position: relative;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    > h3,
+    p {
+      width: fit-content;
+      max-width: 360px;
+      text-wrap: balance;
+      margin-left: 64px;
+    }
+
+    > img {
+      position: absolute;
+      right: 64px;
+    }
+  }
+
+  &--right {
+    > div {
+      align-items: end;
+      > h3,
+      p {
+        margin-left: 0;
+        margin-right: 64px;
+      }
+
+      > img {
+        right: 0;
+        left: 64px;
+      }
+    }
+  }
 }
