@@ -41,7 +41,7 @@ const Choices = () => {
   }, [position, duration, isMobile]);
 
   return (
-    <div className="choices" id="Features">
+    <section className="choices" id="Features">
       <h2>Euer Board – Eure Entscheidungen.</h2>
       <p>Wählt eine beliebige Retrospektive, die zu eurem Team passt.</p>
       <div className="choices__content">
@@ -140,7 +140,7 @@ const Choices = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
