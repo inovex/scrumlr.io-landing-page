@@ -21,11 +21,18 @@
 
 .progress-button__button {
   all: unset;
+  padding: 2px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+
+  &:focus-visible {
+    border-color: var(--lightmode-pink);
+  }
 }
 
 .progress-button__progress {
   position: absolute;
-  bottom: -8px;
+  bottom: -4px;
   right: 4px;
   width: calc(100% - 8px);
   height: 4px;

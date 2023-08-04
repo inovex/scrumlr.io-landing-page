@@ -59,6 +59,12 @@ h2 {
   padding: 0;
   gap: 24px;
   align-items: center;
+
+  a {
+    height: 32px;
+    width: 32px;
+    display: block;
+  }
 }
 
 .footer__internal-links {
@@ -74,6 +80,13 @@ h2 {
     text-decoration: none;
     font-weight: 700;
     line-height: 34px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+
+    &:focus-visible {
+      outline: none;
+      border-color: var(--lightmode-pink);
+    }
   }
 }
 
@@ -124,6 +137,13 @@ h2 {
 
 a {
   transition: all 0.1s ease-in-out;
+  border: 2px solid transparent;
+  border-radius: 4px;
+
+  &:focus-visible {
+    outline: none;
+    border-color: var(--lightmode-pink);
+  }
   &:hover {
     color: var(--lightmode-pink);
   }
