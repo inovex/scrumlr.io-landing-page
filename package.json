@@ -12,18 +12,18 @@
   },
   "dependencies": {
     "@astrojs/react": "^2.2.1",
-    "@types/react": "^18.2.15",
+    "@types/react": "^18.2.18",
     "@types/react-dom": "^18.2.7",
-    "astro": "^2.8.3",
+    "astro": "^2.10.6",
     "classnames": "^2.3.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "sass": "^1.63.6"
+    "sass": "^1.64.2"
   },
   "devDependencies": {
-    "eslint": "^8.45.0",
-    "eslint-plugin-astro": "^0.27.2",
+    "eslint": "^8.46.0",
+    "eslint-plugin-astro": "^0.28.0",
     "eslint-plugin-jsx-a11y": "^6.7.1",
-    "@typescript-eslint/parser": "^6.0.0"
+    "@typescript-eslint/parser": "^6.2.1"
   }
 }
