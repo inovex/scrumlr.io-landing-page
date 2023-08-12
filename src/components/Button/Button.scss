@@ -6,76 +6,45 @@
   border: none;
   border-radius: 999px;
   padding: 16px 32px;
-  color: var(--white, #FFF);
-  font-size: 1rem;
+  color: var(--white);
+  font-size: 1.125rem;
   font-weight: 700;
-  box-shadow: 0px 3px 12px 0px rgba(255, 0, 105, 0.30);
-  background: var(--lightmode-pink, #FF0069);
+  box-shadow: 0 3px 12px 0 rgba(255, 0, 105, 0.30);
+  background: var(--lightmode-pink);
   cursor: pointer;
 
   &:hover {
     transform: scale(1.05);
-    box-shadow: 0px 4px 14px 0px rgba(255, 0, 105, 0.44);
+    box-shadow: 0 4px 14px 0 rgba(255, 0, 105, 0.44);
   }
-  
   &:active {
-    background: var(--lightmode-pink-button-pressed, #DA005A);
+    background: var(--lightmode-pink-button-pressed);
     box-shadow: none;
   }
-
   &:focus {
-    border: 3px solid var(--darkmode-pink, #FF80B4);
+    border: 3px solid var(--darkmode-pink);
     padding: 13px 29px;
-    box-shadow: 0px 4px 14px 0px rgba(255, 0, 105, 0.30);
+    box-shadow: 0 4px 14px 0 rgba(255, 0, 105, 0.30);
     outline: none;
   }
-
   &:disabled {
-    color: var(--dark-grey, #939DAA);
-    background: var(--light-grey-3, #EDEFF2);
+    color: var(--dark-grey);
+    background: var(--light-grey-3);
   }
-}
-
-.button--variant-secondary {
-    border: 2px solid var(--lightmode-pink, #FF0069);
-    padding: 14px 30px;
-    color: var(--lightmode-pink, #FF0069);
-    background: rgba(255, 0, 105, 0.08);
-
-    &:active {
-      background: rgba(255, 0, 105, 0.20);
-    }
-
-    &:focus {
-      background: transparent;
-    }
-
-    &:disabled {
-      border-color: var(--dark-grey, #939DAA);
-    }
 }
 
 [theme='dark'] {
   .button {
-    background: var(--darkmode-pink, #FF80B4);
-
-    &:disabled {
-      color: var(--light-grey-3, #EDEFF2);
-    }
-  }
-
-  .button--variant-secondary {
-    border-color: var(--darkmode-pink, #FF80B4);
-    background: rgba(255, 0, 105, 0.10);
-    color: var(--darkmode-pink, #FF80B4);
+    background: var(--darkmode-pink);
 
     &:active {
-      background: rgba(255, 0, 105, 0.28);
+      background: var(--lightmode-pink);
     }
-
+    &:focus {
+      border-color: var(--lightmode-pink);
+    }
     &:disabled {
-      color: var(--dark-grey, #939DAA);
-      background: rgba(237, 239, 242, 0.08);
+      color: var(--light-grey-3);
     }
   }
 }

@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react';
 import classNames from 'classnames';
-import { Button } from './Button/Button';
-import { Logo } from './Logo';
+import { Button } from '../Button/Button';
+import { Logo } from '../Logo';
 import './Navbar.scss';
 
 export default function Navbar() {
@@ -28,7 +28,9 @@ export default function Navbar() {
     <nav className={classNames('navbar', {'navbar--opaque': !isNavbarTransparent})}>
       <ul>
         <li>
-          <Logo />
+          <a href="">
+            <Logo />
+          </a>
         </li>
         <li>
           <a href="#home">
@@ -47,6 +49,7 @@ export default function Navbar() {
         </li>
         <li>
           <Button
+            className='navbar__button'
             icon={<img src="/assets/icons/icon-plus.svg" alt="Plus" />}
           >
             Board erstellen
