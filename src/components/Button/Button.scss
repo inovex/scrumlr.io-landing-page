@@ -12,6 +12,7 @@
   box-shadow: 0 3px 12px 0 rgba(255, 0, 105, 0.30);
   background: var(--lightmode-pink);
   cursor: pointer;
+  transition: transform 80ms ease-in-out, box-shadow 80ms ease-in-out;
 
   &:hover {
     transform: scale(1.05);

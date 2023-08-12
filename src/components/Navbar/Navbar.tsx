@@ -4,7 +4,7 @@ import { Button } from '../Button/Button';
 import { Logo } from '../Logo';
 import './Navbar.scss';
 
-export default function Navbar() {
+export const Navbar = () => {
   const [isNavbarTransparent, setIsNavbarTransparent] = useState(true);
   
   useEffect(() => {
