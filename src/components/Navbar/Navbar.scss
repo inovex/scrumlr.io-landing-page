@@ -22,7 +22,7 @@
   list-style: none;
   align-items: center;
   gap: 32px;
-  padding: 16px 64px;
+  padding: 16px 20px;
   width: 100%;
   max-width: 1920px;
   box-sizing: border-box;
@@ -51,6 +51,7 @@
 
 @media (min-width: 850px) {
   .navbar > ul {
+    padding: 16px 64px;
     display: grid;
     grid-template-columns: auto 1fr auto 1fr auto;
   }

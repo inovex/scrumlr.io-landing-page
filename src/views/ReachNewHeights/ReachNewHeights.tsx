@@ -1,10 +1,9 @@
 import './ReachNewHeights.scss';
 
-const ReachNewHeights = () => {
+export const ReachNewHeights = () => {
   return (
-    <section style={{height: '1000px'}}>
+    <section>
+      <h1>Reach New Heights</h1>
     </section>
-  )
+  );
 }
-
-export default ReachNewHeights;

@@ -1,0 +1,22 @@
+section {
+  box-sizing: border-box;
+  background: url(../../assets/bg_heights_light.svg);
+  background-position: 65%;
+  background-repeat: no-repeat;
+  height: 1160px;
+  padding-top: 84px;
+}
+
+[theme='dark'] {
+  section {
+    background: url(../../assets/bg_heights_dark.svg);
+    background-position: 65%;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  section {
+    background-position: center;
+  }
+}
