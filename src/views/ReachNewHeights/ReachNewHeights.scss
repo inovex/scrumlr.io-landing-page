@@ -1,7 +1,7 @@
 section {
   box-sizing: border-box;
-  background: url(../../../public/assets/backgrounds/bg_heights_light.svg);
-  background-position: 65%;
+  background-image: url('../../../public/assets/backgrounds/bg_heights_light.svg');
+  background-position: 60%;
   background-repeat: no-repeat;
   height: 1160px;
   padding-top: 84px;
@@ -9,13 +9,11 @@ section {
 
 [theme='dark'] {
   section {
-    background: url(../../../public/assets/backgrounds/bg_heights_dark.svg);
-    background-position: 65%;
-    background-repeat: no-repeat;
+    background-image: url('../../../public/assets/backgrounds/bg_heights_dark.svg');
   }
 }
 
-@media screen and (min-width: 850px) {
+@media (min-width: 768px) {
   section {
     background-position: center;
   }

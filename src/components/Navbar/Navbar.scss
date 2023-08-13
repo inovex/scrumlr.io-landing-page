@@ -49,9 +49,8 @@
   cursor: pointer;
 }
 
-@media (min-width: 850px) {
+@media (min-width: 768px) {
   .navbar > ul {
-    padding: 16px 64px;
     display: grid;
     grid-template-columns: auto 1fr auto 1fr auto;
   }
@@ -60,6 +59,13 @@
   .navbar > ul > li:nth-of-type(3),
   .navbar > ul > li:nth-of-type(4) {
     display: block;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .navbar > ul {
+    padding: 16px 64px;
   }
 
   .navbar__button {
