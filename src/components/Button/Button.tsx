@@ -19,7 +19,7 @@ export const Button =(props: ButtonProps) => {
       disabled={props.disabled} 
       onClick={props.onClick}
     >
-      {props.children}
+      <span>{props.children}</span>
       {props.icon}
     </button>
   );

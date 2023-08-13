@@ -1,6 +1,6 @@
 section {
   box-sizing: border-box;
-  background: url(../../assets/bg_heights_light.svg);
+  background: url(../../../public/assets/backgrounds/bg_heights_light.svg);
   background-position: 65%;
   background-repeat: no-repeat;
   height: 1160px;
@@ -9,7 +9,7 @@ section {
 
 [theme='dark'] {
   section {
-    background: url(../../assets/bg_heights_dark.svg);
+    background: url(../../../public/assets/backgrounds/bg_heights_dark.svg);
     background-position: 65%;
     background-repeat: no-repeat;
   }

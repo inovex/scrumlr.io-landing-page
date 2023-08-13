@@ -28,7 +28,7 @@ export const Navbar = () => {
     <nav className={classNames('navbar', {'navbar--opaque': !isNavbarTransparent})}>
       <ul>
         <li>
-          <a aria-label='Startseite' href=''>
+          <a aria-label='Startseite' href='/'>
             <Logo />
           </a>
         </li>
