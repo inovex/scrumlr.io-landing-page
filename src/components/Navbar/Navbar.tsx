@@ -28,29 +28,30 @@ export const Navbar = () => {
     <nav className={classNames('navbar', {'navbar--opaque': !isNavbarTransparent})}>
       <ul>
         <li>
-          <a href="">
+          <a aria-label='Startseite' href=''>
             <Logo />
           </a>
         </li>
         <li>
-          <a href="#home">
+          <a href='#home'>
             Startseite
           </a>
         </li>
         <li>
-          <a href="#functions">
+          <a href='#functions'>
             Funktionen
           </a>
         </li>
         <li>
-          <a href="#about">
+          <a href='#about'>
             Über uns
           </a>
         </li>
         <li>
           <Button
+            ariaLabel='Board erstellen'
             className='navbar__button'
-            icon={<img src="/assets/icons/icon-plus.svg" alt="Plus" />}
+            icon={<img src='/assets/icons/icon-plus.svg' alt="Plus" />}
           >
             Board erstellen
           </Button>
