@@ -113,6 +113,32 @@ section > p {
 }
 
 @media (min-width: 1024px) {
+  .reach-new-heights__information {
+    flex-direction: row;
+    gap: 62px;
+  }
+  .reach-new-heights__information-item {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 'icon title' '_ description';
+    gap: 0 14px;
+
+    > img {
+      grid-area: icon;
+    }
+    > h2 {
+      grid-area: title;
+    } 
+    > p {
+      grid-area: description;
+      align-self: start;
+      text-align: left;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
   .reach-new-heights > h1 {
     width: 679px;
     font-size: 62px;
@@ -121,5 +147,13 @@ section > p {
   .reach-new-heights > p {
     font-size: 24px;
     font-weight: 500;
+  }
+  .reach-new-heights__information-item {
+    > h2 {
+      font-size: 24px;
+    }
+    > p {
+      font-size: 20px;
+    }
   }
 }
