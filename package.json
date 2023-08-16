@@ -21,7 +21,7 @@
     "sass": "^1.64.2"
   },
   "devDependencies": {
-    "eslint": "^8.46.0",
+    "eslint": "^8.47.0",
     "eslint-plugin-astro": "^0.28.0",
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "@typescript-eslint/parser": "^6.3.0"
