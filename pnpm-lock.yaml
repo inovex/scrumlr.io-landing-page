@@ -16,7 +16,7 @@ dependencies:
     version: 18.2.7
   astro:
     specifier: ^2.10.7
-    version: 2.10.7(sass@1.64.2)
+    version: 2.10.7(sass@1.65.1)
   classnames:
     specifier: ^2.3.2
     version: 2.3.2
@@ -27,8 +27,8 @@ dependencies:
     specifier: ^18.0.0
     version: 18.2.0(react@18.2.0)
   sass:
-    specifier: ^1.64.2
-    version: 1.64.2
+    specifier: ^1.65.1
+    version: 1.65.1
 
 devDependencies:
   '@typescript-eslint/parser':
@@ -91,7 +91,7 @@ packages:
       astro: ^2.5.0
     dependencies:
       '@astrojs/prism': 2.1.2
-      astro: 2.10.7(sass@1.64.2)
+      astro: 2.10.7(sass@1.65.1)
       github-slugger: 1.5.0
       import-meta-resolve: 2.2.2
       rehype-raw: 6.1.1
@@ -1275,7 +1275,7 @@ packages:
       - supports-color
     dev: true
 
-  /astro@2.10.7(sass@1.64.2):
+  /astro@2.10.7(sass@1.65.1):
     resolution: {integrity: sha512-R8aF4yphrsbhxW2UxHZ1DslBn8e8vPQ23+Z/OnajNE1Q4HEZCOZ4CAbHJx2PDwq2p+CRWArNalpr3+rTqyOYBQ==}
     engines: {node: '>=16.12.0', npm: '>=6.14.0'}
     hasBin: true
@@ -1338,7 +1338,7 @@ packages:
       typescript: 5.1.3
       unist-util-visit: 4.1.2
       vfile: 5.3.7
-      vite: 4.4.7(sass@1.64.2)
+      vite: 4.4.7(sass@1.65.1)
       vitefu: 0.2.4(vite@4.4.7)
       which-pm: 2.0.0
       yargs-parser: 21.1.1
@@ -3863,8 +3863,8 @@ packages:
       suf-log: 2.5.3
     dev: false
 
-  /sass@1.64.2:
-    resolution: {integrity: sha512-TnDlfc+CRnUAgLO9D8cQLFu/GIjJIzJCGkE7o4ekIGQOH7T3GetiRR/PsTWJUHhkzcSPrARkPI+gNWn5alCzDg==}
+  /sass@1.65.1:
+    resolution: {integrity: sha512-9DINwtHmA41SEd36eVPQ9BJKpn7eKDQmUHmpI0y5Zv2Rcorrh0zS+cFrt050hdNbmmCNKTW3hV5mWfuegNRsEA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
@@ -4318,7 +4318,7 @@ packages:
       vfile-message: 3.1.4
     dev: false
 
-  /vite@4.4.7(sass@1.64.2):
+  /vite@4.4.7(sass@1.65.1):
     resolution: {integrity: sha512-6pYf9QJ1mHylfVh39HpuSfMPojPSKVxZvnclX1K1FyZ1PXDOcLBibdq5t1qxJSnL63ca8Wf4zts6mD8u8oc9Fw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -4349,7 +4349,7 @@ packages:
       esbuild: 0.18.17
       postcss: 8.4.27
       rollup: 3.27.0
-      sass: 1.64.2
+      sass: 1.65.1
     optionalDependencies:
       fsevents: 2.3.2
     dev: false
@@ -4362,7 +4362,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 4.4.7(sass@1.64.2)
+      vite: 4.4.7(sass@1.65.1)
     dev: false
 
   /vscode-css-languageservice@6.2.6:
