@@ -8,16 +8,39 @@
 .uniqueness__section {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 64px;
 
   &:first-of-type {
     margin-top: 100px;
   }
 
+  .uniqueness__section-dots {
+    position: absolute;
+
+    &--0 {
+      right: -32px;
+    }
+
+    &--1 {
+      left: -16px;
+    }
+
+    &--2 {
+      right: -50px;
+    }
+
+    &--3 {
+      left: -48px;
+    }
+  }
+
   > div {
+    position: relative;
     height: 750px;
     width: 50%;
+    max-width: 780px;
     position: relative;
     text-align: left;
     display: flex;
