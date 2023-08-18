@@ -1,6 +1,6 @@
 section {
   box-sizing: border-box;
-  background-image: url('../../../assets/backgrounds/bg_heights_light.svg');
+  background-image: url('assets/backgrounds/bg_heights_light.svg');
   background-position: 60%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -109,13 +109,10 @@ section {
 
 
 
-
-
 @media (min-width: 768px) {
   section {
     background-position: center;
   }
-
 }
 
 
@@ -201,7 +198,7 @@ section {
 
 [theme='dark'] {
   section {
-    background-image: url('../../../assets/backgrounds/bg_heights_dark.svg');
+    background-image: url('assets/backgrounds/bg_heights_dark.svg');
   }
   .reach-new-heights__image--light {
     display: none;
@@ -216,4 +213,3 @@ section {
     display: block;
   }
 }
-
