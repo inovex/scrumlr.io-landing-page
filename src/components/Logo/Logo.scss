@@ -1,0 +1,57 @@
+.scrumlr-logo__paths {
+  fill: #0057ff;
+
+  path {
+    transition: all 0.08s ease-out;
+  }
+}
+
+.scrumlr-logo {
+  height: 48px;
+  overflow: visible;
+}
+
+.scrumlr-logo__stop {
+  stop-color: #0057ff;
+}
+
+[theme="dark"] {
+  .scrumlr-logo__paths {
+    fill: #fff;
+  }
+
+  .scrumlr-logo__stop:nth-of-type(1),
+  .scrumlr-logo__stop:nth-of-type(2){
+    stop-color: #0057ff;
+  }
+  .scrumlr-logo__stop:nth-of-type(3),
+  .scrumlr-logo__stop:nth-of-type(4){
+    stop-color: #5e00ff;
+  }
+  .scrumlr-logo__stop:nth-of-type(5),
+  .scrumlr-logo__stop:nth-of-type(6){
+    stop-color: #c000ff;
+  }
+  .scrumlr-logo__stop:nth-of-type(7),
+  .scrumlr-logo__stop:nth-of-type(8){
+    stop-color: #e20360;
+  }
+}
+
+.scrumlr-logo--mobile {
+  min-width: 44px;
+}
+
+.scrumlr-logo--desktop {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .scrumlr-logo--desktop {
+    display: initial;
+  }
+
+  .scrumlr-logo--mobile {
+    display: none;
+  }
+}

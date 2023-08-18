@@ -128,7 +128,7 @@ a {
   }
 }
 
-@media (prefers-color-scheme: dark) { 
+[theme="dark"] {
   footer {
     background-color: var(--darkmode-blue, #6B9CFF);
   }

@@ -1,0 +1,20 @@
+section {
+  box-sizing: border-box;
+  background-image: url('/assets/backgrounds/bg_heights_light.svg');
+  background-position: 60%;
+  background-repeat: no-repeat;
+  height: 1160px;
+  padding-top: 84px;
+}
+
+[theme='dark'] {
+  section {
+    background-image: url('/assets/backgrounds/bg_heights_dark.svg');
+  }
+}
+
+@media (min-width: 768px) {
+  section {
+    background-position: center;
+  }
+}
