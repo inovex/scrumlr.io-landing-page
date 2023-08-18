@@ -1,23 +1,29 @@
+import { Button } from '../../components/Button/Button';
 import './ReachNewHeights.scss';
 
 export const ReachNewHeights = () => {
   return (
     <section className='reach-new-heights'>
-      <h1>Erreiche mit deinem <span>Team</span> neue Erfolge und startet eure erste <span>Retrospektive.</span></h1>
-      <p>Beginnt unmittelbar eure erste gemeinsame Sitzung - es ist keine Registrierung erforderlich und es ist absolut kostenlos.</p>
-      <img 
-        src='assets/images/reach-new-heights_light.svg' 
-        alt='Reach new heights' 
-        className='reach-new-heights__image reach-new-heights__image--light'
-      />
-      <img
-        src='assets/images/reach-new-heights_dark.svg' 
-        alt='Reach new heights'
-        className='reach-new-heights__image reach-new-heights__image--dark'
-      />
       <div className='reach-new-heights__content'>
-        <div className='reach-new-heights__content__part1'>
+        <div>
+          <div className='reach-new-heights__headline'>
+            <h1>Erreiche mit deinem <span>Team</span> neue Erfolge und startet eure erste <span>Retrospektive.</span></h1>
+            <p>Beginnt unmittelbar eure erste gemeinsame Sitzung - es ist keine Registrierung erforderlich und es ist absolut kostenlos.</p>
+          </div>
+          <div>
+            <Button>Get Started</Button>
+          </div>
         </div>
+        <img 
+          src='assets/images/reach-new-heights_light.svg' 
+          alt='Reach new heights' 
+          className='reach-new-heights__image reach-new-heights__image--light'
+        />
+        <img
+          src='assets/images/reach-new-heights_dark.svg' 
+          alt='Reach new heights'
+          className='reach-new-heights__image reach-new-heights__image--dark'
+        />
         <div className='reach-new-heights__information'>
           <div className='reach-new-heights__information-item'>
             <img src='assets/icons/icon_what-is-it-about_light.svg' alt='What is it about?' className='information-item__icon information-item__icon--light' />
