@@ -14,7 +14,7 @@ export const Uniqueness = () => {
             alt="uniqueness"
           />
         </div>
-        <div>
+        <div className="uniqueness__text">
           <h3>Schnellstart: ohne Registrierung und kostenlos</h3>
           <p>
             Starte direkt und unverbindlich, ohne aufwändige Registrierung oder
@@ -28,7 +28,7 @@ export const Uniqueness = () => {
         </div>
       </div>
       <div className="uniqueness__section uniqueness__section--right">
-        <div>
+        <div className="uniqueness__text">
           <h3>Individuelle Denkweisen mit dem Team teilen</h3>
           <p>
             Dieses Tool ist der beste Weg, Ideen miteinander auszutauschen und
@@ -54,7 +54,7 @@ export const Uniqueness = () => {
             alt="uniqueness"
           />
         </div>
-        <div>
+        <div className="uniqueness__text">
           <h3>Meinungen und Gedanken übersichtlich sammeln</h3>
           <p>
             Transparente Kommunikation ist wichtig. Mit Scrumlr könnt ihr
@@ -68,7 +68,7 @@ export const Uniqueness = () => {
         </div>
       </div>
       <div className="uniqueness__section uniqueness__section--right">
-        <div>
+        <div className="uniqueness__text">
           <h3>Open Source & sicher gehostet in Deutschland</h3>
           <p>
             Scrumlr ist ein Open-Source-Software, deren Quelldaten eingesehen,
