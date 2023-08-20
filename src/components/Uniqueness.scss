@@ -61,6 +61,10 @@
     }
   }
 
+  .uniqueness__image > img {
+    height: 100%;
+  }
+
   &--right {
     > div {
       align-items: end;
