@@ -1,10 +1,14 @@
 ---
 import { Uniqueness } from '../components/Uniqueness';
+import Choices from '../components/Choices';
 import Layout from '../layouts/Layout.astro';
+import {ReachNewHeights} from "../views/ReachNewHeights/ReachNewHeights";
 ---
 
 <Layout title="scrumlr">
 	<main>
+    	<ReachNewHeights />
+		<Choices client:visible />
 		<Uniqueness client:idle />
   </main>
 </Layout>
@@ -13,5 +17,6 @@ import Layout from '../layouts/Layout.astro';
 	main {
 		padding: 1.5rem;
 		overflow: hidden;
+    	width: 100vw;
 	}
 </style>
