@@ -8,7 +8,7 @@ export const Uniqueness = () => {
         Scrumlr fördert eine ausgewogene Zusammenarbeit innerhalb jedes Teams.{" "}
       </p>
       <div className="uniqueness__section">
-        <div>
+        <div className="uniqueness__image">
           <img
             src="assets/uniqueness/uniqueness_light_0.svg"
             alt="uniqueness"
@@ -40,7 +40,7 @@ export const Uniqueness = () => {
             className="uniqueness__section-dots--1"
           />
         </div>
-        <div>
+        <div className="uniqueness__image">
           <img
             src="assets/uniqueness/uniqueness_light_1.svg"
             alt="uniqueness"
@@ -48,7 +48,7 @@ export const Uniqueness = () => {
         </div>
       </div>
       <div className="uniqueness__section">
-        <div>
+        <div className="uniqueness__image">
           <img
             src="assets/uniqueness/uniqueness_light_2.svg"
             alt="uniqueness"
@@ -80,7 +80,7 @@ export const Uniqueness = () => {
             className="uniqueness__section-dots--3"
           />
         </div>
-        <div>
+        <div className="uniqueness__image">
           <img
             src="assets/uniqueness/uniqueness_light_3.svg"
             alt="uniqueness"
