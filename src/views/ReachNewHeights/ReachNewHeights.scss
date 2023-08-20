@@ -1,4 +1,4 @@
-section {
+.heights {
   box-sizing: border-box;
   background-image: url('assets/backgrounds/bg_heights_light.svg');
   background-position: 60%;
@@ -110,7 +110,7 @@ section {
 
 
 @media (min-width: 768px) {
-  section {
+  .heights {
     background-position: center;
   }
 }
