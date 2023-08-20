@@ -93,7 +93,7 @@
     margin-bottom: 64px;
 
     &:first-of-type {
-      margin-top: 0;
+      margin-top: 32px;
     }
 
     &--right {
@@ -119,7 +119,21 @@
       > img {
         height: 100%;
         right: 0;
+        left: -390px;
       }
+
+      $uniqueness-image-count: 4; // Number of images
+
+      @for $i from 0 to $uniqueness-image-count {
+        .uniqueness__image-#{$i} {
+          content: url("/assets/uniqueness/uniqueness_light_#{$i}_mobile.webp");
+        }
+      }
+    }
+
+    &--right > .uniqueness__image > img {
+      left: initial;
+      right: -490px;
     }
 
     .uniqueness__section-dots {

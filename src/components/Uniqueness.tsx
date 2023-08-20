@@ -11,6 +11,7 @@ export const Uniqueness = () => {
         <div className="uniqueness__image">
           <img
             src="assets/uniqueness/uniqueness_light_0.webp"
+            className="uniqueness__image-0"
             alt="uniqueness"
           />
         </div>
@@ -43,6 +44,7 @@ export const Uniqueness = () => {
         <div className="uniqueness__image">
           <img
             src="assets/uniqueness/uniqueness_light_1.webp"
+            className="uniqueness__image-1"
             alt="uniqueness"
           />
         </div>
@@ -51,6 +53,7 @@ export const Uniqueness = () => {
         <div className="uniqueness__image">
           <img
             src="assets/uniqueness/uniqueness_light_2.webp"
+            className="uniqueness__image-2"
             alt="uniqueness"
           />
         </div>
@@ -83,6 +86,7 @@ export const Uniqueness = () => {
         <div className="uniqueness__image">
           <img
             src="assets/uniqueness/uniqueness_light_3.webp"
+            className="uniqueness__image-3"
             alt="uniqueness"
           />
         </div>
