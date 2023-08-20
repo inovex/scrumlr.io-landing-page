@@ -1,0 +1,82 @@
+.progress-button {
+  position: relative;
+  cursor: pointer;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+
+  transition: all 0.1s ease-in-out;
+
+  svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+
+  &--active,
+  &:hover {
+    color: var(--lightmode-pink);
+  }
+}
+
+.progress-button__button {
+  all: unset;
+  padding: 2px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+
+  &:focus-visible {
+    border-color: var(--lightmode-pink);
+  }
+}
+
+.progress-button__progress {
+  position: absolute;
+  bottom: -4px;
+  right: 4px;
+  width: calc(100% - 8px);
+  height: 4px;
+  background-color: var(--lightmode-pink--desaturated);
+  border-radius: 4px;
+}
+
+.progress-button__progress-bar {
+  position: absolute;
+  height: 4px;
+  background-color: var(--lightmode-pink);
+  border-radius: 4px;
+}
+
+[theme="dark"] {
+  .progress-button {
+    &--active,
+    &:hover {
+      color: var(--darkmode-pink);
+    }
+  }
+
+  .progress-button__progress {
+    background-color: var(--darkmode-pink--desaturated);
+  }
+
+  .progress-button__progress-bar {
+    background-color: var(--darkmode-pink);
+  }
+}
+
+@keyframes progress {
+  from {
+    width: 1%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .progress-button {
+    &:not(.progress-button--active) {
+      display: none;
+    }
+  }
+}
