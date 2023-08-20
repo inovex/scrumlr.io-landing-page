@@ -1,16 +1,18 @@
 ---
 import Choices from '../components/Choices';
 import Layout from '../layouts/Layout.astro';
+import {ReachNewHeights} from "../views/ReachNewHeights/ReachNewHeights";
 ---
 
 <Layout title="scrumlr">
 	<main>
 		<Choices client:visible />
+    	<ReachNewHeights />
   </main>
 </Layout>
 
 <style>
 	main {
-		width: 100vw;
+    width: 100vw;
 	}
 </style>
