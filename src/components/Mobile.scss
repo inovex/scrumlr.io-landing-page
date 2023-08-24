@@ -55,6 +55,38 @@
   opacity: 0.05;
 }
 
+@media screen and (max-width: 700px) {
+  .mobile__section {
+    box-sizing: border-box;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    padding: 64px 0 0 0;
+    gap: 16px;
+  }
+
+  .mobile__image {
+    width: 100%;
+    justify-content: center;
+
+    .mobile__stan {
+      height: 500px;
+    }
+
+    .mobile__background {
+      height: 700px;
+      right: 96px;
+    }
+  }
+
+  .mobile__text {
+    margin: 0;
+    width: 100%;
+  }
+}
+
 [theme="dark"] {
   .mobile__section {
     background: #1f2d49ff;
