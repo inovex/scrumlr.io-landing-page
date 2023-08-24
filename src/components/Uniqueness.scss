@@ -91,6 +91,7 @@
     flex-direction: column;
     box-sizing: border-box;
     margin-bottom: 64px;
+    gap: 32px;
 
     &:first-of-type {
       margin-top: 32px;
@@ -141,7 +142,7 @@
       &--1,
       &--2,
       &--3 {
-        transform: scale(0.75);
+        transform: scale(0.5);
         z-index: 1;
       }
 
@@ -154,19 +155,19 @@
       &--1 {
         left: initial;
         right: -72px;
-        top: -84px;
+        top: -120px;
       }
 
       &--2 {
         right: initial;
         left: -58px;
-        top: -64px;
+        top: -72px;
       }
 
       &--3 {
         left: initial;
         right: -112px;
-        top: -112px;
+        top: -156px;
       }
     }
   }
