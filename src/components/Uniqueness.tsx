@@ -1,6 +1,16 @@
+import { useEffect, useState } from "react";
 import "./Uniqueness.scss";
 
 export const Uniqueness = () => {
+  const [theme, setTheme] = useState("dark");
+
+  useEffect(() => {
+    const theme = document.documentElement.getAttribute("theme");
+    if (theme) {
+      setTheme(theme);
+    }
+  }, []);
+
   return (
     <section className="uniqueness__wrapper">
       <h2>Was macht Scrumlr so besonders?</h2>
@@ -10,7 +20,7 @@ export const Uniqueness = () => {
       <div className="uniqueness__section">
         <div className="uniqueness__image">
           <img
-            src="assets/uniqueness/uniqueness_light_0.webp"
+            src={`assets/uniqueness/uniqueness_${theme}_0.webp`}
             className="uniqueness__image-0"
             alt="uniqueness"
           />
@@ -22,7 +32,7 @@ export const Uniqueness = () => {
             Anmeldung. Scrumlr ist außerdem kostenlos – für immer!
           </p>
           <img
-            src="assets/uniqueness/dots_light_0.svg"
+            src={`assets/uniqueness/dots_${theme}_0.svg`}
             alt=""
             className="uniqueness__section-dots--0"
           />
@@ -36,14 +46,14 @@ export const Uniqueness = () => {
             sich als Team weiterzuentwickeln.
           </p>
           <img
-            src="assets/uniqueness/dots_light_1.svg"
+            src={`assets/uniqueness/dots_${theme}_1.svg`}
             alt=""
             className="uniqueness__section-dots--1"
           />
         </div>
         <div className="uniqueness__image">
           <img
-            src="assets/uniqueness/uniqueness_light_1.webp"
+            src={`assets/uniqueness/uniqueness_${theme}_1.webp`}
             className="uniqueness__image-1"
             alt="uniqueness"
           />
@@ -52,7 +62,7 @@ export const Uniqueness = () => {
       <div className="uniqueness__section">
         <div className="uniqueness__image">
           <img
-            src="assets/uniqueness/uniqueness_light_2.webp"
+            src={`assets/uniqueness/uniqueness_${theme}_2.webp`}
             className="uniqueness__image-2"
             alt="uniqueness"
           />
@@ -64,7 +74,7 @@ export const Uniqueness = () => {
             Meinungen, Gedanken und Ideen miteinander verknüpfen.
           </p>
           <img
-            src="assets/uniqueness/dots_light_2.svg"
+            src={`assets/uniqueness/dots_${theme}_2.svg`}
             alt=""
             className="uniqueness__section-dots--2"
           />
@@ -78,14 +88,14 @@ export const Uniqueness = () => {
             geändert und von Dritten verwendet werden können.
           </p>
           <img
-            src="assets/uniqueness/dots_light_3.svg"
+            src={`assets/uniqueness/dots_${theme}_3.svg`}
             alt=""
             className="uniqueness__section-dots--3"
           />
         </div>
         <div className="uniqueness__image">
           <img
-            src="assets/uniqueness/uniqueness_light_3.webp"
+            src={`assets/uniqueness/uniqueness_${theme}_3.webp`}
             className="uniqueness__image-3"
             alt="uniqueness"
           />
