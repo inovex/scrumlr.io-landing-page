@@ -22,7 +22,7 @@ export const Uniqueness = () => {
           <img
             src={`assets/uniqueness/uniqueness_${theme}_0.webp`}
             className="uniqueness__image-0"
-            alt="uniqueness"
+            alt="Ein Beispiel für die Auswahl unterschiedlicher Templates"
           />
         </div>
         <div className="uniqueness__text">
@@ -55,7 +55,7 @@ export const Uniqueness = () => {
           <img
             src={`assets/uniqueness/uniqueness_${theme}_1.webp`}
             className="uniqueness__image-1"
-            alt="uniqueness"
+            alt="Mehrere User auf einem Scrumlr-Board, die einzelne Karten erstellt und Votes hinterlassen haben"
           />
         </div>
       </div>
@@ -64,7 +64,7 @@ export const Uniqueness = () => {
           <img
             src={`assets/uniqueness/uniqueness_${theme}_2.webp`}
             className="uniqueness__image-2"
-            alt="uniqueness"
+            alt="Ein Beispiel dafür, dass User-generierte Notes in Spalten organisiert und aufeinander gestapelt werden können"
           />
         </div>
         <div className="uniqueness__text">
@@ -97,7 +97,7 @@ export const Uniqueness = () => {
           <img
             src={`assets/uniqueness/uniqueness_${theme}_3.webp`}
             className="uniqueness__image-3"
-            alt="uniqueness"
+            alt="Open-Source, Security und das Hosting in Deutschland stehen bei Scrumlr im Mittelpunkt"
           />
         </div>
       </div>
