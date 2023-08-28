@@ -12,7 +12,7 @@
   background-color: var(--white);
 }
 
-.navbar__button {
+.navbar__link {
   font-size: .875rem;
 }
 
@@ -41,14 +41,6 @@
   justify-self: flex-end;
 }
 
-.navbar a {
-  text-decoration: none;
-  color: var(--lightmode-black);
-  font-size: 1.125rem;
-  font-weight: 600;
-  cursor: pointer;
-}
-
 @media (min-width: 768px) {
   .navbar > ul {
     display: grid;
@@ -59,6 +51,13 @@
   .navbar > ul > li:nth-of-type(3),
   .navbar > ul > li:nth-of-type(4) {
     display: block;
+    & > a {
+      text-decoration: none;
+      color: var(--lightmode-black);
+      font-size: 1.125rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
   }
 
 }
