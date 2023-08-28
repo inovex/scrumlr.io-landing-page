@@ -6,7 +6,6 @@
   background-size: cover;
   min-height: 1160px; //TODO
   padding: 120px 0 61px 0; //TODO
-  min-width: 375px; //TODO
 }
 
 .reach-new-heights__content {
@@ -47,7 +46,7 @@
   }
 
   > p {
-    width: 350px;
+    width: min(350px, 100%);
     color: var(--black);
     font-size: 1rem;
     line-height: 1.5rem;
@@ -69,7 +68,7 @@
 }
 
 .reach-new-heights__image {
-  min-height: 280px;
+  min-height: 250px;
   height: 60vw;
   align-self: end;
 }
