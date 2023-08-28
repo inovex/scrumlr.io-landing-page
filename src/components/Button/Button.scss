@@ -35,6 +35,26 @@
   }
 }
 
+.button.button--tertiary {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--lightmode-pink);
+  background-color: unset;
+  box-shadow: none;
+  border: 0;
+
+  &:hover {
+    transform: none;
+    filter: drop-shadow(0 2px 14px rgba(255, 0, 105, 1));
+  }
+  &:active {
+    color: var(--lightmode-pink-button-pressed);
+  }
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
 [theme='dark'] {
   .button {
     background: var(--darkmode-pink);
@@ -47,6 +67,13 @@
     }
     &:disabled {
       color: var(--light-grey-3);
+    }
+  }
+  .button.button--tertiary {
+    color: var(--darkmode-pink);
+    background-color: transparent;
+    &:active {
+      color: var(--lightmode-pink);
     }
   }
 }

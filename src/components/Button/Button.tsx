@@ -9,13 +9,14 @@ type ButtonProps = {
   disabled?: boolean;
   icon?: ReactNode;
   onClick?: () => void;
+  variant?: 'primary' | 'tertiary';
 };
 
 export const Button =(props: ButtonProps) => {
   return (
     <button 
       aria-label={props.ariaLabel}
-      className={classNames('button', props.className)}
+      className={classNames('button', `button--${props.variant}`, props.className)}
       disabled={props.disabled} 
       onClick={props.onClick}
     >
