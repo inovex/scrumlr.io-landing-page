@@ -1,17 +1,18 @@
-.heights {
+.reach-new-heights {
   box-sizing: border-box;
-  background-image: url('assets/backgrounds/bg_heights_light.svg');
+  background-image: url('/assets/backgrounds/bg_heights_light.svg');
   background-position: 60%;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 1160px; //TODO
-  padding: 120px 8px 0 8px; //TODO
+  padding: 120px 0 61px 0; //TODO
   min-width: 375px; //TODO
 }
 
 .reach-new-heights__content {
   width: 100%;
   max-width: 1920px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -56,8 +57,21 @@
   }
 }
 
+.reach-new-heights__buttons {
+  margin-top: 42px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  & > button > span {
+    font-size: 16px;
+  }
+}
+
 .reach-new-heights__image {
-  width: 80%;
+  min-height: 280px;
+  height: 60vw;
+  align-self: end;
 }
 .reach-new-heights__image--dark {
   display: none;
@@ -104,31 +118,66 @@
 }
 
 
-
-
-
-
-
-@media (min-width: 768px) {
-  .heights {
-    background-position: center;
-  }
-}
-
-
-
-
-
 @media (min-width: 1024px) {
+  .reach-new-heights__headline > h1 {
+    width: 679px;
+    font-size: 62px;
+    line-height: 70px;
+    text-align: left;
+  }
+  .reach-new-heights__headline > p {
+    width: 541px;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: left;
+  }
+  .reach-new-heights__information-item {
+    > h2 {
+      font-size: 24px;
+    }
+    > p {
+      font-size: 20px;
+      &:nth-of-type(1) {
+        width: 295px;
+      }
+      &:nth-of-type(2) {
+        width: 352px;
+      }
+    }
+  }
+  .reach-new-heights {
+    padding-top: 233px;
+  }
   .reach-new-heights__content {
+    padding-left: 32px;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr auto;
     grid-template-rows: auto auto;
+    align-items: center;
     justify-items: center;
   }
+  .reach-new-heights__headline {
+    align-items: start;
+    gap: 36px;
+  }
+  .reach-new-heights__buttons {
+    margin-top: 56px;
+    flex-direction: row;
+    gap: 8px;
+
+    & > button > span {
+      font-size: 18px;
+    }
+  }
+  .reach-new-heights__image {
+    height: 626px;
+    align-self: center;
+    justify-self: end;
+  }
+    
   .reach-new-heights__information {
     flex-direction: row;
-    gap: 62px;
+    gap: 16px;
   }
   .reach-new-heights__information-item {
     display: grid;
@@ -151,24 +200,24 @@
   }
 }
 
-
-
-
-
-
 @media (min-width: 1280px) {
-  .reach-new-heights__content > div > h1 {
+  .reach-new-heights__headline > h1 {
     width: 679px;
     font-size: 62px;
     line-height: 70px;
     text-align: left;
   }
-  .reach-new-heights__content > div > p {
+  .reach-new-heights__headline > p {
     width: 541px;
     font-size: 24px;
     font-weight: 500;
     text-align: left;
   }
+  .reach-new-heights__information {
+    gap: 62px;
+  }
+
+
   .reach-new-heights__information-item {
     > h2 {
       font-size: 24px;
@@ -197,7 +246,7 @@
 
 
 [theme='dark'] {
-  section {
+  .reach-new-heights {
     background-image: url('assets/backgrounds/bg_heights_dark.svg');
   }
   .reach-new-heights__image--light {
