@@ -1,4 +1,4 @@
-import { Button } from '../../components/Button/Button';
+import { Link } from '../../components/Link/Link';
 import Icon from '../../components/Icon';
 import './ReachNewHeights.scss';
 
@@ -12,10 +12,10 @@ export const ReachNewHeights = () => {
             <p>Beginnt unmittelbar eure erste gemeinsame Sitzung - es ist keine Registrierung erforderlich und es ist absolut kostenlos.</p>
           </div>
           <div className='reach-new-heights__buttons'>
-            <Button>Get Started</Button>
-            <Button variant='tertiary' icon={<Icon name='ArrowRight'/>}>
+            <Link href='/new'>Get Started</Link>
+            <Link href='' tertiary icon={<Icon name='ArrowRight'/>}>
               How it works
-            </Button>
+            </Link>
           </div>
         </div>
         <img 
