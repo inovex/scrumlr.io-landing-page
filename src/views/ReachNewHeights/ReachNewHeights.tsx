@@ -12,9 +12,9 @@ export const ReachNewHeights = () => {
             <p>Beginnt unmittelbar eure erste gemeinsame Sitzung - es ist keine Registrierung erforderlich und es ist absolut kostenlos.</p>
           </div>
           <div className='reach-new-heights__buttons'>
-            <Link href='/new'>Get Started</Link>
+            <Link href='/new'>Jetzt loslegen</Link>
             <Link href='' tertiary icon={<Icon name='ArrowRight'/>}>
-              How it works
+              Wie es funktioniert
             </Link>
           </div>
         </div>
