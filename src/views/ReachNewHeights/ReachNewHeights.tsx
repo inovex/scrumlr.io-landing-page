@@ -13,7 +13,7 @@ export const ReachNewHeights = () => {
           </div>
           <div className='reach-new-heights__buttons'>
             <Link href='/new'>Jetzt loslegen</Link>
-            <Link href='' tertiary icon={<Icon name='ArrowRight'/>}>
+            <Link href='#Features' tertiary icon={<Icon name='ArrowRight'/>}>
               Wie es funktioniert
             </Link>
           </div>
