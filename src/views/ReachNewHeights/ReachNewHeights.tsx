@@ -19,12 +19,12 @@ export const ReachNewHeights = () => {
           </div>
         </div>
         <img 
-          src='assets/images/reach-new-heights_light.svg' 
+          src='assets/images/reach-new-heights_light.webp' 
           alt='Reach new heights' 
           className='reach-new-heights__image reach-new-heights__image--light'
         />
         <img
-          src='assets/images/reach-new-heights_dark.svg' 
+          src='assets/images/reach-new-heights_dark.webp' 
           alt='Reach new heights'
           className='reach-new-heights__image reach-new-heights__image--dark'
         />
