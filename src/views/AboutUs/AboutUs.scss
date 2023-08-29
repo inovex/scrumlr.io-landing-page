@@ -1,0 +1,37 @@
+.about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  padding: 64px 0;
+}
+
+.about-us__scrumlr {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us__scrumlr-text {
+  width: 50%;
+
+  > * {
+    width: 66%;
+    max-width: 448px;
+  }
+}
+
+.about-us__scrumlr-image {
+  width: 50%;
+
+  > img {
+    height: 80vh;
+    max-height: 900px;
+  }
+}
+
+.about-us__cta {
+  text-align: center;
+}
