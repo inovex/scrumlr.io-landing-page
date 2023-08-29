@@ -15,7 +15,7 @@ export const Uniqueness = () => {
     <section className="uniqueness__wrapper">
       <h2>Was macht Scrumlr so besonders?</h2>
       <p>
-        Scrumlr fördert eine ausgewogene Zusammenarbeit innerhalb jedes Teams.{" "}
+        Scrumlr fördert eine ausgewogene Zusammenarbeit innerhalb jedes Teams.
       </p>
       <div className="uniqueness__section">
         <div className="uniqueness__image">

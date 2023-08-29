@@ -91,6 +91,33 @@ const { title } = Astro.props;
 		overflow-x: hidden;
 	}
 
+	h2, h3 {
+		font-size: 40px;
+		line-height: 48px;
+	}
+
+	p {
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	@media screen and (max-width: 850px) {
+		h2 {
+			font-size: 24px;
+			line-height: 28px;
+		}
+
+		h3 {
+			font-size: 16px;
+			line-height: 22px;;
+		}
+
+		p {
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+
 	[theme="dark"] {
 		color: var(--white);
 		background: var(--darkmode-background);

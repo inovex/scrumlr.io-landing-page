@@ -121,7 +121,6 @@
       > img {
         height: 100%;
         right: 0;
-        left: -390px;
       }
 
       @for $i from 0 to $uniqueness-image-count {
@@ -132,8 +131,7 @@
     }
 
     &--right > .uniqueness__image > img {
-      left: initial;
-      right: -490px;
+      left: 0;
     }
 
     .uniqueness__section-dots {
