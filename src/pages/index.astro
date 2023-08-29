@@ -2,12 +2,14 @@
 import Choices from '../components/Choices';
 import Layout from '../layouts/Layout.astro';
 import {ReachNewHeights} from "../views/ReachNewHeights/ReachNewHeights";
+import { TargetUser } from '../views/TargetUser/TargetUser';
 ---
 
 <Layout title="scrumlr">
 	<main>
+    <ReachNewHeights />
 		<Choices client:visible />
-    	<ReachNewHeights />
+    <TargetUser />
   </main>
 </Layout>
 
