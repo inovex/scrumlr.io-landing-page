@@ -43,6 +43,7 @@
   background-color: unset;
   box-shadow: none;
   border: 0;
+transition: all 0.2s ease-in-out;
 
   &:hover {
     transform: none;
