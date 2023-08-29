@@ -1,6 +1,6 @@
 .reach-new-heights {
   box-sizing: border-box;
-  background-image: url('assets/backgrounds/bg_heights_light.svg');
+  background-image: url('/assets/backgrounds/bg_heights_light.svg');
   background-position: 60%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -209,7 +209,7 @@
 
 [theme='dark'] {
   .reach-new-heights {
-    background-image: url('assets/backgrounds/bg_heights_dark.svg');
+    background-image: url('/assets/backgrounds/bg_heights_dark.svg');
   }
   .reach-new-heights__image--light {
     display: none;
