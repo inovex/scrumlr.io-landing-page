@@ -135,12 +135,26 @@
   .reach-new-heights__information {
     flex-direction: row;
     justify-content: center;
+    gap: 16px;
   }
   .reach-new-heights__information-item {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 'icon title' '_ description';
+    gap: 0 14px;
+
+    > img {
+      grid-area: icon;
+    }
     > h2 {
       font-size: 24px;
-    }
+      grid-area: title;
+    } 
     > p {
+      grid-area: description;
+      align-self: start;
+      text-align: left;
       font-size: 20px;
       &:nth-of-type(1) {
         width: 295px;
@@ -153,13 +167,8 @@
 }
 
 @media (min-width: 1280px) {
-  .reach-new-heights__headline > h1 {
-    text-align: left;
-  }
+  .reach-new-heights__headline > h1,
   .reach-new-heights__headline > p {
-    width: 541px;
-    font-size: 24px;
-    font-weight: 500;
     text-align: left;
   }
   .reach-new-heights {
@@ -179,7 +188,6 @@
   }
   .reach-new-heights__buttons {
     margin-top: 56px;
-    flex-direction: row;
     gap: 8px;
 
     & > button > span {
@@ -191,32 +199,6 @@
     justify-self: end;
   }
     
-  .reach-new-heights__information {
-    flex-direction: row;
-    gap: 16px;
-  }
-  .reach-new-heights__information-item {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    grid-template-areas: 'icon title' '_ description';
-    gap: 0 14px;
-
-    > img {
-      grid-area: icon;
-    }
-    > h2 {
-      grid-area: title;
-    } 
-    > p {
-      grid-area: description;
-      align-self: start;
-      text-align: left;
-    }
-  }
-}
-
-@media (min-width: 1280px) {
   .reach-new-heights__information {
     gap: 62px;
   }
