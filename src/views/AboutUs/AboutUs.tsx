@@ -24,6 +24,11 @@ export const AboutUs = () => {
             alt="Das Faultier Stan mit einer Kaffeetasse und einem Stift"
           />
         </div>
+        <img
+          className="about-us__background"
+          src="/assets/about/background_light.svg"
+          alt=""
+        />
       </div>
       <div className="about-us__cta">
         <h2>Selber loslegen und überzeugen lassen.</h2>
