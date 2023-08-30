@@ -77,6 +77,10 @@
 }
 
 [theme="dark"] {
+  .about-us__scrumlr-image > img {
+    content: url("/assets/about/stan_dark.webp");
+  }
+
   .about-us__background {
     content: url("/assets/about/background_dark.svg");
   }

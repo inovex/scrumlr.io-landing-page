@@ -21,7 +21,7 @@ export const AboutUs = () => {
         </div>
         <div className="about-us__scrumlr-image">
           <img
-            src="/assets/about/stan.webp"
+            src="/assets/about/stan_light.webp"
             alt="Das Faultier Stan mit einer Kaffeetasse und einem Stift"
           />
         </div>
