@@ -1,26 +1,25 @@
 import type { ReactNode } from 'react';
 import classNames from 'classnames';
-import './Button.scss';
+import './Link.scss';
 
-type ButtonProps = {
+type LinkProps = {
+  href?: string;
   ariaLabel?: string;
   children?: ReactNode;
   className?: string;
-  disabled?: boolean;
   icon?: ReactNode;
-  onClick?: () => void;
+  tertiary?: boolean;
 };
 
-export const Button =(props: ButtonProps) => {
+export const Link =(props: LinkProps) => {
   return (
-    <button 
+    <a 
       aria-label={props.ariaLabel}
-      className={classNames('button', props.className)}
-      disabled={props.disabled} 
-      onClick={props.onClick}
+      className={classNames('link', {'link--tertiary': props.tertiary}, props.className)}
+      href={props.href}
     >
       <span>{props.children}</span>
       {props.icon}
-    </button>
+    </a>
   );
 }
