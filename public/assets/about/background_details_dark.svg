@@ -26,10 +26,6 @@
 <stop stop-color="#485064"/>
 <stop offset="1" stop-color="#485064" stop-opacity="0"/>
 </linearGradient>
-<radialGradient id="paint2_radial_446_15313" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1996 623.843) scale(2514 862.342)">
-<stop stop-color="#6B9CFF"/>
-<stop offset="1" stop-color="#1E2638"/>
-</radialGradient>
 <linearGradient id="paint3_linear_446_15313" x1="2156.5" y1="546.998" x2="3068.5" y2="548.998" gradientUnits="userSpaceOnUse">
 <stop stop-color="#42516F"/>
 <stop offset="0.411458" stop-color="#2F3C56"/>

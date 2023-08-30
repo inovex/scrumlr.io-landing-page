@@ -14,6 +14,7 @@ export const AboutUs = () => {
             zusammenzubringen. Jedes einzelne Teammitglied und dessen Meinung
             zählt – denn nur so kann allgemeine Zufriedenheit erreicht werden.
             <br />
+            <br />
             <span className="bold">Seid auch dabei</span> und ermöglicht eurem
             Team einen wirkungsvollen Rückblick auf bereits Erlebtes!
           </p>
@@ -27,6 +28,11 @@ export const AboutUs = () => {
         <img
           className="about-us__background"
           src="/assets/about/background_light.svg"
+          alt=""
+        />
+        <img
+          className="about-us__background-details"
+          src="/assets/about/background_details_light.svg"
           alt=""
         />
       </div>
