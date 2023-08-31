@@ -2,7 +2,7 @@
 const {text, image, name, role, company} = Astro.props;
 ---
 
-<div class='testimonial'>
+<div>
     <p>{text}</p>
     <figure>
         <img src={image} alt={name} />
@@ -14,10 +14,27 @@ const {text, image, name, role, company} = Astro.props;
 </div>
 
 <style>
-    .testimonial {
+    div {
         height: 330px;
         width: 330px;
         background-color: var(--white);
         border-radius: 16px;
+    }
+
+    p {
+    }
+
+    figure {
+    }
+
+    img {
+    }
+
+    figcaption {
+        > span:first-child {
+        }
+
+        > span:last-child {
+        }
     }
 </style>
