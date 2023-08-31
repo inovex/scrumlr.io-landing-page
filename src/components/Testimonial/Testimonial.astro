@@ -1,0 +1,23 @@
+---
+const {text, image, name, role, company} = Astro.props;
+---
+
+<div class='testimonial'>
+    <p>{text}</p>
+    <figure>
+        <img src={image} alt={name} />
+        <figcaption>
+            <span>{name}</span>
+            <span>{role}, {company}</span>
+        </figcaption>
+    </figure>
+</div>
+
+<style>
+    .testimonial {
+        height: 330px;
+        width: 330px;
+        background-color: var(--white);
+        border-radius: 16px;
+    }
+</style>
