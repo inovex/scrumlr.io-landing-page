@@ -1,4 +1,4 @@
-import { Button } from "../../components/Button/Button";
+import { Link } from "../../components/Link/Link";
 import "./AboutUs.scss";
 
 export const AboutUs = () => {
@@ -42,9 +42,9 @@ export const AboutUs = () => {
           Startet noch heute und ermöglicht euch eine einwandfreie
           Retrospektive.
         </p>
-        <Button ariaLabel="Jetzt loslegen" className="about-us__cta-button">
+        <Link ariaLabel="Jetzt loslegen" className="about-us__cta-button">
           Jetzt loslegen
-        </Button>
+        </Link>
       </div>
     </section>
   );
