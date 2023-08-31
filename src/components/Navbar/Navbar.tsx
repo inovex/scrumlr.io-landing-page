@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react';
 import classNames from 'classnames';
-import { Button } from '../Button/Button';
 import { Logo } from '../Logo';
+import { Link } from '../Link/Link';
 import './Navbar.scss';
 
 export const Navbar = () => {
@@ -48,13 +48,14 @@ export const Navbar = () => {
           </a>
         </li>
         <li>
-          <Button
+          <Link
+            href='/new'
             ariaLabel='Board erstellen'
-            className='navbar__button'
+            className='navbar__link'
             icon={<img src='/assets/icons/icon-plus.svg' alt="Plus" />}
           >
             Board erstellen
-          </Button>
+          </Link>
         </li>
       </ul>
     </nav>
