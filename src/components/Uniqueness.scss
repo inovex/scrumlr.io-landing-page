@@ -115,12 +115,12 @@
     }
 
     .uniqueness__image {
-      height: min(50vh, 125vw);
+      height: min(42vh, 100vw);
+      min-height: 280px;
       width: 100%;
 
       > img {
         height: 100%;
-        right: 0;
       }
 
       @for $i from 0 to $uniqueness-image-count {
@@ -130,8 +130,14 @@
       }
     }
 
+    &--left > .uniqueness__image > img {
+      left: -192px;
+      right: initial;
+    }
+
     &--right > .uniqueness__image > img {
-      left: 0;
+      right: -286px;
+      left: initial;
     }
 
     .uniqueness__section-dots {
@@ -165,6 +171,20 @@
         left: initial;
         right: -112px;
         top: -156px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .uniqueness__section {
+      &--left > .uniqueness__image > img {
+        left: initial;
+        right: -16px;
+      }
+
+      &--right > .uniqueness__image > img {
+        left: 16px;
+        right: initial;
       }
     }
   }
