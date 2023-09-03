@@ -32,7 +32,6 @@
   > * {
     width: 66%;
     max-width: 448px;
-    text-wrap: balance;
   }
 }
 
@@ -77,11 +76,13 @@
   > h2 {
     font-size: 40px;
     line-height: 48px;
+    text-wrap: balance;
   }
 
   > p {
     font-size: 20px;
     line-height: 28px;
+    text-wrap: balance;
   }
 }
 
@@ -149,7 +150,12 @@
     justify-content: center;
 
     > img {
-      margin: 32px 0 16px 0;
+      margin: 0 0 16px 0;
+      height: 42vh;
+      min-height: 280px;
+      max-height: 480px;
+      max-width: 90vw;
+      object-fit: contain;
     }
   }
 
@@ -160,6 +166,9 @@
 
   .about-us__background-details {
     content: url("/assets/about/background_details_light_mobile.svg");
+    right: -900px;
+    top: 224px;
+    height: 80%;
   }
 
   .about-us__cta {
