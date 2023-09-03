@@ -9,16 +9,16 @@
     <path id="Pfad_7377" data-name="Pfad 7377" d="M22.5,0A22.5,22.5,0,1,1,0,22.5,22.5,22.5,0,0,1,22.5,0Z" transform="translate(-5 -5)" fill="url(#linear-gradient)"/>
     <g id="Gruppe_17" data-name="Gruppe 17" transform="translate(8.055 8.366)">
       <g id="Gruppe_17-2" data-name="Gruppe 17" transform="translate(3.759 6.146)">
-        <path id="Pfad_7" data-name="Pfad 7" d="M15.035.023V10.094a3.222,3.222,0,0,1-3.222,3.222H0" transform="translate(0 -0.023)" fill="none" stroke="rgba(107,156,255,0.5)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Pfad_7" data-name="Pfad 7" d="M15.035.023V10.094a3.222,3.222,0,0,1-3.222,3.222H0" transform="translate(0 -0.023)" fill="none" stroke="rgba(107,156,255,0.5)" stroke-linecap="round" stroke-linejoin="round" strokeWidth="2"/>
       </g>
       <g id="Gruppe_18" data-name="Gruppe 18" transform="translate(0.537 1.181)">
-        <path id="Pfad_8" data-name="Pfad 8" d="M.107,15.881A3.222,3.222,0,0,1,0,15.035V6.54M6.452,0h7.642" transform="translate(0)" fill="none" stroke="rgba(107,156,255,0.5)" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Pfad_8" data-name="Pfad 8" d="M.107,15.881A3.222,3.222,0,0,1,0,15.035V6.54M6.452,0h7.642" transform="translate(0)" fill="none" stroke="rgba(107,156,255,0.5)" stroke-linejoin="round" strokeWidth="2"/>
       </g>
       <g id="Gruppe_19" data-name="Gruppe 19" transform="translate(2.578 4.081)">
-        <path id="Pfad_9" data-name="Pfad 9" d="M13.573,0,3.856,9.7m0,4.26a3.021,3.021,0,0,1,0-4.26,3,3,0,0,1-2.122.883A2.183,2.183,0,0,1,0,9.7" transform="translate(0)" fill="none" stroke="rgba(107,156,255,0.5)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="Pfad_9" data-name="Pfad 9" d="M13.573,0,3.856,9.7m0,4.26a3.021,3.021,0,0,1,0-4.26,3,3,0,0,1-2.122.883A2.183,2.183,0,0,1,0,9.7" transform="translate(0)" fill="none" stroke="rgba(107,156,255,0.5)" stroke-linecap="round" stroke-linejoin="round" strokeWidth="1.5"/>
       </g>
       <g id="Gruppe_20" data-name="Gruppe 20" transform="translate(0 0)">
-        <path id="Pfad_10" data-name="Pfad 10" d="M18.657,6.107c-1.181,1.155-3.775,3.712-6.143,6.021l-6.633,6.4L0,19.868l1.385-5.707L3.05,12.55,13.992,1.933,15.2.761c1.241-1.2,2.935-.89,4.178.313a3.617,3.617,0,0,1,1.032,1.693" transform="translate(0 0)" fill="none" stroke="#6b9cff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Pfad_10" data-name="Pfad 10" d="M18.657,6.107c-1.181,1.155-3.775,3.712-6.143,6.021l-6.633,6.4L0,19.868l1.385-5.707L3.05,12.55,13.992,1.933,15.2.761c1.241-1.2,2.935-.89,4.178.313a3.617,3.617,0,0,1,1.032,1.693" transform="translate(0 0)" fill="none" stroke="#6b9cff" stroke-linecap="round" stroke-linejoin="round" strokeWidth="2"/>
       </g>
     </g>
     <path id="Vereinigungsmenge_3" data-name="Vereinigungsmenge 3" d="M-1618.843-265.58v-3.157H-1622v-2.1h3.157V-274h2.1v3.157h3.157v2.1h-3.157v3.157Z" transform="translate(1626.739 279.455)" fill="#6b9cff"/>
