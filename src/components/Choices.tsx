@@ -22,6 +22,7 @@ const Choices = () => {
   }, []);
 
   useEffect(() => {
+    setPosition(0);
     if (isMobile) setDuration(12012);
     else setDuration(4000);
   }, [isMobile]);
