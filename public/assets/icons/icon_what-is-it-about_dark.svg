@@ -11,8 +11,8 @@
       <g id="ic_addimage" transform="translate(0 0)">
         <g id="Gruppe_32" data-name="Gruppe 32">
           <g id="Gruppe_32-2" data-name="Gruppe 32" transform="translate(3.752 3.889)">
-            <path id="Pfad_26" data-name="Pfad 26" d="M6.358,0h7.81A3.036,3.036,0,0,1,17.2,3.036v.722M3.036,17.2A3.036,3.036,0,0,1,0,14.168v-8H0" fill="none" stroke="rgba(107,156,255,0.5)" stroke-width="2"/>
-            <path id="Pfad_7169" data-name="Pfad 7169" d="M3.1,17H8.677" transform="translate(-0.075 0.204)" fill="none" stroke="#4a68a7" stroke-width="2"/>
+            <path id="Pfad_26" data-name="Pfad 26" d="M6.358,0h7.81A3.036,3.036,0,0,1,17.2,3.036v.722M3.036,17.2A3.036,3.036,0,0,1,0,14.168v-8H0" fill="none" stroke="rgba(107,156,255,0.5)" strokeWidth="2"/>
+            <path id="Pfad_7169" data-name="Pfad 7169" d="M3.1,17H8.677" transform="translate(-0.075 0.204)" fill="none" stroke="#4a68a7" strokeWidth="2"/>
           </g>
           <path id="Vereinigungsmenge_3" data-name="Vereinigungsmenge 3" d="M-1619-266v-3h-3v-2h3v-3h2v3h3v2h-3v3Z" transform="translate(1622 274)" fill="#6b9cff"/>
         </g>
@@ -21,8 +21,8 @@
     <g id="ic_column" transform="translate(359.698 908)">
       <path id="BG" d="M32.384,0V32.384H0Z" fill="rgba(255,255,255,0)" opacity="0.3"/>
       <g id="ic" transform="translate(12.665 10.865)">
-        <path id="Pfad_47" data-name="Pfad 47" d="M.7,0H11.243a.708.708,0,0,1,.7.722V5.053a.708.708,0,0,1-.7.722H.7A.708.708,0,0,1,0,5.054V.722A.708.708,0,0,1,.7,0Z" transform="translate(0 11.946) rotate(-90)" fill="none" stroke="#6b9cff" stroke-width="2"/>
-        <path id="Pfad_49" data-name="Pfad 49" d="M11.592,1.9h0V1.012C11.592.453,11.283,0,10.91,0H.682C.309,0,0,.453,0,1.012v1.1H0" transform="translate(8.166 11.592) rotate(-90)" fill="none" stroke="rgba(107,156,255,0.5)" stroke-width="2"/>
+        <path id="Pfad_47" data-name="Pfad 47" d="M.7,0H11.243a.708.708,0,0,1,.7.722V5.053a.708.708,0,0,1-.7.722H.7A.708.708,0,0,1,0,5.054V.722A.708.708,0,0,1,.7,0Z" transform="translate(0 11.946) rotate(-90)" fill="none" stroke="#6b9cff" strokeWidth="2"/>
+        <path id="Pfad_49" data-name="Pfad 49" d="M11.592,1.9h0V1.012C11.592.453,11.283,0,10.91,0H.682C.309,0,0,.453,0,1.012v1.1H0" transform="translate(8.166 11.592) rotate(-90)" fill="none" stroke="rgba(107,156,255,0.5)" strokeWidth="2"/>
       </g>
     </g>
   </g>
