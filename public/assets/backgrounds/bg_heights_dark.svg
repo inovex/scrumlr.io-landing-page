@@ -13,7 +13,7 @@
   <g id="BG_details_3840px" transform="translate(959 47)">
     <rect id="BG" width="3840" height="1160" transform="translate(-959 -47)" fill="url(#linear-gradient)"/>
     <g id="Details">
-      <g id="Ellipse_1983" data-name="Ellipse 1983" transform="translate(1173 117)" fill="none" stroke="#485064" stroke-width="2">
+      <g id="Ellipse_1983" data-name="Ellipse 1983" transform="translate(1173 117)" fill="none" stroke="#485064" strokeWidth="2">
         <ellipse cx="374" cy="390" rx="374" ry="390" stroke="none"/>
         <ellipse cx="374" cy="390" rx="373" ry="389" fill="none"/>
       </g>

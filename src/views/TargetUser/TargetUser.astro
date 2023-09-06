@@ -5,5 +5,22 @@ import './TargetUser.scss';
 <section class='target-user'>
     <h2>Wir sind alle wichtig!</h2>
     <p>Jede:r kann Scrumlr nutzen und dadurch die Teamarbeit stärken.</p>
-    <video src='/assets/images/target-user_light.webm' autoplay loop muted></video>
+    <video 
+         autoplay 
+         loop 
+         muted 
+         playsinline
+         class='target-user__gif target-user__gif--light'
+     >
+        <source src='/assets/images/target-user_light.webm' type='video/webm' />
+    </video>
+    <video 
+         autoplay 
+         loop 
+         muted 
+         playsinline
+         class='target-user__gif target-user__gif--dark'
+    >
+        <source src='/assets/images/target-user_dark.webm' type='video/webm' />
+    </video>
 </section>

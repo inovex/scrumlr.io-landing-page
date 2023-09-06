@@ -6,7 +6,7 @@ import './Navbar.scss';
 
 export const Navbar = () => {
   const [isNavbarTransparent, setIsNavbarTransparent] = useState(true);
-  
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
@@ -17,35 +17,33 @@ export const Navbar = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
-    <nav className={classNames('navbar', {'navbar--opaque': !isNavbarTransparent})}>
+    <nav
+      className={classNames("navbar", {
+        "navbar--opaque": !isNavbarTransparent,
+      })}
+    >
       <ul>
         <li>
-          <a aria-label='Startseite' href='/'>
+          <a aria-label="Startseite" href="/">
             <Logo />
           </a>
         </li>
         <li>
-          <a href='#home'>
-            Startseite
-          </a>
+          <a href="#home">Startseite</a>
         </li>
         <li>
-          <a href='#functions'>
-            Funktionen
-          </a>
+          <a href="#features">Funktionen</a>
         </li>
         <li>
-          <a href='#about'>
-            Über uns
-          </a>
+          <a href="#about">Über uns</a>
         </li>
         <li>
           <Link
@@ -60,4 +58,4 @@ export const Navbar = () => {
       </ul>
     </nav>
   );
-}
+};

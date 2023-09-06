@@ -22,6 +22,7 @@ const Choices = () => {
   }, []);
 
   useEffect(() => {
+    setPosition(0);
     if (isMobile) setDuration(12012);
     else setDuration(4000);
   }, [isMobile]);
@@ -41,7 +42,7 @@ const Choices = () => {
   }, [position, duration, isMobile]);
 
   return (
-    <section className="choices" id="Features">
+    <section className="choices" id="features">
       <h2>Euer Board – Eure Entscheidungen.</h2>
       <p>Wählt eine beliebige Retrospektive, die zu eurem Team passt.</p>
       <div className="choices__content">

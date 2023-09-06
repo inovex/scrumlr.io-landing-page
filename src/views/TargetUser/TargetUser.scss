@@ -28,8 +28,7 @@
     max-width: 825px;
   }
 }
-
-.target-user__image--dark {
+.target-user__gif--dark {
   display: none;
 }
 
@@ -54,10 +53,10 @@
     color: var(--white);
     background-color: #1B2435;
   }
-  .target-user__image--light {
+  .target-user__gif--light {
     display: none;
   }
-  .target-user__image--dark {
+  .target-user__gif--dark {
     display: block;
   }
 }
