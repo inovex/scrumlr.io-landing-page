@@ -4,12 +4,15 @@ import Choices from '../components/Choices';
 import { Uniqueness } from '../components/Uniqueness';
 import { Mobile } from '../components/Mobile';
 import Layout from '../layouts/Layout.astro';
+import {ReachNewHeights} from "../views/ReachNewHeights/ReachNewHeights";
+import {AboutUs} from "../views/AboutUs/AboutUs";
 ---
 
 <Layout title="scrumlr">
 	<main>
     <ReachNewHeights />
 		<Choices client:visible />
+		<AboutUs />
 		<Uniqueness client:idle />
 		<Mobile client:idle />
   </main>
