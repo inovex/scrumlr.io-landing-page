@@ -5,8 +5,54 @@
   justify-content: center;
 }
 
-.feature {
+.features_list {
+  background-image: url("/assets/features/features_line-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features__feature {
+  display: flex;
+  flex-direction: row;
+  gap: 64px;
+  margin: 48px 0;
+
+  > img {
+    margin-left: calc(25vw + 64px);
+  }
+
+  &--reverse {
+    > img {
+      margin-left: 0;
+      margin-right: calc(25vw + 64px);
+    }
+
+    h3,
+    p {
+      margin-left: auto;
+      margin-right: 0;
+    }
+  }
+
+  &:last-of-type {
+    margin-bottom: 96px;
+  }
+}
+
+.features__text {
   text-align: left;
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  > h3,
+  p {
+    width: 256px;
+  }
 }
 
 h2 {

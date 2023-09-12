@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="410.933" height="368.491" viewBox="0 0 410.933 368.491">
+  <defs>
+    <filter id="Hintergrund_1" x="119.039" y="76.596" width="291.895" height="291.895" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Hintergrund_2" x="0" y="89.789" width="326.736" height="254.629" filterUnits="userSpaceOnUse">
+      <feOffset dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4.5" result="blur-2"/>
+      <feFlood flood-color="#ff0069" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="BG" x="310.786" y="0" width="91.656" height="226.937" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-3"/>
+      <feFlood flood-opacity="0.149"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <path id="Pfad_37" data-name="Pfad 37" d="M135.876-11.371V-22.6a1.4,1.4,0,0,1,1.4-1.4,1.4,1.4,0,0,1,1.4,1.4v5.118M135.947-5.831l-6.509-6.8a1.4,1.4,0,0,1-.08-1.079,1.4,1.4,0,0,1,.711-.815,1.4,1.4,0,0,1,1.078-.08c.356.119.456.054.622.391l4.107,2.845m2.805-5.616a1.4,1.4,0,0,1,1.4-1.4,1.4,1.4,0,0,1,1.4,1.4m.035,0c0-.775.593-.7,1.367-.7a1.4,1.4,0,0,1,1.4,1.4" transform="translate(-129.286 24)" fill="none" clip-rule="evenodd"/>
+    </clipPath>
+    <filter id="Ellipse_10" x="253.293" y="193.625" width="35.513" height="35.513" filterUnits="userSpaceOnUse">
+      <feOffset dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4" result="blur-4"/>
+      <feFlood flood-color="#ff0069" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_10-2" x="253.293" y="152.811" width="35.513" height="35.513" filterUnits="userSpaceOnUse">
+      <feOffset dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4" result="blur-5"/>
+      <feFlood flood-color="#ff0069" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip">
+      <use xlink:href="#fill"/>
+    </clipPath>
+    <clipPath id="clip-2">
+      <use xlink:href="#fill-2"/>
+    </clipPath>
+    <clipPath id="clip-3">
+      <use xlink:href="#fill-3"/>
+    </clipPath>
+  </defs>
+  <g id="Grafik_groß" transform="translate(14.25 12)">
+    <g transform="matrix(1, 0, 0, 1, -14.25, -12)" filter="url(#Hintergrund_1)">
+      <rect id="Hintergrund_1-2" data-name="Hintergrund_1" width="273.895" height="273.895" rx="30" transform="translate(128.04 82.6)" fill="#f8f9fa"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -14.25, -12)" filter="url(#Hintergrund_2)">
+      <path id="Hintergrund_2-2" data-name="Hintergrund_2" d="M6.114,0H283.539c3.377,0,6.114,2.389,6.114,5.336v4.7l8.175,7.053-8.175,6.855V220.793c0,2.947-2.737,5.336-6.114,5.336H6.114C2.737,226.129,0,223.74,0,220.793V5.336C0,2.389,2.737,0,6.114,0Z" transform="translate(14.25 98.04)" fill="#f9fafb" stroke="#ff0069" stroke-width="1.5"/>
+    </g>
+    <g id="Menü" transform="translate(311.536)">
+      <g transform="matrix(1, 0, 0, 1, -325.79, -12)" filter="url(#BG)">
+        <rect id="BG-2" data-name="BG" width="61.656" height="196.937" rx="30.828" transform="translate(325.79 12)" fill="#fff"/>
+      </g>
+      <g id="ic_timer" transform="translate(11.857 22.031)" opacity="0.2">
+        <rect id="BG-3" data-name="BG" width="37.942" height="37.942" fill="rgba(255,255,255,0)" opacity="0.3"/>
+        <g id="ic" transform="translate(9.486 7.114)">
+          <path id="Pfad_32" data-name="Pfad 32" d="M12.642.538a9.494,9.494,0,1,0,3.772,2.469L18.45,1.186" transform="translate(0 4.15)" fill="none" stroke="#333948" stroke-linejoin="round" stroke-width="2"/>
+          <path id="Pfad_33" data-name="Pfad 33" d="M12.642.538a9.494,9.494,0,1,0,3.772,2.469" transform="translate(0 4.15)" fill="none" stroke="#333948" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <path id="Pfad_34" data-name="Pfad 34" d="M0,1.232V1.186A1.186,1.186,0,0,1,1.186,0H4.743A1.186,1.186,0,0,1,5.928,1.186v.1" transform="translate(6.521 0)" fill="none" stroke="rgba(51,57,72,0.5)" stroke-linecap="square" stroke-width="1.5"/>
+          <path id="Pfad_35" data-name="Pfad 35" d="M.5,4.743V0" transform="translate(8.986 9.486)" fill="none" stroke="rgba(51,57,72,0.5)" stroke-linecap="round" stroke-width="1.5"/>
+        </g>
+      </g>
+      <g id="ic_vote" transform="translate(4.743 86.39)">
+        <rect id="BG-4" data-name="BG" width="37.942" height="37.942" transform="translate(0 1.186)" fill="rgba(255,255,255,0)"/>
+        <g id="ic-2" data-name="ic" transform="translate(16.933)">
+          <g id="Gruppe_42" data-name="Gruppe 42" transform="translate(0 4.743)" clip-path="url(#clip-path)">
+            <path id="Pfad_36" data-name="Pfad 36" d="M128.247-25H145.67V-4.46H128.247Z" transform="translate(-129.479 23.814)" fill="#fff"/>
+          </g>
+          <path id="Pfad_38" data-name="Pfad 38" d="M6.591,12.629V1.4A1.4,1.4,0,0,1,9.4,1.4V6.521M6.661,18.169l-6.509-6.8A1.4,1.4,0,0,1,.783,9.473a1.4,1.4,0,0,1,1.079-.08c.356.119.456.054.622.391l4.107,2.845M9.4,7.013a1.4,1.4,0,1,1,2.805,0m.035,0c0-.775.593-.7,1.367-.7a1.4,1.4,0,0,1,1.4,1.4" transform="translate(0 4.743)" fill="none" stroke="#333948" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <path id="Pfad_39" data-name="Pfad 39" d="M0,10.736a3.541,3.541,0,0,0,3.015,1.683H7.644A3.506,3.506,0,0,0,11.15,8.913V1.683C11.15.909,10.012,0,9.238,0" transform="translate(6.661 12.176)" fill="none" stroke="#333948" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <path id="Pfad_40" data-name="Pfad 40" d="M9.486,4.743A4.743,4.743,0,0,0,0,4.743" transform="translate(3.218)" fill="none" stroke="#333948" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          <path id="Pfad_41" data-name="Pfad 41" d="M6.715,9.057a4.743,4.743,0,1,0-3.908.017" transform="translate(3.218)" fill="none" stroke="rgba(51,57,72,0.5)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="ic_focus" transform="translate(13.98 137.209)">
+        <rect id="BG-5" data-name="BG" width="37.942" height="37.942" fill="rgba(255,255,255,0)" opacity="0.3"/>
+        <g id="ic-3" data-name="ic" transform="translate(6.195 7.114)" opacity="0.2">
+          <path id="Pfad_42" data-name="Pfad 42" d="M5.928,0,0,5.916" transform="translate(11.99 8.865)" fill="none" stroke="#333948" stroke-linejoin="round" stroke-width="1.5"/>
+          <path id="Pfad_43" data-name="Pfad 43" d="M0,0H3.544l.013.013V3.557" transform="translate(14.361 8.853)" fill="none" stroke="#333948" stroke-linecap="square" stroke-width="1.5"/>
+          <path id="Pfad_44" data-name="Pfad 44" d="M0,2.34A2.16,2.16,0,0,1,1.895,0H20.633a2.16,2.16,0,0,1,1.895,2.34V16.631a2.16,2.16,0,0,1-1.895,2.34H1.895A2.16,2.16,0,0,1,0,16.631Z" transform="translate(0 4.214)" fill="none" stroke="#333948" stroke-linejoin="round" stroke-width="2"/>
+          <path id="Pfad_45" data-name="Pfad 45" d="M0,.656,16.42.386" transform="translate(3.097 18.868)" fill="none" stroke="#989ba3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <path id="Pfad_46" data-name="Pfad 46" d="M.571,0h1.1c2.664,0,6.01,3.262,6.01,5.824v1.8" transform="translate(19.156)" fill="none" stroke="#989ba3" stroke-width="1.5"/>
+        </g>
+      </g>
+    </g>
+    <g id="Button" transform="translate(19.16 266.364)">
+      <rect id="Button-2" data-name="Button" width="260.665" height="26.864" rx="13.432" fill="#ff0069"/>
+      <text id="Start_voting_phase" data-name="Start voting phase" transform="translate(85.08 5.613)" fill="#fff" font-size="12" font-family="Raleway-SemiBold, Raleway" font-weight="600" letter-spacing="0.023em"><tspan x="10.863" y="11">Start voting </tspan></text>
+    </g>
+    <g id="Number_of_votes" data-name="Number of votes" transform="translate(18.201 218.537)">
+      <rect id="BG-6" data-name="BG" width="259.706" height="32.62" rx="5" transform="translate(0 0)" fill="#fff"/>
+      <text id="Number_of_votes-2" data-name="Number of votes" transform="translate(16.31 20.347)" fill="#111" font-size="13" font-family="Raleway-Medium, Raleway" font-weight="500" letter-spacing="0.035em"><tspan x="0" y="0">Number of votes</tspan></text>
+      <text id="_5" data-name="5" transform="translate(211.877 19.675)" fill="#111" font-size="13" font-family="Raleway-Medium, Raleway" font-weight="500" letter-spacing="0.035em"><tspan x="0" y="0">5</tspan></text>
+      <g id="ic_minus" transform="translate(184.827 4.797)">
+        <rect id="BG-7" data-name="BG" width="22.067" height="22.067" fill="rgba(255,255,255,0)"/>
+        <g id="Ellipse_32" data-name="Ellipse 32" transform="translate(2.878 2.878)" fill="none" stroke="#ff0069" stroke-width="1">
+          <circle cx="8.155" cy="8.155" r="8.155" stroke="none"/>
+          <circle cx="8.155" cy="8.155" r="7.655" fill="none"/>
+        </g>
+        <g id="Rechteck_573" data-name="Rechteck 573" transform="translate(8.635 10.554)" fill="#fff" stroke="#ff0069" stroke-width="1">
+          <rect id="fill" width="4.797" height="0.959" rx="0.48" stroke="none"/>
+          <path d="M0,0.4594177007675171h4.797088623046875M4.297088623046875,0v0.9594177007675171M4.797088623046875,0.5h-4.797088623046875M0.5,0.9594177007675171v-0.9594177007675171" fill="none" clip-path="url(#clip)"/>
+        </g>
+      </g>
+      <g id="ic_plus" transform="translate(224.207 4.797)">
+        <rect id="BG-8" data-name="BG" width="22.067" height="22.067" fill="rgba(255,255,255,0)"/>
+        <g id="Pfad_6696" data-name="Pfad 6696" transform="translate(2.878 2.878)" fill="none">
+          <path d="M8.155,0A8.155,8.155,0,1,1,0,8.155,8.155,8.155,0,0,1,8.155,0Z" stroke="none"/>
+          <path d="M 8.155050277709961 1 C 4.20974063873291 1 1 4.20974063873291 1 8.155050277709961 C 1 12.10036087036133 4.20974063873291 15.31010055541992 8.155050277709961 15.31010055541992 C 12.10036087036133 15.31010055541992 15.31010055541992 12.10036087036133 15.31010055541992 8.155050277709961 C 15.31010055541992 4.20974063873291 12.10036087036133 1 8.155050277709961 1 M 8.155050277709961 0 C 12.65896034240723 0 16.31010055541992 3.651140213012695 16.31010055541992 8.155050277709961 C 16.31010055541992 12.65896034240723 12.65896034240723 16.31010055541992 8.155050277709961 16.31010055541992 C 3.651140213012695 16.31010055541992 0 12.65896034240723 0 8.155050277709961 C 0 3.651140213012695 3.651140213012695 0 8.155050277709961 0 Z" stroke="none" fill="#ff0069"/>
+        </g>
+        <g id="Rechteck_573-2" data-name="Rechteck 573" transform="translate(8.635 10.554)" fill="#fff" stroke="#ff0069" stroke-width="1">
+          <rect id="fill-2" width="4.797" height="0.959" rx="0.48" stroke="none"/>
+          <path d="M0,0.4594177007675171h4.797088623046875M4.297088623046875,0v0.9594177007675171M4.797088623046875,0.5h-4.797088623046875M0.5,0.9594177007675171v-0.9594177007675171" fill="none" clip-path="url(#clip-2)"/>
+        </g>
+        <g id="Rechteck_574" data-name="Rechteck 574" transform="translate(11.513 8.635) rotate(90)" fill="#ff0069" stroke="#ff0069" stroke-width="1">
+          <rect id="fill-3" width="4.797" height="0.959" rx="0.48" stroke="none"/>
+          <path d="M0,0.4594177007675171h4.797088623046875M4.297088623046875,0v0.9594177007675171M4.797088623046875,0.5h-4.797088623046875M0.5,0.9594177007675171v-0.9594177007675171" fill="none" clip-path="url(#clip-3)"/>
+        </g>
+      </g>
+    </g>
+    <g id="Zeile_2" data-name="Zeile 2" transform="translate(18.201 177.594)">
+      <rect id="BG-9" data-name="BG" width="259.706" height="32.62" rx="5" transform="translate(0 0)" fill="#fff"/>
+      <g id="to_toggle" transform="translate(218.451 12.031)">
+        <rect id="Rechteck_56" data-name="Rechteck 56" width="22.067" height="5.757" rx="2.878" transform="translate(0 2.838)" fill="#edeff2"/>
+        <g transform="matrix(1, 0, 0, 1, -250.9, -201.63)" filter="url(#Ellipse_10)">
+          <circle id="Ellipse_10-3" data-name="Ellipse 10" cx="5.757" cy="5.757" r="5.757" transform="translate(265.29 201.63)" fill="#ff0069"/>
+        </g>
+      </g>
+      <rect id="Rechteck_12535" data-name="Rechteck 12535" width="119" height="16" rx="2" transform="translate(13.299 7.406)" fill="#edeff2"/>
+    </g>
+    <g id="Zeile_1" data-name="Zeile 1" transform="translate(18.201 136.781)">
+      <rect id="BG-10" data-name="BG" width="259.706" height="33.58" rx="5" transform="translate(0 0)" fill="#fff"/>
+      <g id="to_toggle-2" data-name="to_toggle" transform="translate(218.451 12.031)">
+        <rect id="Rechteck_56-2" data-name="Rechteck 56" width="22.067" height="5.757" rx="2.878" transform="translate(0 2.838)" fill="#edeff2"/>
+        <g transform="matrix(1, 0, 0, 1, -250.9, -160.81)" filter="url(#Ellipse_10-2)">
+          <circle id="Ellipse_10-4" data-name="Ellipse 10" cx="5.757" cy="5.757" r="5.757" transform="translate(265.29 160.81)" fill="#ff0069"/>
+        </g>
+      </g>
+      <rect id="Rechteck_12540" data-name="Rechteck 12540" width="97" height="15" rx="2" transform="translate(13.299 9.219)" fill="#edeff2"/>
+    </g>
+    <g id="Überschrift" transform="translate(122.441 97.235)">
+      <text id="Voting" transform="translate(4.171 13)" fill="#111" font-size="14" font-family="Raleway-Bold, Raleway" font-weight="700" letter-spacing="0.025em"><tspan x="0" y="0">Voting</tspan></text>
+      <path id="Pfad_6679" data-name="Pfad 6679" d="M0,.5H53.36" transform="translate(-0.328 23.151)" fill="none" stroke="#ff0069" stroke-linecap="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>
