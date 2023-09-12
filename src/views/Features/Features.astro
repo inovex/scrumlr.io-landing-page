@@ -1,0 +1,33 @@
+---
+import "./Features.scss"
+import { Link } from "../../components/Link/Link";
+---
+
+<section class="features">
+    <h2>Das war's aber noch nicht - da ist noch mehr!</h2>
+    <p>Die Features ermöglichen einen aktiven Austausch und erleichtern die Zusammenarbeit.</p>
+    <div classname="feature">
+        <img />
+        <div>
+            <h3>Abstimmungssitzung</h3>
+            <p>Das Team kann während der Abstimmung auf beliebige Notes voten.</p>
+        </div>
+    </div>
+    <div classname="feature feature--reverse">
+        <div>
+            <h3>Präsentationsmodus</h3>
+            <p>Die Moderation kann gewisse Stacks oder Notes hervorheben.</p>
+        </div>
+        <img />
+    </div>
+    <div classname="feature">
+        <img />
+        <div>
+            <h3>Sitzungsdaten speichern</h3>
+            <p>Alle Teilnehmenden können das Board exportieren und somit die Sitzung speichern.</p>
+        </div>
+    </div>
+    <Link ariaLabel="Jetzt loslegen" className="features__cta-button">
+      Jetzt loslegen
+    </Link>
+</section>

@@ -5,6 +5,7 @@ import { Uniqueness } from '../components/Uniqueness';
 import { Mobile } from '../components/Mobile';
 import Layout from '../layouts/Layout.astro';
 import TargetUser from '../views/TargetUser/TargetUser.astro';
+import Features from "../views/Features/Features.astro";
 import {AboutUs} from "../views/AboutUs/AboutUs";
 ---
 
@@ -15,6 +16,7 @@ import {AboutUs} from "../views/AboutUs/AboutUs";
 		<Uniqueness client:idle />
 		<Mobile client:idle />
         <TargetUser />
+		<Features />
 		<AboutUs />
   </main>
 </Layout>
@@ -22,7 +24,7 @@ import {AboutUs} from "../views/AboutUs/AboutUs";
 <style>
 	main {
 		overflow: hidden;
-    width: 100vw;
-    min-width: 320px;
+    	width: 100vw;
+    	min-width: 320px;
 	}
 </style>
