@@ -1,0 +1,22 @@
+#features_dark_2 {
+  display: none;
+
+  * {
+    transition: all 0.1s ease-in-out;
+  }
+
+  &:hover {
+    #printViewBG {
+      fill: #6096ff;
+    }
+    #printIcon > path {
+      stroke: rgb(0, 87, 255);
+    }
+  }
+}
+
+[theme="dark"] {
+  #features_dark_2 {
+    display: block;
+  }
+}

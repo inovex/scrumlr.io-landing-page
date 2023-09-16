@@ -1,0 +1,17 @@
+#features_light_1 {
+  #card-2-bg {
+    transition: stroke 0.1s ease-in-out;
+  }
+
+  &:hover {
+    #card-2-bg {
+      stroke: #45ffa9;
+    }
+  }
+}
+
+[theme="dark"] {
+  #features_light_1 {
+    display: none;
+  }
+}

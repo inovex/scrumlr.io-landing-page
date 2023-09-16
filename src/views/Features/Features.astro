@@ -1,6 +1,12 @@
 ---
 import "./Features.scss"
 import { Link } from "../../components/Link/Link";
+import Features_light_0 from "./images/Features_light_0.tsx";
+import Features_light_1 from "./images/Features_light_1.tsx";
+import Features_light_2 from "./images/Features_light_2.tsx";
+import Features_dark_0 from "./images/Features_dark_0.tsx";
+import Features_dark_1 from "./images/Features_dark_1.tsx";
+import Features_dark_2 from "./images/Features_dark_2.tsx";
 ---
 
 <section class="features">
@@ -8,7 +14,8 @@ import { Link } from "../../components/Link/Link";
     <p>Die Features ermöglichen einen aktiven Austausch und erleichtern die Zusammenarbeit.</p>
     <div class="features_list">
         <div class="features__feature">
-            <img src="assets/features/features_light_0.svg" alt="Das Voting-Menü von scrumlr mit der Option zum Einstellen der maximalen Anzahl an Votes" />
+            <Features_light_0 />
+            <Features_dark_0 />
             <div class="features__text">
                 <h3>Abstimmungssitzung</h3>
                 <p>Das Team kann während der Abstimmung auf beliebige Notes voten.</p>
@@ -19,16 +26,18 @@ import { Link } from "../../components/Link/Link";
                 <h3>Präsentationsmodus</h3>
                 <p>Die Moderation kann gewisse Stacks oder Notes hervorheben.</p>
             </div>
-            <img src="assets/features/features_light_1.svg" alt="Button zum Aktivieren des Präsentiermodus'" />
+            <Features_light_1 />
+            <Features_dark_1 />
         </div>
         <div class="features__feature">
-            <img src="assets/features/features_light_2.svg" alt="Liste der Optionen zum exportieren des Boards: JSON, CSV, Druck & Clipboard" />
+            <Features_light_2 />
+            <Features_dark_2 />
             <div class="features__text">
                 <h3>Sitzungsdaten speichern</h3>
                 <p>Alle Teilnehmenden können das Board exportieren und somit die Sitzung speichern.</p>
             </div>
         </div>
-        <Link ariaLabel="Jetzt loslegen" class="features__cta-button">
+        <Link ariaLabel="Jetzt loslegen" className="features__cta-button">
         Jetzt loslegen
         </Link>
     </div>

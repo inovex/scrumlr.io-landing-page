@@ -1,0 +1,17 @@
+#features_light_0 {
+  .voting-menu {
+    transition: stroke 0.1s ease-in-out;
+  }
+
+  &:hover {
+    .voting-menu {
+      stroke: #ff80b4;
+    }
+  }
+}
+
+[theme="dark"] {
+  #features_light_0 {
+    display: none;
+  }
+}

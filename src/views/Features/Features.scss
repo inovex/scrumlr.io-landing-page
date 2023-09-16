@@ -1,4 +1,6 @@
 .features {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,7 +8,7 @@
 }
 
 .features_list {
-  background-image: url("/assets/features/features_line-bg.svg");
+  background-image: url("/assets/features/features_line-bg_light.svg");
   background-repeat: no-repeat;
   background-position: center bottom;
   display: flex;
@@ -20,16 +22,7 @@
   gap: 64px;
   margin: 48px 0;
 
-  > img {
-    margin-left: calc(25vw + 64px);
-  }
-
   &--reverse {
-    > img {
-      margin-left: 0;
-      margin-right: calc(25vw + 64px);
-    }
-
     h3,
     p {
       margin-left: auto;
@@ -68,4 +61,10 @@ h3 {
 p {
   font-size: 20px;
   line-height: 28px;
+}
+
+[theme="dark"] {
+  .features_list {
+    background-image: url("/assets/features/features_line-bg_dark.svg");
+  }
 }

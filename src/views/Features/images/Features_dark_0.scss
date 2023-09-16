@@ -1,0 +1,19 @@
+#features_dark_0 {
+  display: none;
+
+  #Hintergrund_2-2 {
+    transition: stroke 0.1s ease-in-out;
+  }
+
+  &:hover {
+    #Hintergrund_2-2 {
+      stroke: #ff80b4;
+    }
+  }
+}
+
+[theme="dark"] {
+  #features_dark_0 {
+    display: block;
+  }
+}

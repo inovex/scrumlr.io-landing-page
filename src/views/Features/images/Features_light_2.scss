@@ -1,0 +1,22 @@
+#features_light_2 {
+  .print-view_bg {
+    transition: all 0.1s ease-in-out;
+  }
+
+  .print-view_bg {
+    opacity: 0;
+    transform: translate(-1px, -1px) scale(0.87);
+  }
+
+  &:hover {
+    .print-view_bg {
+      opacity: 1;
+    }
+  }
+}
+
+[theme="dark"] {
+  #features_light_2 {
+    display: none;
+  }
+}
