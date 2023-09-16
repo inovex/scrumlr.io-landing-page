@@ -2,8 +2,8 @@ import "./Features_light_2.scss";
 
 const Features_light_2 = () => (
   <svg
-    width="318"
-    height="272"
+    width="352"
+    height="301"
     viewBox="0 0 318 272"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
