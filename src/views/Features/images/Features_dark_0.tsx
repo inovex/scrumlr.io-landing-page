@@ -20,7 +20,7 @@ const Features_darK_0 = () => (
       >
         <feOffset dy="3" input="SourceAlpha" />
         <feGaussianBlur stdDeviation="3" result="blur" />
-        <feFlood flood-opacity="0.161" />
+        <feFlood floodOpacity="0.161" />
         <feComposite operator="in" in2="blur" />
         <feComposite in="SourceGraphic" />
       </filter>
@@ -34,7 +34,7 @@ const Features_darK_0 = () => (
       >
         <feOffset dy="6" input="SourceAlpha" />
         <feGaussianBlur stdDeviation="10" result="blur-2" />
-        <feFlood flood-color="#ff5a9e" flood-opacity="0.071" />
+        <feFlood floodColor="#ff5a9e" floodOpacity="0.071" />
         <feComposite operator="in" in2="blur-2" />
         <feComposite in="SourceGraphic" />
       </filter>
@@ -48,7 +48,7 @@ const Features_darK_0 = () => (
       >
         <feOffset dy="3" input="SourceAlpha" />
         <feGaussianBlur stdDeviation="5" result="blur-3" />
-        <feFlood flood-color="#111" flood-opacity="0.149" />
+        <feFlood floodColor="#111" floodOpacity="0.149" />
         <feComposite operator="in" in2="blur-3" />
         <feComposite in="SourceGraphic" />
       </filter>
@@ -62,7 +62,7 @@ const Features_darK_0 = () => (
       >
         <feOffset dy="4" input="SourceAlpha" />
         <feGaussianBlur stdDeviation="4" result="blur-4" />
-        <feFlood flood-color="#ff5a9e" flood-opacity="0.161" />
+        <feFlood floodColor="#ff5a9e" floodOpacity="0.161" />
         <feComposite operator="in" in2="blur-4" />
         <feComposite in="SourceGraphic" />
       </filter>
@@ -76,7 +76,7 @@ const Features_darK_0 = () => (
       >
         <feOffset dy="4" input="SourceAlpha" />
         <feGaussianBlur stdDeviation="4" result="blur-5" />
-        <feFlood flood-color="#ff5a9e" flood-opacity="0.161" />
+        <feFlood floodColor="#ff5a9e" floodOpacity="0.161" />
         <feComposite operator="in" in2="blur-5" />
         <feComposite in="SourceGraphic" />
       </filter>
@@ -146,8 +146,8 @@ const Features_darK_0 = () => (
               transform="translate(0 3.762)"
               fill="none"
               stroke="#fff"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinejoin="round"
+              strokeWidth="2"
             />
             <path
               id="Pfad_33"
@@ -156,9 +156,9 @@ const Features_darK_0 = () => (
               transform="translate(0 3.762)"
               fill="none"
               stroke="#fff"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
             />
             <path
               id="Pfad_34"
@@ -167,8 +167,8 @@ const Features_darK_0 = () => (
               transform="translate(5.912 0)"
               fill="none"
               stroke="#fff"
-              stroke-linecap="square"
-              stroke-width="1.5"
+              strokeLinecap="square"
+              strokeWidth="1.5"
             />
             <path
               id="Pfad_35"
@@ -177,8 +177,8 @@ const Features_darK_0 = () => (
               transform="translate(8.099 8.599)"
               fill="none"
               stroke="rgba(255,255,255,0.2)"
-              stroke-linecap="round"
-              stroke-width="1.5"
+              strokeLinecap="round"
+              strokeWidth="1.5"
             />
           </g>
         </g>
@@ -199,9 +199,9 @@ const Features_darK_0 = () => (
               transform="translate(0 4.3)"
               fill="none"
               stroke="#fff"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="1.5"
             />
             <path
               id="Pfad_39"
@@ -210,9 +210,9 @@ const Features_darK_0 = () => (
               transform="translate(6.038 11.038)"
               fill="none"
               stroke="#fff"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="1.5"
             />
             <path
               id="Pfad_40"
@@ -221,9 +221,9 @@ const Features_darK_0 = () => (
               transform="translate(2.918)"
               fill="none"
               stroke="#fff"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
             />
             <path
               id="Pfad_41"
@@ -232,9 +232,9 @@ const Features_darK_0 = () => (
               transform="translate(2.918)"
               fill="none"
               stroke="rgba(255,255,255,0.2)"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
             />
           </g>
         </g>
@@ -260,8 +260,8 @@ const Features_darK_0 = () => (
               transform="translate(10.87 8.037)"
               fill="none"
               stroke="#fff"
-              stroke-linejoin="round"
-              stroke-width="1.5"
+              strokeLinejoin="round"
+              strokeWidth="1.5"
             />
             <path
               id="Pfad_43"
@@ -270,8 +270,8 @@ const Features_darK_0 = () => (
               transform="translate(13.019 8.025)"
               fill="none"
               stroke="#fff"
-              stroke-linecap="square"
-              stroke-width="1.5"
+              strokeLinecap="square"
+              strokeWidth="1.5"
             />
             <path
               id="Pfad_44"
@@ -280,8 +280,8 @@ const Features_darK_0 = () => (
               transform="translate(0 3.82)"
               fill="none"
               stroke="#fff"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinejoin="round"
+              strokeWidth="2"
             />
             <path
               id="Pfad_45"
@@ -290,9 +290,9 @@ const Features_darK_0 = () => (
               transform="translate(2.808 17.069)"
               fill="none"
               stroke="#fff"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="1.5"
               opacity="0.2"
             />
             <path
@@ -302,7 +302,7 @@ const Features_darK_0 = () => (
               transform="translate(17.366)"
               fill="none"
               stroke="#fff"
-              stroke-width="1.5"
+              strokeWidth="1.5"
               opacity="0.2"
             />
           </g>
@@ -323,10 +323,10 @@ const Features_darK_0 = () => (
           data-name="Start voting phase"
           transform="translate(94.5 246.563)"
           fill="#fff"
-          font-size="12"
-          font-family="Raleway-SemiBold, Raleway"
-          font-weight="600"
-          letter-spacing="0.023em"
+          fontSize="12"
+          fontFamily="Raleway-SemiBold, Raleway"
+          fontWeight="600"
+          letterSpacing="0.023em"
         >
           <tspan x="6.649" y="11">
             Start voting{" "}
@@ -352,10 +352,10 @@ const Features_darK_0 = () => (
           data-name="Number of votes"
           transform="translate(14.786 18.567)"
           fill="#fff"
-          font-size="12"
-          font-family="Raleway-Medium, Raleway"
-          font-weight="500"
-          letter-spacing="0.035em"
+          fontSize="12"
+          fontFamily="Raleway-Medium, Raleway"
+          fontWeight="500"
+          letterSpacing="0.035em"
         >
           <tspan x="0" y="0">
             Number of votes
@@ -366,10 +366,10 @@ const Features_darK_0 = () => (
           data-name="5"
           transform="translate(192.08 17.958)"
           fill="#fff"
-          font-size="12"
-          font-family="Raleway-Medium, Raleway"
-          font-weight="500"
-          letter-spacing="0.035em"
+          fontSize="12"
+          fontFamily="Raleway-Medium, Raleway"
+          fontWeight="500"
+          letterSpacing="0.035em"
         >
           <tspan x="0" y="0">
             5
@@ -389,7 +389,7 @@ const Features_darK_0 = () => (
             transform="translate(2.609 2.609)"
             fill="none"
             stroke="#ff5a9e"
-            stroke-width="1"
+            strokeWidth="1"
           >
             <circle cx="7.393" cy="7.393" r="7.393" stroke="none" />
             <circle cx="7.393" cy="7.393" r="6.893" fill="none" />
@@ -400,7 +400,7 @@ const Features_darK_0 = () => (
             transform="translate(7.828 9.567)"
             fill="#fff"
             stroke="#ff5a9e"
-            stroke-width="1"
+            strokeWidth="1"
           >
             <rect
               id="fill"
@@ -412,7 +412,7 @@ const Features_darK_0 = () => (
             <path
               d="M0,0.36977070569992065h4.348853588104248M3.848853588104248,0v0.8697707056999207M4.348853588104248,0.5h-4.348853588104248M0.5,0.8697707056999207v-0.8697707056999207"
               fill="none"
-              clip-path="url(#clip)"
+              clipPath="url(#clip)"
             />
           </g>
         </g>
@@ -446,7 +446,7 @@ const Features_darK_0 = () => (
             transform="translate(7.828 9.567)"
             fill="#fff"
             stroke="#ff5a9e"
-            stroke-width="1"
+            strokeWidth="1"
           >
             <rect
               id="fill-2"
@@ -458,7 +458,7 @@ const Features_darK_0 = () => (
             <path
               d="M0,0.36977070569992065h4.348853588104248M3.848853588104248,0v0.8697707056999207M4.348853588104248,0.5h-4.348853588104248M0.5,0.8697707056999207v-0.8697707056999207"
               fill="none"
-              clip-path="url(#clip-2)"
+              clipPath="url(#clip-2)"
             />
           </g>
           <g
@@ -467,7 +467,7 @@ const Features_darK_0 = () => (
             transform="translate(10.437 7.828) rotate(90)"
             fill="#ff0069"
             stroke="#ff5a9e"
-            stroke-width="1"
+            strokeWidth="1"
           >
             <rect
               id="fill-3"
@@ -479,7 +479,7 @@ const Features_darK_0 = () => (
             <path
               d="M0,0.36977070569992065h4.348853588104248M3.848853588104248,0v0.8697707056999207M4.348853588104248,0.5h-4.348853588104248M0.5,0.8697707056999207v-0.8697707056999207"
               fill="none"
-              clip-path="url(#clip-3)"
+              clipPath="url(#clip-3)"
             />
           </g>
         </g>
@@ -583,10 +583,10 @@ const Features_darK_0 = () => (
           id="Voting"
           transform="translate(3483.816 -7049.85)"
           fill="#fff"
-          font-size="14"
-          font-family="Raleway-Bold, Raleway"
-          font-weight="700"
-          letter-spacing="0.025em"
+          fontSize="14"
+          fontFamily="Raleway-Bold, Raleway"
+          fontWeight="700"
+          letterSpacing="0.025em"
         >
           <tspan x="0" y="0">
             Voting
@@ -599,8 +599,8 @@ const Features_darK_0 = () => (
           transform="translate(3482.316 -7041.909)"
           fill="none"
           stroke="#ff5a9e"
-          stroke-linecap="round"
-          stroke-width="3"
+          strokeLinecap="round"
+          strokeWidth="3"
         />
       </g>
     </g>

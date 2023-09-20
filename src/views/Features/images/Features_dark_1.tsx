@@ -20,7 +20,7 @@ const Features_darK_1 = () => (
       >
         <feOffset dy="3" input="SourceAlpha" />
         <feGaussianBlur stdDeviation="3" result="blur" />
-        <feFlood flood-opacity="0.161" />
+        <feFlood floodOpacity="0.161" />
         <feComposite operator="in" in2="blur" />
         <feComposite in="SourceGraphic" />
       </filter>
@@ -34,7 +34,7 @@ const Features_darK_1 = () => (
       >
         <feOffset dy="3" input="SourceAlpha" />
         <feGaussianBlur stdDeviation="3" result="blur-2" />
-        <feFlood flood-color="#111" flood-opacity="0.09" />
+        <feFlood floodColor="#111" floodOpacity="0.09" />
         <feComposite operator="in" in2="blur-2" />
         <feComposite in="SourceGraphic" />
       </filter>
@@ -48,7 +48,7 @@ const Features_darK_1 = () => (
       >
         <feOffset dy="2" input="SourceAlpha" />
         <feGaussianBlur stdDeviation="1.5" result="blur-3" />
-        <feFlood flood-color="#111" flood-opacity="0.161" />
+        <feFlood floodColor="#111" floodOpacity="0.161" />
         <feComposite operator="in" in2="blur-3" />
         <feComposite in="SourceGraphic" />
       </filter>
@@ -62,7 +62,7 @@ const Features_darK_1 = () => (
       >
         <feOffset dy="3" input="SourceAlpha" />
         <feGaussianBlur stdDeviation="3" result="blur-4" />
-        <feFlood flood-color="#111" flood-opacity="0.22" />
+        <feFlood floodColor="#111" floodOpacity="0.22" />
         <feComposite operator="in" in2="blur-4" />
         <feComposite in="SourceGraphic" />
       </filter>
@@ -76,7 +76,7 @@ const Features_darK_1 = () => (
       >
         <feOffset dy="3" input="SourceAlpha" />
         <feGaussianBlur stdDeviation="5" result="blur-5" />
-        <feFlood flood-color="#111" flood-opacity="0.149" />
+        <feFlood floodColor="#111" floodOpacity="0.149" />
         <feComposite operator="in" in2="blur-5" />
         <feComposite in="SourceGraphic" />
       </filter>
@@ -218,9 +218,9 @@ const Features_darK_1 = () => (
                   transform="translate(0 4.745)"
                   fill="none"
                   stroke="#fff"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="1.5"
                 />
                 <path
                   id="Pfad_39"
@@ -229,9 +229,9 @@ const Features_darK_1 = () => (
                   transform="translate(6.665 12.183)"
                   fill="none"
                   stroke="#fff"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="1.5"
                 />
                 <path
                   id="Pfad_40"
@@ -240,9 +240,9 @@ const Features_darK_1 = () => (
                   transform="translate(3.22)"
                   fill="none"
                   stroke="#fff"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                 />
                 <path
                   id="Pfad_41"
@@ -251,9 +251,9 @@ const Features_darK_1 = () => (
                   transform="translate(3.22)"
                   fill="none"
                   stroke="rgba(255,255,255,0.2)"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                 />
               </g>
             </g>
@@ -282,10 +282,10 @@ const Features_darK_1 = () => (
                 data-name="Presenter mode"
                 transform="translate(9.52 30.444)"
                 fill="#fff"
-                font-size="14"
-                font-family="Raleway-Bold, Raleway"
-                font-weight="700"
-                letter-spacing="0.035em"
+                fontSize="14"
+                fontFamily="Raleway-Bold, Raleway"
+                fontWeight="700"
+                letterSpacing="0.035em"
               >
                 <tspan x="0" y="0">
                   Presenter mode
@@ -325,8 +325,8 @@ const Features_darK_1 = () => (
                   transform="translate(11.997 8.871)"
                   fill="none"
                   stroke="#fff"
-                  stroke-linejoin="round"
-                  stroke-width="1.5"
+                  strokeLinejoin="round"
+                  strokeWidth="1.5"
                 />
                 <path
                   id="Pfad_43"
@@ -335,8 +335,8 @@ const Features_darK_1 = () => (
                   transform="translate(14.37 8.858)"
                   fill="none"
                   stroke="#fff"
-                  stroke-linecap="square"
-                  stroke-width="1.5"
+                  strokeLinecap="square"
+                  strokeWidth="1.5"
                 />
                 <path
                   id="Pfad_44"
@@ -345,8 +345,8 @@ const Features_darK_1 = () => (
                   transform="translate(0 4.217)"
                   fill="none"
                   stroke="#fff"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                 />
                 <path
                   id="Pfad_45"
@@ -355,9 +355,9 @@ const Features_darK_1 = () => (
                   transform="translate(3.099 18.879)"
                   fill="none"
                   stroke="#989ba3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="1.5"
                 />
                 <path
                   id="Pfad_46"
@@ -366,7 +366,7 @@ const Features_darK_1 = () => (
                   transform="translate(19.167)"
                   fill="none"
                   stroke="#989ba3"
-                  stroke-width="1.5"
+                  strokeWidth="1.5"
                 />
               </g>
             </g>
@@ -389,8 +389,8 @@ const Features_darK_1 = () => (
               transform="translate(0 4.152)"
               fill="none"
               stroke="#fff"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinejoin="round"
+              strokeWidth="2"
             />
             <path
               id="Pfad_33"
@@ -399,9 +399,9 @@ const Features_darK_1 = () => (
               transform="translate(0 4.152)"
               fill="none"
               stroke="#fff"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
             />
             <path
               id="Pfad_34"
@@ -410,8 +410,8 @@ const Features_darK_1 = () => (
               transform="translate(6.525 0)"
               fill="none"
               stroke="#fff"
-              stroke-linecap="square"
-              stroke-width="1.5"
+              strokeLinecap="square"
+              strokeWidth="1.5"
             />
             <path
               id="Pfad_35"
@@ -420,8 +420,8 @@ const Features_darK_1 = () => (
               transform="translate(8.991 9.491)"
               fill="none"
               stroke="#fff"
-              stroke-linecap="round"
-              stroke-width="1.5"
+              strokeLinecap="round"
+              strokeWidth="1.5"
             />
           </g>
         </g>

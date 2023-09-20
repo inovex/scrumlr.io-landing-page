@@ -34,29 +34,29 @@ const Features_darK_0 = () => (
       <path
         d="M322.23 37.6765C320.246 36.9749 318.074 37.0245 316.124 37.8159C314.174 38.6074 312.582 40.0858 311.648 41.9717C310.714 43.8576 310.503 46.0204 311.056 48.051C311.608 50.0816 312.886 51.8394 314.647 52.9921C316.407 54.1448 318.529 54.6125 320.611 54.3068C322.694 54.001 324.592 52.943 325.946 51.3328C327.301 49.7226 328.02 47.6717 327.965 45.568C327.91 43.4642 327.087 41.4533 325.65 39.9155L327.496 38.2645"
         stroke="#333948"
-        stroke-width="2"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinejoin="round"
       />
       <path
         d="M322.23 37.6765C320.246 36.9749 318.074 37.0245 316.124 37.8159C314.174 38.6074 312.582 40.0858 311.648 41.9717C310.714 43.8576 310.503 46.0204 311.056 48.051C311.608 50.0816 312.886 51.8394 314.647 52.9921C316.407 54.1448 318.529 54.6125 320.611 54.3068C322.694 54.001 324.592 52.943 325.946 51.3328C327.301 49.7226 328.02 47.6717 327.965 45.568C327.91 43.4642 327.087 41.4533 325.65 39.9155"
         stroke="#333948"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M316.68 34.5433V34.5013C316.68 34.2162 316.793 33.9427 316.995 33.7411C317.196 33.5395 317.47 33.4263 317.755 33.4263H320.98C321.265 33.4263 321.538 33.5395 321.74 33.7411C321.941 33.9427 322.055 34.2162 322.055 34.5013V34.5883"
         stroke="#333948"
-        stroke-opacity="0.5"
-        stroke-width="1.5"
-        stroke-linecap="square"
+        strokeOpacity="0.5"
+        strokeWidth="1.5"
+        strokeLinecap="square"
       />
       <path
         d="M319.367 46.3254V42.0254"
         stroke="#333948"
-        stroke-opacity="0.5"
-        stroke-width="1.5"
-        stroke-linecap="round"
+        strokeOpacity="0.5"
+        strokeWidth="1.5"
+        strokeLinecap="round"
       />
     </g>
     <mask
@@ -69,8 +69,8 @@ const Features_darK_0 = () => (
       height="18"
     >
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M317.052 101.072V90.894C317.052 90.557 317.186 90.2337 317.424 89.9953C317.663 89.757 317.986 89.623 318.323 89.623C318.49 89.6229 318.656 89.6557 318.81 89.7195C318.964 89.7833 319.104 89.8769 319.223 89.995C319.341 90.113 319.434 90.2532 319.498 90.4074C319.562 90.5617 319.595 90.7271 319.595 90.894V95.534M317.116 106.094L311.216 99.927C311.14 99.777 311.094 99.6132 311.082 99.4454C311.069 99.2775 311.09 99.1088 311.143 98.949C311.196 98.7893 311.281 98.6417 311.392 98.5148C311.502 98.388 311.637 98.2844 311.788 98.21C311.938 98.1337 312.102 98.0879 312.27 98.0754C312.438 98.0629 312.606 98.0838 312.766 98.137C313.089 98.245 313.18 98.186 313.33 98.491L317.053 101.07M319.596 95.978C319.596 95.641 319.73 95.3177 319.968 95.0793C320.207 94.841 320.53 94.707 320.867 94.707C321.204 94.707 321.528 94.841 321.766 95.0793C322.004 95.3177 322.138 95.641 322.138 95.978M322.17 95.978C322.17 95.278 322.707 95.342 323.41 95.342C323.747 95.342 324.071 95.476 324.309 95.7143C324.547 95.9527 324.681 96.276 324.681 96.613"
         fill="white"
       />
@@ -84,62 +84,62 @@ const Features_darK_0 = () => (
     <path
       d="M317.051 101.072V90.8941C317.051 90.5568 317.185 90.2334 317.424 89.995C317.662 89.7565 317.986 89.6226 318.323 89.6226C318.66 89.6226 318.983 89.7565 319.222 89.995C319.46 90.2334 319.594 90.5568 319.594 90.8941V95.5341M317.114 106.094L311.214 99.9231C311.139 99.7732 311.094 99.6099 311.081 99.4425C311.069 99.2752 311.09 99.107 311.144 98.9479C311.197 98.7887 311.281 98.6417 311.391 98.5152C311.502 98.3887 311.636 98.2854 311.786 98.2111C311.936 98.1347 312.1 98.089 312.268 98.0764C312.436 98.0639 312.605 98.0848 312.764 98.1381C313.087 98.2461 313.178 98.1871 313.328 98.4921L317.051 101.071M319.594 95.9801C319.594 95.6428 319.728 95.3194 319.967 95.081C320.205 94.8425 320.529 94.7086 320.866 94.7086C321.203 94.7086 321.526 94.8425 321.765 95.081C322.003 95.3194 322.137 95.6428 322.137 95.9801M322.169 95.9801C322.169 95.2801 322.706 95.3441 323.409 95.3441C323.746 95.3451 324.068 95.4796 324.306 95.7181C324.543 95.9566 324.677 96.2795 324.676 96.6161"
       stroke="#333948"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
     <path
       d="M317.113 106.094C317.401 106.561 317.803 106.946 318.282 107.213C318.76 107.48 319.299 107.621 319.847 107.62H324.047C324.89 107.619 325.697 107.283 326.292 106.687C326.887 106.091 327.221 105.284 327.221 104.441V97.8873C327.221 97.1853 326.19 96.3613 325.487 96.3613"
       stroke="#333948"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
     <path
       d="M322.596 89.6232C322.596 88.4828 322.143 87.3891 321.337 86.5827C320.53 85.7763 319.437 85.3232 318.296 85.3232C317.156 85.3232 316.062 85.7763 315.256 86.5827C314.449 87.3891 313.996 88.4828 313.996 89.6232"
       stroke="#333948"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
     <path
       d="M320.084 93.5343C320.978 93.1255 321.705 92.4228 322.144 91.5431C322.583 90.6634 322.707 89.6599 322.496 88.6998C322.284 87.7398 321.751 86.881 320.983 86.2667C320.216 85.6524 319.261 85.3196 318.278 85.3238C317.295 85.3279 316.343 85.6688 315.581 86.2896C314.818 86.9104 314.292 87.7736 314.089 88.7354C313.886 89.6973 314.018 90.6997 314.465 91.5756C314.911 92.4515 315.644 93.1481 316.541 93.5493"
       stroke="#333948"
-      stroke-opacity="0.5"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeOpacity="0.5"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
     <g opacity="0.2">
       <path
         d="M325.961 145.879L320.586 151.242"
         stroke="#333948"
-        stroke-width="1.5"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinejoin="round"
       />
       <path
         d="M322.734 145.867H325.947L325.959 145.879V149.092"
         stroke="#333948"
-        stroke-width="1.5"
-        stroke-linecap="square"
+        strokeWidth="1.5"
+        strokeLinecap="square"
       />
       <path
         d="M309.715 143.784C309.669 143.276 309.823 142.771 310.143 142.374C310.464 141.978 310.927 141.723 311.433 141.662H328.42C328.926 141.723 329.389 141.978 329.71 142.374C330.031 142.771 330.185 143.276 330.138 143.784V156.739C330.185 157.247 330.031 157.753 329.71 158.15C329.39 158.546 328.927 158.802 328.42 158.862H311.433C310.927 158.802 310.464 158.546 310.143 158.15C309.822 157.753 309.669 157.247 309.715 156.739V143.784Z"
         stroke="#333948"
-        stroke-width="2"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinejoin="round"
       />
       <path
         d="M312.523 155.542L327.408 155.297"
         stroke="#989BA3"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M327.598 137.842H328.598C331.014 137.842 334.047 140.799 334.047 143.122V144.75"
         stroke="#989BA3"
-        stroke-width="1.5"
+        strokeWidth="1.5"
       />
     </g>
     <path
@@ -285,8 +285,8 @@ const Features_darK_0 = () => (
     <path
       d="M121 116.596H169.374"
       stroke="#FF0069"
-      stroke-width="3"
-      stroke-linecap="round"
+      strokeWidth="3"
+      strokeLinecap="round"
     />
     <defs>
       <filter
@@ -296,9 +296,9 @@ const Features_darK_0 = () => (
         width="272"
         height="272"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -330,9 +330,9 @@ const Features_darK_0 = () => (
         width="288"
         height="223"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -364,9 +364,9 @@ const Features_darK_0 = () => (
         width="75.8945"
         height="198.535"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -398,9 +398,9 @@ const Features_darK_0 = () => (
         width="26.4375"
         height="26.438"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -432,9 +432,9 @@ const Features_darK_0 = () => (
         width="26.4375"
         height="26.438"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"

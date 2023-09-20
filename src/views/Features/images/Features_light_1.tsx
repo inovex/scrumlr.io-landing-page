@@ -57,8 +57,8 @@ const Features_darK_0 = () => (
         height="20"
       >
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M295.055 108.613V97.3771C295.055 97.1932 295.091 97.0111 295.162 96.8413C295.232 96.6714 295.335 96.5171 295.465 96.3871C295.595 96.2571 295.75 96.154 295.919 96.0836C296.089 96.0133 296.271 95.9771 296.455 95.9771C296.827 95.9771 297.183 96.1246 297.445 96.3871C297.708 96.6497 297.855 97.0057 297.855 97.3771V102.498M295.125 114.156L288.613 107.35C288.529 107.185 288.479 107.004 288.465 106.819C288.451 106.633 288.474 106.447 288.533 106.271C288.592 106.095 288.685 105.932 288.807 105.792C288.93 105.652 289.078 105.538 289.245 105.456C289.411 105.372 289.591 105.321 289.777 105.308C289.962 105.294 290.148 105.317 290.324 105.376C290.68 105.495 290.781 105.43 290.946 105.767L295.055 108.614M297.862 102.994C297.862 102.623 298.01 102.267 298.272 102.004C298.535 101.742 298.891 101.594 299.262 101.594C299.634 101.594 299.99 101.742 300.252 102.004C300.515 102.267 300.662 102.623 300.662 102.994M300.697 102.994C300.697 102.219 301.29 102.294 302.065 102.294C302.249 102.294 302.431 102.33 302.601 102.401C302.771 102.471 302.925 102.574 303.055 102.704C303.185 102.834 303.288 102.988 303.359 103.158C303.429 103.328 303.465 103.51 303.465 103.694"
           fill="white"
         />
@@ -69,31 +69,31 @@ const Features_darK_0 = () => (
       <path
         d="M295.056 108.613V97.3771C295.056 97.005 295.204 96.6482 295.467 96.3851C295.73 96.1219 296.087 95.9741 296.459 95.9741C296.831 95.9741 297.188 96.1219 297.451 96.3851C297.714 96.6482 297.862 97.005 297.862 97.3771V102.501M295.127 114.156L288.614 107.35C288.529 107.185 288.479 107.004 288.465 106.819C288.451 106.633 288.474 106.447 288.533 106.271C288.592 106.094 288.685 105.932 288.808 105.792C288.93 105.652 289.079 105.538 289.246 105.456C289.412 105.372 289.592 105.322 289.777 105.308C289.963 105.295 290.149 105.318 290.325 105.377C290.681 105.496 290.782 105.431 290.947 105.768L295.056 108.615M297.862 102.994C297.862 102.622 298.01 102.265 298.273 102.002C298.536 101.738 298.893 101.591 299.265 101.591C299.638 101.591 299.995 101.738 300.258 102.002C300.521 102.265 300.669 102.622 300.669 102.994M300.704 102.994C300.704 102.219 301.297 102.294 302.072 102.294C302.256 102.294 302.438 102.33 302.608 102.401C302.778 102.471 302.932 102.574 303.062 102.704C303.192 102.834 303.295 102.989 303.365 103.158C303.436 103.328 303.472 103.51 303.472 103.694"
         stroke="#333948"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M295.125 114.157C295.442 114.672 295.886 115.097 296.414 115.392C296.942 115.687 297.537 115.841 298.142 115.841H302.773C303.703 115.841 304.596 115.471 305.254 114.814C305.911 114.156 306.281 113.263 306.281 112.333V105.099C306.281 104.324 305.143 103.415 304.368 103.415"
         stroke="#333948"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M301.175 95.9769C301.175 94.7184 300.675 93.5113 299.785 92.6214C298.895 91.7314 297.688 91.2314 296.429 91.2314C295.171 91.2314 293.963 91.7314 293.074 92.6214C292.184 93.5113 291.684 94.7184 291.684 95.9769"
         stroke="#333948"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M298.402 100.294C299.389 99.8426 300.191 99.067 300.675 98.0963C301.159 97.1255 301.296 96.0182 301.063 94.9588C300.829 93.8994 300.24 92.9519 299.393 92.2741C298.546 91.5963 297.493 91.2292 296.408 91.2339C295.323 91.2386 294.273 91.6149 293.432 92.3C292.591 92.9851 292.01 93.9377 291.786 94.9991C291.562 96.0605 291.708 97.1666 292.201 98.1331C292.693 99.0996 293.502 99.8682 294.492 100.311"
         stroke="#333948"
-        stroke-opacity="0.5"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeOpacity="0.5"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </g>
     <path
@@ -111,65 +111,65 @@ const Features_darK_0 = () => (
     <path
       d="M299.746 189.391C312.953 189.391 323.66 178.684 323.66 165.477C323.66 152.27 312.953 141.563 299.746 141.563C286.539 141.563 275.832 152.27 275.832 165.477C275.832 178.684 286.539 189.391 299.746 189.391Z"
       stroke="#D3DAF0"
-      stroke-width="2"
+      strokeWidth="2"
     />
     <path
       d="M304.893 162.484L298.961 168.403"
       stroke="#333948"
-      stroke-width="1.5"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinejoin="round"
     />
     <path
       d="M301.332 162.471H304.878L304.891 162.484V166.03"
       stroke="#333948"
-      stroke-width="1.5"
-      stroke-linecap="square"
+      strokeWidth="1.5"
+      strokeLinecap="square"
     />
     <path
       d="M286.962 160.172C286.911 159.611 287.081 159.052 287.436 158.615C287.791 158.177 288.303 157.896 288.862 157.83H307.607C308.167 157.896 308.678 158.177 309.033 158.615C309.388 159.052 309.558 159.611 309.507 160.172V174.472C309.558 175.033 309.388 175.592 309.033 176.029C308.678 176.467 308.167 176.748 307.607 176.814H288.862C288.302 176.748 287.79 176.466 287.435 176.029C287.08 175.591 286.911 175.031 286.962 174.47V160.172Z"
       stroke="#333948"
-      stroke-width="2"
-      stroke-linejoin="round"
+      strokeWidth="2"
+      strokeLinejoin="round"
     />
     <path
       d="M290.062 173.148L306.492 172.878"
       stroke="#989BA3"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
     <path
       d="M306.699 153.613H307.799C310.47 153.613 313.818 156.877 313.818 159.44V161.24"
       stroke="#989BA3"
-      stroke-width="1.5"
+      strokeWidth="1.5"
     />
     <g opacity="0.2">
       <path
         d="M300.78 40.8519C298.59 40.0776 296.192 40.1326 294.04 41.0063C291.888 41.88 290.13 43.5119 289.1 45.5936C288.069 47.6753 287.837 50.0624 288.447 52.3037C289.057 54.5449 290.467 56.485 292.41 57.7572C294.354 59.0293 296.696 59.5453 298.994 59.2077C301.292 58.87 303.387 57.7021 304.883 55.9247C306.378 54.1473 307.17 51.8836 307.11 49.5616C307.05 47.2396 306.141 45.0201 304.555 43.3229L306.592 41.4999"
         stroke="#333948"
-        stroke-width="2"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinejoin="round"
       />
       <path
         d="M300.78 40.8519C298.59 40.0776 296.192 40.1326 294.04 41.0063C291.888 41.88 290.13 43.5119 289.1 45.5936C288.069 47.6753 287.837 50.0624 288.447 52.3037C289.057 54.5449 290.467 56.485 292.41 57.7572C294.354 59.0293 296.696 59.5453 298.994 59.2077C301.292 58.87 303.387 57.7021 304.883 55.9247C306.378 54.1473 307.17 51.8836 307.11 49.5616C307.05 47.2396 306.141 45.0201 304.555 43.3229"
         stroke="#333948"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M294.656 37.3941V37.3481C294.656 37.0336 294.781 36.7319 295.004 36.5095C295.226 36.2871 295.528 36.1621 295.842 36.1621H299.401C299.557 36.162 299.711 36.1926 299.855 36.2521C299.999 36.3116 300.13 36.399 300.241 36.5091C300.351 36.6193 300.438 36.7501 300.498 36.894C300.558 37.038 300.588 37.1923 300.588 37.3481V37.4481"
         stroke="#333948"
-        stroke-opacity="0.5"
-        stroke-width="1.5"
-        stroke-linecap="square"
+        strokeOpacity="0.5"
+        strokeWidth="1.5"
+        strokeLinecap="square"
       />
       <path
         d="M297.621 50.3983V45.6533"
         stroke="#333948"
-        stroke-opacity="0.5"
-        stroke-width="1.5"
-        stroke-linecap="round"
+        strokeOpacity="0.5"
+        strokeWidth="1.5"
+        strokeLinecap="round"
       />
     </g>
     <path
@@ -184,9 +184,9 @@ const Features_darK_0 = () => (
         width="272"
         height="272"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -218,9 +218,9 @@ const Features_darK_0 = () => (
         width="174.561"
         height="81.9429"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -252,9 +252,9 @@ const Features_darK_0 = () => (
         width="206.518"
         height="28.2642"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -286,9 +286,9 @@ const Features_darK_0 = () => (
         width="226.146"
         height="149.949"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -320,9 +320,9 @@ const Features_darK_0 = () => (
         width="81.6914"
         height="226.428"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
