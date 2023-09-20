@@ -17,3 +17,9 @@
     display: block;
   }
 }
+
+@media screen and (max-width: 400px) {
+  #features_dark_1 {
+    transform: scale(0.8);
+  }
+}

@@ -20,3 +20,9 @@
     display: none;
   }
 }
+
+@media screen and (max-width: 400px) {
+  #features_light_2 {
+    transform: scale(0.8);
+  }
+}
