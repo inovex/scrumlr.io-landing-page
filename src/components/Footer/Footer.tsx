@@ -125,7 +125,7 @@ export const Footer = () => {
         <div className="footer__bottom-content">
           <ul className="footer__legal-links">
             <li>
-              <a href="#Data">Datenschutz</a>
+              <a href="/Legal/Privacy">Datenschutz</a>
             </li>
             <li>
               <a href="#Cookies">Cookie-Richtlinien</a>

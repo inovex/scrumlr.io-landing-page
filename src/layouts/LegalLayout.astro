@@ -1,0 +1,86 @@
+---
+import { ViewTransitions } from "astro:transitions";
+import Layout from "./Layout.astro";
+---
+
+<Layout title="scrumlr">
+  <div class="legal">
+    <aside>
+      <nav>
+        <a href="/Legal/Privacy">Privacy policy</a>
+        <a href="/Legal/Cookies">Cookie policy</a>
+        <a href="/Legal/Terms">Terms & conditions</a>
+      </nav>
+      <address>
+        <p>scrumlr.io is provided by:</p>
+        <p>
+          inovex GmbH<br />
+           Karlsruher Straße 71<br />
+           75179 Pforzheim<br />
+           Germany<br />
+        </p>
+        <p>
+          Owner contact email:<br />
+          <a href="mailto:info@scrumlr.io">info@scrumlr.io</a>
+        </p>
+      </address>
+      <p>
+        Latest update:<br />
+        <time>November 2021</time>
+      </p>
+    </aside>
+    <section>
+      <slot />
+    </section>
+  </div>
+</Layout>
+<ViewTransitions />
+
+<style lang="scss">
+  .legal {
+    display: flex;
+    flex-direction: row;
+    padding: 128px 64px;
+    position: relative;
+  }
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    padding-right: 64px;
+    gap: 64px;
+    color: #333948;
+    flex-shrink: 0;
+    position: sticky;
+    top: 192px;
+    align-self: start;
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+
+      a {
+        text-decoration: none;
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 500;
+        transition: all 0.1s ease-in-out;
+
+        &:hover {
+          color: var(--lightmode-pink);
+        }
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 400;
+      }
+    }
+
+    address {
+      font-style: normal;
+    }
+  }
+</style>
