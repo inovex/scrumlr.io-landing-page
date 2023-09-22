@@ -32,6 +32,7 @@ import Layout from "./Layout.astro";
     <section>
       <slot />
     </section>
+    <div class="legal_bg"></div>
   </div>
 </Layout>
 <ViewTransitions />
@@ -40,14 +41,15 @@ import Layout from "./Layout.astro";
   .legal {
     display: flex;
     flex-direction: row;
-    padding: 128px 64px;
+    padding: 128px 80px;
     position: relative;
+    background: linear-gradient(90deg, #fff 0%, rgba(107, 156, 255, 0.03) 100%);
+    gap: 80px;
   }
 
   aside {
     display: flex;
     flex-direction: column;
-    padding-right: 64px;
     gap: 64px;
     color: #333948;
     flex-shrink: 0;
@@ -82,5 +84,22 @@ import Layout from "./Layout.astro";
     address {
       font-style: normal;
     }
+  }
+
+  .legal_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      307deg,
+      rgba(0, 87, 255, 0.37) 1.31%,
+      #d1e0ff 40.42%,
+      #fff2f7 71.15%,
+      #ffe0ed 106.18%
+    );
+    z-index: -1;
+    opacity: 0.2;
   }
 </style>
