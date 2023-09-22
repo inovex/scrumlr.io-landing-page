@@ -157,7 +157,10 @@ footer a {
 
   a:hover {
     color: var(--darkmode-pink);
-    color: var(--white);
+  }
+
+  .footer__bottom * {
+    color: var(--darkmode-blue);
   }
 }
 
