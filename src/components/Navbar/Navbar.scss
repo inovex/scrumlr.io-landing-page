@@ -13,7 +13,7 @@
 }
 
 .navbar__link {
-  font-size: .875rem;
+  font-size: 0.875rem;
 }
 
 .navbar > ul {
@@ -36,6 +36,10 @@
 .navbar > ul > li:nth-of-type(3),
 .navbar > ul > li:nth-of-type(4) {
   display: none;
+
+  a:hover {
+    color: var(--lightmode-pink);
+  }
 }
 .navbar > ul > li:nth-of-type(5) {
   justify-self: flex-end;
@@ -51,15 +55,19 @@
   .navbar > ul > li:nth-of-type(3),
   .navbar > ul > li:nth-of-type(4) {
     display: block;
-    & > a {
-      text-decoration: none;
-      color: var(--lightmode-black);
-      font-size: 1.125rem;
-      font-weight: 600;
-      cursor: pointer;
-    }
   }
 
+  .navbar a {
+    text-decoration: none;
+    color: var(--lightmode-black);
+    font-size: 1.125rem;
+    font-weight: 600;
+    cursor: pointer;
+
+    > span {
+      color: var(--white);
+    }
+  }
 }
 
 @media (min-width: 1024px) {
@@ -78,13 +86,16 @@
   }
 }
 
-
-[theme="dark"] {
+@media (prefers-color-scheme: dark) {
   .navbar--opaque {
-    background-color: rgba(30, 38, 56, 0.90);;
+    background-color: rgba(30, 38, 56, 0.9);
   }
 
-  .navbar > ul > li > a {
+  .navbar a {
     color: var(--white);
+
+    &:hover > span {
+      color: var(--white);
+    }
   }
 }

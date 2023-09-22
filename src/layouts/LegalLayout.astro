@@ -102,4 +102,18 @@ import Layout from "./Layout.astro";
     z-index: -1;
     opacity: 0.2;
   }
+
+  @media screen and (prefers-color-scheme: dark) {
+    .legal {
+      background: #242c3d;
+    }
+
+    aside {
+      color: #d4d9dd;
+    }
+
+    .legal_bg {
+      display: none;
+    }
+  }
 </style>

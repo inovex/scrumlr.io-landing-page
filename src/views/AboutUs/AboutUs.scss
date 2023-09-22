@@ -91,7 +91,7 @@
   font-weight: 600;
 }
 
-[theme="dark"] {
+@media (prefers-color-scheme: dark) {
   .about-us__scrumlr-image > img {
     content: url("/assets/about/stan_dark.webp");
   }

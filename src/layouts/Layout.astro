@@ -136,8 +136,10 @@ const { title } = Astro.props;
     }
   }
 
-  [theme="dark"] {
-    color: var(--white);
-    background: var(--darkmode-background);
+  @media (prefers-color-scheme: dark) {
+    html {
+      color: var(--white);
+      background: var(--darkmode-background);
+    }
   }
 </style>

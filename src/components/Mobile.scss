@@ -92,7 +92,7 @@
   }
 }
 
-[theme="dark"] {
+@media (prefers-color-scheme: dark) {
   .mobile__section {
     background: #1f2d49ff;
   }

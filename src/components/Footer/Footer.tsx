@@ -13,7 +13,7 @@ export const Footer = () => {
     <footer>
       <div className="footer__top">
         <img
-          src="icons/inovex-outline.svg"
+          src="/icons/inovex-outline.svg"
           alt="inovex"
           className="footer__logo"
         />
@@ -118,10 +118,10 @@ export const Footer = () => {
               <a href="/Legal/Privacy">Datenschutz</a>
             </li>
             <li>
-              <a href="#Cookies">Cookie-Richtlinien</a>
+              <a href="/Legal/Cookies">Cookie-Richtlinien</a>
             </li>
             <li>
-              <a href="#Terms">Geschäftsbedingungen</a>
+              <a href="/Legal/Terms">Geschäftsbedingungen</a>
             </li>
           </ul>
           <span>©2023 inovex GmbH. Alle Rechte vorbehalten.</span>
