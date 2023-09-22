@@ -1,3 +1,11 @@
+import { Facebook } from "../../icons/Facebook";
+import { Github } from "../../icons/Github";
+import { Instagram } from "../../icons/Instagram";
+import { Linkedin } from "../../icons/Linkedin";
+import { Podcast } from "../../icons/Podcast";
+import { X } from "../../icons/X";
+import { Xing } from "../../icons/Xing";
+import { Inovex } from "../../icons/Inovex";
 import "./Footer.scss";
 
 export const Footer = () => {
@@ -17,89 +25,71 @@ export const Footer = () => {
           </p>
           <ul className="footer__external-links">
             <li>
-              <a href="https://inovex.de" target="_blank">
-                <img
-                  width="32px"
-                  height="32px"
-                  src="icons/inovex.svg"
-                  alt="inovex"
-                />
+              <a href="https://inovex.de" target="_blank" aria-label="inovex">
+                <Inovex />
               </a>
             </li>
             <li>
-              <a href="https://github.com/inovex" target="_blank">
-                <img
-                  width="32px"
-                  height="32px"
-                  src="icons/github.svg"
-                  alt="github"
-                />
+              <a
+                href="https://github.com/inovex"
+                target="_blank"
+                aria-label="github"
+              >
+                <Github />
               </a>
             </li>
             <li>
               <a
                 href="https://www.linkedin.com/company/inovex/"
                 target="_blank"
+                aria-label="linkedin"
               >
-                <img
-                  width="32px"
-                  height="32px"
-                  src="icons/linkedin.svg"
-                  alt="linkedin"
-                />
+                <Linkedin />
               </a>
             </li>
             <li>
               <a
                 href="https://www.xing.com/companies/inovexgmbh"
                 target="_blank"
+                aria-label="xing"
               >
-                <img
-                  width="32px"
-                  height="32px"
-                  src="icons/xing.svg"
-                  alt="xing"
-                />
+                <Xing />
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/inovexgmbh" target="_blank">
-                <img
-                  width="32px"
-                  height="32px"
-                  src="icons/twitter.svg"
-                  alt="twitter"
-                />
+              <a
+                href="https://twitter.com/inovexgmbh"
+                target="_blank"
+                aria-label="X"
+              >
+                <X />
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/inovexlife/" target="_blank">
-                <img
-                  width="32px"
-                  height="32px"
-                  src="icons/instagram.svg"
-                  alt="instagram"
-                />
+              <a
+                href="https://www.instagram.com/inovexlife/"
+                target="_blank"
+                aria-label="instagram"
+              >
+                <Instagram />
               </a>
             </li>
             <li>
-              <a href="https://www.facebook.com/inovexde" target="_blank">
-                <img
-                  width="32px"
-                  height="32px"
-                  src="icons/facebook.svg"
-                  alt="facebook"
-                />
+              <a
+                href="https://www.facebook.com/inovexde"
+                target="_blank"
+                aria-label="facebook"
+              >
+                <Facebook />
               </a>
             </li>
             <li>
-              <a href="https://digital-future.podigee.io/" target="_blank">
-                <img
-                  width="32px"
-                  height="32px"
-                  src="icons/podcast.svg"
-                  alt="podcast"
-                />
+              <a
+                href="https://digital-future.podigee.io/"
+                target="_blank"
+                aria-label="Podcast"
+              >
+                <Podcast />
               </a>
             </li>
           </ul>
