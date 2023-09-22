@@ -100,23 +100,24 @@ import LegalLayout from "../../layouts/LegalLayout.astro";
     process information about you only where we have legal bases for doing so
     under applicable EU laws. The legal bases depend on the Services you use and
     how you use them. This means we collect and use your information only where:
+  </p>
 
-
-    <ul>
-      <li>
-        We need it to provide you the service, including to operate the service,
-        provide customer support and personalized features and to protect the
-        safety and security of the service;
-      </li>
-      <li>
-        It satisfies a legitimate interest (which is not overridden by your data
-        protection interests), such as for research and development, to market
-        and promote the service and to protect our legal rights and interests;
-      </li>
-      <li>You give us consent to do so for a specific purpose; or</li>
-      <li>We need to process your data to comply with a legal obligation.</li>
-    </ul>
-     If you have consented to our use of information about you for a specific
+  <ul>
+    <li>
+      We need it to provide you the service, including to operate the service,
+      provide customer support and personalized features and to protect the
+      safety and security of the service;
+    </li>
+    <li>
+      It satisfies a legitimate interest (which is not overridden by your data
+      protection interests), such as for research and development, to market and
+      promote the service and to protect our legal rights and interests;
+    </li>
+    <li>You give us consent to do so for a specific purpose; or</li>
+    <li>We need to process your data to comply with a legal obligation.</li>
+  </ul>
+  <p>
+    If you have consented to our use of information about you for a specific
     purpose, you have the right to change your mind at any time, but this will
     not affect any processing that has already taken place.
   </p>
@@ -227,11 +228,37 @@ import LegalLayout from "../../layouts/LegalLayout.astro";
     font-size: 62px;
     line-height: 70px;
     font-weight: 700;
+    margin: 64px 0 96px 0;
   }
 
   h2 {
     font-size: 40px;
     line-height: 48px;
     font-weight: 700;
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    margin: 48px 0 16px 0;
+  }
+
+  p,
+  li {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+  }
+
+  a {
+    color: var(--lightmode-pink);
+    text-decoration: none;
+    transition: all 0.1s ease-in-out;
+
+    &:hover {
+      filter: brightness(1.2);
+      text-decoration: underline;
+    }
   }
 </style>
