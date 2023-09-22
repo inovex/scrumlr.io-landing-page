@@ -12,7 +12,7 @@
   max-height: 900px;
   background: #f2f6ffff;
   gap: 128px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .mobile__image {
@@ -99,5 +99,13 @@
 
   .mobile__dots {
     opacity: 1;
+  }
+
+  .mobile__stan {
+    content: url("assets/mobile/mobile_dark.webp");
+  }
+
+  .mobile__background {
+    content: url("assets/mobile/mobile_background_dark.svg");
   }
 }

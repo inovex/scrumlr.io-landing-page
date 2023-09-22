@@ -1,3 +1,5 @@
+$uniqueness-image-count: 4; // Number of images
+
 .uniqueness__wrapper {
   min-width: 100vw;
   display: flex;
@@ -89,7 +91,6 @@
 }
 
 @media screen and (max-width: 1140px) {
-  $uniqueness-image-count: 4; // Number of images
   .uniqueness__wrapper {
     padding: 32px;
     box-sizing: border-box;
@@ -172,7 +173,7 @@
   }
 
   @media (prefers-color-scheme: dark) {
-    .uniqueness__image > {
+    .uniqueness__section .uniqueness__image > {
       @for $i from 0 to $uniqueness-image-count {
         .uniqueness__image-#{$i} {
           content: url("/assets/uniqueness/uniqueness_dark_#{$i}_mobile.webp");
@@ -219,5 +220,15 @@
   .uniqueness__image-3 {
     left: initial;
     right: -500px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .uniqueness__image > {
+    @for $i from 0 to $uniqueness-image-count {
+      .uniqueness__image-#{$i} {
+        content: url("/assets/uniqueness/uniqueness_dark_#{$i}.webp");
+      }
+    }
   }
 }

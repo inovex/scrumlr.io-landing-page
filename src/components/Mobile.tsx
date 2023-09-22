@@ -16,12 +16,12 @@ export const Mobile = () => {
       <div className="mobile__image">
         <img
           className="mobile__stan"
-          src={`assets/mobile/mobile_${theme}.webp`}
+          src={`assets/mobile/mobile_light.webp`}
           alt="Das Maskottchen Stan zeigt einen Screenshot der mobilen Version von Scrumlr"
         />
         <img
           className="mobile__background"
-          src={`assets/mobile/mobile_background_${theme}.svg`}
+          src={`assets/mobile/mobile_background_light.svg`}
           alt=""
         />
       </div>
