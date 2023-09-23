@@ -97,16 +97,16 @@ export const Footer = () => {
         <nav className="footer__right">
           <ul className="footer__internal-links">
             <li>
-              <a href="#Home">Home</a>
+              <a href="/#Home">Home</a>
             </li>
             <li>
-              <a href="#Features">Features</a>
+              <a href="/#Features">Features</a>
             </li>
             <li>
-              <a href="#About">About</a>
+              <a href="/#About">About</a>
             </li>
             <li>
-              <a href="#GetStarted">Get Started</a>
+              <a href="/#GetStarted">Get Started</a>
             </li>
           </ul>
         </nav>

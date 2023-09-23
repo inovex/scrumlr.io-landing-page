@@ -1,6 +1,7 @@
 ---
 import { Navbar } from "../components/Navbar/Navbar";
 import { Footer } from "../components/Footer/Footer";
+import { ViewTransitions } from "astro:transitions";
 
 export interface Props {
   title: string;
@@ -32,6 +33,7 @@ const { title } = Astro.props;
     </div>
   </body>
 </html>
+<ViewTransitions />
 <style is:global lang="scss">
   @font-face {
     font-family: "Raleway";

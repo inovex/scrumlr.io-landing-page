@@ -1,15 +1,37 @@
 ---
 import { ViewTransitions } from "astro:transitions";
 import Layout from "./Layout.astro";
+
+const navItems = [
+  {
+    href: "/Legal/Privacy",
+    name: "Privacy Policy",
+  },
+  {
+    href: "/Legal/Cookies",
+    name: "Cookie Policy",
+  },
+  {
+    href: "/Legal/Terms",
+    name: "Terms & Conditions",
+  },
+];
 ---
 
 <Layout title="scrumlr">
   <div class="legal">
     <aside>
       <nav>
-        <a href="/Legal/Privacy">Privacy policy</a>
-        <a href="/Legal/Cookies">Cookie policy</a>
-        <a href="/Legal/Terms">Terms & conditions</a>
+        {
+          navItems.map((item) => (
+            <a
+              href={item.href}
+              class={Astro.url.pathname === item.href ? "active" : ""}
+            >
+              {item.name}
+            </a>
+          ))
+        }
       </nav>
       <address>
         <p>scrumlr.io is provided by:</p>
@@ -26,7 +48,7 @@ import Layout from "./Layout.astro";
       </address>
       <p>
         Latest update:<br />
-        <time>November 2021</time>
+        <strong><time>November 2021</time></strong>
       </p>
     </aside>
     <section>
@@ -69,20 +91,38 @@ import Layout from "./Layout.astro";
         font-weight: 500;
         transition: all 0.1s ease-in-out;
 
+        &:visited {
+          color: #333948;
+        }
+
+        &.active {
+          color: var(--lightmode-blue);
+        }
+
         &:hover {
           color: var(--lightmode-pink);
         }
-      }
-
-      p {
-        font-size: 20px;
-        line-height: 28px;
-        font-weight: 400;
       }
     }
 
     address {
       font-style: normal;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 28px;
+      font-weight: 400;
+
+      a {
+        text-decoration: none;
+        color: var(--lightmode-pink);
+
+        &:hover {
+          text-decoration: underline;
+          filter: brightness(1.2);
+        }
+      }
     }
   }
 
@@ -110,6 +150,24 @@ import Layout from "./Layout.astro";
 
     aside {
       color: #d4d9dd;
+
+      nav a {
+        &:visited {
+          color: #d4d9dd;
+        }
+
+        &.active {
+          color: var(--darkmode-blue);
+        }
+
+        &:hover {
+          color: var(--darkmode-pink);
+        }
+      }
+
+      p a {
+        color: var(--darkmode-pink);
+      }
     }
 
     .legal_bg {
