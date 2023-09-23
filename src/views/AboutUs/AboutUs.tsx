@@ -42,7 +42,11 @@ export const AboutUs = () => {
           Startet noch heute und ermöglicht euch eine einwandfreie
           Retrospektive.
         </p>
-        <Link ariaLabel="Jetzt loslegen" className="about-us__cta-button">
+        <Link
+          href="/new"
+          ariaLabel="Jetzt loslegen"
+          className="about-us__cta-button"
+        >
           Jetzt loslegen
         </Link>
       </div>
