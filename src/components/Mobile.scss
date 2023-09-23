@@ -12,7 +12,6 @@
   max-height: 900px;
   background: #f2f6ffff;
   gap: 128px;
-  overflow: hidden visible;
 }
 
 .mobile__image {
@@ -47,6 +46,7 @@
   width: 25%;
   max-width: 600px;
   margin-right: auto;
+  overflow-x: hidden;
 
   > h2,
   p {
