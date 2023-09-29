@@ -12,6 +12,7 @@
   max-height: 900px;
   background: #f2f6ffff;
   gap: 128px;
+  overflow-x: clip;
 }
 
 .mobile__image {
@@ -46,7 +47,6 @@
   width: 25%;
   max-width: 600px;
   margin-right: auto;
-  overflow-x: hidden;
 
   > h2,
   p {
@@ -72,6 +72,10 @@
     gap: 16px;
   }
 
+  .mobile__dots {
+    display: none;
+  }
+
   .mobile__image {
     width: 100%;
     justify-content: center;
@@ -88,7 +92,7 @@
 
   .mobile__text {
     margin: 0;
-    width: 100%;
+    width: 90%;
   }
 }
 
