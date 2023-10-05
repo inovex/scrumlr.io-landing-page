@@ -1,11 +1,12 @@
 .reach-new-heights {
   box-sizing: border-box;
-  background-image: url('/assets/backgrounds/bg_heights_light.svg');
+  background-image: url("/assets/backgrounds/bg_heights_light.svg");
   background-position: 60%;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 1160px; 
-  padding: 120px 0 61px 0; 
+  min-height: 1160px;
+  padding: 120px 0 61px 0;
+  overflow: hidden;
 }
 
 .reach-new-heights__content {
@@ -33,13 +34,23 @@
     margin: 0;
   }
   > h1 > span:nth-of-type(1) {
-    background: linear-gradient(270deg, rgba(96, 150, 255, 0.50) 0%, #0057FF 55.76%, #0044C6 100%);
+    background: linear-gradient(
+      270deg,
+      rgba(96, 150, 255, 0.5) 0%,
+      #0057ff 55.76%,
+      #0044c6 100%
+    );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   > h1 > span:nth-of-type(2) {
-    background: linear-gradient(270deg, rgba(255, 128, 180, 0.50) 8.60%, #FF0069 64.62%, #DA005A 100%);
+    background: linear-gradient(
+      270deg,
+      rgba(255, 128, 180, 0.5) 8.6%,
+      #ff0069 64.62%,
+      #da005a 100%
+    );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -142,7 +153,7 @@
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
-    grid-template-areas: 'icon title' '_ description';
+    grid-template-areas: "icon title" "_ description";
     gap: 0 14px;
 
     > img {
@@ -151,7 +162,7 @@
     > h2 {
       font-size: 24px;
       grid-area: title;
-    } 
+    }
     > p {
       grid-area: description;
       align-self: start;
@@ -201,15 +212,15 @@
     align-self: center;
     justify-self: end;
   }
-    
+
   .reach-new-heights__information {
     gap: 62px;
   }
 }
 
-[theme='dark'] {
+@media (prefers-color-scheme: dark) {
   .reach-new-heights {
-    background-image: url('/assets/backgrounds/bg_heights_dark.svg');
+    background-image: url("/assets/backgrounds/bg_heights_dark.svg");
   }
   .reach-new-heights__image--light {
     display: none;

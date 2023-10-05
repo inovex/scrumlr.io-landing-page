@@ -3,7 +3,7 @@ import "./AboutUs.scss";
 
 export const AboutUs = () => {
   return (
-    <section className="about-us">
+    <section className="about-us" id="About">
       <div className="about-us__scrumlr">
         <div className="about-us__scrumlr-text">
           <h2>Wir sind Scrumlr</h2>
@@ -36,13 +36,17 @@ export const AboutUs = () => {
           alt=""
         />
       </div>
-      <div className="about-us__cta">
+      <div className="about-us__cta" id="GetStarted">
         <h2>Selber loslegen und überzeugen lassen.</h2>
         <p>
           Startet noch heute und ermöglicht euch eine einwandfreie
           Retrospektive.
         </p>
-        <Link ariaLabel="Jetzt loslegen" className="about-us__cta-button">
+        <Link
+          href="/new"
+          ariaLabel="Jetzt loslegen"
+          className="about-us__cta-button"
+        >
           Jetzt loslegen
         </Link>
       </div>

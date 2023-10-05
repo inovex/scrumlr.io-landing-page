@@ -1,3 +1,11 @@
+import { Facebook } from "../../icons/Facebook";
+import { Github } from "../../icons/Github";
+import { Instagram } from "../../icons/Instagram";
+import { Linkedin } from "../../icons/Linkedin";
+import { Podcast } from "../../icons/Podcast";
+import { X } from "../../icons/X";
+import { Xing } from "../../icons/Xing";
+import { Inovex } from "../../icons/Inovex";
 import "./Footer.scss";
 
 export const Footer = () => {
@@ -5,7 +13,7 @@ export const Footer = () => {
     <footer>
       <div className="footer__top">
         <img
-          src="icons/inovex-outline.svg"
+          src="/icons/inovex-outline.svg"
           alt="inovex"
           className="footer__logo"
         />
@@ -17,89 +25,71 @@ export const Footer = () => {
           </p>
           <ul className="footer__external-links">
             <li>
-              <a href="https://inovex.de" target="_blank">
-                <img
-                  width="32px"
-                  height="32px"
-                  src="icons/inovex.svg"
-                  alt="inovex"
-                />
+              <a href="https://inovex.de" target="_blank" aria-label="inovex">
+                <Inovex />
               </a>
             </li>
             <li>
-              <a href="https://github.com/inovex" target="_blank">
-                <img
-                  width="32px"
-                  height="32px"
-                  src="icons/github.svg"
-                  alt="github"
-                />
+              <a
+                href="https://github.com/inovex"
+                target="_blank"
+                aria-label="GitHub"
+              >
+                <Github />
               </a>
             </li>
             <li>
               <a
                 href="https://www.linkedin.com/company/inovex/"
                 target="_blank"
+                aria-label="LinkedIn"
               >
-                <img
-                  width="32px"
-                  height="32px"
-                  src="icons/linkedin.svg"
-                  alt="linkedin"
-                />
+                <Linkedin />
               </a>
             </li>
             <li>
               <a
                 href="https://www.xing.com/companies/inovexgmbh"
                 target="_blank"
+                aria-label="XING"
               >
-                <img
-                  width="32px"
-                  height="32px"
-                  src="icons/xing.svg"
-                  alt="xing"
-                />
+                <Xing />
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/inovexgmbh" target="_blank">
-                <img
-                  width="32px"
-                  height="32px"
-                  src="icons/twitter.svg"
-                  alt="twitter"
-                />
+              <a
+                href="https://twitter.com/inovexgmbh"
+                target="_blank"
+                aria-label="X"
+              >
+                <X />
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/inovexlife/" target="_blank">
-                <img
-                  width="32px"
-                  height="32px"
-                  src="icons/instagram.svg"
-                  alt="instagram"
-                />
+              <a
+                href="https://www.instagram.com/inovexlife/"
+                target="_blank"
+                aria-label="Instagram"
+              >
+                <Instagram />
               </a>
             </li>
             <li>
-              <a href="https://www.facebook.com/inovexde" target="_blank">
-                <img
-                  width="32px"
-                  height="32px"
-                  src="icons/facebook.svg"
-                  alt="facebook"
-                />
+              <a
+                href="https://www.facebook.com/inovexde"
+                target="_blank"
+                aria-label="Facebook"
+              >
+                <Facebook />
               </a>
             </li>
             <li>
-              <a href="https://digital-future.podigee.io/" target="_blank">
-                <img
-                  width="32px"
-                  height="32px"
-                  src="icons/podcast.svg"
-                  alt="podcast"
-                />
+              <a
+                href="https://digital-future.podigee.io/"
+                target="_blank"
+                aria-label="Podcast"
+              >
+                <Podcast />
               </a>
             </li>
           </ul>
@@ -107,16 +97,16 @@ export const Footer = () => {
         <nav className="footer__right">
           <ul className="footer__internal-links">
             <li>
-              <a href="#Home">Home</a>
+              <a href="/#Home">Home</a>
             </li>
             <li>
-              <a href="#Features">Features</a>
+              <a href="/#Features">Features</a>
             </li>
             <li>
-              <a href="#About">About</a>
+              <a href="/#About">About</a>
             </li>
             <li>
-              <a href="#GetStarted">Get Started</a>
+              <a href="/#GetStarted">Get Started</a>
             </li>
           </ul>
         </nav>
@@ -125,13 +115,13 @@ export const Footer = () => {
         <div className="footer__bottom-content">
           <ul className="footer__legal-links">
             <li>
-              <a href="#Data">Datenschutz</a>
+              <a href="/Legal/Privacy">Datenschutz</a>
             </li>
             <li>
-              <a href="#Cookies">Cookie-Richtlinien</a>
+              <a href="/Legal/Cookies">Cookie-Richtlinien</a>
             </li>
             <li>
-              <a href="#Terms">Geschäftsbedingungen</a>
+              <a href="/Legal/Terms">Geschäftsbedingungen</a>
             </li>
           </ul>
           <span>©2023 inovex GmbH. Alle Rechte vorbehalten.</span>
