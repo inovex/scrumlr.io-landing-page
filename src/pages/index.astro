@@ -1,18 +1,18 @@
 ---
-import {ReachNewHeights} from "../views/ReachNewHeights/ReachNewHeights";
-import Choices from '../components/Choices';
-import { Uniqueness } from '../components/Uniqueness';
-import { Mobile } from '../components/Mobile';
-import Layout from '../layouts/Layout.astro';
-import TargetUser from '../views/TargetUser/TargetUser.astro';
-import {AboutUs} from "../views/AboutUs/AboutUs";
+import { ReachNewHeights } from "../views/ReachNewHeights/ReachNewHeights";
+import Choices from "../components/Choices";
+import { Uniqueness } from "../components/Uniqueness";
+import { Mobile } from "../components/Mobile";
+import Layout from "../layouts/Layout.astro";
+import TargetUser from "../views/TargetUser/TargetUser.astro";
+import { AboutUs } from "../views/AboutUs/AboutUs";
 ---
 
-<Layout title="scrumlr">
-    <ReachNewHeights />
-	<Choices client:visible />
-	<Uniqueness client:idle />
-	<Mobile client:idle />
-	<TargetUser />
-	<AboutUs />
+<Layout title="Scrumlr">
+  <ReachNewHeights />
+  <Choices client:visible />
+  <Uniqueness />
+  <Mobile />
+  <TargetUser />
+  <AboutUs />
 </Layout>

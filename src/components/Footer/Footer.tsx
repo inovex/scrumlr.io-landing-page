@@ -33,7 +33,7 @@ export const Footer = () => {
               <a
                 href="https://github.com/inovex"
                 target="_blank"
-                aria-label="github"
+                aria-label="GitHub"
               >
                 <Github />
               </a>
@@ -42,7 +42,7 @@ export const Footer = () => {
               <a
                 href="https://www.linkedin.com/company/inovex/"
                 target="_blank"
-                aria-label="linkedin"
+                aria-label="LinkedIn"
               >
                 <Linkedin />
               </a>
@@ -51,7 +51,7 @@ export const Footer = () => {
               <a
                 href="https://www.xing.com/companies/inovexgmbh"
                 target="_blank"
-                aria-label="xing"
+                aria-label="XING"
               >
                 <Xing />
               </a>
@@ -69,7 +69,7 @@ export const Footer = () => {
               <a
                 href="https://www.instagram.com/inovexlife/"
                 target="_blank"
-                aria-label="instagram"
+                aria-label="Instagram"
               >
                 <Instagram />
               </a>
@@ -78,7 +78,7 @@ export const Footer = () => {
               <a
                 href="https://www.facebook.com/inovexde"
                 target="_blank"
-                aria-label="facebook"
+                aria-label="Facebook"
               >
                 <Facebook />
               </a>
