@@ -23,7 +23,7 @@
     "eslint": "^8.50.0",
     "eslint-plugin-astro": "^0.29.0",
     "eslint-plugin-jsx-a11y": "^6.7.1",
-    "@typescript-eslint/parser": "^6.7.2",
+    "@typescript-eslint/parser": "^6.7.3",
     "sass": "^1.68.0"
   }
 }
