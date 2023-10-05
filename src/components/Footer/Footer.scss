@@ -61,6 +61,7 @@ footer {
   align-items: center;
 
   a {
+    color: var(--white);
     height: 32px;
     width: 32px;
     display: block;
@@ -140,23 +141,32 @@ footer a {
   border: 2px solid transparent;
   border-radius: 4px;
 
+  &:hover {
+    color: var(--lightmode-pink);
+  }
+
   &:focus-visible {
     outline: none;
     border-color: var(--lightmode-pink);
   }
-  &:hover {
-    color: var(--lightmode-pink);
-  }
 }
 
-[theme="dark"] {
+@media (prefers-color-scheme: dark) {
   footer {
     background-color: var(--darkmode-blue);
+
+    a:hover {
+      color: var(--darkmode-pink);
+    }
+
+    a:focus-visible {
+      border-color: var(--darkmode-pink);
+    }
   }
 
-  a:hover {
-    color: var(--darkmode-pink);
-    color: var(--white);
+  .footer__legal-links a,
+  .footer__bottom {
+    color: var(--darkmode-blue);
   }
 }
 

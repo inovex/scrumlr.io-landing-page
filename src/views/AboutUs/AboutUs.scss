@@ -5,6 +5,7 @@
   align-items: center;
   gap: 64px;
   padding-top: 64px;
+  overflow: hidden;
 }
 
 .about-us__scrumlr {
@@ -90,7 +91,7 @@
   font-weight: 600;
 }
 
-[theme="dark"] {
+@media (prefers-color-scheme: dark) {
   .about-us__scrumlr-image > img {
     content: url("/assets/about/stan_dark.webp");
   }
@@ -117,7 +118,7 @@
     flex-direction: column;
     gap: 0;
     text-align: center;
-    padding: 64px 0 128px 0;
+    padding: 0 0 12vw 0;
     background-size: 100%;
     background-position: 100% 180%;
   }

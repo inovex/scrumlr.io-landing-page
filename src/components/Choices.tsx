@@ -7,19 +7,14 @@ import Icon from "./Icon";
 
 const Choices = () => {
   const [position, setPosition] = useState(0);
-  const [theme, setTheme] = useState("dark");
+  const theme = useMediaQuery("(prefers-color-scheme: dark)")
+    ? "dark"
+    : "light";
   const [duration, setDuration] = useState(4000);
   const isMobile = useMediaQuery("(max-width: 850px)") ?? true;
 
   const setVideoDuration = (duration: number) =>
     isMobile && setDuration(duration * 1000);
-
-  useEffect(() => {
-    const theme = document.documentElement.getAttribute("theme");
-    if (theme) {
-      setTheme(theme);
-    }
-  }, []);
 
   useEffect(() => {
     setPosition(0);
@@ -42,7 +37,7 @@ const Choices = () => {
   }, [position, duration, isMobile]);
 
   return (
-    <section className="choices" id="features">
+    <section className="choices" id="Features">
       <h2>Euer Board – Eure Entscheidungen.</h2>
       <p>Wählt eine beliebige Retrospektive, die zu eurem Team passt.</p>
       <div className="choices__content">

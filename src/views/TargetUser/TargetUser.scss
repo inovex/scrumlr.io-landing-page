@@ -12,7 +12,7 @@
     text-align: center;
     font-size: 24px;
     font-weight: 700;
-    line-height: normal;  
+    line-height: normal;
     margin: 0;
   }
   > p {
@@ -48,10 +48,10 @@
   }
 }
 
-[theme='dark'] {
+@media (prefers-color-scheme: dark) {
   .target-user {
     color: var(--white);
-    background-color: #1B2435;
+    background-color: #1b2435;
   }
   .target-user__gif--light {
     display: none;

@@ -13,7 +13,9 @@
   box-shadow: 0 3px 12px 0 rgba(255, 0, 105, 0.3);
   background: var(--lightmode-pink);
   cursor: pointer;
-  transition: transform 80ms ease-in-out, box-shadow 80ms ease-in-out;
+  transition:
+    transform 80ms ease-in-out,
+    box-shadow 80ms ease-in-out;
   text-decoration: none;
   width: fit-content;
 
@@ -58,10 +60,13 @@
   }
 }
 
-[theme="dark"] {
+@media (prefers-color-scheme: dark) {
   .link {
     background: var(--darkmode-pink);
 
+    &:hover {
+      color: var(--white);
+    }
     &:active {
       background: var(--lightmode-pink);
     }
