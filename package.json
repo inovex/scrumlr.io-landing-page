@@ -11,18 +11,18 @@
     "lint": "eslint . --ext .js,.ts,.astro"
   },
   "dependencies": {
-    "@astrojs/react": "^3.0.2",
+    "@astrojs/react": "^3.0.3",
     "@types/react": "^18.2.25",
-    "@types/react-dom": "^18.2.8",
-    "astro": "^3.2.2",
+    "@types/react-dom": "^18.2.11",
+    "astro": "^3.2.4",
     "classnames": "^2.3.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
-    "@typescript-eslint/parser": "^6.7.3",
+    "@typescript-eslint/parser": "^6.7.5",
     "prettier-plugin-astro": "^0.12.0",
-    "eslint": "^8.50.0",
+    "eslint": "^8.51.0",
     "eslint-plugin-astro": "^0.29.0",
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "sass": "^1.68.0"
