@@ -10,7 +10,7 @@
   }
 }
 
-[theme="dark"] {
+@media (prefers-color-scheme: dark) {
   #features_light_1 {
     display: none;
   }

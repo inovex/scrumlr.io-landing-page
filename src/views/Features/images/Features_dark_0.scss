@@ -12,7 +12,7 @@
   }
 }
 
-[theme="dark"] {
+@media (prefers-color-scheme: dark) {
   #features_dark_0 {
     display: block;
   }
