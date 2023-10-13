@@ -1,0 +1,46 @@
+.feedback_card {
+    width: 333px;
+    height: 333px;
+    filter: var(--shadow);
+    background-color: var(--white);
+    border-radius: 16px;
+    margin: 0 16px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -1px;
+        width: 70px;
+        height: 3px;
+        background-color: var(--lightmode-pink);
+        border-radius: 2px;
+    }
+
+    .feedback_card-text {
+        margin: 0;
+    }
+
+    .feedback_card-author {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+
+        img {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+        }
+
+        .feedback_card-author-info {
+            .feedback_card-author-name {
+                margin: 0;
+            }
+        }
+    }
+}

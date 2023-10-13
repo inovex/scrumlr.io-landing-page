@@ -1,0 +1,77 @@
+---
+import FeedbackCarousel from "./FeedbackCarousel.tsx";
+export type FeedbackItem = {
+  id: number;
+  name: string;
+  role: string;
+  company: string;
+  image: string;
+  feedback: string;
+};
+
+const feedback: FeedbackItem[] = [
+  {
+    id: 1,
+    name: "John Doe",
+    role: "CEO",
+    company: "ABC Inc.",
+    image: "favicon.svg",
+    feedback: "Scrumlr makes regular updates, making the tool even more intuitive.",
+  },
+  {
+    id: 2,
+    name: "Dohn Joe",
+    role: "CFO",
+    company: "ABC Inc.",
+    image: "favicon.svg",
+    feedback: "Amazing tool for planning our agendas in an cooperative way.",
+  },
+  {
+    id: 3,
+    name: "Hans Peter",
+    role: "CXO",
+    company: "ABC Inc.",
+    image: "favicon.svg",
+    feedback: "Our team loved this tool. It made the everything - especially the communication faster and easier 👏🏼",
+  },
+  {
+    id: 4,
+    name: "Peter Hans",
+    role: "Praktikant",
+    company: "ABC Inc.",
+    image: "favicon.svg",
+    feedback: "This Web-app has so many useful and cool features!",
+  },
+  {
+    id: 5,
+    name: "Peter Lusting",
+    role: "CTO",
+    company: "ABC Inc.",
+    image: "favicon.svg",
+    feedback: "Gumo zusammen, scruml ist supi",
+  },
+];
+---
+
+<section class="feedback">
+  <h2>Our satisfied Users:</h2>
+  <p>Happy users are important to us. That's why we value every feedback.</p>
+  <div class="feedback_carousel-container">
+    <FeedbackCarousel items={feedback} client:only="react" />
+  </div>
+</section>
+
+<style lang="scss">
+  .feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 128px;
+  }
+
+  .feedback_carousel-container {
+    width: 100%;
+    overflow-x: clip;
+    margin-top: 96px;
+  }
+</style>
