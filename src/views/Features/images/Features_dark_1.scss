@@ -1,0 +1,25 @@
+#features_dark_1 {
+  display: none;
+
+  #card-2-bg {
+    transition: stroke 0.1s ease-in-out;
+  }
+
+  &:hover {
+    #card-2-bg {
+      stroke: #45ffa9;
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  #features_dark_1 {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #features_dark_1 {
+    transform: scale(0.8);
+  }
+}

@@ -1,0 +1,28 @@
+#features_dark_2 {
+  display: none;
+
+  * {
+    transition: all 0.1s ease-in-out;
+  }
+
+  &:hover {
+    #printViewBG {
+      fill: #6096ff;
+    }
+    #printIcon > path {
+      stroke: rgb(0, 87, 255);
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  #features_dark_2 {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #features_dark_2 {
+    transform: scale(0.8);
+  }
+}

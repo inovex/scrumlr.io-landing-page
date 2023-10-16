@@ -17,6 +17,7 @@
     transform 80ms ease-in-out,
     box-shadow 80ms ease-in-out;
   text-decoration: none;
+  width: fit-content;
 
   &:hover {
     transform: scale(1.05);
