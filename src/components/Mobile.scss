@@ -1,0 +1,134 @@
+.mobile__section {
+  --stan-height: 50vh;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  margin: 2vh 0 128px 0;
+  height: calc(var(--stan-height) + 100px);
+  min-height: 600px;
+  max-height: 900px;
+  background: #f2f6ffff;
+  gap: 128px;
+  overflow-x: clip;
+}
+
+.mobile__image {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  .mobile__stan {
+    right: 0;
+    height: var(--stan-height);
+    min-height: 500px;
+    max-height: 800px;
+    z-index: 1;
+  }
+
+  .mobile__background {
+    position: absolute;
+    height: calc(var(--stan-height) + 300px);
+
+    min-height: 800px;
+    max-height: 1100px;
+    right: 0;
+    z-index: 0;
+  }
+}
+
+.mobile__text {
+  position: relative;
+  width: 25%;
+  max-width: 600px;
+  margin-right: auto;
+
+  > h2,
+  p {
+    text-wrap: balance;
+  }
+}
+
+.mobile__dots {
+  position: absolute;
+  right: -75%;
+  opacity: 0.05;
+}
+
+@media screen and (max-width: 700px) {
+  h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .mobile__section {
+    box-sizing: border-box;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: fit-content;
+    padding: 64px 0 0 0;
+    gap: 16px;
+  }
+
+  .mobile__dots {
+    display: none;
+  }
+
+  .mobile__image {
+    width: 100%;
+    justify-content: center;
+
+    .mobile__stan {
+      min-height: unset;
+      height: 380px;
+      content: url("/assets/mobile/mobile_light--mobile.webp");
+    }
+
+    .mobile__background {
+      min-height: unset;
+      height: 540px;
+      right: 46px;
+    }
+  }
+
+  .mobile__text {
+    margin: 0;
+    width: 90%;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .mobile__image .mobile__stan {
+      content: url("/assets/mobile/mobile_dark--mobile.webp");
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .mobile__section {
+    background: #1f2d49ff;
+  }
+
+  .mobile__dots {
+    opacity: 1;
+  }
+
+  .mobile__stan {
+    content: url("/assets/mobile/mobile_dark.webp");
+  }
+
+  .mobile__background {
+    content: url("/assets/mobile/mobile_background_dark.svg");
+  }
+}

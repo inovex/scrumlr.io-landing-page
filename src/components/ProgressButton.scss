@@ -47,7 +47,7 @@
   border-radius: 4px;
 }
 
-[theme="dark"] {
+@media (prefers-color-scheme: dark) {
   .progress-button {
     &--active,
     &:hover {

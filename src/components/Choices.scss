@@ -28,7 +28,7 @@
   gap: 32px;
 
   .choices__image-wrapper {
-    height: min(34vw, 450px);
+    height: min(34vw, 750px);
     max-width: min(80%, 1320px);
   }
 
@@ -115,16 +115,18 @@
   }
 }
 
-[theme="dark"] .choices__content {
-  background-image: url("/assets/backgrounds/bg_cloud_dark.svg");
+@media (prefers-color-scheme: dark) {
+  .choices__content {
+    background-image: url("/assets/backgrounds/bg_cloud_dark.svg");
 
-  .choices__video-button {
-    background: var(--darkmode-blue);
-  }
+    .choices__video-button {
+      background: var(--darkmode-blue);
+    }
 
-  .choices__video-position-buttons {
-    button {
-      background: var(--darkmode-pink);
+    .choices__video-position-buttons {
+      button {
+        background: var(--darkmode-pink);
+      }
     }
   }
 }

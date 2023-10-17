@@ -1,98 +1,142 @@
 ---
-import {Navbar} from '../components/Navbar/Navbar';
-import {Footer} from "../components/Footer/Footer";
+import { Navbar } from "../components/Navbar/Navbar";
+import { Footer } from "../components/Footer/Footer";
+import { ViewTransitions } from "astro:transitions";
 
 export interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description">
-		<meta name="viewport" content="width=device-width, initial-scale=1 viewport-fit=cover" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1 viewport-fit=cover"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
     <div class="body_wrapper">
-        <Navbar client:load />
-		<slot />
-    <Footer client:visible />
-    <script>
-    document.addEventListener('DOMContentLoaded', (event) => {
-      const theme = localStorage.getItem('theme') || window.matchMedia("(prefers-color-scheme: dark)").matches ? 'dark' : 'light';
-      document.documentElement.setAttribute('theme', theme);
-    });
-  </script>
-  </div>
-	</body>
+      <Navbar client:load />
+      <main>
+        <slot />
+      </main>
+      <Footer />
+    </div>
+  </body>
 </html>
+<ViewTransitions />
 <style is:global lang="scss">
-	@font-face {
-		font-family: 'Raleway';
-		font-weight: 100 900;
-		src: local('Pacifico Regular'), url('/fonts/Raleway-VariableFont_wght.ttf') format('truetype');
-		font-display: swap;
-	}
+  @font-face {
+    font-family: "Raleway";
+    font-weight: 100 900;
+    src:
+      local("Pacifico Regular"),
+      url("/fonts/Raleway-VariableFont_wght.ttf") format("truetype");
+    font-display: swap;
+  }
 
-	@font-face {
-		font-family: 'Raleway';
-		font-style: italic;
-		font-weight: 100 900;
-		src: local('Pacifico Regular'), url('/fonts/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
-		font-display: swap;
-	}
+  @font-face {
+    font-family: "Raleway";
+    font-style: italic;
+    font-weight: 100 900;
+    src:
+      local("Pacifico Regular"),
+      url("/fonts/Raleway-Italic-VariableFont_wght.ttf") format("truetype");
+    font-display: swap;
+  }
 
-	html {
-		font-family: 'Raleway', sans-serif;
-		box-sizing: border-box;
-		scroll-behavior: smooth;
+  html {
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 
-		--white: #ffffff;
-		--lightmode-black: #111111;
-		--lightmode-background: #ffffff;
-		--lightmode-blue: #0057ff;
-		--lightmode-blue-link-pressed: #0044c6;
-		--lightmode-pink: #ff0069;
-		--lightmode-pink-link-pressed: #da005a;
-		--lightmode-pink--desaturated: #ffe6f0;
+    --white: #ffffff;
+    --lightmode-black: #111111;
+    --lightmode-background: #ffffff;
+    --lightmode-blue: #0057ff;
+    --lightmode-blue-link-pressed: #0044c6;
+    --lightmode-pink: #ff0069;
+    --lightmode-pink-link-pressed: #da005a;
+    --lightmode-pink--desaturated: #ffe6f0;
 
-		--shadow: drop-shadow(0px 2px 32px rgba(0, 0, 0, 0.2));
+    --shadow: drop-shadow(0px 2px 32px rgba(0, 0, 0, 0.2));
 
-		--darkmode-background: #242C3D;
-		--darkmode-blue: #6b9cff;
-		--darkmode-pink: #ff80b4;
-		--darkmode-pink--desaturated: #353044;
+    --darkmode-background: #242c3d;
+    --darkmode-blue: #6b9cff;
+    --darkmode-pink: #ff80b4;
+    --darkmode-pink--desaturated: #353044;
 
-		--darkmode-shadow: 0 2px 32px -12px #0f131b;
+    --darkmode-shadow: 0 2px 32px -12px #0f131b;
 
-		--light-grey-3: #edeff2;
-		--dark-grey: #939daa;
+    --light-grey-3: #edeff2;
+    --dark-grey: #939daa;
 
-		color: var(--lightmode-black);
-		background: var(--lightmode-background);
-	}
-	body {
-		margin: 0;
-		padding: 0;
-		min-height: 100vh;
-	}
+    color: var(--lightmode-black);
+    background: var(--lightmode-background);
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  }
 
-	.body_wrapper {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		overflow-x: hidden;
-	}
+  section {
+    overflow-x: clip;
+  }
 
-	[theme="dark"] {
-		color: var(--white);
-		background: var(--darkmode-background);
-	}
+  .body_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  main {
+    width: 100vw;
+    min-width: 320px;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  h3 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  @media screen and (min-width: 992px) {
+    h2,
+    h3 {
+      font-size: 40px;
+      line-height: 48px;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    html {
+      color: var(--white);
+      background: var(--darkmode-background);
+    }
+  }
 </style>

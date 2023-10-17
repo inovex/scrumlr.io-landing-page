@@ -1,0 +1,23 @@
+#features_light_0 {
+  .voting-menu {
+    transition: stroke 0.1s ease-in-out;
+  }
+
+  &:hover {
+    .voting-menu {
+      stroke: #ff80b4;
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  #features_light_0 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #features_light_0 {
+    transform: scale(0.8);
+  }
+}

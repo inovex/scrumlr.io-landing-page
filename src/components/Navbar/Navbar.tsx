@@ -1,12 +1,12 @@
-import {useState, useEffect} from 'react';
-import classNames from 'classnames';
-import { Logo } from '../Logo';
-import { Link } from '../Link/Link';
-import './Navbar.scss';
+import { useState, useEffect } from "react";
+import classNames from "classnames";
+import { Logo } from "../Logo";
+import { Link } from "../Link/Link";
+import "./Navbar.scss";
 
 export const Navbar = () => {
   const [isNavbarTransparent, setIsNavbarTransparent] = useState(true);
-  
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
@@ -17,42 +17,40 @@ export const Navbar = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
-    <nav className={classNames('navbar', {'navbar--opaque': !isNavbarTransparent})}>
+    <nav
+      className={classNames("navbar", {
+        "navbar--opaque": !isNavbarTransparent,
+      })}
+    >
       <ul>
         <li>
-          <a aria-label='Startseite' href='/'>
+          <a aria-label="Startseite" href="/">
             <Logo />
           </a>
         </li>
         <li>
-          <a href='#home'>
-            Startseite
-          </a>
+          <a href="/#Home">Startseite</a>
         </li>
         <li>
-          <a href='#functions'>
-            Funktionen
-          </a>
+          <a href="/#Features">Funktionen</a>
         </li>
         <li>
-          <a href='#about'>
-            Über uns
-          </a>
+          <a href="/#About">Über uns</a>
         </li>
         <li>
           <Link
-            href='/new'
-            ariaLabel='Board erstellen'
-            className='navbar__link'
-            icon={<img src='/assets/icons/icon-plus.svg' alt="Plus" />}
+            href="/new"
+            ariaLabel="Board erstellen"
+            className="navbar__link"
+            icon={<img src="/assets/icons/icon-plus.svg" alt="Plus" />}
           >
             Board erstellen
           </Link>
@@ -60,4 +58,4 @@ export const Navbar = () => {
       </ul>
     </nav>
   );
-}
+};

@@ -15,25 +15,25 @@
   stop-color: #0057ff;
 }
 
-[theme="dark"] {
+@media (prefers-color-scheme: dark) {
   .scrumlr-logo__paths {
     fill: #fff;
   }
 
   .scrumlr-logo__stop:nth-of-type(1),
-  .scrumlr-logo__stop:nth-of-type(2){
+  .scrumlr-logo__stop:nth-of-type(2) {
     stop-color: #0057ff;
   }
   .scrumlr-logo__stop:nth-of-type(3),
-  .scrumlr-logo__stop:nth-of-type(4){
+  .scrumlr-logo__stop:nth-of-type(4) {
     stop-color: #5e00ff;
   }
   .scrumlr-logo__stop:nth-of-type(5),
-  .scrumlr-logo__stop:nth-of-type(6){
+  .scrumlr-logo__stop:nth-of-type(6) {
     stop-color: #c000ff;
   }
   .scrumlr-logo__stop:nth-of-type(7),
-  .scrumlr-logo__stop:nth-of-type(8){
+  .scrumlr-logo__stop:nth-of-type(8) {
     stop-color: #e20360;
   }
 }

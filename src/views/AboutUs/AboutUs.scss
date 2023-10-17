@@ -1,0 +1,186 @@
+.about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  padding-top: 64px;
+  overflow: hidden;
+}
+
+.about-us__scrumlr {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: auto min(64vh, 1600px);
+  background-position: 55%;
+  gap: 10vw;
+}
+
+.about-us__scrumlr-text {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 50%;
+  margin: 32px 0;
+
+  > * {
+    width: 66%;
+    max-width: 448px;
+  }
+}
+
+.about-us__scrumlr-image {
+  width: 50%;
+  z-index: 1;
+
+  > img {
+    height: 62vh;
+    min-height: 420px;
+    max-height: 640px;
+    margin-bottom: -2vh;
+    margin-top: 12vh;
+  }
+}
+
+.about-us__background {
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.about-us__background-details {
+  position: absolute;
+  height: 140%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.about-us__cta {
+  text-align: center;
+  background-color: #f4f8ff;
+  width: 100%;
+  padding: 96px 0;
+  margin-top: -64px;
+}
+
+.about-us__scrumlr-text,
+.about-us__cta {
+  > h2 {
+    font-size: 40px;
+    line-height: 48px;
+    text-wrap: balance;
+  }
+
+  > p {
+    font-size: 20px;
+    line-height: 28px;
+    text-wrap: balance;
+  }
+}
+
+.bold {
+  font-weight: 600;
+}
+
+@media (prefers-color-scheme: dark) {
+  .about-us__scrumlr-image > img {
+    content: url("/assets/about/stan_dark.webp");
+  }
+
+  .about-us__background {
+    content: url("/assets/about/background_dark.svg");
+  }
+
+  .about-us__background-details {
+    content: url("/assets/about/background_details_dark.svg");
+  }
+
+  .about-us__cta {
+    background-color: #1b2435;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .about-us {
+    gap: 0;
+  }
+
+  .about-us__scrumlr {
+    flex-direction: column;
+    gap: 0;
+    text-align: center;
+    padding: 0 0 12vw 0;
+    background-size: 100%;
+    background-position: 100% 180%;
+  }
+
+  .about-us__scrumlr-text {
+    width: 100%;
+    align-items: center;
+
+    > * {
+      width: 80%;
+    }
+  }
+
+  .about-us__scrumlr-text,
+  .about-us__cta {
+    > h2 {
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    > p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  .about-us__scrumlr-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    > img {
+      margin: 0 0 16px 0;
+      height: 42vh;
+      min-height: 280px;
+      max-height: 480px;
+      max-width: 90vw;
+      object-fit: contain;
+    }
+  }
+
+  .about-us__background {
+    top: 0;
+    height: calc(100% - 128px);
+  }
+
+  .about-us__background-details {
+    content: url("/assets/about/background_details_light_mobile.svg");
+    right: -900px;
+    top: 224px;
+    height: 80%;
+  }
+
+  .about-us__cta {
+    padding: 64px;
+    margin-top: -128px;
+
+    > h2 {
+      z-index: 1;
+    }
+    > p {
+      margin-bottom: 48px;
+    }
+  }
+}

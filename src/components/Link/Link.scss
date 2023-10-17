@@ -10,11 +10,14 @@
   font-size: 1.125rem;
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  box-shadow: 0 3px 12px 0 rgba(255, 0, 105, 0.30);
+  box-shadow: 0 3px 12px 0 rgba(255, 0, 105, 0.3);
   background: var(--lightmode-pink);
   cursor: pointer;
-  transition: transform 80ms ease-in-out, box-shadow 80ms ease-in-out;
+  transition:
+    transform 80ms ease-in-out,
+    box-shadow 80ms ease-in-out;
   text-decoration: none;
+  width: fit-content;
 
   &:hover {
     transform: scale(1.05);
@@ -27,7 +30,7 @@
   &:focus {
     border: 3px solid var(--darkmode-pink);
     padding: 13px 29px;
-    box-shadow: 0 4px 14px 0 rgba(255, 0, 105, 0.30);
+    box-shadow: 0 4px 14px 0 rgba(255, 0, 105, 0.3);
     outline: none;
   }
   &:disabled {
@@ -43,7 +46,7 @@
   background-color: unset;
   box-shadow: none;
   border: 0;
-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 
   &:hover {
     transform: none;
@@ -57,10 +60,13 @@ transition: all 0.2s ease-in-out;
   }
 }
 
-[theme='dark'] {
+@media (prefers-color-scheme: dark) {
   .link {
     background: var(--darkmode-pink);
 
+    &:hover {
+      color: var(--white);
+    }
     &:active {
       background: var(--lightmode-pink);
     }
