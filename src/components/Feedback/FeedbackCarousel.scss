@@ -2,8 +2,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1460px;
+  height: 400px;
+  width: 100%;
   overflow-x: clip;
+}
+
+.feedback-carousel_group {
+  display: flex;
+  flex-direction: row;
 }
 
 .feedback-carousel_controls {
@@ -22,6 +28,24 @@
   background-color: var(--lightmode-pink);
   cursor: pointer;
   opacity: 0.5;
+
+  transition: all 0.1s ease-in-out;
+
+  &:hover {
+    transform: scale(1.4);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--darkmode-pink);
+  }
+
+  &.active {
+    opacity: 1;
+  }
+}
+
+.use-spring-carousel-item {
+  justify-content: center;
 }
 
 .feedback_card {

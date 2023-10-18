@@ -1,11 +1,22 @@
 import { useEffect, useMemo, useState } from "react";
-import { useTransitionCarousel } from "react-spring-carousel";
+import { useSpringCarousel } from "react-spring-carousel";
 import type { FeedbackItem } from "./Feedback.astro";
 import useElementSize from "../../hooks/useElementSize";
 import "./FeedbackCarousel.scss";
 
 type FeedbackCarouselProps = {
   items: FeedbackItem[];
+};
+
+type CarouselEvent = {
+  eventName: string;
+  // Indicates where you're sliding to
+  slideActionType: "prev" | "next";
+  // Props of the next active item
+  nextItem: {
+    id: string;
+    index: number;
+  };
 };
 
 const FeedbackCard = (item: FeedbackItem) => (
@@ -27,23 +38,15 @@ const groupArrayIntoChunks = (
   inputArray: FeedbackItem[],
   chunkSize: number,
 ): FeedbackItem[][] => {
-  if (chunkSize <= 0) {
-    // Handle invalid chunk size (zero or negative value)
-    console.error("Invalid chunk size");
-    return [];
-  }
+  if (chunkSize <= 0) return [];
 
   const groupedArray: FeedbackItem[][] = [];
   for (let i = 0; i < inputArray.length; i += chunkSize) {
-    // Calculate the end index for the current chunk
     const endIndex = Math.min(i + chunkSize, inputArray.length);
-    // Slice the input array to create a chunk
     const chunk = inputArray.slice(i, endIndex);
-    // Push the chunk to the grouped array
     groupedArray.push(chunk);
   }
 
-  console.log(groupedArray);
   return groupedArray;
 };
 
@@ -51,6 +54,7 @@ const FeedbackCarousel = ({ items }: FeedbackCarouselProps) => {
   const [groupedFeedback, setGroupedFeedback] = useState<FeedbackItem[][]>(
     groupArrayIntoChunks(items, 4),
   );
+  const [activeSlide, setActiveSlide] = useState(0);
   const size = useElementSize("feedback-carousel");
   const availableSpace = size ? Math.floor(size.width / 365) : 1;
   const itemsPerSlide = availableSpace > 4 ? 4 : availableSpace;
@@ -65,23 +69,37 @@ const FeedbackCarousel = ({ items }: FeedbackCarouselProps) => {
     slideToNextItem,
     useListenToCustomEvent,
     slideToItem,
-  } = useTransitionCarousel({
+  } = useSpringCarousel({
     items: groupedFeedback.map((group, index) => ({
       id: index,
-      renderItem: group.map((item) => FeedbackCard(item)),
+      renderItem: (
+        <ul className="feedback-carousel_group">
+          {group.map((item) => FeedbackCard(item))}
+        </ul>
+      ),
     })),
+  });
+
+  useListenToCustomEvent((event: CarouselEvent) => {
+    if (event.eventName === "onSlideStartChange") {
+      setActiveSlide(event.nextItem.index);
+    }
   });
 
   return (
     <div id="feedback-carousel">
       {groupedFeedback?.length && carouselFragment}
-      {groupedFeedback?.length}
       <div className="feedback-carousel_controls">
-        {Array.from({ length: items.length }).map((_, index) => (
+        {groupedFeedback.map((_, index) => (
           <button
             key={index}
-            className="feedback-carousel_dot"
-            onClick={() => slideToItem(index)}
+            className={`feedback-carousel_dot ${
+              activeSlide === index ? "active" : ""
+            }`}
+            onClick={() => {
+              slideToItem(index);
+              setActiveSlide(index);
+            }}
           />
         ))}
       </div>
