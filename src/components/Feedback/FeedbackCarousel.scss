@@ -25,6 +25,7 @@
   all: unset;
   padding: 16px 8px;
   cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.7, 0.53, 0.17, 0.99);
 
   &:hover > .feedback-carousel__dot {
     transform: scale(1.4);
@@ -32,6 +33,26 @@
 
   &:focus-visible > .feedback-carousel__dot {
     outline: 3px solid var(--darkmode-pink);
+  }
+
+  &.active > .feedback-carousel__dot {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+
+  &.small > .feedback-carousel__dot {
+    width: 4px;
+    height: 4px;
+  }
+
+  &.hidden {
+    padding: 0;
+
+    > .feedback-carousel__dot {
+      width: 0px;
+      height: 0px;
+      margin: 0;
+    }
   }
 }
 
@@ -44,22 +65,6 @@
   opacity: 0.5;
 
   transition: all 0.4s cubic-bezier(0.7, 0.53, 0.17, 0.99);
-
-  &.active {
-    transform: scale(1.2);
-    opacity: 1;
-  }
-
-  &.small {
-    width: 4px;
-    height: 4px;
-  }
-
-  &.hidden {
-    width: 0px;
-    height: 0px;
-    margin: 0;
-  }
 }
 
 .use-spring-carousel-item {
