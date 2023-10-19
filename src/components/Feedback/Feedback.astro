@@ -1,17 +1,44 @@
 ---
 import FeedbackCarousel from "./FeedbackCarousel.tsx";
 export type FeedbackItem = {
-  id: number;
   name: string;
   role: string;
-  company: string;
-  image: string;
+  company?: string;
+  image?: string;
   feedback: string;
 };
 
 const feedback: FeedbackItem[] = [
   {
-    id: 1,
+    name: "Amelia Febrer",
+    role: "CEO",
+    company: "Regardi",
+    image: "favicon.svg",
+    feedback:
+      "Scumlr macht Retrospektiven zu einem Event! Man freut sich immer wieder drauf. Schönes Design und einfache Bedienung. Ich bin ein absoluter Fan.",
+  },
+  {
+    name: "Filip Lukenic",
+    role: "Produktmanager",
+    feedback:
+      "Scrumlr hat mich seit der ersten Nutzung begeistert! Das Tool ist aus meinem Arbeitsalltag nicht mehr wegzudenken und ich kann es nur jedem empfehlen, der auf agile Arbeitsweisen setzt.",
+  },
+  {
+    name: "Yann Carpy",
+    role: "Product Owner",
+    company: "inovex",
+    image: "favicon.svg",
+    feedback:
+      "Dank der Einfachheit und den Möglichkeiten von Scrumlr können wir effektive Retros auch ohne dedizierten Moderator durchführen.",
+  },
+  {
+    name: "Melanie Laudin",
+    role: "Usability Engineer",
+    image: "favicon.svg",
+    feedback:
+      "Scrumlr ist das perfekte Tool für spontane Retros: Es ist sehr leicht zu benutzen, hat eine niedrige Einstiegshürde und die coolsten Avatare ever!",
+  },
+  {
     name: "John Doe",
     role: "CEO",
     company: "ABC Inc.",
@@ -20,7 +47,6 @@ const feedback: FeedbackItem[] = [
       "Scrumlr makes regular updates, making the tool even more intuitive.",
   },
   {
-    id: 2,
     name: "Dohn Joe",
     role: "CFO",
     company: "ABC Inc.",
@@ -28,7 +54,6 @@ const feedback: FeedbackItem[] = [
     feedback: "Amazing tool for planning our agendas in an cooperative way.",
   },
   {
-    id: 3,
     name: "Hans Peter",
     role: "CXO",
     company: "ABC Inc.",
@@ -37,7 +62,6 @@ const feedback: FeedbackItem[] = [
       "Our team loved this tool. It made the everything - especially the communication faster and easier 👏🏼",
   },
   {
-    id: 4,
     name: "Peter Hans",
     role: "Praktikant",
     company: "ABC Inc.",
@@ -45,7 +69,6 @@ const feedback: FeedbackItem[] = [
     feedback: "This Web-app has so many useful and cool features!",
   },
   {
-    id: 5,
     name: "Peter Lusting",
     role: "CTO",
     company: "ABC Inc.",
@@ -53,7 +76,13 @@ const feedback: FeedbackItem[] = [
     feedback: "Gumo zusammen, scruml ist supi",
   },
   {
-    id: 6,
+    name: "Selina Lusting",
+    role: "PO",
+    company: "scrumlr Inc.",
+    image: "favicon.svg",
+    feedback: "Also ich finde scrumlr nicht so cool...",
+  },
+  {
     name: "Selina Lusting",
     role: "PO",
     company: "scrumlr Inc.",

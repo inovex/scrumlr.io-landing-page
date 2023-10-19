@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import { useSpringCarousel } from "react-spring-carousel";
 import type { FeedbackItem } from "./Feedback.astro";
 import useElementSize from "../../hooks/useElementSize";
@@ -19,20 +19,37 @@ type CarouselEvent = {
   };
 };
 
-const FeedbackCard = (item: FeedbackItem) => (
-  <div className="feedback_card" key={item.id}>
-    <p className="feedback_card-text">{item.feedback}</p>
-    <div className="feedback_card-author">
-      <img src={item.image} alt={item.name} />
-      <div className="feedback_card-author-info">
-        <h4 className="feedback_card-author-name">{item.name}</h4>
-        <span className="feedback_card-author-position">
-          {item.role}, {item.company}
-        </span>
+const FeedbackCard = (item: FeedbackItem, posistionPercentage: number) => {
+  const shadowOffset = !isNaN(posistionPercentage)
+    ? posistionPercentage * -32 + 16
+    : 0;
+
+  return (
+    <li
+      className="feedback_card"
+      key={item.name + item.company}
+      style={{
+        filter: `drop-shadow(${shadowOffset}px 30px 15px rgba(0, 0, 0, 0.07))`,
+      }}
+    >
+      <p className="feedback_card-text">{item.feedback}</p>
+      <div className="feedback_card-author">
+        {item.image ? (
+          <img src={item.image} alt={item.name} />
+        ) : (
+          <img src="favicon.svg" alt={item.name} />
+        )}
+        <div className="feedback_card-author-info">
+          <h4 className="feedback_card-author-name">{item.name}</h4>
+          <span className="feedback_card-author-position">
+            {item.role}
+            {item.company && ", " + item.company}
+          </span>
+        </div>
       </div>
-    </div>
-  </div>
-);
+    </li>
+  );
+};
 
 const groupArrayIntoChunks = (
   inputArray: FeedbackItem[],
@@ -74,7 +91,9 @@ const FeedbackCarousel = ({ items }: FeedbackCarouselProps) => {
       id: index,
       renderItem: (
         <ul className="feedback-carousel_group">
-          {group.map((item) => FeedbackCard(item))}
+          {group.map((item, index) =>
+            FeedbackCard(item, index / (group.length - 1)),
+          )}
         </ul>
       ),
     })),
