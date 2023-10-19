@@ -74,11 +74,12 @@ const FeedbackCarousel = ({ items }: FeedbackCarouselProps) => {
   );
   const [activeSlide, setActiveSlide] = useState(0);
   const size = useElementSize("feedback-carousel");
-  const availableSpace = size ? Math.floor(size.width / 365) : 1;
+  const availableSpace = size ? Math.floor(size.width / 400) : 1;
   const itemsPerSlide = availableSpace > 4 ? 4 : availableSpace;
 
   useEffect(() => {
-    setGroupedFeedback(groupArrayIntoChunks(items, 4));
+    setGroupedFeedback(groupArrayIntoChunks(items, itemsPerSlide || 1));
+    console.log(items, itemsPerSlide || 1, groupedFeedback);
   }, [items, itemsPerSlide]);
 
   const {
@@ -110,18 +111,30 @@ const FeedbackCarousel = ({ items }: FeedbackCarouselProps) => {
     <div id="feedback-carousel">
       {groupedFeedback?.length && carouselFragment}
       <div className="feedback-carousel_controls">
-        {groupedFeedback.map((_, index) => (
-          <button
-            key={index}
-            className={`feedback-carousel_dot ${
-              activeSlide === index ? "active" : ""
-            }`}
-            onClick={() => {
-              slideToItem(index);
-              setActiveSlide(index);
-            }}
-          />
-        ))}
+        {groupedFeedback.map((_, index) => {
+          const distance = Math.abs(activeSlide - index);
+          let dotState = "";
+          if (activeSlide === index) dotState = "active";
+          else if (
+            distance === 3 &&
+            index !== 0 &&
+            index !== groupedFeedback.length - 1
+          )
+            dotState = "small";
+          else if (distance > 3) dotState = "hidden";
+
+          return (
+            <button
+              key={index}
+              className={`feedback-carousel_dot ${dotState}
+                `}
+              onClick={() => {
+                slideToItem(index);
+                setActiveSlide(index);
+              }}
+            />
+          );
+        })}
       </div>
     </div>
   );

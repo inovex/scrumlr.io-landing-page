@@ -16,9 +16,9 @@
 
 .feedback-carousel_controls {
   justify-content: center;
+  align-items: center;
   display: flex;
   flex-direction: row;
-  gap: 16px;
   margin-top: 32px;
 }
 
@@ -30,6 +30,7 @@
   background-color: var(--lightmode-pink);
   cursor: pointer;
   opacity: 0.5;
+  margin: 0 8px;
 
   transition: all 0.1s ease-in-out;
 
@@ -42,7 +43,19 @@
   }
 
   &.active {
+    transform: scale(1.2);
     opacity: 1;
+  }
+
+  &.small {
+    width: 4px;
+    height: 4px;
+  }
+
+  &.hidden {
+    width: 0px;
+    height: 0px;
+    margin: 0;
   }
 }
 
@@ -91,9 +104,31 @@
     }
 
     .feedback_card-author-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
       .feedback_card-author-name {
         margin: 0;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .feedback_card {
+    width: 286px;
+    height: 286px;
+    margin: 0;
+
+    .feedback_card-text {
+      font-size: 14px;
+      line-height: 22px;
+      overflow: scroll;
+    }
+
+    .feedback_card-author-info {
+      font-size: 14px;
     }
   }
 }

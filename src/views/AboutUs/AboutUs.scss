@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   gap: 64px;
-  padding-top: 128px;
+  padding-top: min(148px, 10vh);
   overflow: hidden;
 }
 
@@ -112,6 +112,7 @@
 @media screen and (max-width: 992px) {
   .about-us {
     gap: 0;
+    padding-top: 0;
   }
 
   .about-us__scrumlr {
