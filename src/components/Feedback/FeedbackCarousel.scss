@@ -116,6 +116,11 @@
 }
 
 @media screen and (max-width: 375px) {
+  #feedback-carousel {
+    height: 358px;
+    margin-bottom: 64px;
+  }
+
   .feedback_card {
     width: 286px;
     height: 286px;
@@ -130,5 +135,24 @@
     .feedback_card-author-info {
       font-size: 14px;
     }
+  }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  .feedback_card {
+    background-color: #1b2435;
+
+    &::before {
+      background-color: var(--darkmode-pink);
+      filter: drop-shadow(0px -3px 5px rgba(255, 128, 180, 0.3));
+    }
+  }
+
+  .feedback_card-author-name {
+    color: var(--darkmode-pink);
+  }
+
+  .feedback-carousel_dot {
+    background-color: var(--darkmode-pink);
   }
 }

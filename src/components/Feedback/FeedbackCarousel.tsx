@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useSpringCarousel } from "react-spring-carousel";
 import type { FeedbackItem } from "./Feedback.astro";
 import useElementSize from "../../hooks/useElementSize";
@@ -77,9 +77,8 @@ const FeedbackCarousel = ({ items }: FeedbackCarouselProps) => {
   const availableSpace = size ? Math.floor(size.width / 400) : 1;
   const itemsPerSlide = availableSpace > 4 ? 4 : availableSpace;
 
-  useEffect(() => {
+  useMemo(() => {
     setGroupedFeedback(groupArrayIntoChunks(items, itemsPerSlide || 1));
-    console.log(items, itemsPerSlide || 1, groupedFeedback);
   }, [items, itemsPerSlide]);
 
   const {
@@ -89,6 +88,7 @@ const FeedbackCarousel = ({ items }: FeedbackCarouselProps) => {
     useListenToCustomEvent,
     slideToItem,
   } = useSpringCarousel({
+    draggingSlideTreshold: 16,
     items: groupedFeedback.map((group, index) => ({
       id: index,
       renderItem: (
