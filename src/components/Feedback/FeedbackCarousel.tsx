@@ -3,6 +3,7 @@ import { useSpringCarousel } from "react-spring-carousel";
 import type { FeedbackItem } from "./Feedback.astro";
 import useElementSize from "../../hooks/useElementSize";
 import "./FeedbackCarousel.scss";
+import { useInterval } from "../../hooks/useInterval";
 
 type FeedbackCarouselProps = {
   items: FeedbackItem[];
@@ -76,6 +77,9 @@ const FeedbackCarousel = ({ items }: FeedbackCarouselProps) => {
   const size = useElementSize("feedback-carousel");
   const availableSpace = size ? Math.floor(size.width / 400) : 1;
   const itemsPerSlide = availableSpace > 4 ? 4 : availableSpace;
+  const [intervalDelay, setIntervalDelay] = useState<number | null>(
+    6000 * itemsPerSlide,
+  );
 
   useMemo(() => {
     setGroupedFeedback(groupArrayIntoChunks(items, itemsPerSlide || 1));
@@ -101,9 +105,20 @@ const FeedbackCarousel = ({ items }: FeedbackCarouselProps) => {
     })),
   });
 
+  useInterval(() => {
+    if (activeSlide === groupedFeedback.length - 1) {
+      slideToItem(0);
+      setActiveSlide(0);
+    } else {
+      slideToItem(activeSlide + 1);
+      setActiveSlide(activeSlide + 1);
+    }
+  }, intervalDelay);
+
   useListenToCustomEvent((event: CarouselEvent) => {
     if (event.eventName === "onSlideStartChange") {
       setActiveSlide(event.nextItem.index);
+      setIntervalDelay(null); // Stop the interval
     }
   });
 
@@ -130,6 +145,7 @@ const FeedbackCarousel = ({ items }: FeedbackCarouselProps) => {
               onClick={() => {
                 slideToItem(index);
                 setActiveSlide(index);
+                setIntervalDelay(null); // Stop the interval
               }}
             >
               <div className="feedback-carousel__dot" />
