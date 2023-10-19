@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { useSpringCarousel } from "react-spring-carousel";
 import type { FeedbackItem } from "./Feedback.astro";
 import useElementSize from "../../hooks/useElementSize";

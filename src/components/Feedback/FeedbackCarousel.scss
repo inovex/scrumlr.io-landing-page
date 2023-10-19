@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 400px;
+  gap: 32px;
   width: 100%;
   overflow-x: clip;
 }
@@ -19,7 +19,6 @@
   align-items: center;
   display: flex;
   flex-direction: row;
-  margin-top: 32px;
 }
 
 .feedback-carousel_dot {
@@ -30,7 +29,7 @@
   background-color: var(--lightmode-pink);
   cursor: pointer;
   opacity: 0.5;
-  margin: 0 8px;
+  margin: 16px 8px;
 
   transition: all 0.1s ease-in-out;
 
@@ -115,10 +114,12 @@
   }
 }
 
+@media screen and (max-width: 992px) {
+}
+
 @media screen and (max-width: 375px) {
   #feedback-carousel {
     height: 358px;
-    margin-bottom: 64px;
   }
 
   .feedback_card {

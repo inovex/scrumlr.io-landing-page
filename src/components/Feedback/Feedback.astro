@@ -117,9 +117,15 @@ const feedback: FeedbackItem[] = [
   .feedback_carousel-container {
     width: 100%;
     overflow-x: clip;
-    margin: 96px;
+    margin-top: 4vh;
     display: flex;
     justify-content: center;
+  }
+
+  @media screen and (max-width: 992px) {
+    .feedback {
+      margin-bottom: 8vh;
+    }
   }
 
   @media screen and (max-width: 375px) {
