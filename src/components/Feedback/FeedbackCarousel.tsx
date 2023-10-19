@@ -126,13 +126,17 @@ const FeedbackCarousel = ({ items }: FeedbackCarouselProps) => {
           return (
             <button
               key={index}
-              className={`feedback-carousel_dot ${dotState}
-                `}
+              className="feedback-carousel__button"
               onClick={() => {
                 slideToItem(index);
                 setActiveSlide(index);
               }}
-            />
+            >
+              <div
+                className={`feedback-carousel__dot ${dotState}
+                `}
+              />
+            </button>
           );
         })}
       </div>
