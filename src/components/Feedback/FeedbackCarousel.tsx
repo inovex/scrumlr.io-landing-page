@@ -43,7 +43,8 @@ const FeedbackCard = (item: FeedbackItem, posistionPercentage: number) => {
           <h4 className="feedback_card-author-name">{item.name}</h4>
           <span className="feedback_card-author-position">
             {item.role}
-            {item.company && ", " + item.company}
+            {item.role && item.company && ", "}
+            {item.company}
           </span>
         </div>
       </div>

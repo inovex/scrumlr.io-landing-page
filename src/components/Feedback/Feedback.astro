@@ -2,7 +2,7 @@
 import FeedbackCarousel from "./FeedbackCarousel.tsx";
 export type FeedbackItem = {
   name: string;
-  role: string;
+  role?: string;
   company?: string;
   image?: string;
   feedback: string;
@@ -37,6 +37,12 @@ const feedback: FeedbackItem[] = [
     image: "favicon.svg",
     feedback:
       "Scrumlr ist das perfekte Tool für spontane Retros: Es ist sehr leicht zu benutzen, hat eine niedrige Einstiegshürde und die coolsten Avatare ever!",
+  },
+  {
+    name: "Team PPL",
+    company: "Marc Cain",
+    feedback:
+      "Scrumlr ist mit seinem intuitiven, kollaborativen Ansatz und seiner Anpassbarkeit das wichtigste Tool in unserem Team. Er fördert unsere Agilität und macht durch die coolen Avatare auch noch eine Menge Spaß.",
   },
   {
     name: "John Doe",
