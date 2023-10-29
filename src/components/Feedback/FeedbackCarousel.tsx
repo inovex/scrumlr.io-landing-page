@@ -4,6 +4,7 @@ import type { FeedbackItem } from "./Feedback.astro";
 import useElementSize from "../../hooks/useElementSize";
 import "./FeedbackCarousel.scss";
 import { useInterval } from "../../hooks/useInterval";
+import FeedbackCard from "./FeedbackCard";
 
 type FeedbackCarouselProps = {
   items: FeedbackItem[];
@@ -18,39 +19,6 @@ type CarouselEvent = {
     id: string;
     index: number;
   };
-};
-
-const FeedbackCard = (item: FeedbackItem, posistionPercentage: number) => {
-  const shadowOffset = !isNaN(posistionPercentage)
-    ? posistionPercentage * -32 + 16
-    : 0;
-
-  return (
-    <li
-      className="feedback_card"
-      key={item.name + item.company}
-      style={{
-        filter: `drop-shadow(${shadowOffset}px 30px 15px rgba(0, 0, 0, 0.07))`,
-      }}
-    >
-      <p className="feedback_card-text">{item.feedback}</p>
-      <div className="feedback_card-author">
-        {item.image ? (
-          <img src={item.image} alt={item.name} />
-        ) : (
-          <img src="favicon.svg" alt={item.name} />
-        )}
-        <div className="feedback_card-author-info">
-          <h4 className="feedback_card-author-name">{item.name}</h4>
-          <span className="feedback_card-author-position">
-            {item.role}
-            {item.role && item.company && ", "}
-            {item.company}
-          </span>
-        </div>
-      </div>
-    </li>
-  );
 };
 
 const groupArrayIntoChunks = (
@@ -77,50 +45,44 @@ const FeedbackCarousel = ({ items }: FeedbackCarouselProps) => {
   const size = useElementSize("feedback-carousel");
   const availableSpace = size ? Math.floor(size.width / 400) : 1;
   const itemsPerSlide = availableSpace > 4 ? 4 : availableSpace;
-  const [intervalDelay, setIntervalDelay] = useState<number | null>(
-    6000 * itemsPerSlide,
-  );
+  const [intervalDelay, setIntervalDelay] = useState<number | null>(8000);
+
+  const { carouselFragment, useListenToCustomEvent, slideToItem } =
+    useSpringCarousel({
+      draggingSlideTreshold: 16,
+      items: groupedFeedback.map((group, index) => ({
+        id: index,
+        renderItem: (
+          <ul className="feedback-carousel_group">
+            {group.map((item, index) =>
+              FeedbackCard(item, index / (group.length - 1)),
+            )}
+          </ul>
+        ),
+      })),
+    });
 
   useMemo(() => {
     setGroupedFeedback(groupArrayIntoChunks(items, itemsPerSlide || 1));
+    setIntervalDelay(8000 * itemsPerSlide); // Time per slide = 8s * items per slide
   }, [items, itemsPerSlide]);
 
-  const {
-    carouselFragment,
-    slideToPrevItem,
-    slideToNextItem,
-    useListenToCustomEvent,
-    slideToItem,
-  } = useSpringCarousel({
-    draggingSlideTreshold: 16,
-    items: groupedFeedback.map((group, index) => ({
-      id: index,
-      renderItem: (
-        <ul className="feedback-carousel_group">
-          {group.map((item, index) =>
-            FeedbackCard(item, index / (group.length - 1)),
-          )}
-        </ul>
-      ),
-    })),
-  });
-
   useInterval(() => {
-    if (activeSlide === groupedFeedback.length - 1) {
-      slideToItem(0);
-      setActiveSlide(0);
-    } else {
-      slideToItem(activeSlide + 1);
-      setActiveSlide(activeSlide + 1);
-    }
+    if (activeSlide === groupedFeedback.length - 1) slideTo(0);
+    else slideTo(activeSlide + 1);
   }, intervalDelay);
 
   useListenToCustomEvent((event: CarouselEvent) => {
-    if (event.eventName === "onSlideStartChange") {
-      setActiveSlide(event.nextItem.index);
-      setIntervalDelay(null); // Stop the interval
-    }
+    if (event.eventName === "onSlideStartChange")
+      return setActiveSlide(event.nextItem.index);
+    else if (event.eventName === "onDrag") setIntervalDelay(null); // Stop the interval
   });
+
+  const slideTo = (index: number, clearInterval?: boolean) => {
+    if (clearInterval) setIntervalDelay(null); // Stop the interval
+    slideToItem(index);
+    setActiveSlide(index);
+  };
 
   return (
     <div id="feedback-carousel">
@@ -142,11 +104,7 @@ const FeedbackCarousel = ({ items }: FeedbackCarouselProps) => {
             <button
               key={index}
               className={`feedback-carousel__button ${dotState}`}
-              onClick={() => {
-                slideToItem(index);
-                setActiveSlide(index);
-                setIntervalDelay(null); // Stop the interval
-              }}
+              onClick={() => slideTo(index, true)}
             >
               <div className="feedback-carousel__dot" />
             </button>
