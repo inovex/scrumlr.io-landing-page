@@ -63,6 +63,7 @@ const FeedbackCarousel = ({ items }: FeedbackCarouselProps) => {
     });
 
   useMemo(() => {
+    if (itemsPerSlide < 1) return;
     setGroupedFeedback(groupArrayIntoChunks(items, itemsPerSlide || 1));
     setIntervalDelay(8000 * itemsPerSlide); // Time per slide = 8s * items per slide
   }, [items, itemsPerSlide]);
