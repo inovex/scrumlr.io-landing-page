@@ -1,0 +1,29 @@
+---
+import type { GetStaticPaths } from "astro";
+import ReachNewHeights from "../../views/ReachNewHeights/ReachNewHeights.astro";
+import Choices from "../../components/Choices";
+import { Uniqueness } from "../../components/Uniqueness";
+import { Mobile } from "../../components/Mobile";
+import Layout from "../../layouts/Layout.astro";
+import TargetUser from "../../views/TargetUser/TargetUser.astro";
+import Features from "../../views/Features/Features.astro";
+import { AboutUs } from "../../views/AboutUs/AboutUs";
+
+export const getStaticPaths = (() => {
+    return [
+        {params: {lang: "en"}},
+        {params: {lang: "de"}},
+    ];
+}) satisfies GetStaticPaths;
+
+---
+
+<Layout title="Scrumlr">
+  <ReachNewHeights />
+  <Choices client:visible />
+  <Uniqueness />
+  <Mobile />
+  <Features />
+  <TargetUser />
+  <AboutUs />
+</Layout>

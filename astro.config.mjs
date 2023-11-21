@@ -4,8 +4,8 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react()],
-  redirects: {
-    "/legal": "/legal/privacy",
-  },
+    integrations: [react()],
+    redirects: {
+        "/legal": "/legal/privacy",
+    },
 });

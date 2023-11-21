@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@astrojs/react": "^3.0.4",
+    "@directus/sdk": "^13.0.2",
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
     "astro": "^3.5.3",
@@ -21,10 +22,10 @@
   },
   "devDependencies": {
     "@typescript-eslint/parser": "^6.10.0",
-    "prettier-plugin-astro": "^0.12.1",
     "eslint": "^8.53.0",
     "eslint-plugin-astro": "^0.29.1",
     "eslint-plugin-jsx-a11y": "^6.8.0",
+    "prettier-plugin-astro": "^0.12.1",
     "sass": "^1.69.5"
   }
 }
