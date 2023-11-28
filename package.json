@@ -11,10 +11,10 @@
     "lint": "eslint . --ext .js,.ts,.astro"
   },
   "dependencies": {
-    "@astrojs/react": "^3.0.4",
-    "@types/react": "^18.2.33",
-    "@types/react-dom": "^18.2.14",
-    "astro": "^3.4.2",
+    "@astrojs/react": "^3.0.6",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "astro": "^3.6.0",
     "classnames": "^2.3.2",
     "random-avatar-generator": "^2.0.0",
     "react": "^18.2.0",
@@ -22,11 +22,11 @@
     "react-spring-carousel": "^2.0.19"
   },
   "devDependencies": {
-    "@typescript-eslint/parser": "^6.9.1",
-    "prettier-plugin-astro": "^0.12.1",
-    "eslint": "^8.52.0",
+    "@typescript-eslint/parser": "^6.13.1",
+    "prettier-plugin-astro": "^0.12.2",
+    "eslint": "^8.54.0",
     "eslint-plugin-astro": "^0.29.1",
-    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
     "sass": "^1.69.5"
   }
 }
