@@ -13,7 +13,7 @@ const content = await getTranslatedContent("Hero_Section", lang!);
   <div class="reach-new-heights__content">
     <div>
       <div class="reach-new-heights__headline">
-        <h1>{content.header}</h1>
+          <h1 set:html={content.header} />
         <p>{content.paragraph}</p>
       </div>
       <div class="reach-new-heights__buttons">
@@ -44,7 +44,7 @@ const content = await getTranslatedContent("Hero_Section", lang!);
           class="information-item__icon information-item__icon--dark"
         />
         <h2>{content.detailsHeader1}</h2>
-        <p>{content.detailsText1}</p>
+        <p set:html={content.detailsText1}/>
       </div>
 
       <div class="reach-new-heights__information-item">
@@ -59,7 +59,7 @@ const content = await getTranslatedContent("Hero_Section", lang!);
           class="information-item__icon information-item__icon--dark"
         />
         <h2>{content.detailsHeader2}</h2>
-        <p>{content.detailsText2}</p>
+        <p set:html={content.detailsText2}/>
       </div>
     </div>
   </div>

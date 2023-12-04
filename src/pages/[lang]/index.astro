@@ -2,12 +2,12 @@
 import type { GetStaticPaths } from "astro";
 import ReachNewHeights from "../../views/ReachNewHeights/ReachNewHeights.astro";
 import Choices from "../../components/Choices";
-import { Uniqueness } from "../../components/Uniqueness";
-import { Mobile } from "../../components/Mobile";
+import Uniqueness from "../../views/Uniqueness/Uniqueness.astro";
+import Mobile from "../../views/Mobile/Mobile.astro";
 import Layout from "../../layouts/Layout.astro";
 import TargetUser from "../../views/TargetUser/TargetUser.astro";
 import Features from "../../views/Features/Features.astro";
-import { AboutUs } from "../../views/AboutUs/AboutUs";
+import AboutUs from "../../views/AboutUs/AboutUs.astro";
 
 export const getStaticPaths = (() => {
     return [
