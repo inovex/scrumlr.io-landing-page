@@ -1,6 +1,14 @@
 ---
-import LegalLayout from "../../layouts/LegalLayout.astro";
+import type { GetStaticPaths } from "astro";
+import LegalLayout from "../../../layouts/LegalLayout.astro";
 import "./legal.scss";
+
+export const getStaticPaths = (() => {
+    return [
+        {params: {lang: "en"}},
+        {params: {lang: "de"}},
+    ];
+}) satisfies GetStaticPaths;
 ---
 
 <LegalLayout>
