@@ -40,7 +40,6 @@ const content = await getTranslatedContent("Header", lang!);
     function handleScroll() {
         const scrollPosition = window.scrollY;
         if (scrollPosition > 0) {
-            console.log(navbar);
             navbar?.classList.add("navbar--opaque");
         } else {
             navbar?.classList.remove("navbar--opaque");
