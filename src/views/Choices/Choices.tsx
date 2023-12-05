@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
+import ProgressButton from "../../components/ProgressButton";
+import useMediaQuery from "../../hooks/useMediaQuery";
+import Video from "../../components/Video";
+import Icon from "../../components/Icon";
 import "./Choices.scss";
-import ProgressButton from "./ProgressButton";
-import useMediaQuery from "../hooks/useMediaQuery";
-import Video from "./Video";
-import Icon from "./Icon";
 
 const Choices = () => {
   const [position, setPosition] = useState(0);
