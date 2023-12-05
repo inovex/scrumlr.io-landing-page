@@ -1,0 +1,128 @@
+---
+import FeedbackCarousel from "./FeedbackCarousel.tsx";
+export type FeedbackItem = {
+  name: string;
+  role?: string;
+  company?: string;
+  image?: string;
+  feedback: string;
+};
+
+const feedback: FeedbackItem[] = [
+  {
+    name: "Amelia Febrer",
+    role: "CEO",
+    company: "Regardi",
+    image: "favicon.svg",
+    feedback:
+      "Scumlr macht Retrospektiven zu einem Event! Man freut sich immer wieder drauf. Schönes Design und einfache Bedienung. Ich bin ein absoluter Fan.",
+  },
+  {
+    name: "Filip Lukenic",
+    role: "Produktmanager",
+    feedback:
+      "Scrumlr hat mich seit der ersten Nutzung begeistert! Das Tool ist aus meinem Arbeitsalltag nicht mehr wegzudenken und ich kann es nur jedem empfehlen, der auf agile Arbeitsweisen setzt.",
+  },
+  {
+    name: "Yann Carpy",
+    role: "Product Owner",
+    company: "inovex",
+    feedback:
+      "Dank der Einfachheit und den Möglichkeiten von Scrumlr können wir effektive Retros auch ohne dedizierten Moderator durchführen.",
+  },
+  {
+    name: "Melanie Laudin",
+    role: "Usability Engineer",
+    feedback:
+      "Scrumlr ist das perfekte Tool für spontane Retros: Es ist sehr leicht zu benutzen, hat eine niedrige Einstiegshürde und die coolsten Avatare ever!",
+  },
+  {
+    name: "Team PPL",
+    company: "Marc Cain",
+    feedback:
+      "Scrumlr ist mit seinem intuitiven, kollaborativen Ansatz und seiner Anpassbarkeit das wichtigste Tool in unserem Team. Er fördert unsere Agilität und macht durch die coolen Avatare auch noch eine Menge Spaß.",
+  },
+  {
+    name: "John Doe",
+    role: "CEO",
+    company: "ABC Inc.",
+    feedback:
+      "Scrumlr makes regular updates, making the tool even more intuitive.",
+  },
+  {
+    name: "Dohn Joe",
+    role: "CFO",
+    company: "ABC Inc.",
+    feedback: "Amazing tool for planning our agendas in an cooperative way.",
+  },
+  {
+    name: "Hans Peter",
+    role: "CXO",
+    company: "ABC Inc.",
+    feedback:
+      "Our team loved this tool. It made the everything - especially the communication faster and easier 👏🏼",
+  },
+  {
+    name: "Peter Hans",
+    role: "Praktikant",
+    company: "ABC Inc.",
+    feedback: "This Web-app has so many useful and cool features!",
+  },
+  {
+    name: "Peter Lusting",
+    role: "CTO",
+    company: "ABC Inc.",
+    feedback: "Gumo zusammen, scruml ist supi",
+  },
+  {
+    name: "Selina Lusting",
+    role: "PO",
+    company: "scrumlr Inc.",
+    feedback: "Also ich finde scrumlr nicht so cool...",
+  },
+];
+---
+
+<section class="feedback">
+  <h2>Our satisfied Users:</h2>
+  <p>Happy users are important to us. That's why we value every feedback.</p>
+  <div class="feedback_carousel-container">
+    <FeedbackCarousel items={feedback} client:only="react" />
+  </div>
+</section>
+
+<style lang="scss">
+  .feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4vh;
+
+    h2,
+    p {
+      max-width: 80%;
+      text-align: center;
+      text-wrap: balance;
+    }
+  }
+
+  .feedback_carousel-container {
+    width: 100%;
+    overflow-x: clip;
+    margin-top: 4vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 992px) {
+    .feedback {
+      margin-bottom: 8vh;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .feedback_carousel-container {
+      margin: 0;
+    }
+  }
+</style>

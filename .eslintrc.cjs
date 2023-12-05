@@ -4,7 +4,7 @@ module.exports = {
     // ...
     "plugin:astro/recommended",
   ],
-  ignorePatterns: ["dist/", "*.config.js"],
+  ignorePatterns: ["dist/", "*.config.js", "*.d.ts"],
   // ...
   overrides: [
     {

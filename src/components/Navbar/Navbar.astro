@@ -28,7 +28,7 @@ const content = await getTranslatedContent("Header", lang!);
       <Link
         href="/new"
         ariaLabel={content.createBoard}
-        class="navbar__link"
+        className="navbar__link"
         >{content.createBoard}</Link>
     </li>
   </ul>
@@ -41,9 +41,9 @@ const content = await getTranslatedContent("Header", lang!);
         const scrollPosition = window.scrollY;
         if (scrollPosition > 0) {
             console.log(navbar);
-            navbar.classList.add("navbar--opaque");
+            navbar?.classList.add("navbar--opaque");
         } else {
-            navbar.classList.remove("navbar--opaque");
+            navbar?.classList.remove("navbar--opaque");
         }
     }
 
