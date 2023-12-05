@@ -14,7 +14,7 @@ const FeedbackCard = (item: FeedbackItem, posistionPercentage: number) => {
         filter: `drop-shadow(${shadowOffset}px 30px 15px rgba(0, 0, 0, 0.07))`,
       }}
     >
-      <p className="feedback_card-text">{item.feedback}</p>
+      <p className="feedback_card-text">{item.text}</p>
       <div className="feedback_card-author">
         <img
           src={

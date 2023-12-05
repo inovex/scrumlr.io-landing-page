@@ -24,3 +24,8 @@ export default async function getTranslatedContent(collection: string, language:
 
     return content.translations[0];
 }
+
+export async function getContent(collection: string) {
+    const content = await directusClient.request(readItems(collection));
+    return content;
+}
