@@ -1,15 +1,19 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@astrojs/react':
     specifier: ^3.0.6
-    version: 3.0.6(@types/react-dom@18.2.15)(@types/react@18.2.37)(react-dom@18.2.0)(react@18.2.0)(vite@4.4.9)
+    version: 3.0.6(@types/react-dom@18.2.17)(@types/react@18.2.37)(react-dom@18.2.0)(react@18.2.0)(vite@4.4.9)
   '@types/react':
     specifier: ^18.2.37
     version: 18.2.37
   '@types/react-dom':
-    specifier: ^18.2.15
-    version: 18.2.15
+    specifier: ^18.2.17
+    version: 18.2.17
   astro:
     specifier: ^3.6.0
     version: 3.6.0(sass@1.69.5)(typescript@5.1.3)
@@ -106,7 +110,7 @@ packages:
       prismjs: 1.29.0
     dev: false
 
-  /@astrojs/react@3.0.6(@types/react-dom@18.2.15)(@types/react@18.2.37)(react-dom@18.2.0)(react@18.2.0)(vite@4.4.9):
+  /@astrojs/react@3.0.6(@types/react-dom@18.2.17)(@types/react@18.2.37)(react-dom@18.2.0)(react@18.2.0)(vite@4.4.9):
     resolution: {integrity: sha512-hjC02q8cPeyzw+LWe6V2dPTYf8OgfuZwxmH32tkhn3JC/VTz1AdO5rM7dgvbilLnUoL7qMGapODEkSl2mmW+oA==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
@@ -116,7 +120,7 @@ packages:
       react-dom: ^17.0.2 || ^18.0.0
     dependencies:
       '@types/react': 18.2.37
-      '@types/react-dom': 18.2.15
+      '@types/react-dom': 18.2.17
       '@vitejs/plugin-react': 4.0.4(vite@4.4.9)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -221,9 +225,9 @@ packages:
     resolution: {integrity: sha512-y6EEzULok0Qvz8yyLkCvVX+02ic+By2UdOhylwUOvOn9dvYc9mKICJuuU1n1XBI02YWsNsnrY1kc6DVbjcXbtw==}
     engines: {node: '>=6.9.0'}
     dependencies:
-      '@babel/compat-data': 7.22.9
+      '@babel/compat-data': 7.23.3
       '@babel/helper-validator-option': 7.22.15
-      browserslist: 4.21.9
+      browserslist: 4.22.1
       lru-cache: 5.1.1
       semver: 6.3.1
     dev: false
@@ -236,8 +240,8 @@ packages:
     dependencies:
       '@babel/core': 7.22.11
       '@babel/helper-annotate-as-pure': 7.22.5
-      '@babel/helper-environment-visitor': 7.22.5
-      '@babel/helper-function-name': 7.22.5
+      '@babel/helper-environment-visitor': 7.22.20
+      '@babel/helper-function-name': 7.23.0
       '@babel/helper-member-expression-to-functions': 7.23.0
       '@babel/helper-optimise-call-expression': 7.22.5
       '@babel/helper-replace-supers': 7.22.20(@babel/core@7.22.11)
@@ -402,7 +406,7 @@ packages:
     resolution: {integrity: sha512-tK14r66JZKiC43p8Ki33yLBVJKlQDFoA8GYN67lWCDCqoL6EMMSuM9b+Iff2jHaM/RRFYl7K+iiru7hbRqNx8Q==}
     engines: {node: '>=6.9.0'}
     dependencies:
-      '@babel/types': 7.22.11
+      '@babel/types': 7.23.4
     dev: false
 
   /@babel/helper-split-export-declaration@7.22.6:
@@ -588,9 +592,9 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0-0
     dependencies:
-      '@babel/compat-data': 7.22.9
+      '@babel/compat-data': 7.23.3
       '@babel/core': 7.22.11
-      '@babel/helper-compilation-targets': 7.22.10
+      '@babel/helper-compilation-targets': 7.22.15
       '@babel/helper-plugin-utils': 7.22.5
       '@babel/plugin-syntax-object-rest-spread': 7.8.3(@babel/core@7.22.11)
       '@babel/plugin-transform-parameters': 7.23.3(@babel/core@7.22.11)
@@ -2471,7 +2475,7 @@ packages:
     peerDependencies:
       '@babel/preset-env': ^7.1.6
     dependencies:
-      '@babel/parser': 7.22.14
+      '@babel/parser': 7.23.4
       '@babel/preset-env': 7.23.3(@babel/core@7.22.11)
       flow-parser: 0.206.0
       jscodeshift: 0.14.0(@babel/preset-env@7.23.3)
@@ -2789,8 +2793,8 @@ packages:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
     dev: false
 
-  /@types/react-dom@18.2.15:
-    resolution: {integrity: sha512-HWMdW+7r7MR5+PZqJF6YFNSCtjz1T0dsvo/f1BV6HkV+6erD/nA7wd9NM00KVG83zf2nJ7uATPO9ttdIPvi3gg==}
+  /@types/react-dom@18.2.17:
+    resolution: {integrity: sha512-rvrT/M7Df5eykWFxn6MYt5Pem/Dbyc1N8Y0S9Mrkw2WFCRiqUgw9P7ul2NpwsXCSM1DVdENzdG9J5SreqfAIWg==}
     dependencies:
       '@types/react': 18.2.37
     dev: false
@@ -3322,7 +3326,7 @@ packages:
     peerDependencies:
       '@babel/core': ^7.4.0 || ^8.0.0-0 <8.0.0
     dependencies:
-      '@babel/compat-data': 7.22.9
+      '@babel/compat-data': 7.23.3
       '@babel/core': 7.22.11
       '@babel/helper-define-polyfill-provider': 0.4.3(@babel/core@7.22.11)
       semver: 6.3.1
@@ -5734,7 +5738,7 @@ packages:
       '@babel/preset-env': ^7.1.6
     dependencies:
       '@babel/core': 7.22.11
-      '@babel/parser': 7.22.14
+      '@babel/parser': 7.23.4
       '@babel/plugin-proposal-class-properties': 7.18.6(@babel/core@7.22.11)
       '@babel/plugin-proposal-nullish-coalescing-operator': 7.18.6(@babel/core@7.22.11)
       '@babel/plugin-proposal-optional-chaining': 7.21.0(@babel/core@7.22.11)
@@ -6268,7 +6272,7 @@ packages:
       '@babel/plugin-transform-sticky-regex': 7.23.3(@babel/core@7.22.11)
       '@babel/plugin-transform-typescript': 7.23.4(@babel/core@7.22.11)
       '@babel/plugin-transform-unicode-regex': 7.23.3(@babel/core@7.22.11)
-      '@babel/template': 7.22.5
+      '@babel/template': 7.22.15
       babel-plugin-transform-flow-enums: 0.0.2(@babel/core@7.22.11)
       react-refresh: 0.4.3
     transitivePeerDependencies:
@@ -6308,7 +6312,7 @@ packages:
     engines: {node: '>=16'}
     dependencies:
       '@babel/traverse': 7.22.11
-      '@babel/types': 7.22.11
+      '@babel/types': 7.23.4
       invariant: 2.2.4
       metro-symbolicate: 0.76.8
       nullthrows: 1.1.1
@@ -6340,7 +6344,7 @@ packages:
     dependencies:
       '@babel/core': 7.22.11
       '@babel/generator': 7.22.10
-      '@babel/template': 7.22.5
+      '@babel/template': 7.22.15
       '@babel/traverse': 7.22.11
       nullthrows: 1.1.1
     transitivePeerDependencies:
@@ -6353,7 +6357,7 @@ packages:
     dependencies:
       '@babel/core': 7.22.11
       '@babel/generator': 7.22.10
-      '@babel/parser': 7.22.14
+      '@babel/parser': 7.23.4
       '@babel/types': 7.23.4
       babel-preset-fbjs: 3.4.0(@babel/core@7.22.11)
       metro: 0.76.8
@@ -6378,10 +6382,10 @@ packages:
       '@babel/code-frame': 7.22.13
       '@babel/core': 7.22.11
       '@babel/generator': 7.22.10
-      '@babel/parser': 7.22.14
-      '@babel/template': 7.22.5
+      '@babel/parser': 7.23.4
+      '@babel/template': 7.22.15
       '@babel/traverse': 7.22.11
-      '@babel/types': 7.22.11
+      '@babel/types': 7.23.4
       accepts: 1.3.8
       async: 3.2.5
       chalk: 4.1.2
@@ -9342,7 +9346,3 @@ packages:
   /zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: false
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
