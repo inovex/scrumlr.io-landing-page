@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import ProgressButton from "../../components/ProgressButton";
-import useMediaQuery from "../../hooks/useMediaQuery";
-import Video from "../../components/Video";
-import Icon from "../../components/Icon";
-import "./Choices.scss";
+import ProgressButton from "./ProgressButton";
+import useMediaQuery from "../hooks/useMediaQuery";
+import Video from "./Video";
+import Icon from "./Icon";
+import "../views/Choices/Choices.scss";
 
-const Choices = () => {
+const VideoPlayer = () => {
   const [position, setPosition] = useState(0);
   const theme = useMediaQuery("(prefers-color-scheme: dark)")
     ? "dark"
@@ -37,9 +37,6 @@ const Choices = () => {
   }, [position, duration, isMobile]);
 
   return (
-    <section className="choices" id="Features">
-      <h2>Euer Board – Eure Entscheidungen.</h2>
-      <p>Wählt eine beliebige Retrospektive, die zu eurem Team passt.</p>
       <div className="choices__content">
         <div className="choices__buttons">
           <ProgressButton
@@ -136,8 +133,7 @@ const Choices = () => {
           </ul>
         </div>
       </div>
-    </section>
   );
-};
+}
 
-export default Choices;
+export default VideoPlayer;
