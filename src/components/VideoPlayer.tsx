@@ -5,7 +5,21 @@ import Video from "./Video";
 import Icon from "./Icon";
 import "../views/Choices/Choices.scss";
 
-const VideoPlayer = () => {
+type Props = {
+  textContent: {
+    buttonCollab: string;
+    buttonModerate: string;
+    buttonCustomize: string;
+    screenshotAlt: string;
+    buttonPrevVidLabel: string;
+    buttonNextVidLabel: string;
+    buttonFirstVidLabel: string;
+    buttonSecondVidLabel: string;
+    buttonThirdVidLabel: string;
+  }
+}
+
+const VideoPlayer = (props: Props) => {
   const [position, setPosition] = useState(0);
   const theme = useMediaQuery("(prefers-color-scheme: dark)")
     ? "dark"
@@ -45,7 +59,7 @@ const VideoPlayer = () => {
             active={!isMobile ? position <= 2 : position === 0}
             duration={!isMobile ? duration * 3 : duration}
           >
-            Collaborate on notes
+            {props.textContent.buttonCollab}
           </ProgressButton>
           <ProgressButton
             icon="Vote"
@@ -53,7 +67,7 @@ const VideoPlayer = () => {
             active={!isMobile ? position > 2 && position <= 5 : position === 1}
             duration={!isMobile ? duration * 3 : duration}
           >
-            Moderate your session
+            {props.textContent.buttonModerate}
           </ProgressButton>
           <ProgressButton
             icon="Columns"
@@ -61,7 +75,7 @@ const VideoPlayer = () => {
             active={!isMobile ? position > 5 && position <= 8 : position === 2}
             duration={!isMobile ? duration * 3 : duration}
           >
-            Customize your board
+            {props.textContent.buttonCustomize}
           </ProgressButton>
         </div>
         <div className="choices__image-wrapper">
@@ -75,7 +89,7 @@ const VideoPlayer = () => {
                 src={`assets/choices/choices_${theme}_${position}.png`}
                 height="290"
                 width="680"
-                alt={`scrumlr screenshot ${position + 1}`}
+                alt={`${props.textContent.screenshotAlt} ${position + 1}`}
               />
             </picture>
           )}
@@ -85,7 +99,7 @@ const VideoPlayer = () => {
             className="choices__video-button choices__video-button--left"
             disabled={position === 0}
             onClick={() => setPosition(position - 1)}
-            aria-label="Vorheriges Video"
+            aria-label={props.textContent.buttonPrevVidLabel}
           >
             <Icon name="Chevron" />
           </button>
@@ -100,7 +114,7 @@ const VideoPlayer = () => {
             className="choices__video-button choices__video-button--right"
             disabled={position === 2}
             onClick={() => setPosition(position + 1)}
-            aria-label="Nächstes Video"
+            aria-label={props.textContent.buttonNextVidLabel}
           >
             <Icon name="Chevron" />
           </button>
@@ -110,7 +124,7 @@ const VideoPlayer = () => {
                 className="choices__video-position-button--0"
                 disabled={position === 0}
                 onClick={() => setPosition(0)}
-                aria-label="Erstes Video"
+                aria-label={props.textContent.buttonFirstVidLabel}
               />
             </li>
 
@@ -119,7 +133,7 @@ const VideoPlayer = () => {
                 className="choices__video-position-button--1"
                 disabled={position === 1}
                 onClick={() => setPosition(1)}
-                aria-label="Zweites Video"
+                aria-label={props.textContent.buttonSecondVidLabel}
               />
             </li>
             <li>
@@ -127,7 +141,7 @@ const VideoPlayer = () => {
                 className="choices__video-position-button--2"
                 disabled={position === 2}
                 onClick={() => setPosition(2)}
-                aria-label="Drittes Video"
+                aria-label={props.textContent.buttonThirdVidLabel}
               />
             </li>
           </ul>

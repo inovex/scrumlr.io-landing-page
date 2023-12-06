@@ -10,6 +10,6 @@ const content = await getTranslatedContent("Choices_Section", lang!);
 <section class="choices" id="Features">
   <h2>{content.header}</h2>
   <p>{content.text}</p>
-  <VideoPlayer client:visible />
+  <VideoPlayer client:visible textContent={content} />
 </section>
 
