@@ -82,11 +82,11 @@ const VideoPlayer = (props: Props) => {
           {!isMobile && (
             <picture>
               <source
-                srcSet={`assets/choices/choices_${theme}_${position}.webp`}
+                srcSet={`/assets/choices/choices_${theme}_${position}.webp`}
                 type="image/webp"
               />
               <img
-                src={`assets/choices/choices_${theme}_${position}.png`}
+                src={`/assets/choices/choices_${theme}_${position}.png`}
                 height="290"
                 width="680"
                 alt={`${props.textContent.screenshotAlt} ${position + 1}`}
@@ -106,7 +106,7 @@ const VideoPlayer = (props: Props) => {
           {isMobile && (
             <Video
               className="choices__video"
-              video={`assets/choices/videos/choices_${theme}_${position}`}
+              video={`/assets/choices/videos/choices_${theme}_${position}`}
               handleLoadedMetadata={setVideoDuration}
             />
           )}
