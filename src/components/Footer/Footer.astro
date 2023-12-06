@@ -98,16 +98,16 @@ const content = await getTranslatedContent("Footer", lang!);
     <nav class="footer__right">
       <ul class="footer__internal-links">
         <li>
-            <a href="/#Home">{content.home}</a>
+          <a href=`/${lang}#Home`>{content.home}</a>
         </li>
         <li>
-            <a href="/#Features">{content.features}</a>
+          <a href=`/${lang}#Features`>{content.features}</a>
         </li>
         <li>
-            <a href="/#About">{content.about}</a>
+          <a href=`/${lang}#About`>{content.about}</a>
         </li>
         <li>
-            <a href="/#GetStarted">{content.getStarted}</a>
+          <a href=`/new`>{content.getStarted}</a>
         </li>
       </ul>
     </nav>
@@ -116,13 +116,13 @@ const content = await getTranslatedContent("Footer", lang!);
     <div class="footer__bottom-content">
       <ul class="footer__legal-links">
         <li>
-            <a href="/Legal/Privacy">{content.privacy}</a>
+            <a href=`${lang}/Legal/Privacy`>{content.privacy}</a>
         </li>
         <li>
-            <a href="/Legal/Cookies">{content.cookies}</a>
+            <a href=`${lang}/Legal/Cookies`>{content.cookies}</a>
         </li>
         <li>
-            <a href="/Legal/Terms">{content.terms}</a>
+            <a href=`${lang}/Legal/Terms`>{content.terms}</a>
         </li>
       </ul>
       <span>{content.copyright}</span>

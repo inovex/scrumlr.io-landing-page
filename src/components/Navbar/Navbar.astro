@@ -11,18 +11,18 @@ const content = await getTranslatedContent("Header", lang!);
 <nav id="navbar" class="navbar">
   <ul>
     <li>
-      <a aria-label="Startseite" href="/">
+      <a aria-label={content.home} href=`/${lang}`>
         <Logo />
       </a>
     </li>
     <li>
-        <a href="/#Home">{content.home}</a>
+      <a href=`/${lang}#Home`>{content.home}</a>
     </li>
     <li>
-        <a href="/#Features">{content.features}</a>
+      <a href=`/${lang}#Features`>{content.features}</a>
     </li>
     <li>
-        <a href="/#About">{content.aboutUs}</a>
+      <a href=`/${lang}#About`>{content.aboutUs}</a>
     </li>
     <li>
       <Link

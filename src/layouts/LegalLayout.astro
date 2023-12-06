@@ -2,17 +2,19 @@
 import { ViewTransitions } from "astro:transitions";
 import Layout from "./Layout.astro";
 
+const {lang} = Astro.params;
+
 const navItems = [
   {
-    href: "/Legal/Privacy",
+    href: `/${lang}/Legal/Privacy`,
     name: "Privacy Policy",
   },
   {
-    href: "/Legal/Cookies",
+    href: `/${lang}/Legal/Cookies`,
     name: "Cookie Policy",
   },
   {
-    href: "/Legal/Terms",
+    href: `/${lang}/Legal/Terms`,
     name: "Terms & Conditions",
   },
 ];
