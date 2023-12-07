@@ -11,11 +11,10 @@ import Feedback from "../../views/Feedback/Feedback.astro";
 import AboutUs from "../../views/AboutUs/AboutUs.astro";
 
 export const getStaticPaths = (() => {
-    return [
-        {params: {lang: "en"}},
-        {params: {lang: "de"}},
-    ];
+  return [{ params: { lang: "en" } }, { params: { lang: "de" } }];
 }) satisfies GetStaticPaths;
+
+export const prerender = true;
 ---
 
 <Layout title="Scrumlr">
