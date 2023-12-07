@@ -6,7 +6,16 @@ $uniqueness-image-count: 4; // Number of images
   flex-direction: column;
   text-align: center;
   overflow: hidden;
+
+  h2 {
+    margin: 24px 0;
+  }
+
+  p {
+    margin: 0;
+  }
 }
+
 
 .uniqueness__section {
   display: flex;
@@ -99,17 +108,17 @@ $uniqueness-image-count: 4; // Number of images
   .uniqueness__section {
     flex-direction: column;
     box-sizing: border-box;
-    margin-bottom: 64px;
+    margin-bottom: 100px;
     gap: 32px;
 
     &:first-of-type {
-      margin-top: 32px;
+      margin-top: 64px;
     }
 
     &--right {
       flex-direction: column-reverse;
     }
-
+    
     .uniqueness__text {
       width: 100%;
       height: fit-content;
@@ -118,7 +127,7 @@ $uniqueness-image-count: 4; // Number of images
 
       > h3,
       p {
-        margin: 16px 8px;
+        margin: 8px 8px;
       }
     }
 
@@ -161,7 +170,7 @@ $uniqueness-image-count: 4; // Number of images
       &--2 {
         right: initial;
         left: -58px;
-        top: -72px;
+        top: -473px;
       }
 
       &--3 {

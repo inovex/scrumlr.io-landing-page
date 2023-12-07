@@ -38,12 +38,12 @@ const content = await getTranslatedContent("Header", lang!);
     const navbar = document.querySelector("#navbar");
 
     function handleScroll() {
-        const scrollPosition = window.scrollY;
-        if (scrollPosition > 0) {
-            navbar?.classList.add("navbar--opaque");
-        } else {
-            navbar?.classList.remove("navbar--opaque");
-        }
+      const scrollPosition = window.scrollY;
+      if (scrollPosition > 0) {
+        navbar?.classList.add("navbar--opaque");
+      } else {
+        navbar?.classList.remove("navbar--opaque");
+      }
     }
 
     window.addEventListener("scroll", handleScroll);
