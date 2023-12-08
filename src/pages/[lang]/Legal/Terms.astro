@@ -1,0 +1,20 @@
+---
+import type { GetStaticPaths } from "astro";
+import LegalLayout from "../../../layouts/LegalLayout.astro";
+import getTranslatedContent from "../../../utils/directus.ts";
+import "./legal.scss";
+
+const {lang} = Astro.params;
+const content = await getTranslatedContent("Terms_Conditions", lang!);
+
+export const getStaticPaths = (() => {
+    return [
+        {params: {lang: "en"}},
+        {params: {lang: "de"}},
+    ];
+}) satisfies GetStaticPaths;
+---
+
+<LegalLayout>
+  <section set:html={content.Terms_Conditions} />
+</LegalLayout>

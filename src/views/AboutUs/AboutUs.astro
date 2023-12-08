@@ -1,0 +1,49 @@
+---
+import { Link } from "../../components/Link/Link";
+import getTranslatedContent from "../../utils/directus";
+import "./AboutUs.scss";
+
+const {lang} = Astro.params;
+const content = await getTranslatedContent("AboutUs_Section", lang!);
+---
+
+<section class="about-us" id="About">
+<div class="about-us__scrumlr">
+<div class="about-us__scrumlr-text">
+    <h2>{content.aboutUsHeader}</h2>
+  <p>
+    {content.AboutUsText1}
+    <br />
+    <br />
+    {content.aboutUsText2}
+  </p>
+</div>
+<div class="about-us__scrumlr-image">
+  <img
+    src="/assets/about/stan_light.webp"
+    alt={content.imageAlt}
+  />
+</div>
+<img
+  class="about-us__background"
+  src="/assets/about/background_light.svg"
+  alt=""
+/>
+<img
+  class="about-us__background-details"
+  src="/assets/about/background_details_light.svg"
+  alt=""
+/>
+</div>
+<div class="about-us__cta" id="GetStarted">
+    <h2>{content.getStartedHeader}</h2>
+    <p>{content.getStartedText}</p>
+<Link
+  href="/new"
+  ariaLabel={content.cta}
+  className="about-us__cta-button"
+>
+    {content.cta}
+</Link>
+</div>
+</section>

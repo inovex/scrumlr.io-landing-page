@@ -1,0 +1,49 @@
+---
+import { Logo } from "../Logo";
+import { Link } from "../Link/Link";
+import "./Navbar.scss";
+import getTranslatedContent from "../../utils/directus";
+
+const {lang} = Astro.params;
+const content = await getTranslatedContent("Header", lang!);
+---
+
+<nav id="navbar" class="navbar">
+  <ul>
+    <li>
+      <a aria-label={content.home} href=`/${lang}`>
+        <Logo />
+      </a>
+    </li>
+    <li>
+      <a href=`/${lang}#Home`>{content.home}</a>
+    </li>
+    <li>
+      <a href=`/${lang}#Features`>{content.features}</a>
+    </li>
+    <li>
+      <a href=`/${lang}#About`>{content.aboutUs}</a>
+    </li>
+    <li>
+      <Link
+        href="/new"
+        className="navbar__link"
+        >{content.createBoard}</Link>
+    </li>
+  </ul>
+</nav>
+
+<script>
+    const navbar = document.querySelector("#navbar");
+
+    function handleScroll() {
+      const scrollPosition = window.scrollY;
+      if (scrollPosition > 0) {
+        navbar?.classList.add("navbar--opaque");
+      } else {
+        navbar?.classList.remove("navbar--opaque");
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll);
+</script>

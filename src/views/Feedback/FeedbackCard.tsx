@@ -11,7 +11,7 @@ const FeedbackCard = (item: FeedbackItem, posistionPercentage: number) => {
       className="feedback_card"
       key={item.name + item.company}
       style={{
-        filter: `drop-shadow(${shadowOffset}px 30px 15px rgba(0, 0, 0, 0.07))`,
+        filter: `drop-shadow(${shadowOffset}px 8px 20px rgba(0, 0, 0, 0.15))`,
       }}
     >
       <p className="feedback_card-text">{item.feedback}</p>

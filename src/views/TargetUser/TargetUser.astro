@@ -1,10 +1,14 @@
 ---
 import './TargetUser.scss';
+import getTranslatedContent from "../../utils/directus";
+
+const {lang} = Astro.params;
+const content = await getTranslatedContent("TargetUser_Section", lang!);
 ---
 
 <section class='target-user'>
-    <h2>Wir sind alle wichtig!</h2>
-    <p>Jede:r kann Scrumlr nutzen und dadurch die Teamarbeit stärken.</p>
+    <h2>{content.header}</h2>
+    <p>{content.text}</p>
     <video 
          autoplay 
          loop 

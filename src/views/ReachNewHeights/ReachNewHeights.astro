@@ -1,0 +1,65 @@
+---
+import { Link } from "../../components/Link/Link";
+import "./ReachNewHeights.scss";
+import getTranslatedContent from "../../utils/directus";
+
+const {lang} = Astro.params;
+const content = await getTranslatedContent("Hero_Section", lang!);
+---
+
+
+<section class="reach-new-heights" id="Home">
+  <div class="reach-new-heights__content">
+    <div>
+      <div class="reach-new-heights__headline">
+          <h1 set:html={content.header} />
+        <p>{content.paragraph}</p>
+      </div>
+      <div class="reach-new-heights__buttons">
+          <Link href="/new">{content.cta}</Link>
+              <Link href="#Features" tertiary>{content.detailsButton}</Link>
+      </div>
+    </div>
+    <img
+      src="/assets/images/reach-new-heights_light.webp"
+      alt={content.imageAlt1}
+      class="reach-new-heights__image reach-new-heights__image--light"
+    />
+    <img
+      src="/assets/images/reach-new-heights_dark.webp"
+      alt={content.imageAlt1}
+      class="reach-new-heights__image reach-new-heights__image--dark"
+    />
+    <div class="reach-new-heights__information">
+      <div class="reach-new-heights__information-item">
+        <img
+          src="/assets/icons/icon_what-is-it-about_light.svg"
+          alt="What is it about?"
+          class="information-item__icon information-item__icon--light"
+        />
+        <img
+          src="/assets/icons/icon_what-is-it-about_dark.svg"
+          alt="What is it about?"
+          class="information-item__icon information-item__icon--dark"
+        />
+        <h2>{content.detailsHeader1}</h2>
+        <p set:html={content.detailsText1}/>
+      </div>
+
+      <div class="reach-new-heights__information-item">
+        <img
+          src="/assets/icons/icon_how-can-it-be-used_light.svg"
+          alt="How can it be used?"
+          class="information-item__icon information-item__icon--light"
+        />
+        <img
+          src="/assets/icons/icon_how-can-it-be-used_dark.svg"
+          alt="How can it be used?"
+          class="information-item__icon information-item__icon--dark"
+        />
+        <h2>{content.detailsHeader2}</h2>
+        <p set:html={content.detailsText2}/>
+      </div>
+    </div>
+  </div>
+</section>

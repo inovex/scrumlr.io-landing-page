@@ -11,7 +11,9 @@
     "lint": "eslint . --ext .js,.ts,.astro"
   },
   "dependencies": {
+    "@astrojs/node": "^7.0.0",
     "@astrojs/react": "^3.0.6",
+    "@directus/sdk": "^13.0.2",
     "@types/react": "^18.2.42",
     "@types/react-dom": "^18.2.17",
     "astro": "^4.0.3",
@@ -23,10 +25,10 @@
   },
   "devDependencies": {
     "@typescript-eslint/parser": "^6.13.1",
-    "prettier-plugin-astro": "^0.12.2",
     "eslint": "^8.55.0",
     "eslint-plugin-astro": "^0.30.0",
     "eslint-plugin-jsx-a11y": "^6.8.0",
+    "prettier-plugin-astro": "^0.12.2",
     "sass": "^1.69.5"
   }
 }

@@ -1,0 +1,131 @@
+---
+import { Facebook } from "../../icons/Facebook";
+import { Github } from "../../icons/Github";
+import { Instagram } from "../../icons/Instagram";
+import { Linkedin } from "../../icons/Linkedin";
+import { Podcast } from "../../icons/Podcast";
+import { X } from "../../icons/X";
+import { Xing } from "../../icons/Xing";
+import { Inovex } from "../../icons/Inovex";
+import getTranslatedContent from "../../utils/directus";
+import "./Footer.scss";
+
+const {lang} = Astro.params;
+const content = await getTranslatedContent("Footer", lang!);
+---
+
+<footer>
+  <div class="footer__top">
+    <img
+      src="/icons/inovex-outline.svg"
+      alt="inovex"
+      class="footer__logo"
+    />
+    <div class="footer__left">
+      <h2 class="footer__heading">inovex GmbH</h2>
+      <p class="footer__inovex-description" set:html={content.inovexDescription} />
+      <ul class="footer__external-links">
+        <li>
+          <a href="https://inovex.de" target="_blank" aria-label="inovex">
+            <Inovex />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/inovex"
+            target="_blank"
+            aria-label="GitHub"
+          >
+            <Github />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/company/inovex/"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <Linkedin />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.xing.com/companies/inovexgmbh"
+            target="_blank"
+            aria-label="XING"
+          >
+            <Xing />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://twitter.com/inovexgmbh"
+            target="_blank"
+            aria-label="X"
+          >
+            <X />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/inovexlife/"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <Instagram />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.facebook.com/inovexde"
+            target="_blank"
+            aria-label="Facebook"
+          >
+            <Facebook />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://digital-future.podigee.io/"
+            target="_blank"
+            aria-label="Podcast"
+          >
+            <Podcast />
+          </a>
+        </li>
+      </ul>
+    </div>
+    <nav class="footer__right">
+      <ul class="footer__internal-links">
+        <li>
+          <a href=`/${lang}#Home`>{content.home}</a>
+        </li>
+        <li>
+          <a href=`/${lang}#Features`>{content.features}</a>
+        </li>
+        <li>
+          <a href=`/${lang}#About`>{content.about}</a>
+        </li>
+        <li>
+          <a href=`/new`>{content.getStarted}</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <nav class="footer__bottom">
+    <div class="footer__bottom-content">
+      <ul class="footer__legal-links">
+        <li>
+          <a href=`/${lang}/Legal/Privacy`>{content.privacy}</a>
+        </li>
+        <li>
+          <a href=`/${lang}/Legal/Cookies`>{content.cookies}</a>
+        </li>
+        <li>
+          <a href=`/${lang}/Legal/Terms`>{content.terms}</a>
+        </li>
+      </ul>
+      <span>{content.copyright}</span>
+    </div>
+  </nav>
+</footer>

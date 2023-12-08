@@ -1,0 +1,31 @@
+---
+import "./Mobile.scss";
+import getTranslatedContent from "../../utils/directus";
+
+const {lang} = Astro.params;
+const content = await getTranslatedContent("Mobile_Section", lang!);
+---
+
+<section class="mobile__section">
+<div class="mobile__image">
+  <img
+    class="mobile__stan"
+    src={`/assets/mobile/mobile_light.webp`}
+    alt={content.imageAlt}
+  />
+  <img
+    class="mobile__background"
+    src={`/assets/mobile/mobile_background_light.svg`}
+    alt=""
+  />
+</div>
+<div class="mobile__text">
+    <h2>{content.header}</h2>
+    <p>{content.text}</p>
+  <img
+    class="mobile__dots"
+    src="/assets/mobile/mobile_dots.svg"
+    alt=""
+  />
+</div>
+</section>
