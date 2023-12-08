@@ -6,10 +6,16 @@
   align-items: center;
   text-align: center;
 
+  h2 {
+    margin: 24px 32px;
+  }
+  p {
+    margin: 0;
+  }
+
   h2,
   p {
     text-wrap: balance;
-    margin: 24px 32px;
   }
 }
 

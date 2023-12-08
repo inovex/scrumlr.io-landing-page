@@ -11,7 +11,7 @@ const content = await getTranslatedContent("Header", lang!);
 <nav id="navbar" class="navbar">
   <ul>
     <li>
-      <a aria-label={content.home} href=`/`>
+      <a aria-label={content.home} href=`/${lang}`>
         <Logo />
       </a>
     </li>
@@ -27,7 +27,6 @@ const content = await getTranslatedContent("Header", lang!);
     <li>
       <Link
         href="/new"
-        ariaLabel={content.createBoard}
         className="navbar__link"
         >{content.createBoard}</Link>
     </li>

@@ -1,15 +1,4 @@
 ---
-const AVAILABLE_TRANSLATIONS = ["de", "en"];
-
-const language = Astro.request.headers.get("accept-language");
-// Split the language string into an array of languages
-const languages = language
-  ?.split(",")
-  .map((lang) => lang.split(";")[0].trim().split("-")[0]);
-
-// Find the first language in the header that matches one of the available languages
-const pageLang =
-  languages?.find((lang) => AVAILABLE_TRANSLATIONS.includes(lang)) || "en";
 ---
 
-<meta http-equiv="refresh" content=`0;url=/${pageLang}` />
+<meta http-equiv="refresh" content="0;url=/en" />

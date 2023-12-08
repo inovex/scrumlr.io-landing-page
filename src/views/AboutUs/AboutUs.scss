@@ -87,6 +87,10 @@
     text-wrap: balance;
     margin: 0;
   }
+
+  > a {
+    margin-top: 68px;
+  }
 }
 
 .bold {
@@ -168,9 +172,6 @@
 
     > h2 {
       z-index: 1;
-    }
-    > p {
-      margin-bottom: 68px;
     }
   }
 }

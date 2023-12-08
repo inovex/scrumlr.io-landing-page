@@ -22,12 +22,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 24px;
 
   > h1 {
-    width: 310px;
-    font-size: 32px;
-    line-height: 34px;
+    width: 90%;
+    font-size: 40px;
+    line-height: 44px;
     font-weight: 700;
     color: var(--black);
     text-align: center;
@@ -59,8 +59,8 @@
   > p {
     width: min(350px, 100%);
     color: var(--black);
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 28px;
     font-weight: 400;
     text-align: center;
     margin: 0;
@@ -151,7 +151,7 @@
   .reach-new-heights__information-item {
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto 1fr;
     grid-template-areas: "icon title" "_ description";
     gap: 0 14px;
 
@@ -232,5 +232,19 @@
   }
   .information-item__icon--dark {
     display: block;
+  }
+  .reach-new-heights__headline > h1 {
+    > span:nth-of-type(1) {
+      background: linear-gradient(270deg, #6096FF -10.69%, #0057FF 112.7%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    > span:nth-of-type(2) {
+      background: linear-gradient(270deg, #FF80B4 21.6%, #FF0069 113.57%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
 }
