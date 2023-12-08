@@ -28,10 +28,9 @@ export type FeedbackItem = {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 4vh;
 
     h2 {
-      margin: 24px 0;
+      margin: 128px 0 24px 0;
     }
     p {
       margin: 0;
@@ -56,7 +55,11 @@ export type FeedbackItem = {
 
   @media screen and (max-width: 992px) {
     .feedback {
-      margin-bottom: 8vh;
+      margin-bottom: 64px;
+
+      h2 {
+        margin-top: 64px;
+      }
     }
   }
 

@@ -60,6 +60,12 @@
   }
 }
 
+@media (min-width: 768px) {
+  .link {
+    font-size: 1.125rem;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   .link {
     background: var(--darkmode-pink);

@@ -1,16 +1,16 @@
 .target-user {
-  padding-top: 61px;
+  padding-top: 96px;
   padding-bottom: 44px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
   background-color: rgba(255, 0, 105, 0.02);
   color: var(--black);
 
   > h2 {
     text-align: center;
     margin: 0;
+    margin-bottom: 24px;
   }
   > p {
     text-align: center;
@@ -27,19 +27,10 @@
   display: none;
 }
 
-@media (min-width: 768px) {
-  .target-user {
-    gap: 22px;
 
-    > h2 {
-      font-size: 40px;
-      line-height: 48px; /* 120% */
-    }
-    > p {
-      font-size: 24px;
-      font-weight: 500;
-      line-height: 32px; /* 133.333% */
-    }
+@media screen and (max-width: 1140px) {
+  .target-user {
+    padding-top: 64px;
   }
 }
 

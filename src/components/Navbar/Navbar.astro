@@ -34,9 +34,8 @@ const content = await getTranslatedContent("Header", lang!);
 </nav>
 
 <script>
-    const navbar = document.querySelector("#navbar");
-
     function handleScroll() {
+      const navbar = document.querySelector("#navbar");
       const scrollPosition = window.scrollY;
       if (scrollPosition > 0) {
         navbar?.classList.add("navbar--opaque");

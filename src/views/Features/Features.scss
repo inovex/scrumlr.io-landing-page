@@ -5,10 +5,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 64px;
+  margin-bottom: 96px;
 
   h2 {
-    margin: 24px 0;
+    margin: 44px 0 24px 0;
   }
 
   p {
@@ -27,17 +27,14 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  gap: 108px;
+  margin-top: 64px;
 }
 
 .features__feature {
   display: flex;
   flex-direction: row;
-  gap: 20px;
-  margin: 96px 0 0 0;
-
-  &:first-of-type {
-    margin-top: 20px;
-  }
+  gap: 56px;
 
   &--reverse {
     h3,
@@ -45,10 +42,6 @@
       margin-left: auto;
       margin-right: 0;
     }
-  }
-
-  &:last-of-type {
-    margin-bottom: 96px;
   }
 }
 
@@ -64,7 +57,6 @@
 }
 
 .features__text {
-  text-align: left;
   width: 25vw;
   display: flex;
   flex-direction: column;
@@ -75,11 +67,16 @@
   p {
     width: 256px;
   }
-}
 
-p {
-  font-size: 20px;
-  line-height: 28px;
+  > h3 {
+    margin-bottom: 20px;
+  }
+
+  > p {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -89,15 +86,23 @@ p {
 }
 
 @media screen and (max-width: 1140px) {
+  .features {
+    margin-bottom: 64px;
+  }
+
   .features__placeholder {
     width: 100px;
   }
-}
 
-@media screen and (max-width: 965px) {
+  .features_list {
+    gap: 96px;
+  }
+
+
   .features__feature {
     flex-direction: column;
     align-items: center;
+    gap: 20px;
 
     &--reverse {
       flex-direction: column-reverse;
@@ -112,10 +117,11 @@ p {
         margin-top: 0;
         margin-bottom: 16px;
       }
-    }
 
-    &:last-of-type {
-      margin-bottom: 96px;
+      p {
+        text-align: center;
+      }
+
     }
   }
 

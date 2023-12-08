@@ -1,5 +1,6 @@
 .choices {
-  padding: max(5vh, 64px) 0 0 0;
+  padding: 0;
+  padding-top: 96px;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -30,11 +31,10 @@
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  padding: 64px 0 128px 0;
-  gap: 32px;
+  padding: 64px 0 164px 0;
+  gap: 40px;
 
   .choices__image-wrapper {
-    height: min(34vw, 750px);
     max-width: min(80%, 1320px);
   }
 
@@ -139,6 +139,11 @@
 }
 
 @media screen and (max-width: 850px) {
+
+  .choices {
+    padding-top: 64px;
+  }
+
   .choices p {
     margin: 0 32px;
   }
