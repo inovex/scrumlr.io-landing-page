@@ -13,7 +13,7 @@ footer {
   max-width: 1920px;
   margin: 0 auto;
   height: 427px;
-  padding: 100px var(--footer-padding-x);
+  padding: 100px 64px;
   color: var(--white);
   box-sizing: border-box;
   display: flex;
@@ -46,6 +46,7 @@ footer {
 }
 
 .footer__inovex-description {
+  text-wrap: balance;
   margin: 0;
   font-size: 20px;
   line-height: 28px;
@@ -87,7 +88,7 @@ footer {
 
     &:focus-visible {
       outline: none;
-      border-color: var(--lightmode-pink);
+      border-color: var(--lightmode-blue);
     }
   }
 }
@@ -113,7 +114,7 @@ footer {
   align-items: center;
   width: 100%;
   max-width: 1920px;
-  padding: 0 var(--footer-padding-x);
+  padding: 0 64px;
   box-sizing: border-box;
 
   span {
@@ -143,7 +144,7 @@ footer a {
   border-radius: 4px;
 
   &:hover {
-    color: var(--lightmode-pink);
+    color: var(--darkmode-blue);
   }
 
   &:focus-visible {
@@ -157,11 +158,11 @@ footer a {
     background-color: var(--darkmode-blue);
 
     a:hover {
-      color: var(--darkmode-pink);
+      color: var(--lightmode-blue);
     }
 
     a:focus-visible {
-      border-color: var(--darkmode-pink);
+      border-color: var(--lightmode-blue);
     }
   }
 

@@ -110,13 +110,13 @@ $uniqueness-image-count: 4; // Number of images
 @media screen and (max-width: 1140px) {
   .uniqueness__wrapper {
     padding: 32px;
+    padding-bottom: 64px;
     box-sizing: border-box;
   }
 
   .uniqueness__section {
     flex-direction: column;
     box-sizing: border-box;
-    margin-bottom: 100px;
     gap: 32px;
 
     &:first-of-type {
