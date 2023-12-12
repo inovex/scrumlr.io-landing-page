@@ -1,10 +1,10 @@
 ---
 import FeedbackCarousel from "./FeedbackCarousel.tsx";
-import getTranslatedContent, {getContent} from "../../utils/directus";
+import getTranslatedContent, { getContent } from "../../utils/directus";
 
-const {lang} = Astro.params;
+const { lang } = Astro.params;
 const content = await getTranslatedContent("Feedback_Section", lang!);
-const testimonials = await getContent("testimonials") as FeedbackItem[];
+const testimonials = (await getContent("testimonials")) as FeedbackItem[];
 
 export type FeedbackItem = {
   name: string;
@@ -16,8 +16,8 @@ export type FeedbackItem = {
 ---
 
 <section class="feedback">
-    <h2>{content.header}</h2>
-    <p>{content.text}</p>
+  <h2>{content.header}</h2>
+  <p>{content.text}</p>
   <div class="feedback_carousel-container">
     <FeedbackCarousel items={testimonials} client:only="react" />
   </div>

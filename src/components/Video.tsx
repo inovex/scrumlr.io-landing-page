@@ -4,13 +4,15 @@ import { useRef, useEffect, useMemo } from "react";
 
 type Props = {
   className?: string;
-  handleLoadedMetadata?: (duration: number) => void;
   video: string;
+  paused: boolean;
+  handleLoadedMetadata?: (duration: number) => void;
 };
 
 export default function Video({
   className,
   video,
+  paused,
   handleLoadedMetadata,
 }: Props) {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -18,6 +20,13 @@ export default function Video({
   useEffect(() => {
     if (videoRef.current) videoRef.current.defaultMuted = true;
   }, []);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      if (paused) videoRef.current.pause();
+      else videoRef.current.play();
+    }
+  }, [paused]);
 
   const key = useMemo(() => video, [video]);
 

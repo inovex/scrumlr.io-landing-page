@@ -5,6 +5,7 @@ import useElementSize from "../../hooks/useElementSize";
 import "./FeedbackCarousel.scss";
 import { useInterval } from "../../hooks/useInterval";
 import FeedbackCard from "./FeedbackCard";
+import { useIntersectionObserver } from "@uidotdev/usehooks";
 
 type FeedbackCarouselProps = {
   items: FeedbackItem[];
@@ -47,6 +48,11 @@ const FeedbackCarousel = ({ items }: FeedbackCarouselProps) => {
   const itemsPerSlide = availableSpace > 4 ? 4 : availableSpace;
   const [intervalDelay, setIntervalDelay] = useState<number | null>(8000);
 
+  const [ref, entry] = useIntersectionObserver({
+    threshold: 0.75,
+    rootMargin: "0px",
+  });
+
   const { carouselFragment, useListenToCustomEvent, slideToItem } =
     useSpringCarousel({
       draggingSlideTreshold: 16,
@@ -69,6 +75,7 @@ const FeedbackCarousel = ({ items }: FeedbackCarouselProps) => {
   }, [items, itemsPerSlide]);
 
   useInterval(() => {
+    if (!entry?.isIntersecting) return;
     if (activeSlide === groupedFeedback.length - 1) slideTo(0);
     else slideTo(activeSlide + 1);
   }, intervalDelay);
@@ -86,7 +93,7 @@ const FeedbackCarousel = ({ items }: FeedbackCarouselProps) => {
   };
 
   return (
-    <div id="feedback-carousel">
+    <div id="feedback-carousel" ref={ref}>
       {groupedFeedback?.length && carouselFragment}
       <div className="feedback-carousel_controls">
         {groupedFeedback.map((_, index) => {
