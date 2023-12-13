@@ -7,6 +7,7 @@ type ProgessButtonProps = {
   icon: string;
   onClick: () => void;
   active: boolean;
+  paused: boolean;
   duration: number;
 };
 
@@ -15,13 +16,14 @@ const ProgressButton = ({
   icon,
   onClick,
   active,
+  paused,
   duration,
 }: ProgessButtonProps) => {
   return (
     <div
       className={classNames(
         "progress-button",
-        active && "progress-button--active"
+        active && "progress-button--active",
       )}
     >
       <Icon name={icon} />
@@ -33,7 +35,9 @@ const ProgressButton = ({
           <div
             className="progress-button__progress-bar"
             style={{
-              animation: `progress ${duration}ms linear forwards`,
+              animation: `progress ${duration}ms linear ${
+                paused ? "paused" : "running"
+              } forwards`,
             }}
           />
         </div>
