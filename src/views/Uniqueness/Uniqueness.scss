@@ -20,7 +20,6 @@ $uniqueness-image-count: 4; // Number of images
   margin-bottom: 24px;
 }
 
-
 .uniqueness__section {
   display: flex;
   flex-direction: row;
@@ -126,7 +125,7 @@ $uniqueness-image-count: 4; // Number of images
     &--right {
       flex-direction: column-reverse;
     }
-    
+
     .uniqueness__text {
       width: 100%;
       height: fit-content;
@@ -148,9 +147,9 @@ $uniqueness-image-count: 4; // Number of images
       }
 
       @for $i from 0 to $uniqueness-image-count {
-        .uniqueness__image-#{$i} {
+        /* .uniqueness__image-#{$i} {
           content: url("/assets/uniqueness/uniqueness_light_#{$i}_mobile.webp");
-        }
+        } */
       }
     }
 
@@ -192,9 +191,9 @@ $uniqueness-image-count: 4; // Number of images
   @media (prefers-color-scheme: dark) {
     .uniqueness__section .uniqueness__image > {
       @for $i from 0 to $uniqueness-image-count {
-        .uniqueness__image-#{$i} {
+        /* .uniqueness__image-#{$i} {
           content: url("/assets/uniqueness/uniqueness_dark_#{$i}_mobile.webp");
-        }
+        } */
       }
     }
   }
@@ -222,12 +221,12 @@ $uniqueness-image-count: 4; // Number of images
   }
 
   .uniqueness__image-0 {
-    left: -350px;
+    left: -390px;
   }
 
   .uniqueness__image-1 {
     left: initial;
-    right: -490px;
+    right: -445px;
   }
 
   .uniqueness__image-2 {
@@ -244,8 +243,14 @@ $uniqueness-image-count: 4; // Number of images
   .uniqueness__image > {
     @for $i from 0 to $uniqueness-image-count {
       .uniqueness__image-#{$i} {
-        content: url("/assets/uniqueness/uniqueness_dark_#{$i}.webp");
+        content: url("/assets/uniqueness/uniqueness_dark_#{$i}.svg");
       }
+    }
+  }
+
+  @for $i from 0 to $uniqueness-image-count {
+    .uniqueness__section-dots--#{$i} {
+      content: url("/assets/uniqueness/dots_dark_#{$i}.svg");
     }
   }
 }
