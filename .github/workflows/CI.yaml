@@ -69,5 +69,5 @@ jobs:
           tags: ${{ steps.meta-landing-page.outputs.tags }}
           labels: ${{ steps.meta-landing-page.outputs.labels }}
           build-args: |
-          DIRECTUS_URL = ${{ secrets.DIRECTUS_URL }}
-          DIRECTUS_TOKEN = ${{ secrets.DIRECTUS_TOKEN }}
+            DIRECTUS_URL = ${{ secrets.DIRECTUS_URL }}
+            DIRECTUS_TOKEN = ${{ secrets.DIRECTUS_TOKEN }}
