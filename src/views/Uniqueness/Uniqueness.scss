@@ -117,6 +117,7 @@ $uniqueness-image-count: 4; // Number of images
     flex-direction: column;
     box-sizing: border-box;
     gap: 32px;
+    margin-top: 64px;
 
     &:first-of-type {
       margin-top: 64px;
@@ -147,9 +148,9 @@ $uniqueness-image-count: 4; // Number of images
       }
 
       @for $i from 0 to $uniqueness-image-count {
-        /* .uniqueness__image-#{$i} {
-          content: url("/assets/uniqueness/uniqueness_light_#{$i}_mobile.webp");
-        } */
+        .uniqueness__image-#{$i} {
+          content: url("/assets/uniqueness/uniqueness_light_#{$i}--mobile.svg");
+        }
       }
     }
 
@@ -191,9 +192,9 @@ $uniqueness-image-count: 4; // Number of images
   @media (prefers-color-scheme: dark) {
     .uniqueness__section .uniqueness__image > {
       @for $i from 0 to $uniqueness-image-count {
-        /* .uniqueness__image-#{$i} {
-          content: url("/assets/uniqueness/uniqueness_dark_#{$i}_mobile.webp");
-        } */
+        .uniqueness__image-#{$i} {
+          content: url("/assets/uniqueness/uniqueness_dark_#{$i}--mobile.svg");
+        }
       }
     }
   }
@@ -221,21 +222,21 @@ $uniqueness-image-count: 4; // Number of images
   }
 
   .uniqueness__image-0 {
-    left: -390px;
+    left: -364px;
   }
 
   .uniqueness__image-1 {
     left: initial;
-    right: -445px;
+    right: -420px;
   }
 
   .uniqueness__image-2 {
-    left: -390px;
+    left: -344px;
   }
 
   .uniqueness__image-3 {
     left: initial;
-    right: -500px;
+    right: -432px;
   }
 }
 
