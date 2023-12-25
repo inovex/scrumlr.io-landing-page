@@ -13,7 +13,7 @@
   "dependencies": {
     "@astrojs/node": "^7.0.1",
     "@astrojs/react": "^3.0.7",
-    "@directus/sdk": "^13.0.2",
+    "@directus/sdk": "^14.0.0",
     "@types/react": "^18.2.45",
     "@types/react-dom": "^18.2.18",
     "@uidotdev/usehooks": "^2.4.1",
