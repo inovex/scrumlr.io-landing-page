@@ -23,8 +23,11 @@ jobs:
 
       - name: Code Linting
         run: npm run lint
+
   build:
     name: Build
+    if: github.ref == 'refs/heads/main' && success()
+    needs: linting
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
