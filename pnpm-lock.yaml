@@ -1,9 +1,13 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@astrojs/node':
-    specifier: ^7.0.2
-    version: 7.0.2(astro@4.0.7)
+    specifier: ^7.0.3
+    version: 7.0.3(astro@4.0.7)
   '@astrojs/react':
     specifier: ^3.0.8
     version: 3.0.8(@types/react-dom@18.2.18)(@types/react@18.2.45)(react-dom@18.2.0)(react@18.2.0)(vite@5.0.10)
@@ -110,8 +114,8 @@ packages:
       - supports-color
     dev: false
 
-  /@astrojs/node@7.0.2(astro@4.0.7):
-    resolution: {integrity: sha512-g07KV9JBbUubfzLyu2ql+zu09dW3a7zVX1fDr6UriQdz6BvPh0Y0Qn+DqA5P8JwSKAw93mJDuChDW7JrI7CBJg==}
+  /@astrojs/node@7.0.3(astro@4.0.7):
+    resolution: {integrity: sha512-+fqwk73nOQ/ejodMSPdOW0U1FcVHL7+fNFnqRs6MXumdfxWfu5hDGnqGM/QuIf1icXILAF+QoQcpMxRGLn7PfA==}
     peerDependencies:
       astro: ^4.0.0
     dependencies:
@@ -9040,7 +9044,3 @@ packages:
   /zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: false
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
