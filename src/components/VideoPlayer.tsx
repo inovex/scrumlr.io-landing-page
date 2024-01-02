@@ -99,6 +99,7 @@ const VideoPlayer = (props: Props) => {
               src={`/assets/choices/choices_${theme}_${position}.png`}
               height="290"
               width="680"
+              className="choices__image"
               alt={`${props.textContent.screenshotAlt} ${position + 1}`}
             />
           </picture>
@@ -157,6 +158,16 @@ const VideoPlayer = (props: Props) => {
           </li>
         </ul>
       </div>
+      <img
+        src="/assets/backgrounds/bg_cloud_light--left.svg"
+        alt=""
+        className="choices__cloud choices__cloud--left"
+      />
+      <img
+        src="/assets/backgrounds/bg_cloud_light--right.svg"
+        alt=""
+        className="choices__cloud choices__cloud--right"
+      />
     </div>
   );
 };
