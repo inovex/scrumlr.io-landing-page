@@ -30,6 +30,12 @@
   margin: 0 auto;
 }
 
+.navbar > ul > li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
 .navbar > ul > li:nth-of-type(1) {
   justify-self: flex-start;
 }

@@ -3,6 +3,7 @@ import { Logo } from "../Logo";
 import { Link } from "../Link/Link";
 import "./Navbar.scss";
 import getTranslatedContent from "../../utils/directus";
+import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher.astro";
 
 const {lang} = Astro.params;
 const content = await getTranslatedContent("Header", lang!);
@@ -25,6 +26,7 @@ const content = await getTranslatedContent("Header", lang!);
       <a href=`/${lang}#About`>{content.aboutUs}</a>
     </li>
     <li>
+      <LanguageSwitcher />
       <Link
         href="/new"
         className="navbar__link"

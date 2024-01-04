@@ -1,0 +1,41 @@
+---
+import German from '../../icons/German.astro';
+import English from '../../icons/English.astro';
+import './LanguageSwitcher.scss';
+
+const {lang} = Astro.params;
+---
+
+
+<div class="language-switcher__container">
+  <button id="language-switcher__button" class="language-switcher__button">
+    {lang === 'de' ? <German /> : <English />}
+  </button>
+
+  <menu id="language-switcher__dropdown" class="language-switcher__dropdown">
+    <li class="language-switcher__dropdown-item">
+      <a href="/en">
+        <English />
+        <span>English</span>
+      </a>
+    </li>
+    <li class="language-switcher__dropdown-item">
+      <a href="/de">
+        <German />
+        <span>Deutsch</span>
+      </a>
+  </menu>
+</div>
+
+<script>
+  document.getElementById('language-switcher__button').addEventListener('click', () => {
+    document.getElementById('language-switcher__dropdown').classList.toggle('language-switcher__dropdown--visible');
+  });
+
+  window.onclick = function(event) {
+    if (!event.target.matches('#language-switcher__button')) {
+      console.log(event.target);
+      document.getElementById('language-switcher__dropdown').classList.remove('language-switcher__dropdown--visible');
+    }
+  };
+</script>
