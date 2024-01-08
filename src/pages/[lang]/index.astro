@@ -1,6 +1,6 @@
 ---
 import type { GetStaticPaths } from "astro";
-import ReachNewHeights from "@views/ReachNewHeights/ReachNewHeights.astro";
+import Hero from "@views/Hero/Hero.astro";
 import Choices from "@views/Choices/Choices.astro";
 import Uniqueness from "@views/Uniqueness/Uniqueness.astro";
 import Mobile from "@views/Mobile/Mobile.astro";
@@ -16,7 +16,7 @@ export const getStaticPaths = (() => {
 ---
 
 <Layout title="scrumlr.io - Online collaboration">
-  <ReachNewHeights />
+  <Hero />
   <Choices />
   <Uniqueness />
   <Mobile />
