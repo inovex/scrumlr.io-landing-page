@@ -2,7 +2,7 @@
 import type { GetStaticPaths } from "astro";
 import LegalLayout from "@layouts/LegalLayout.astro";
 import getTranslatedContent from "@utils/directus.ts";
-import "./Legal.scss";
+import "@styles/Legal.scss";
 
 const {lang} = Astro.params;
 const content = await getTranslatedContent("Terms_Conditions", lang!);

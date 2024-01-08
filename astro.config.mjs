@@ -3,8 +3,6 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react()],
-  redirects: {
-    "/legal": "/legal/privacy",
-  },
+  site: 'https://scrumlr.io',
+  integrations: [react()]
 });
