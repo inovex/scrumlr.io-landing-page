@@ -30,6 +30,6 @@
     "eslint-plugin-astro": "^0.31.0",
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "prettier-plugin-astro": "^0.12.2",
-    "sass": "^1.69.5"
+    "sass": "^1.69.7"
   }
 }
