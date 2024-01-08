@@ -1,11 +1,11 @@
 ---
 import type {GetStaticPaths} from "astro";
-import LegalLayout from "../../../layouts/LegalLayout.astro";
-import getTranslatedContent from "../../../utils/directus.ts";
+import LegalLayout from "@layouts/LegalLayout.astro";
+import getTranslatedContent from "@utils/directus.ts";
 import "./Legal.scss";
 
 const {lang} = Astro.params;
-const content = await getTranslatedContent("Cookie_Policy", lang!);
+const content = await getTranslatedContent("Legal_Notice", lang!);
 
 export const getStaticPaths = (() => {
     return [
@@ -16,5 +16,5 @@ export const getStaticPaths = (() => {
 ---
 
 <LegalLayout>
-  <section set:html={content.Cookie_Policy} />
+  <section set:html={content.legal_notice} />
 </LegalLayout>
