@@ -13,14 +13,13 @@
   box-shadow: 0 3px 12px 0 rgba(255, 0, 105, 0.3);
   background: var(--lightmode-pink);
   cursor: pointer;
-  transition:
-    transform 80ms ease-in-out,
-    box-shadow 80ms ease-in-out;
   text-decoration: none;
   width: fit-content;
+  transition-duration: 80ms;
+  transition-timing-function: linear;
 
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
     box-shadow: 0 4px 14px 0 rgba(255, 0, 105, 0.44);
   }
   &:active {

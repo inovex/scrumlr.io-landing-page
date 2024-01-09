@@ -113,6 +113,7 @@ const FeedbackCarousel = ({ items }: FeedbackCarouselProps) => {
               key={index}
               className={`feedback-carousel__button ${dotState}`}
               onClick={() => slideTo(index, true)}
+              aria-label={`Feedback Slide ${index + 1}`}
             >
               <div className="feedback-carousel__dot" />
             </button>

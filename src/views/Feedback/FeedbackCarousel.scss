@@ -103,11 +103,11 @@
   .feedback_card-author {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 16px;
 
     img {
       width: 42px;
-      height: 42px;
       border-radius: 50%;
     }
 
@@ -118,6 +118,7 @@
 
       .feedback_card-author-name {
         margin: 0;
+        font-weight: bold;
       }
     }
   }

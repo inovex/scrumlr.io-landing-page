@@ -24,7 +24,7 @@ const FeedbackCard = (item: FeedbackItem, posistionPercentage: number) => {
           alt={item.name}
         />
         <div className="feedback_card-author-info">
-          <h4 className="feedback_card-author-name">{item.name}</h4>
+          <span className="feedback_card-author-name">{item.name}</span>
           <span className="feedback_card-author-position">
             {item.role}
             {item.role && item.company && ", "}

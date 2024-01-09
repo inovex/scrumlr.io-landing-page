@@ -18,8 +18,7 @@ export const Link =(props: LinkProps) => {
       className={classNames('link', {'link--tertiary': props.tertiary}, props.className)}
       href={props.href}
     >
-      <span>{props.children}</span>
-      {props.icon}
+      {props.children}
     </a>
   );
 }

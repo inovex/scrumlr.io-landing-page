@@ -1,8 +1,9 @@
 ---
 import { Logo } from "../Logo";
+import { Plus } from "../../icons/Plus";
 import { Link } from "../Link/Link";
+import getTranslatedContent from "@utils/directus";
 import "./Navbar.scss";
-import getTranslatedContent from "../../utils/directus";
 
 const {lang} = Astro.params;
 const content = await getTranslatedContent("Header", lang!);
@@ -26,9 +27,12 @@ const content = await getTranslatedContent("Header", lang!);
     </li>
     <li>
       <Link
-        href="/new"
+        href="https://scrumlr.io/new"
         className="navbar__link"
-        >{content.createBoard}</Link>
+      >
+        <span>{content.createBoard}</span>
+        <Plus />
+      </Link>
     </li>
   </ul>
 </nav>
