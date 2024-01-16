@@ -60,8 +60,7 @@
 
 .mobile__dots {
   position: absolute;
-  right: -75%;
-  opacity: 0.05;
+  right: -60%;
 }
 
 @media screen and (max-width: 991px) {
@@ -118,7 +117,7 @@
   }
 
   .mobile__dots {
-    opacity: 1;
+    content: url("/assets/mobile/dots--dark.svg");
   }
 
   .mobile__stan {

@@ -133,7 +133,7 @@ const VideoPlayer = (props: Props) => {
         <ul className="choices__video-position-buttons">
           <li>
             <button
-              className="choices__video-position-button--0"
+              className={`choices__video-position-button--0 ${!isMobile ? position <= 2 : position === 0 ? "choices__video-position-button--active" : ""}`}
               disabled={position === 0}
               onClick={() => setPosition(0)}
               aria-label={props.textContent.buttonFirstVidLabel}
@@ -142,7 +142,7 @@ const VideoPlayer = (props: Props) => {
 
           <li>
             <button
-              className="choices__video-position-button--1"
+              className={`choices__video-position-button--1 ${!isMobile ? position > 2 && position <= 5 : position === 1 ? "choices__video-position-button--active" : ""}`}
               disabled={position === 1}
               onClick={() => setPosition(1)}
               aria-label={props.textContent.buttonSecondVidLabel}
@@ -150,7 +150,7 @@ const VideoPlayer = (props: Props) => {
           </li>
           <li>
             <button
-              className="choices__video-position-button--2"
+              className={`choices__video-position-button--2 ${!isMobile ? position > 5 && position <= 8 : position === 2 ? "choices__video-position-button--active" : ""}`}
               disabled={position === 2}
               onClick={() => setPosition(2)}
               aria-label={props.textContent.buttonThirdVidLabel}

@@ -13,7 +13,7 @@ const {lang} = Astro.params;
 const content = await getTranslatedContent("Features_Section", lang!);
 ---
 
-<section id="Features" class="features">
+<section id="features" class="features">
     <h2>{content.header}</h2>
     <p>{content.text}</p>
   <div class="features_list">

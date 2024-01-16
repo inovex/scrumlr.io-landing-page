@@ -1,12 +1,12 @@
 ---
-import { Github } from "../../icons/Github";
-import { Instagram } from "../../icons/Instagram";
-import { Linkedin } from "../../icons/Linkedin";
-import { Podcast } from "../../icons/Podcast";
-import { X } from "../../icons/X";
-import { Xing } from "../../icons/Xing";
-import { Inovex } from "../../icons/Inovex";
-import getTranslatedContent from "../../utils/directus";
+import { Github } from "@icons/Github";
+import { Instagram } from "@icons/Instagram";
+import { Linkedin } from "@icons/Linkedin";
+import { Podcast } from "@icons/Podcast";
+import { X } from "@icons/X";
+import { Xing } from "@icons/Xing";
+import { Inovex } from "@icons/Inovex";
+import getTranslatedContent from "@utils/directus";
 import "./Footer.scss";
 
 const {lang} = Astro.params;
@@ -88,13 +88,13 @@ const content = await getTranslatedContent("Footer", lang!);
     <nav class="footer__right">
       <ul class="footer__internal-links">
         <li>
-          <a href=`/${lang}#Home`>{content.home}</a>
+          <a href=`/${lang}#home`>{content.home}</a>
         </li>
         <li>
-          <a href=`/${lang}#Features`>{content.features}</a>
+          <a href=`/${lang}#features`>{content.features}</a>
         </li>
         <li>
-          <a href=`/${lang}#About`>{content.about}</a>
+          <a href=`/${lang}#about`>{content.about}</a>
         </li>
         <li>
           <a href=`/new`>{content.getStarted}</a>

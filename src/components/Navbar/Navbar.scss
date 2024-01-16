@@ -15,6 +15,7 @@
 
 .navbar__link {
   font-size: 1rem;
+  padding: 12px 22px 12px 26px;
 }
 
 .navbar > ul {
@@ -63,6 +64,7 @@
       font-size: 1.125rem;
       font-weight: 600;
       cursor: pointer;
+      letter-spacing: 0.4px;
 
       > span {
         color: var(--white);
