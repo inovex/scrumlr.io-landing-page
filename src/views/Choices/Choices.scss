@@ -108,15 +108,23 @@
 
   button {
     border: none;
-    background: var(--lightmode-pink);
-    padding: 6px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
+    background-color: var(--lightmode-pink);
     opacity: 0.5;
+    transition: all 0.2s cubic-bezier(0.7, 0.53, 0.17, 0.99);
+    cursor: pointer;
 
-    &:disabled {
-      opacity: 1;
+    &:hover {
+      transform: scale(1.2);
     }
   }
+}
+
+.choices__video-position-button--active {
+  transform: scale(1.2);
+  opacity: 1 !important;
 }
 
 .choices__cloud {

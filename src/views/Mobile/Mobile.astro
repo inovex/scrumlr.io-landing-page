@@ -1,6 +1,6 @@
 ---
 import "./Mobile.scss";
-import getTranslatedContent from "../../utils/directus";
+import getTranslatedContent from "@utils/directus";
 
 const { lang } = Astro.params;
 const content = await getTranslatedContent("Mobile_Section", lang!);

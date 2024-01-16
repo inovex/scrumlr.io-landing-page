@@ -1,5 +1,6 @@
 ---
 import { Link } from "@components/Link/Link";
+import ArrowRight from "@icons/ArrowRight";
 import getTranslatedContent from "@utils/directus";
 import "./Hero.scss";
 
@@ -8,7 +9,7 @@ const content = await getTranslatedContent("Hero_Section", lang!);
 ---
 
 
-<section class="reach-new-heights" id="Home">
+<section class="reach-new-heights" id="home">
   <div class="reach-new-heights__content">
     <div>
       <div class="reach-new-heights__headline">
@@ -16,8 +17,11 @@ const content = await getTranslatedContent("Hero_Section", lang!);
         <p>{content.paragraph}</p>
       </div>
       <div class="reach-new-heights__buttons">
-          <Link href="/new">{content.cta}</Link>
-              <Link href="#Features" tertiary>{content.detailsButton}</Link>
+        <Link href="/new">{content.cta}</Link>
+        <Link href="#choices" tertiary>
+          <span>{content.detailsButton}</span>
+          <ArrowRight />
+        </Link>
       </div>
     </div>
     <img
