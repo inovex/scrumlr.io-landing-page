@@ -20,6 +20,8 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   overflow-y: clip;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .footer__left {
