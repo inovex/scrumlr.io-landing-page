@@ -1,0 +1,115 @@
+  .user-menu {
+    position: relative;
+  }
+
+  .user-menu__avatar {
+    height: 46px;
+    width: 46px;
+    border-radius: 999px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+  }
+
+  .user-menu__dropdown::before {
+    background-color: #fff;
+    position: absolute;
+    content: "";
+    width: 56px;
+    height: 64px;
+    top: 0;
+    transform: translateY(-100%);
+    left: 0;
+    border-top-right-radius: 28px;
+    border-top-left-radius: 28px;
+  }
+
+  .user-menu__dropdown {
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    left: -5px;
+    top: 59px;
+    border-radius: 16px;
+    border-top-left-radius: 0;
+    box-shadow: 0px 3px 12px rgba(36, 44, 61, 0.1);
+    z-index: -1;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  .user-menu__dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .user-menu__dropdown li {
+    box-sizing: border-box;
+    width: 210px;
+    height: auto;
+  }
+
+  .user-menu__dropdown li:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .user-menu__dropdown li:first-of-type a,
+  .user-menu__dropdown li:first-of-type button {
+    border-top-right-radius: 16px;
+  }
+
+  .user-menu__dropdown li:last-of-type a,
+  .user-menu__dropdown li:last-of-type button {
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+
+  .user-menu__dropdown a,
+  .user-menu__dropdown button {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    padding: 12px 24px 12px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: #242C3D;
+
+    &:hover {
+      background-color: #F6F5FB;
+    }
+  }
+
+  .user-menu__dropdown a svg,
+  .user-menu__dropdown button svg {
+    height: 32px;
+    width: 32px;
+  }
+
+  .user-menu__dropdown a span,
+  .user-menu__dropdown button span {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .user-menu__dropdown::before,
+    .user-menu__dropdown {
+      background-color: #5A647D;
+    }
+    .user-menu__dropdown a,
+    .user-menu__dropdown button {
+      color: var(--white);
+      &:hover {
+        background-color: #626D88;
+      }
+    }
+  }
+

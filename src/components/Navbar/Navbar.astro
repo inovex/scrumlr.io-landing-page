@@ -3,6 +3,8 @@ import { Logo } from "../Logo";
 import { Plus } from "../../icons/Plus";
 import { Link } from "../Link/Link";
 import getTranslatedContent from "@utils/directus";
+//import UserMenu from "@components/UserMenu.astro";
+import UserMenu from "@components/UserMenu/UserMenu";
 import "./Navbar.scss";
 
 const {lang} = Astro.params;
@@ -26,6 +28,7 @@ const content = await getTranslatedContent("Header", lang!);
       <a href=`/${lang}#about`>{content.aboutUs}</a>
     </li>
     <li>
+      <UserMenu client:load />
       <Link
         href="https://scrumlr.io/new"
         className="navbar__link"

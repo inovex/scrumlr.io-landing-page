@@ -1,25 +1,27 @@
 ---
 import { ViewTransitions } from "astro:transitions";
 import Layout from "./Layout.astro";
+import getTranslatedContent from "@utils/directus";
 
 const {lang} = Astro.params;
+const content = await getTranslatedContent("Legal_Menu", lang!);
 
 const navItems = [
   {
     href: `/${lang}/data-protection`,
-    name: "Privacy Policy",
+    name: content.privacy,
   },
   {
     href: `/${lang}/cookie-policy`,
-    name: "Cookie Policy",
+    name: content.cookies,
   },
   {
     href: `/${lang}/terms`,
-    name: "Terms & Conditions",
+    name: content.terms,
   },
   {
     href: `/${lang}/legal-notice`,
-    name: "Legal Notice",
+    name: content.legal_notice,
   },
 ];
 ---
@@ -40,21 +42,21 @@ const navItems = [
         }
       </nav>
       <address>
-        <p>scrumlr.io is provided by:</p>
+        <p>{content.providedBy}</p>
         <p>
           inovex GmbH<br />
            Karlsruher Straße 71<br />
            75179 Pforzheim<br />
-           Germany<br />
+           {content.germany}<br />
         </p>
         <p>
-          Owner contact email:<br />
-          <a href="mailto:info@scrumlr.io">info@scrumlr.io</a>
+          {content.ownerMail}<br />
+          <a href=`mailto:${content.email}`>{content.email}</a>
         </p>
       </address>
       <p>
-        Latest update:<br />
-        <strong><time>November 2021</time></strong>
+      {content.lastUpdate}<br />
+      <strong><time>{content.lastUpdateDate}</time></strong>
       </p>
     </aside>
     <section>

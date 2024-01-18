@@ -46,6 +46,13 @@
   justify-self: flex-end;
 }
 
+.navbar > ul > li:last-of-type {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
 
 @media (min-width: 768px) {
   .navbar > ul {

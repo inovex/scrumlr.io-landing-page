@@ -115,6 +115,7 @@
     opacity: 0.5;
     transition: all 0.2s cubic-bezier(0.7, 0.53, 0.17, 0.99);
     cursor: pointer;
+    padding: 0;
 
     &:hover {
       transform: scale(1.2);

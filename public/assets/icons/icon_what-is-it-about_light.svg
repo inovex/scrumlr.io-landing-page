@@ -1,32 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="45" viewBox="0 0 45 45">
-  <defs>
-    <linearGradient id="linear-gradient" x1="0.181" y1="0.142" x2="0.906" y2="0.853" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#fff2f7"/>
-      <stop offset="1" stop-color="#eff3fb"/>
-    </linearGradient>
-  </defs>
-  <g id="ic_addcards" transform="translate(-348.744 -898.658)">
-    <g id="Ellipse_1990" data-name="Ellipse 1990" transform="translate(348.744 898.658)" stroke="#fff" strokeWidth="2" fill="url(#linear-gradient)">
-      <circle cx="22.5" cy="22.5" r="22.5" stroke="none"/>
-      <circle cx="22.5" cy="22.5" r="21.5" fill="none"/>
-    </g>
-    <g id="Gruppe_4601" data-name="Gruppe 4601" transform="translate(357.737 909.171)">
-      <g id="ic_addimage" transform="translate(0 0)">
-        <g id="Gruppe_32" data-name="Gruppe 32">
-          <g id="Gruppe_32-2" data-name="Gruppe 32" transform="translate(3.752 3.889)">
-            <path id="Pfad_26" data-name="Pfad 26" d="M6.358,0h7.81A3.036,3.036,0,0,1,17.2,3.036v.722M3.036,17.2A3.036,3.036,0,0,1,0,14.168v-8H0" fill="none" stroke="rgba(0,87,255,0.5)" strokeWidth="2"/>
-            <path id="Pfad_7169" data-name="Pfad 7169" d="M3.1,17H8.677" transform="translate(-0.075 0.204)" fill="none" stroke="#7faaff" strokeWidth="2"/>
-          </g>
-          <path id="Vereinigungsmenge_3" data-name="Vereinigungsmenge 3" d="M-1619-266v-3h-3v-2h3v-3h2v3h3v2h-3v3Z" transform="translate(1622 274)" fill="#0057ff"/>
-        </g>
-      </g>
-    </g>
-    <g id="ic_column" transform="translate(359.698 908)">
-      <path id="BG" d="M32.384,0V32.384H0Z" fill="rgba(255,255,255,0)" opacity="0.3"/>
-      <g id="ic" transform="translate(12.665 10.865)">
-        <path id="Pfad_47" data-name="Pfad 47" d="M.7,0H11.243a.708.708,0,0,1,.7.722V5.053a.708.708,0,0,1-.7.722H.7A.708.708,0,0,1,0,5.054V.722A.708.708,0,0,1,.7,0Z" transform="translate(0 11.946) rotate(-90)" fill="none" stroke="#0057ff" strokeWidth="2"/>
-        <path id="Pfad_49" data-name="Pfad 49" d="M11.391,1.9h0V1.012c0-.559-.3-1.012-.67-1.012H.67C.3,0,0,.453,0,1.012v1.1H0" transform="translate(8.166 11.391) rotate(-90)" fill="none" stroke="#7faaff" strokeWidth="2"/>
-      </g>
-    </g>
-  </g>
+<svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.5 45C34.9264 45 45 34.9264 45 22.5C45 10.0736 34.9264 0 22.5 0C10.0736 0 0 10.0736 0 22.5C0 34.9264 10.0736 45 22.5 45Z" fill="url(#paint0_linear_2419_44511)"/>
+<path d="M22.5 44C34.3741 44 44 34.3741 44 22.5C44 10.6259 34.3741 1 22.5 1C10.6259 1 1 10.6259 1 22.5C1 34.3741 10.6259 44 22.5 44Z" stroke="white" stroke-width="2"/>
+<path d="M20.1041 14.401H27.9141C28.7186 14.4021 29.4898 14.7224 30.0583 15.2916C30.6268 15.8609 30.9461 16.6325 30.9461 17.437V18.159M16.7821 31.601C15.9776 31.601 15.206 31.2817 14.6367 30.7132C14.0675 30.1447 13.7472 29.3735 13.7461 28.569V20.569" stroke="#0057FF" stroke-opacity="0.5" stroke-width="2"/>
+<path d="M16.7734 31.605H22.3504" stroke="#5C8FFF" stroke-width="2"/>
+<path d="M12.9922 18.512V15.512H9.99219V13.512H12.9922V10.512H14.9922V13.512H17.9922V15.512H14.9922V18.512H12.9922Z" fill="#0057FF"/>
+<path d="M24.6172 31.4518V20.9088C24.6182 20.8153 24.6378 20.723 24.6747 20.6371C24.7116 20.5512 24.7652 20.4735 24.8323 20.4084C24.8994 20.3433 24.9788 20.2922 25.0658 20.2579C25.1528 20.2237 25.2457 20.207 25.3392 20.2088H29.6702C29.7637 20.207 29.8566 20.2237 29.9436 20.2579C30.0306 20.2922 30.1099 20.3433 30.1771 20.4084C30.2442 20.4735 30.2978 20.5512 30.3347 20.6371C30.3716 20.723 30.3911 20.8153 30.3922 20.9088V31.4518C30.3911 31.5452 30.3716 31.6375 30.3348 31.7233C30.2979 31.8092 30.2444 31.8869 30.1774 31.9519C30.1104 32.017 30.0312 32.0682 29.9443 32.1025C29.8574 32.1368 29.7646 32.1536 29.6712 32.1518H25.3392C25.2457 32.1537 25.1528 32.137 25.0658 32.1028C24.9788 32.0685 24.8994 32.0174 24.8323 31.9523C24.7652 31.8872 24.7116 31.8095 24.6747 31.7236C24.6378 31.6377 24.6182 31.5453 24.6172 31.4518V31.4518Z" stroke="#0057FF" stroke-width="2"/>
+<path d="M34.6812 20.206H33.7932C33.2342 20.206 32.7812 20.506 32.7812 20.876V30.927C32.7812 31.297 33.2342 31.597 33.7932 31.597H34.8932" stroke="#5C8FFF" stroke-width="2"/>
+<defs>
+<linearGradient id="paint0_linear_2419_44511" x1="8.145" y1="6.39" x2="40.77" y2="38.385" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFF2F7"/>
+<stop offset="1" stop-color="#EFF3FB"/>
+</linearGradient>
+</defs>
 </svg>
