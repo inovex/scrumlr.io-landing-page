@@ -2,7 +2,13 @@ import {useState, useEffect} from "react";
 import classNames from "classnames";
 import "./UserMenu.scss";
 
-const UserMenu = () => {
+type UserMenuProps = {
+  germanLabel: string;
+  englishLabel: string;
+  logoutLabel: string;
+};
+
+const UserMenu = ({germanLabel, englishLabel, logoutLabel}: UserMenuProps) => {
 
   const serverUrl = "http://localhost:8080";
 
@@ -30,11 +36,11 @@ const UserMenu = () => {
   }
 
   return (
-    <div className="user-menu">
+    <div className={classNames("user-menu", {"user-menu--active": isActive})}>
       <button id="user-menu__avatar" className="user-menu__avatar" onClick={() => setIsActive(curr => !curr)}>
         <img src="/assets/images/Stan.png" alt="Stan Scrumlr" />
       </button>
-      <div id="user-menu__dropdown" className={classNames("user-menu__dropdown", {"user-menu__dropdown--active": isActive})}>
+      <div id="user-menu__dropdown" className="user-menu__dropdown">
         <ul>
           <li>
             <a href="/de">
@@ -48,7 +54,7 @@ const UserMenu = () => {
                   <path d="M0 0H32V10.4375H0V0Z" fill="#333333"/>
                 </g>
               </svg>
-              <span>Deutsch</span>
+              <span>{germanLabel}</span>
             </a>
           </li>
           <li>
@@ -64,7 +70,7 @@ const UserMenu = () => {
                   <path d="M0.9375 0.90625L0.43125 2.5H-1.25L0.10625 3.4875L-0.4125 5.08125L0.9375 4.09375L2.2875 5.08125L1.775 3.49375L3.1375 2.5H1.4625L0.9375 0.90625ZM6.675 0.90625L6.15625 2.5H4.48125L5.8375 3.4875L5.31875 5.08125L6.675 4.09375L8.03125 5.08125L7.5125 3.49375L8.875 2.5H7.2L6.675 0.90625ZM12.4187 0.90625L11.9 2.50625H10.225L11.5813 3.49375L11.0625 5.0875L12.4187 4.1L13.7688 5.08125L13.2563 3.5L14.6125 2.5H12.9375L12.4187 0.90625ZM0.9375 5.575L0.41875 7.16875H-1.25L0.10625 8.15625L-0.4125 9.75L0.9375 8.75L2.2875 9.73125L1.775 8.15L3.13125 7.15H1.4625L0.9375 5.575ZM6.675 5.575L6.15625 7.16875H4.4875L5.84375 8.15625L5.325 9.75L6.68125 8.7625L8.03125 9.74375L7.51875 8.1625L8.875 7.1625H7.2L6.675 5.575ZM12.4125 5.575L11.8938 7.16875H10.2188L11.575 8.15625L11.0562 9.75L12.4125 8.7625L13.7625 9.74375L13.25 8.1625L14.6062 7.1625H12.9375L12.4125 5.575ZM0.9375 10.225L0.41875 11.8188H-1.25L0.1 12.8125L-0.41875 14.4062L0.9375 13.4125L2.29375 14.4L1.775 12.8125L3.13125 11.8188H1.45625L0.9375 10.225ZM6.675 10.225L6.15625 11.8188H4.48125L5.8375 12.8125L5.31875 14.4062L6.675 13.4187L8.03125 14.4062L7.5125 12.8188L8.86875 11.825H7.19375L6.675 10.225ZM12.4125 10.225L11.8938 11.8188H10.2188L11.575 12.8062L11.0562 14.4L12.4125 13.4125L13.7688 14.4L13.25 12.8125L14.6062 11.8188H12.9375L12.4125 10.225Z" fill="#EEEEEE"/>
                 </g>
               </svg>
-              <span>English</span>
+              <span>{englishLabel}</span>
             </a>
           </li>
           {isAuthenticated && (<li>
@@ -75,7 +81,7 @@ const UserMenu = () => {
                 <path d="M18.1406 16.5469L15.595 19.0925" stroke="#313949" stroke-width="2" stroke-linecap="square"/>
                 <path d="M7 16.5938H16.5868" stroke="#313949" stroke-width="2" stroke-linecap="round"/>
               </svg>
-              <span>Logout</span>
+              <span>{logoutLabel}</span>
             </button>
           </li>)}
         </ul>
