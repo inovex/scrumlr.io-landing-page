@@ -38,7 +38,7 @@ const UserMenu = ({germanLabel, englishLabel, logoutLabel}: UserMenuProps) => {
   return (
     <div className={classNames("user-menu", {"user-menu--active": isActive})}>
       <button id="user-menu__avatar" className="user-menu__avatar" onClick={() => setIsActive(curr => !curr)}>
-        <img src="/assets/images/Stan.png" alt="Stan Scrumlr" />
+        <img src="/assets/images/Stan.svg" alt="Stan Scrumlr" />
       </button>
       <div id="user-menu__dropdown" className="user-menu__dropdown">
         <ul>

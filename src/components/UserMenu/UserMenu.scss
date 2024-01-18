@@ -10,6 +10,8 @@
     border: none;
     cursor: pointer;
     background-color: transparent;
+    position: relative;
+    z-index: 100;
 
     > img {
       height: 100%;
@@ -19,6 +21,12 @@
   }
 
   .user-menu--active {
+    .user-menu__avatar > img {
+      transform: scale(0.8);
+    }
+  }
+  .user-menu:hover,
+  .user-menu:focus-within {
     .user-menu__avatar > img {
       transform: scale(0.8);
     }
@@ -46,9 +54,9 @@
     border-radius: 16px;
     border-top-left-radius: 0;
     box-shadow: 0px 3px 12px rgba(36, 44, 61, 0.1);
-    z-index: -1;
   }
-  .user-menu--active {
+  .user-menu:hover,
+  .user-menu:focus-within {
     .user-menu__dropdown {
       display: block;
     }
