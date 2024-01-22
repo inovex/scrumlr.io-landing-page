@@ -1,7 +1,18 @@
+
+
   .user-menu {
     height: 56px;
     width: 56px;
     position: relative;
+
+    --user-menu-bg: var(--white);
+    --user-menu-color: var(--lightmode-black);
+  }
+  @media (prefers-color-scheme: dark) {
+    .user-menu {
+      --user-menu-bg: var(--dark-blue-4);
+      --user-menu-color: var(--white);
+    }
   }
 
   .user-menu__avatar {
@@ -21,21 +32,14 @@
       transition: all 0.2s cubic-bezier(0.7, 0.53, 0.17, 0.99);
     }
   }
-
   .user-menu--active {
-    .user-menu__avatar > img {
-      transform: scale(0.8);
-    }
-  }
-  .user-menu:hover,
-  .user-menu:focus-within {
     .user-menu__avatar > img {
       transform: scale(0.8);
     }
   }
 
   .user-menu__dropdown::before {
-    background-color: #fff;
+    background-color: var(--user-menu-bg);
     position: absolute;
     content: "";
     width: 56px;
@@ -48,17 +52,16 @@
   }
 
   .user-menu__dropdown {
-    background-color: #fff;
+    background-color: var(--user-menu-bg);
     display: none;
     position: absolute;
     left: 0;
     top: 65px;
     border-radius: 16px;
     border-top-left-radius: 0;
-    box-shadow: 0px 3px 12px rgba(36, 44, 61, 0.1);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   }
-  .user-menu:hover,
-  .user-menu:focus-within {
+  .user-menu--active {
     .user-menu__dropdown {
       display: block;
     }
@@ -104,10 +107,10 @@
     border: none;
     cursor: pointer;
     background-color: transparent;
-    color: #242C3D;
+    color: var(--user-menu-color);
 
     &:hover {
-      background-color: #F6F5FB;
+      background-color: rgba(0, 0, 0, 0.08);
     }
   }
 
@@ -121,19 +124,5 @@
   .user-menu__dropdown button span {
     font-weight: bold;
     font-size: 16px;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    .user-menu__dropdown::before,
-    .user-menu__dropdown {
-      background-color: #5A647D;
-    }
-    .user-menu__dropdown a,
-    .user-menu__dropdown button {
-      color: var(--white);
-      &:hover {
-        background-color: #626D88;
-      }
-    }
   }
 

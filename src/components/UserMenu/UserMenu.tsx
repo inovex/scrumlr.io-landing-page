@@ -9,8 +9,7 @@ type UserMenuProps = {
 };
 
 const UserMenu = ({germanLabel, englishLabel, logoutLabel}: UserMenuProps) => {
-
-  const serverUrl = "http://localhost:8080";
+  const serverUrl = import.meta.env.PUBLIC_SCRUMLR_SERVER_URL;
 
   const [isActive, setIsActive] = useState(false);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -22,6 +21,14 @@ const UserMenu = ({germanLabel, englishLabel, logoutLabel}: UserMenuProps) => {
     }).then((response) => {
       if (response.status === 200) {
         setIsAuthenticated(true);
+      }
+    });
+  }, []);
+
+  useEffect(() => {
+    document.addEventListener("click", (event) => {
+      if (!(event.target as HTMLElement).closest(".user-menu")) {
+        setIsActive(false);
       }
     });
   }, []);
@@ -75,11 +82,10 @@ const UserMenu = ({germanLabel, englishLabel, logoutLabel}: UserMenuProps) => {
           </li>
           {isAuthenticated && (<li>
             <button id="user-menu__logout-button" onClick={() => handleLogout()}>
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11.7969 9.79688C11.7969 8.45275 11.7969 8.62042 12.0585 8.10703C12.2886 7.65544 12.6554 7.28856 13.107 7.05846C13.6204 6.79688 14.293 6.79688 15.6371 6.79688H21.1571C22.5012 6.79688 23.1724 6.79688 23.6857 7.05846C24.1373 7.28856 24.5055 7.65544 24.7355 8.10703C24.9969 8.61992 24.9969 9.29167 24.9969 10.6332V22.1612C24.9969 23.5027 24.9969 24.1734 24.7355 24.6863C24.5055 25.1379 24.1373 25.5055 23.6857 25.7355C23.1729 25.9969 22.5021 25.9969 21.1606 25.9969H15.6332C14.2917 25.9969 13.6199 25.9969 13.107 25.7355C12.6554 25.5055 12.2886 25.1376 12.0585 24.686C11.7969 24.1726 11.7969 24.341 11.7969 22.9969" stroke="#333948" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M15.5859 14L18.1315 16.5456" stroke="#313949" stroke-width="2" stroke-linecap="square"/>
-                <path d="M18.1406 16.5469L15.595 19.0925" stroke="#313949" stroke-width="2" stroke-linecap="square"/>
-                <path d="M7 16.5938H16.5868" stroke="#313949" stroke-width="2" stroke-linecap="round"/>
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 32 32">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-opacity=".5" strokeWidth="1.5" d="M11.797 9.797c0-1.344 0-1.177.261-1.69a2.4 2.4 0 0 1 1.049-1.049c.513-.261 1.186-.261 2.53-.261h5.52c1.344 0 2.015 0 2.529.261.451.23.82.597 1.05 1.049.26.513.26 1.185.26 2.526v11.528c0 1.342 0 2.012-.26 2.525-.23.452-.599.82-1.05 1.05-.513.26-1.184.26-2.525.26h-5.528c-1.341 0-2.013 0-2.526-.26a2.4 2.4 0 0 1-1.048-1.05c-.262-.513-.262-.345-.262-1.69"/>
+                <path stroke="currentColor" stroke-linecap="square" strokeWidth="2" d="m15.586 14 2.545 2.546m.009.001-2.545 2.546"/>
+                <path stroke="currentColor" stroke-linecap="round" strokeWidth="2" d="M7 16.594h9.587"/>
               </svg>
               <span>{logoutLabel}</span>
             </button>
