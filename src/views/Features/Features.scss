@@ -39,8 +39,8 @@
   &--reverse {
     h3,
     p {
-      margin-left: auto;
       margin-right: 0;
+      align-self: end;
     }
   }
 }
@@ -65,7 +65,7 @@
 
   > h3,
   p {
-    width: 256px;
+    width: 320px;
   }
 
   > h3 {

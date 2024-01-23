@@ -45,7 +45,7 @@ const UserMenu = ({germanLabel, englishLabel, logoutLabel}: UserMenuProps) => {
   return (
     <div className={classNames("user-menu", {"user-menu--active": isActive})}>
       <button id="user-menu__avatar" className="user-menu__avatar" onClick={() => setIsActive(curr => !curr)}>
-        <img src="/assets/images/Stan.svg" alt="Stan Scrumlr" />
+        <img src="/assets/images/Stan_light.svg" alt="Stan Scrumlr" />
       </button>
       <div id="user-menu__dropdown" className="user-menu__dropdown">
         <ul>
@@ -80,7 +80,7 @@ const UserMenu = ({germanLabel, englishLabel, logoutLabel}: UserMenuProps) => {
               <span>{englishLabel}</span>
             </a>
           </li>
-          {isAuthenticated && (<li>
+          {isAuthenticated ? (<li>
             <button id="user-menu__logout-button" onClick={() => handleLogout()}>
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 32 32">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-opacity=".5" strokeWidth="1.5" d="M11.797 9.797c0-1.344 0-1.177.261-1.69a2.4 2.4 0 0 1 1.049-1.049c.513-.261 1.186-.261 2.53-.261h5.52c1.344 0 2.015 0 2.529.261.451.23.82.597 1.05 1.049.26.513.26 1.185.26 2.526v11.528c0 1.342 0 2.012-.26 2.525-.23.452-.599.82-1.05 1.05-.513.26-1.184.26-2.525.26h-5.528c-1.341 0-2.013 0-2.526-.26a2.4 2.4 0 0 1-1.048-1.05c-.262-.513-.262-.345-.262-1.69"/>
@@ -89,7 +89,16 @@ const UserMenu = ({germanLabel, englishLabel, logoutLabel}: UserMenuProps) => {
               </svg>
               <span>{logoutLabel}</span>
             </button>
-          </li>)}
+          </li>) : (
+            <a id="user-menu__logout-button" href="https://scrumlr.io/login">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 32 32">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-opacity=".5" strokeWidth="1.5" d="M11.797 9.797c0-1.344 0-1.177.261-1.69a2.4 2.4 0 0 1 1.049-1.049c.513-.261 1.186-.261 2.53-.261h5.52c1.344 0 2.015 0 2.529.261.451.23.82.597 1.05 1.049.26.513.26 1.185.26 2.526v11.528c0 1.342 0 2.012-.26 2.525-.23.452-.599.82-1.05 1.05-.513.26-1.184.26-2.525.26h-5.528c-1.341 0-2.013 0-2.526-.26a2.4 2.4 0 0 1-1.048-1.05c-.262-.513-.262-.345-.262-1.69"/>
+                <path stroke="currentColor" stroke-linecap="square" strokeWidth="2" d="m15.586 14 2.545 2.546m.009.001-2.545 2.546"/>
+                <path stroke="currentColor" stroke-linecap="round" strokeWidth="2" d="M7 16.594h9.587"/>
+              </svg>
+              <span>Anmelden</span>
+            </a>
+          )}
         </ul>
       </div>
     </div>

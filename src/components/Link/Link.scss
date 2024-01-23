@@ -18,13 +18,21 @@
   transition-duration: 80ms;
   transition-timing-function: linear;
 
+  &:link {
+    text-decoration: none;
+  } 
+  &:visited {
+    text-decoration: none;
+  }
   &:hover {
     transform: scale(1.1);
     box-shadow: 0 4px 14px 0 rgba(255, 0, 105, 0.44);
+    text-decoration: none;
   }
   &:active {
     background: var(--lightmode-pink-link-pressed);
     box-shadow: none;
+    text-decoration: none;
   }
   &:focus {
     border: 3px solid var(--darkmode-pink);

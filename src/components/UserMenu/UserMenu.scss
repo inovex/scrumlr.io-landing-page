@@ -32,6 +32,11 @@
       transition: all 0.2s cubic-bezier(0.7, 0.53, 0.17, 0.99);
     }
   }
+  @media (prefers-color-scheme: dark) {
+    .user-menu__avatar > img {
+      content: url(/assets/images/Stan_dark.svg);
+    }
+  }
   .user-menu--active {
     .user-menu__avatar > img {
       transform: scale(0.8);
