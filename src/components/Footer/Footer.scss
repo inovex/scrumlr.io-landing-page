@@ -4,6 +4,7 @@ footer {
   width: 100vw;
   background-color: var(--lightmode-blue);
   margin-top: auto;
+  overflow: clip;
 
   --footer-padding-x: 256px;
 }
@@ -19,7 +20,6 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  overflow-y: clip;
 }
 
 .footer__left {

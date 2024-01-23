@@ -9,8 +9,8 @@
   color: var(--white);
   font-size: 1rem;
   font-family: Raleway, sans-serif;
-  font-weight: 500;
-  box-shadow: 0 3px 12px 0 rgba(255, 0, 105, 0.3);
+  font-weight: 600;
+  box-shadow: 0 3px 6px 0 rgba(255, 0, 105, 0.3);
   background: var(--lightmode-pink);
   cursor: pointer;
   text-decoration: none;
@@ -18,13 +18,21 @@
   transition-duration: 80ms;
   transition-timing-function: linear;
 
+  &:link {
+    text-decoration: none;
+  } 
+  &:visited {
+    text-decoration: none;
+  }
   &:hover {
     transform: scale(1.1);
     box-shadow: 0 4px 14px 0 rgba(255, 0, 105, 0.44);
+    text-decoration: none;
   }
   &:active {
     background: var(--lightmode-pink-link-pressed);
     box-shadow: none;
+    text-decoration: none;
   }
   &:focus {
     border: 3px solid var(--darkmode-pink);
@@ -56,12 +64,6 @@
   }
   &:focus {
     text-decoration: underline;
-  }
-}
-
-@media (min-width: 768px) {
-  .link {
-    font-size: 1.125rem;
   }
 }
 
