@@ -3,7 +3,6 @@ import { Logo } from "../Logo";
 import { Plus } from "../../icons/Plus";
 import { Link } from "../Link/Link";
 import getTranslatedContent from "@utils/directus";
-//import UserMenu from "@components/UserMenu.astro";
 import UserMenu from "@components/UserMenu/UserMenu";
 import "./Navbar.scss";
 
@@ -36,7 +35,7 @@ const userMenuLabels = {
     <li>
       <UserMenu client:load {...userMenuLabels} />
       <Link
-        href="https://scrumlr.io/new"
+        href="/new"
         className="navbar__link"
       >
         <span>{content.createBoard}</span>
