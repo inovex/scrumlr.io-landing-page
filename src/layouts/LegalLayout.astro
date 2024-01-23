@@ -2,9 +2,12 @@
 import { ViewTransitions } from "astro:transitions";
 import Layout from "./Layout.astro";
 import getTranslatedContent from "@utils/directus";
+import "./LegalLayout.scss";
 
 const {lang} = Astro.params;
 const content = await getTranslatedContent("Legal_Menu", lang!);
+
+const pathname = new URL(Astro.request.url).pathname;
 
 const navItems = [
   {
@@ -26,6 +29,7 @@ const navItems = [
 ];
 ---
 
+
 <Layout title="Scrumlr | Legal Documents">
   <div class="legal">
     <aside>
@@ -34,7 +38,7 @@ const navItems = [
           navItems.map((item) => (
             <a
               href={item.href}
-              class={Astro.url.pathname === item.href ? "active" : ""}
+              class={pathname.includes(item.href) ? "active" : ""}
             >
               {item.name}
             </a>
@@ -66,169 +70,3 @@ const navItems = [
   </div>
 </Layout>
 <ViewTransitions />
-
-<style lang="scss">
-  .legal {
-    display: flex;
-    flex-direction: row;
-    padding: 128px 8vw;
-    position: relative;
-    background: linear-gradient(90deg, #fff 0%, rgba(107, 156, 255, 0.03) 100%);
-    gap: 8vw;
-    justify-content: center;
-  }
-
-  aside {
-    display: flex;
-    flex-direction: column;
-    gap: 64px;
-    color: #333948;
-    flex-shrink: 0;
-    position: sticky;
-    top: 192px;
-    align-self: start;
-
-    nav {
-      display: flex;
-      flex-direction: column;
-      gap: 32px;
-
-      a {
-        text-decoration: none;
-        font-size: 24px;
-        line-height: 28px;
-        font-weight: 500;
-        transition: all 0.1s ease-in-out;
-
-        &:visited {
-          color: #333948;
-        }
-
-        &.active {
-          color: var(--lightmode-blue);
-        }
-
-        &:hover {
-          color: var(--lightmode-pink);
-        }
-      }
-    }
-
-    address {
-      font-style: normal;
-    }
-
-    p {
-      font-size: 20px;
-      line-height: 28px;
-      font-weight: 400;
-
-      a {
-        text-decoration: none;
-        color: var(--lightmode-pink);
-
-        &:hover {
-          text-decoration: underline;
-          filter: brightness(1.2);
-        }
-      }
-    }
-  }
-
-  section {
-    max-width: 1440px;
-    text-wrap: balance;
-  }
-
-  .legal_bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-      307deg,
-      rgba(0, 87, 255, 0.37) 1.31%,
-      #d1e0ff 40.42%,
-      #fff2f7 71.15%,
-      #ffe0ed 106.18%
-    );
-    z-index: -1;
-    opacity: 0.2;
-  }
-
-  @media screen and (max-width: 948px) {
-    .legal {
-      flex-direction: column-reverse;
-
-      aside {
-        position: unset;
-        top: 32px;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 32px;
-
-        > nav {
-          gap: 16px;
-          position: absolute;
-          top: 128px;
-        }
-
-        > address {
-          margin-top: 32px;
-        }
-
-        > address > p:first-child,
-        > p {
-          margin-top: 0;
-        }
-
-        > address > p:first-child {
-          font-weight: 700;
-          font-size: 20px;
-        }
-
-        * {
-          font-size: 16px;
-          line-height: 24px;
-        }
-      }
-
-      section {
-        margin-top: 128px;
-      }
-    }
-  }
-
-  @media screen and (prefers-color-scheme: dark) {
-    .legal {
-      background: #242c3d;
-    }
-
-    aside {
-      color: #d4d9dd;
-
-      nav a {
-        &:visited {
-          color: #d4d9dd;
-        }
-
-        &.active {
-          color: var(--darkmode-blue);
-        }
-
-        &:hover {
-          color: var(--darkmode-pink);
-        }
-      }
-
-      p a {
-        color: var(--darkmode-pink);
-      }
-    }
-
-    .legal_bg {
-      display: none;
-    }
-  }
-</style>
