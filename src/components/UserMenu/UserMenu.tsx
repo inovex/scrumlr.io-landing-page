@@ -5,10 +5,11 @@ import "./UserMenu.scss";
 type UserMenuProps = {
   germanLabel: string;
   englishLabel: string;
+  loginLabel: string;
   logoutLabel: string;
 };
 
-const UserMenu = ({germanLabel, englishLabel, logoutLabel}: UserMenuProps) => {
+const UserMenu = ({germanLabel, englishLabel, loginLabel, logoutLabel}: UserMenuProps) => {
   const serverUrl = import.meta.env.PUBLIC_SCRUMLR_SERVER_URL;
 
   const [isActive, setIsActive] = useState(false);
@@ -96,7 +97,7 @@ const UserMenu = ({germanLabel, englishLabel, logoutLabel}: UserMenuProps) => {
                 <path stroke="currentColor" stroke-linecap="square" strokeWidth="2" d="m15.586 14 2.545 2.546m.009.001-2.545 2.546"/>
                 <path stroke="currentColor" stroke-linecap="round" strokeWidth="2" d="M7 16.594h9.587"/>
               </svg>
-              <span>Anmelden</span>
+              <span>{loginLabel}</span>
             </a>
           )}
         </ul>

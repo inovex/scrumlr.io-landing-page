@@ -35,10 +35,8 @@
     text-decoration: none;
   }
   &:focus {
-    border: 3px solid var(--darkmode-pink);
-    padding: 13px 29px;
+    outline: 3px solid var(--darkmode-pink);
     box-shadow: 0 4px 14px 0 rgba(255, 0, 105, 0.3);
-    outline: none;
   }
   &:disabled {
     color: var(--dark-grey);
