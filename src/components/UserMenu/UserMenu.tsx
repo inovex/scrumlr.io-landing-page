@@ -10,13 +10,11 @@ type UserMenuProps = {
 };
 
 const UserMenu = ({germanLabel, englishLabel, loginLabel, logoutLabel}: UserMenuProps) => {
-  const serverUrl = import.meta.env.PUBLIC_SCRUMLR_SERVER_URL;
-
   const [isActive, setIsActive] = useState(false);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   useEffect(() => {
-    fetch(`${serverUrl}/user`, {
+    fetch(`api/user`, {
       method: "GET",
       credentials: "include",
     }).then((response) => {
@@ -35,7 +33,7 @@ const UserMenu = ({germanLabel, englishLabel, loginLabel, logoutLabel}: UserMenu
   }, []);
 
   const handleLogout = () => {
-    fetch(`${serverUrl}/login`, {
+    fetch(`api/login`, {
       method: "DELETE",
       credentials: "include",
     }).then(() => {
