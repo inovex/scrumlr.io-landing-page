@@ -74,3 +74,4 @@ jobs:
           build-args: |
             DIRECTUS_URL=${{ secrets.DIRECTUS_URL }}
             DIRECTUS_TOKEN=${{ secrets.DIRECTUS_TOKEN }}
+            PUBLIC_SCRUMLR_SERVER_URL="https://development.scrumlr.fra.ics.inovex.io/api"
