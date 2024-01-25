@@ -158,14 +158,16 @@ const VideoPlayer = (props: Props) => {
           </li>
         </ul>
       </div>
-      <img
-        src="/assets/backgrounds/bg_cloud_light--left.svg"
-        alt=""
+      <object
+        type="image/svg+xml"
+        data="/assets/backgrounds/bg_cloud_light--left.svg"
+        aria-label=""
         className="choices__cloud choices__cloud--left"
       />
-      <img
-        src="/assets/backgrounds/bg_cloud_light--right.svg"
-        alt=""
+      <object
+        type="image/svg+xml"
+        data="/assets/backgrounds/bg_cloud_light--right.svg"
+        aria-label=""
         className="choices__cloud choices__cloud--right"
       />
     </div>

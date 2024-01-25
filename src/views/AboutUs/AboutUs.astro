@@ -24,15 +24,15 @@ const content = await getTranslatedContent("AboutUs_Section", lang!);
     alt={content.imageAlt}
   />
 </div>
-<img
+<object
   class="about-us__background"
-  src="/assets/about/background_light.svg"
-  alt=""
+  data="/assets/about/background_light.svg"
+  type="image/svg+xml"
 />
-<img
+<object
   class="about-us__background-details"
-  src="/assets/about/background_details_light.svg"
-  alt=""
+  data="/assets/about/background_details_light.svg"
+  type="image/svg+xml"
 />
 </div>
 <div class="about-us__cta" id="GetStarted">

@@ -24,26 +24,26 @@ const content = await getTranslatedContent("Hero_Section", lang!);
         </Link>
       </div>
     </div>
-    <img
-      src="/assets/images/reach-new-heights_light.svg"
-      alt={content.imageAlt1}
+    <object
+      type="image/svg+xml"
+      data="/assets/images/reach-new-heights_light.svg"
       class="reach-new-heights__image reach-new-heights__image--light"
     />
-    <img
-      src="/assets/images/reach-new-heights_dark.svg"
-      alt={content.imageAlt1}
+    <object
+      type="image/svg+xml"
+      data="/assets/images/reach-new-heights_dark.svg"
       class="reach-new-heights__image reach-new-heights__image--dark"
     />
     <div class="reach-new-heights__information">
       <div class="reach-new-heights__information-item">
-        <img
-          src="/assets/icons/icon_what-is-it-about_light.svg"
-          alt="What is it about?"
+        <object
+          type="image/svg+xml"
+          data="/assets/icons/icon_what-is-it-about_light.svg"
           class="information-item__icon information-item__icon--light"
         />
-        <img
-          src="/assets/icons/icon_what-is-it-about_dark.svg"
-          alt="What is it about?"
+        <object
+          type="image/svg+xml"
+          data="/assets/icons/icon_what-is-it-about_dark.svg"
           class="information-item__icon information-item__icon--dark"
         />
         <h2>{content.detailsHeader1}</h2>
@@ -51,14 +51,14 @@ const content = await getTranslatedContent("Hero_Section", lang!);
       </div>
 
       <div class="reach-new-heights__information-item">
-        <img
-          src="/assets/icons/icon_how-can-it-be-used_light.svg"
-          alt="How can it be used?"
+        <object 
+          type="image/svg+xml"
+          data="/assets/icons/icon_how-can-it-be-used_light.svg"
           class="information-item__icon information-item__icon--light"
         />
-        <img
-          src="/assets/icons/icon_how-can-it-be-used_dark.svg"
-          alt="How can it be used?"
+        <object
+          type="image/svg+xml"
+          data="/assets/icons/icon_how-can-it-be-used_dark.svg"
           class="information-item__icon information-item__icon--dark"
         />
         <h2>{content.detailsHeader2}</h2>

@@ -8,20 +8,20 @@ const content = await getTranslatedContent("Mobile_Section", lang!);
 
 <section class="mobile__section">
   <div class="mobile__image">
-    <img
+    <object
       class="mobile__stan"
-      src={`/assets/mobile/mobile_light.svg`}
-      alt={content.imageAlt}
+      data="/assets/mobile/mobile_light.svg"
+      type="image/svg+xml"
     />
-    <img
+    <object
       class="mobile__background"
-      src={`/assets/mobile/mobile_background_light.svg`}
-      alt=""
+      data="/assets/mobile/mobile_background_light.svg"
+      type="image/svg+xml"
     />
   </div>
   <div class="mobile__text">
     <h2>{content.header}</h2>
     <p>{content.text}</p>
-    <img class="mobile__dots" src="/assets/mobile/mobile_dots.svg" alt="" />
+    <object class="mobile__dots" data="/assets/mobile/mobile_dots.svg" type="image/svg+xml" />
   </div>
 </section>
