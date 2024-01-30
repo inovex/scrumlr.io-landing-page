@@ -11,7 +11,7 @@
     "lint": "eslint . --ext .js,.ts,.astro"
   },
   "dependencies": {
-    "@astrojs/node": "^7.0.2",
+    "@astrojs/node": "^7.0.4",
     "@astrojs/react": "^3.0.8",
     "@directus/sdk": "^14.0.0",
     "@uidotdev/usehooks": "^2.4.1",
