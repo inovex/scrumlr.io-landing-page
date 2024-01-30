@@ -19,7 +19,7 @@ dependencies:
     version: 2.4.1(react-dom@18.2.0)(react@18.2.0)
   astro:
     specifier: ^4.0.7
-    version: 4.0.7(sass@1.69.5)(typescript@5.1.3)
+    version: 4.0.7(sass@1.70.0)(typescript@5.1.3)
   classnames:
     specifier: ^2.5.1
     version: 2.5.1
@@ -59,8 +59,8 @@ devDependencies:
     specifier: ^0.12.2
     version: 0.12.2
   sass:
-    specifier: ^1.69.5
-    version: 1.69.5
+    specifier: ^1.70.0
+    version: 1.70.0
 
 packages:
 
@@ -119,7 +119,7 @@ packages:
     peerDependencies:
       astro: ^4.0.0
     dependencies:
-      astro: 4.0.7(sass@1.69.5)(typescript@5.1.3)
+      astro: 4.0.7(sass@1.70.0)(typescript@5.1.3)
       send: 0.18.0
       server-destroy: 1.0.1
     transitivePeerDependencies:
@@ -2609,21 +2609,13 @@ packages:
   /@types/react-reconciler@0.26.7:
     resolution: {integrity: sha512-mBDYl8x+oyPX/VBb3E638N0B7xG+SPk/EAMcVPeexqus/5aTpTphQi0curhhshOqRrc9t6OPoJfEUkbymse/lQ==}
     dependencies:
-      '@types/react': 18.2.45
+      '@types/react': 18.2.48
     dev: false
 
   /@types/react-reconciler@0.28.8:
     resolution: {integrity: sha512-SN9c4kxXZonFhbX4hJrZy37yw9e7EIxcpHCxQv5JUS18wDE5ovkQKlqQEkufdJCCMfuI9BnjUJvhYeJ9x5Ra7g==}
     dependencies:
-      '@types/react': 18.2.45
-    dev: false
-
-  /@types/react@18.2.45:
-    resolution: {integrity: sha512-TtAxCNrlrBp8GoeEp1npd5g+d/OejJHFxS3OWmrPBMFaVQMSN0OFySozJio5BHxTuTeug00AVXVAjfDSfk+lUg==}
-    dependencies:
-      '@types/prop-types': 15.7.5
-      '@types/scheduler': 0.16.3
-      csstype: 3.1.2
+      '@types/react': 18.2.48
     dev: false
 
   /@types/react@18.2.48:
@@ -2797,7 +2789,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.23.3(@babel/core@7.23.5)
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.0
-      vite: 5.0.10(sass@1.69.5)
+      vite: 5.0.10(sass@1.70.0)
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -3016,7 +3008,7 @@ packages:
       - supports-color
     dev: true
 
-  /astro@4.0.7(sass@1.69.5)(typescript@5.1.3):
+  /astro@4.0.7(sass@1.70.0)(typescript@5.1.3):
     resolution: {integrity: sha512-K+Ms2AAQvi6yERPuglcI69tnHyTT44JCjzqprSjw3uOwFX7N9obpLgbhmLMH1fPFTgzt3ZD7APjmtDPN51makw==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
@@ -3077,7 +3069,7 @@ packages:
       tsconfck: 3.0.0(typescript@5.1.3)
       unist-util-visit: 5.0.0
       vfile: 6.0.1
-      vite: 5.0.10(sass@1.69.5)
+      vite: 5.0.10(sass@1.70.0)
       vitefu: 0.2.5(vite@5.0.10)
       which-pm: 2.1.1
       yargs-parser: 21.1.1
@@ -7712,8 +7704,8 @@ packages:
       suf-log: 2.5.3
     dev: true
 
-  /sass@1.69.5:
-    resolution: {integrity: sha512-qg2+UCJibLr2LCVOt3OlPhr/dqVHWOa9XtZf2OjbLs/T4VPSJ00udtgJxH3neXZm+QqX8B+3cU7RaLqp1iVfcQ==}
+  /sass@1.70.0:
+    resolution: {integrity: sha512-uUxNQ3zAHeAx5nRFskBnrWzDUJrrvpCPD5FNAoRvTi0WwremlheES3tg+56PaVtCs5QDRX5CBLxxKMDJMEa1WQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
@@ -8705,7 +8697,7 @@ packages:
       vfile-message: 4.0.2
     dev: false
 
-  /vite@5.0.10(sass@1.69.5):
+  /vite@5.0.10(sass@1.70.0):
     resolution: {integrity: sha512-2P8J7WWgmc355HUMlFrwofacvr98DAjoE52BfdbwQtyLH06XKwaL/FMnmKM2crF0iX4MpmMKoDlNCB1ok7zHCw==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -8736,7 +8728,7 @@ packages:
       esbuild: 0.19.8
       postcss: 8.4.32
       rollup: 4.6.1
-      sass: 1.69.5
+      sass: 1.70.0
     optionalDependencies:
       fsevents: 2.3.3
     dev: false
@@ -8749,7 +8741,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 5.0.10(sass@1.69.5)
+      vite: 5.0.10(sass@1.70.0)
     dev: false
 
   /vlq@1.0.1:
