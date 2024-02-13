@@ -12,8 +12,8 @@ dependencies:
     specifier: ^3.0.10
     version: 3.0.10(@types/react-dom@18.2.19)(@types/react@18.2.55)(react-dom@18.2.0)(react@18.2.0)(vite@5.0.12)
   '@directus/sdk':
-    specifier: ^14.0.0
-    version: 14.0.0
+    specifier: ^15.0.0
+    version: 15.0.0
   '@uidotdev/usehooks':
     specifier: ^2.4.1
     version: 2.4.1(react-dom@18.2.0)(react@18.2.0)
@@ -1598,8 +1598,8 @@ packages:
       to-fast-properties: 2.0.0
     dev: false
 
-  /@directus/sdk@14.0.0:
-    resolution: {integrity: sha512-xxX20VpdwKXR5O1QNo1HXY3hF8sulOjTdio+zWELLGsSnW4asXT32VLGhiPSl9gtZ2ctSnsrU29k5ACYD2WoRQ==}
+  /@directus/sdk@15.0.0:
+    resolution: {integrity: sha512-QnfTQGeiZEhdWcS1K5IyoskzOzpvRt1GVjxaBjke6amP9wODa7PxLbXmpDz/1aRgml0HIkrhMDdmbWaHMgXuTQ==}
     engines: {node: '>=18.0.0'}
     dev: false
 
