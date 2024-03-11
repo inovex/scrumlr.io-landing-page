@@ -12,8 +12,8 @@ dependencies:
     specifier: ^3.0.10
     version: 3.0.10(@types/react-dom@18.2.19)(@types/react@18.2.56)(react-dom@18.2.0)(react@18.2.0)(vite@5.0.12)
   '@directus/sdk':
-    specifier: ^14.0.0
-    version: 14.0.0
+    specifier: ^15.0.2
+    version: 15.0.2
   '@uidotdev/usehooks':
     specifier: ^2.4.1
     version: 2.4.1(react-dom@18.2.0)(react@18.2.0)
@@ -1598,9 +1598,15 @@ packages:
       to-fast-properties: 2.0.0
     dev: false
 
-  /@directus/sdk@14.0.0:
-    resolution: {integrity: sha512-xxX20VpdwKXR5O1QNo1HXY3hF8sulOjTdio+zWELLGsSnW4asXT32VLGhiPSl9gtZ2ctSnsrU29k5ACYD2WoRQ==}
+  /@directus/sdk@15.0.2:
+    resolution: {integrity: sha512-OGgj7twVa8rIGONXwTWKUru8t6amyd+rsq/7OukOTR1z199p1O8hsLJz7buKualGyqJvoX21CeTNEg9jcQHPPg==}
     engines: {node: '>=18.0.0'}
+    dependencies:
+      '@directus/system-data': 1.0.1
+    dev: false
+
+  /@directus/system-data@1.0.1:
+    resolution: {integrity: sha512-sm2gO9SUcRle5rCsmS4qby2K8OfvewnU9/Iao7brGyexLjXDrvfxBB2danNWVLw1qE+UrLX/R+caVrxQ4ZaMkw==}
     dev: false
 
   /@esbuild/android-arm64@0.19.8:
@@ -2609,21 +2615,13 @@ packages:
   /@types/react-reconciler@0.26.7:
     resolution: {integrity: sha512-mBDYl8x+oyPX/VBb3E638N0B7xG+SPk/EAMcVPeexqus/5aTpTphQi0curhhshOqRrc9t6OPoJfEUkbymse/lQ==}
     dependencies:
-      '@types/react': 18.2.55
+      '@types/react': 18.2.56
     dev: false
 
   /@types/react-reconciler@0.28.8:
     resolution: {integrity: sha512-SN9c4kxXZonFhbX4hJrZy37yw9e7EIxcpHCxQv5JUS18wDE5ovkQKlqQEkufdJCCMfuI9BnjUJvhYeJ9x5Ra7g==}
     dependencies:
-      '@types/react': 18.2.55
-    dev: false
-
-  /@types/react@18.2.55:
-    resolution: {integrity: sha512-Y2Tz5P4yz23brwm2d7jNon39qoAtMMmalOQv6+fEFt1mT+FcM3D841wDpoUvFXhaYenuROCy3FZYqdTjM7qVyA==}
-    dependencies:
-      '@types/prop-types': 15.7.5
-      '@types/scheduler': 0.16.3
-      csstype: 3.1.2
+      '@types/react': 18.2.56
     dev: false
 
   /@types/react@18.2.56:
