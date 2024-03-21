@@ -15,7 +15,7 @@
     "@astrojs/react": "^3.0.10",
     "@directus/sdk": "^15.0.3",
     "@uidotdev/usehooks": "^2.4.1",
-    "astro": "^4.3.5",
+    "astro": "^4.5.8",
     "classnames": "^2.5.1",
     "random-avatar-generator": "^2.0.0",
     "react": "^18.2.0",
