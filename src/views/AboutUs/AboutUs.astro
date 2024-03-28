@@ -3,7 +3,7 @@ import { Link } from "../../components/Link/Link";
 import getTranslatedContent from "../../utils/directus";
 import "./AboutUs.scss";
 
-const {lang} = Astro.params;
+const {lang} = Astro.props;
 const content = await getTranslatedContent("AboutUs_Section", lang!);
 ---
 

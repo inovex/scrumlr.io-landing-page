@@ -9,7 +9,7 @@ import { Inovex } from "@icons/Inovex";
 import getTranslatedContent from "@utils/directus";
 import "./Footer.scss";
 
-const {lang} = Astro.params;
+const {lang} = Astro.props;
 const content = await getTranslatedContent("Footer", lang!);
 ---
 

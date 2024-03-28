@@ -1,5 +1,4 @@
 ---
-import type { GetStaticPaths } from "astro";
 import Hero from "@views/Hero/Hero.astro";
 import Choices from "@views/Choices/Choices.astro";
 import Uniqueness from "@views/Uniqueness/Uniqueness.astro";
@@ -9,18 +8,15 @@ import TargetUser from "@views/TargetUser/TargetUser.astro";
 import Features from "@views/Features/Features.astro";
 import Feedback from "@views/Feedback/Feedback.astro";
 import AboutUs from "@views/AboutUs/AboutUs.astro";
-
-export const getStaticPaths = (() => {
-  return [{ params: { lang: "en" } }, { params: { lang: "de" } }];
-}) satisfies GetStaticPaths;
 ---
 
-<Layout title="scrumlr.io - Online collaboration">
-  <Hero />
-  <Choices />
-  <Uniqueness />
-  <Mobile />
-  <Features />
-  <Feedback />
-  <AboutUs />
+<Layout title="scrumlr.io - Online collaboration" lang="de" >
+  <Hero lang="de" />
+  <Choices lang="de" />
+  <Uniqueness lang="de" />
+  <Mobile lang="de" />
+  <Features lang="de" />
+  <TargetUser lang="de" />
+  <Feedback lang="de" />
+  <AboutUs lang="de" />
 </Layout>

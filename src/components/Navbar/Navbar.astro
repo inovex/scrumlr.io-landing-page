@@ -6,7 +6,7 @@ import getTranslatedContent from "@utils/directus";
 import UserMenu from "@components/UserMenu/UserMenu";
 import "./Navbar.scss";
 
-const {lang} = Astro.params;
+const {lang} = Astro.props;
 const content = await getTranslatedContent("Header", lang!);
 
 const userMenuLabels = {

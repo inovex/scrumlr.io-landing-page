@@ -3,7 +3,7 @@ import VideoPlayer from "../../components/VideoPlayer";
 import getTranslatedContent from "../../utils/directus";
 import "./Choices.scss";
 
-const { lang } = Astro.params;
+const { lang } = Astro.props;
 const content = await getTranslatedContent("Choices_Section", lang!);
 ---
 
