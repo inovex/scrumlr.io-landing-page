@@ -1,0 +1,17 @@
+---
+import LegalLayout from "@layouts/LegalLayout.astro";
+import getTranslatedContent from "@utils/directus.ts";
+import "@styles/Legal.scss";
+
+const content = await getTranslatedContent("Terms_Conditions", "de");
+---
+
+<LegalLayout>
+  <section set:html={content.Terms_Conditions} />
+</LegalLayout>
+
+<style>
+  section {
+    text-wrap: wrap;
+  }
+</style>

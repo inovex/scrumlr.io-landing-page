@@ -9,7 +9,7 @@ import Features_dark_1 from "./images/Features_dark_1.tsx";
 import Features_dark_2 from "./images/Features_dark_2.tsx";
 import getTranslatedContent from "../../utils/directus";
 
-const {lang} = Astro.params;
+const {lang} = Astro.props;
 const content = await getTranslatedContent("Features_Section", lang!);
 ---
 

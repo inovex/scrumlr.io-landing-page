@@ -2,7 +2,7 @@
 import "./Uniqueness.scss";
 import getTranslatedContent from "../../utils/directus";
 
-const { lang } = Astro.params;
+const { lang } = Astro.props;
 const content = await getTranslatedContent("Uniqueness_Section", lang!);
 ---
 

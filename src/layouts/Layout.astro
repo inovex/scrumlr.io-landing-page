@@ -4,13 +4,14 @@ import Footer from "../components/Footer/Footer.astro";
 
 export interface Props {
   title: string;
+  lang: string;
 }
 
-const { title } = Astro.props;
+const { title, lang } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Open source online retrospective & collaboration tool - fast onboarding, jump right into a session with your team" />
@@ -24,11 +25,11 @@ const { title } = Astro.props;
   </head>
   <body>
     <div class="body_wrapper">
-      <Navbar />
+      <Navbar lang={lang} />
       <main>
         <slot />
       </main>
-      <Footer />
+      <Footer lang={lang} />
     </div>
   </body>
 </html>
