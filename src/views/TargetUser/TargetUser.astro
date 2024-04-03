@@ -2,7 +2,7 @@
 import './TargetUser.scss';
 import getTranslatedContent from "../../utils/directus";
 
-const {lang} = Astro.props;
+const {lang} = Astro.params;
 const content = await getTranslatedContent("TargetUser_Section", lang!);
 ---
 
@@ -10,22 +10,21 @@ const content = await getTranslatedContent("TargetUser_Section", lang!);
     <h2>{content.header}</h2>
     <p>{content.text}</p>
     <video 
-       autoplay 
-       loop 
-       muted 
-       playsinline
-       class='target-user__gif target-user__gif--light'
+         autoplay 
+         loop 
+         muted 
+         playsinline
+         class='target-user__gif target-user__gif--light'
      >
-      <source src='/assets/images/target-user_light.mp4' type='video/mp4;codecs=hvc1' >
-      <source src='/assets/images/target-user_light.webm' type='video/webm' >
+        <source src='/assets/images/target-user_light.webm' type='video/webm' />
     </video>
     <video 
-       autoplay 
-       loop 
-       muted 
-       playsinline
-       class='target-user__gif target-user__gif--dark'
+         autoplay 
+         loop 
+         muted 
+         playsinline
+         class='target-user__gif target-user__gif--dark'
     >
-      <source src='/assets/images/target-user_dark.webm' type='video/webm' />
+        <source src='/assets/images/target-user_dark.webm' type='video/webm' />
     </video>
 </section>
