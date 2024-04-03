@@ -1,4 +1,5 @@
 ---
+import { getLangFromUrl } from "src/i18n/utils";
 import "./Features.scss";
 import { Link } from "../../components/Link/Link";
 import Features_light_0 from "./images/Features_light_0.tsx";
@@ -9,8 +10,8 @@ import Features_dark_1 from "./images/Features_dark_1.tsx";
 import Features_dark_2 from "./images/Features_dark_2.tsx";
 import getTranslatedContent from "../../utils/directus";
 
-const {lang} = Astro.params;
-const content = await getTranslatedContent("Features_Section", lang!);
+const lang = getLangFromUrl(Astro.url);
+const content = await getTranslatedContent("Features_Section", lang);
 ---
 
 <section id="features" class="features">

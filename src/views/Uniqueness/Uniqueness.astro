@@ -1,9 +1,10 @@
 ---
-import "./Uniqueness.scss";
+import { getLangFromUrl } from "src/i18n/utils";
 import getTranslatedContent from "../../utils/directus";
+import "./Uniqueness.scss";
 
-const { lang } = Astro.params;
-const content = await getTranslatedContent("Uniqueness_Section", lang!);
+const lang = getLangFromUrl(Astro.url);
+const content = await getTranslatedContent("Uniqueness_Section", lang);
 ---
 
 <section class="uniqueness__wrapper">

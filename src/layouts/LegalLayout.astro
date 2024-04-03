@@ -1,29 +1,30 @@
 ---
+import { getLangFromUrl, getPathForLanguage } from "src/i18n/utils";
+import getTranslatedContent from "@utils/directus";
 import { ViewTransitions } from "astro:transitions";
 import Layout from "./Layout.astro";
-import getTranslatedContent from "@utils/directus";
 import "./LegalLayout.scss";
 
-const {lang} = Astro.params;
-const content = await getTranslatedContent("Legal_Menu", lang!);
+const lang = getLangFromUrl(Astro.url);
+const content = await getTranslatedContent("Legal_Menu", lang);
 
 const pathname = new URL(Astro.request.url).pathname;
 
 const navItems = [
   {
-    href: `/${lang}/data-protection`,
+    href: getPathForLanguage(lang, "/data-protection"),
     name: content.privacy,
   },
   {
-    href: `/${lang}/cookie-policy`,
+    href: getPathForLanguage(lang, "/cookie-policy"),
     name: content.cookies,
   },
   {
-    href: `/${lang}/terms`,
+    href: getPathForLanguage(lang, "/terms"),
     name: content.terms,
   },
   {
-    href: `/${lang}/legal-notice`,
+    href: getPathForLanguage(lang, "/legal-notice"),
     name: content.legal_notice,
   },
 ];
