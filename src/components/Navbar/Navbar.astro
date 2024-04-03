@@ -1,13 +1,14 @@
 ---
+import getTranslatedContent from "@utils/directus";
+import { getLangFromUrl, getPathForLanguage } from '../../i18n/utils';
 import { Logo } from "../Logo";
 import { Plus } from "../../icons/Plus";
 import { Link } from "../Link/Link";
-import getTranslatedContent from "@utils/directus";
 import UserMenu from "@components/UserMenu/UserMenu";
 import "./Navbar.scss";
 
-const {lang} = Astro.props;
-const content = await getTranslatedContent("Header", lang!);
+const lang = getLangFromUrl(Astro.url);
+const content = await getTranslatedContent("Header", lang);
 
 const userMenuLabels = {
   germanLabel: content.german,
@@ -20,18 +21,18 @@ const userMenuLabels = {
 <nav id="navbar" class="navbar">
   <ul>
     <li>
-      <a aria-label={content.home} href=`/${lang}`>
+      <a aria-label={content.home} href={getPathForLanguage(lang, "/")}>
         <Logo />
       </a>
     </li>
     <li>
-      <a href=`/${lang}#home`>{content.home}</a>
+      <a href={getPathForLanguage(lang, "#home")}>{content.home}</a>
     </li>
     <li>
-      <a href=`/${lang}#features`>{content.features}</a>
+      <a href={getPathForLanguage(lang, "#features")}>{content.features}</a>
     </li>
     <li>
-      <a href=`/${lang}#about`>{content.aboutUs}</a>
+      <a href={getPathForLanguage(lang, "#about")}>{content.aboutUs}</a>
     </li>
     <li>
       <UserMenu client:load {...userMenuLabels} />

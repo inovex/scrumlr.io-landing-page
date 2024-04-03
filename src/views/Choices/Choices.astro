@@ -1,10 +1,11 @@
 ---
+import { getLangFromUrl } from "src/i18n/utils";
 import VideoPlayer from "../../components/VideoPlayer";
 import getTranslatedContent from "../../utils/directus";
 import "./Choices.scss";
 
-const { lang } = Astro.props;
-const content = await getTranslatedContent("Choices_Section", lang!);
+const lang = getLangFromUrl(Astro.url);
+const content = await getTranslatedContent("Choices_Section", lang);
 ---
 
 <section id="choices" class="choices">

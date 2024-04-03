@@ -1,9 +1,10 @@
 ---
-import "./Mobile.scss";
+import { getLangFromUrl } from "src/i18n/utils";
 import getTranslatedContent from "@utils/directus";
+import "./Mobile.scss";
 
-const { lang } = Astro.props;
-const content = await getTranslatedContent("Mobile_Section", lang!);
+const lang = getLangFromUrl(Astro.url);
+const content = await getTranslatedContent("Mobile_Section", lang);
 ---
 
 <section class="mobile__section">

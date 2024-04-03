@@ -1,10 +1,11 @@
 ---
+import { getLangFromUrl } from "src/i18n/utils";
 import { Link } from "../../components/Link/Link";
 import getTranslatedContent from "../../utils/directus";
 import "./AboutUs.scss";
 
-const {lang} = Astro.props;
-const content = await getTranslatedContent("AboutUs_Section", lang!);
+const lang = getLangFromUrl(Astro.url);
+const content = await getTranslatedContent("AboutUs_Section", lang);
 ---
 
 <section class="about-us" id="about">
