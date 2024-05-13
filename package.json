@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@astrojs/node": "^8.2.3",
-    "@astrojs/react": "^3.0.10",
+    "@astrojs/react": "^3.3.4",
     "@directus/sdk": "^15.0.3",
     "@uidotdev/usehooks": "^2.4.1",
     "astro": "^4.5.8",
