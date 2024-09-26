@@ -26,7 +26,7 @@ jobs:
 
   build:
     name: Build
-    if: github.ref == 'refs/heads/main' && success()
+    # if: github.ref == 'refs/heads/main' && success()
     needs: linting
     runs-on: ubuntu-latest
     steps:
@@ -60,7 +60,7 @@ jobs:
             org.opencontainers.image.licenses=MIT
             org.opencontainers.image.title=scrumlr.io - Landing Page
             org.opencontainers.image.description=The landing page of scrumlr.io
-            
+
       - name: Set up Docker buildx
         uses: docker/setup-buildx-action@v2
 
