@@ -18,3 +18,4 @@ export function getPathForLanguage(lang: keyof typeof languages, path: string) {
   
   return lang === defaultLang ? path : `/${lang}${path}`;
 }
+
