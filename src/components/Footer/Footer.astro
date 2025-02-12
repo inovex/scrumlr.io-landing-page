@@ -1,6 +1,6 @@
 ---
 import getTranslatedContent from "@utils/directus";
-import {getLangFromUrl, getPathForLanguage} from "../../i18n/utils";
+import { getLangFromUrl, getPathForLanguage } from "../../i18n/utils";
 import { Github } from "@icons/Github";
 import { Instagram } from "@icons/Instagram";
 import { Linkedin } from "@icons/Linkedin";
@@ -15,14 +15,13 @@ const content = await getTranslatedContent("Footer", lang);
 
 <footer>
   <div class="footer__top">
-    <img
-      src="/icons/inovex-outline.svg"
-      alt="inovex"
-      class="footer__logo"
-    />
+    <img src="/icons/inovex-outline.svg" alt="inovex" class="footer__logo" />
     <div class="footer__left">
       <h2 class="footer__heading">inovex GmbH</h2>
-      <p class="footer__inovex-description" set:html={content.inovexDescription} />
+      <p
+        class="footer__inovex-description"
+        set:html={content.inovexDescription}
+      />
       <ul class="footer__external-links">
         <li>
           <a href="https://inovex.de" target="_blank" aria-label="inovex">
@@ -79,13 +78,15 @@ const content = await getTranslatedContent("Footer", lang);
     <nav class="footer__right">
       <ul class="footer__internal-links">
         <li>
-          <a href={getPathForLanguage(lang, "#home")}>{content.home}</a>
+          <a href={"/" + getPathForLanguage(lang, "#home")}>{content.home}</a>
         </li>
         <li>
-          <a href={getPathForLanguage(lang, "#features")}>{content.features}</a>
+          <a href={"/" + getPathForLanguage(lang, "#features")}>
+            {content.features}
+          </a>
         </li>
         <li>
-          <a href={getPathForLanguage(lang, "#about")}>{content.about}</a>
+          <a href={"/" + getPathForLanguage(lang, "#about")}>{content.about}</a>
         </li>
         <li>
           <a href=`/new`>{content.getStarted}</a>
@@ -97,16 +98,22 @@ const content = await getTranslatedContent("Footer", lang);
     <div class="footer__bottom-content">
       <ul class="footer__legal-links">
         <li>
-          <a href={getPathForLanguage(lang, "/data-protection")}>{content.privacy}</a>
+          <a href={getPathForLanguage(lang, "/data-protection")}>
+            {content.privacy}
+          </a>
         </li>
         <li>
-          <a href={getPathForLanguage(lang, "/cookie-policy")}>{content.cookies}</a>
+          <a href={getPathForLanguage(lang, "/cookie-policy")}>
+            {content.cookies}
+          </a>
         </li>
         <li>
           <a href={getPathForLanguage(lang, "/terms")}>{content.terms}</a>
         </li>
         <li>
-          <a href={getPathForLanguage(lang, "/legal-notice")}>{content.legal_notice}</a>
+          <a href={getPathForLanguage(lang, "/legal-notice")}>
+            {content.legal_notice}
+          </a>
         </li>
       </ul>
       <span>{content.copyright}</span>
