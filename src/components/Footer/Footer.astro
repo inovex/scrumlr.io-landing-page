@@ -78,15 +78,15 @@ const content = await getTranslatedContent("Footer", lang);
     <nav class="footer__right">
       <ul class="footer__internal-links">
         <li>
-          <a href={"/" + getPathForLanguage(lang, "#home")}>{content.home}</a>
+          <a href={getPathForLanguage(lang, "#home")}>{content.home}</a>
         </li>
         <li>
-          <a href={"/" + getPathForLanguage(lang, "#features")}>
+          <a href={getPathForLanguage(lang, "#features")}>
             {content.features}
           </a>
         </li>
         <li>
-          <a href={"/" + getPathForLanguage(lang, "#about")}>{content.about}</a>
+          <a href={getPathForLanguage(lang, "#about")}>{content.about}</a>
         </li>
         <li>
           <a href=`/new`>{content.getStarted}</a>
