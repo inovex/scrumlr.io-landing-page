@@ -1,16 +1,16 @@
 ---
+import getTranslatedContent from "@utils/directus";
+import {getLangFromUrl, getPathForLanguage} from "../../i18n/utils";
 import { Github } from "@icons/Github";
 import { Instagram } from "@icons/Instagram";
 import { Linkedin } from "@icons/Linkedin";
 import { Podcast } from "@icons/Podcast";
-import { X } from "@icons/X";
 import { Xing } from "@icons/Xing";
 import { Inovex } from "@icons/Inovex";
-import getTranslatedContent from "@utils/directus";
 import "./Footer.scss";
 
-const {lang} = Astro.params;
-const content = await getTranslatedContent("Footer", lang!);
+const lang = getLangFromUrl(Astro.url);
+const content = await getTranslatedContent("Footer", lang);
 ---
 
 <footer>
@@ -40,7 +40,7 @@ const content = await getTranslatedContent("Footer", lang!);
         </li>
         <li>
           <a
-            href="https://www.linkedin.com/company/inovex/"
+            href="https://www.linkedin.com/showcase/scrumlr/"
             target="_blank"
             aria-label="LinkedIn"
           >
@@ -58,16 +58,7 @@ const content = await getTranslatedContent("Footer", lang!);
         </li>
         <li>
           <a
-            href="https://twitter.com/inovexgmbh"
-            target="_blank"
-            aria-label="X"
-          >
-            <X />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.instagram.com/inovexlife/"
+            href="https://www.instagram.com/scrumlr/"
             target="_blank"
             aria-label="Instagram"
           >
@@ -88,13 +79,13 @@ const content = await getTranslatedContent("Footer", lang!);
     <nav class="footer__right">
       <ul class="footer__internal-links">
         <li>
-          <a href=`/${lang}#home`>{content.home}</a>
+          <a href={getPathForLanguage(lang, "#home")}>{content.home}</a>
         </li>
         <li>
-          <a href=`/${lang}#features`>{content.features}</a>
+          <a href={getPathForLanguage(lang, "#features")}>{content.features}</a>
         </li>
         <li>
-          <a href=`/${lang}#about`>{content.about}</a>
+          <a href={getPathForLanguage(lang, "#about")}>{content.about}</a>
         </li>
         <li>
           <a href=`/new`>{content.getStarted}</a>
@@ -106,16 +97,16 @@ const content = await getTranslatedContent("Footer", lang!);
     <div class="footer__bottom-content">
       <ul class="footer__legal-links">
         <li>
-          <a href=`/${lang}/data-protection`>{content.privacy}</a>
+          <a href={getPathForLanguage(lang, "/data-protection")}>{content.privacy}</a>
         </li>
         <li>
-          <a href=`/${lang}/cookie-policy`>{content.cookies}</a>
+          <a href={getPathForLanguage(lang, "/cookie-policy")}>{content.cookies}</a>
         </li>
         <li>
-          <a href=`/${lang}/terms`>{content.terms}</a>
+          <a href={getPathForLanguage(lang, "/terms")}>{content.terms}</a>
         </li>
         <li>
-          <a href=`/${lang}/legal-notice`>{content.legal_notice}</a>
+          <a href={getPathForLanguage(lang, "/legal-notice")}>{content.legal_notice}</a>
         </li>
       </ul>
       <span>{content.copyright}</span>

@@ -95,7 +95,7 @@ const UserMenu = ({
             </a>
           </li>
           <li>
-            <a href="/en">
+            <a href="/">
               <svg
                 width="32"
                 height="32"

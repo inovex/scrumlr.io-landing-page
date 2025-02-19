@@ -1,4 +1,22 @@
 ---
+import Hero from "@views/Hero/Hero.astro";
+import Choices from "@views/Choices/Choices.astro";
+import Uniqueness from "@views/Uniqueness/Uniqueness.astro";
+import Mobile from "@views/Mobile/Mobile.astro";
+import Layout from "@layouts/Layout.astro";
+import TargetUser from "@views/TargetUser/TargetUser.astro";
+import Features from "@views/Features/Features.astro";
+import Feedback from "@views/Feedback/Feedback.astro";
+import AboutUs from "@views/AboutUs/AboutUs.astro";
 ---
 
-<meta http-equiv="refresh" content="0;url=/en" />
+<Layout title="scrumlr.io – Effortless Online Retrospectives for Agile Teams" >
+  <Hero />
+  <Choices />
+  <Uniqueness />
+  <Mobile />
+  <Features />
+  <TargetUser />
+  <Feedback />
+  <AboutUs />
+</Layout>

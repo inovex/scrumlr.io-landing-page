@@ -1,9 +1,10 @@
 ---
-import './TargetUser.scss';
+import { getLangFromUrl } from "src/i18n/utils";
 import getTranslatedContent from "../../utils/directus";
+import './TargetUser.scss';
 
-const {lang} = Astro.params;
-const content = await getTranslatedContent("TargetUser_Section", lang!);
+const lang = getLangFromUrl(Astro.url);
+const content = await getTranslatedContent("TargetUser_Section", lang);
 ---
 
 <section class='target-user'>
