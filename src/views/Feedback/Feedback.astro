@@ -2,16 +2,25 @@
 import { getLangFromUrl } from "src/i18n/utils";
 import FeedbackCarousel from "./FeedbackCarousel.tsx";
 import getTranslatedContent, { getContent } from "../../utils/directus";
+import type { FileMetadata } from "src/types/directus.types";
 
 const lang = getLangFromUrl(Astro.url);
 const content = await getTranslatedContent("Feedback_Section", lang);
 const testimonials = (await getContent("testimonials")) as FeedbackItem[];
+const directusUrl = import.meta.env.DIRECTUS_URL;
+
+testimonials.forEach((testimonial) => {
+  if (testimonial.image) {
+    testimonial.imageUrl = `${directusUrl}/assets/${testimonial.image.id}`;
+  }
+});
 
 export type FeedbackItem = {
   name: string;
   role?: string;
   company?: string;
-  image?: string;
+  image: FileMetadata;
+  imageUrl?: string;
   feedback: string;
 };
 ---
