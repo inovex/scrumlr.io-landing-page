@@ -1,4 +1,3 @@
-import { AvatarGenerator } from "random-avatar-generator";
 import type { FeedbackItem } from "./Feedback.astro";
 
 const FeedbackCard = (item: FeedbackItem, posistionPercentage: number) => {
@@ -16,13 +15,7 @@ const FeedbackCard = (item: FeedbackItem, posistionPercentage: number) => {
     >
       <p className="feedback_card-text">{item.feedback}</p>
       <div className="feedback_card-author">
-        <img
-          src={
-            item.image ??
-            new AvatarGenerator().generateRandomAvatar(item.name + item.company)
-          }
-          alt={item.name}
-        />
+        <img src={item.imageUrl} alt={item.name} />
         <div className="feedback_card-author-info">
           <span className="feedback_card-author-name">{item.name}</span>
           <span className="feedback_card-author-position">
