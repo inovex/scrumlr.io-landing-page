@@ -12,6 +12,10 @@ export function getLangFromUrl(url: URL) {
 }
 
 export function getPathForLanguage(lang: keyof typeof languages, path: string) {
+  if (path.startsWith("#")) {
+    return lang === defaultLang ? `/${path}` : `/${lang}${path}`;
+  }
+  
   return lang === defaultLang ? path : `/${lang}${path}`;
 }
 
