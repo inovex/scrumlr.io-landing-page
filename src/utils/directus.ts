@@ -40,11 +40,6 @@ export default async function getTranslatedContent(
 }
 
 export async function getContent(collection: string) {
-  console.log(directusUrl, directusToken);
-
-  console.log(
-    `${directusUrl}/assets/${"cc030b8a-4742-41a6-930a-f2aa65959de2"}`,
-  );
   const content = await directusClient.request(
     readItems(collection, {
       fields: ["*.*"],
