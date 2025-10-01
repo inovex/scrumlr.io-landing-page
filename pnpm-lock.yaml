@@ -15,8 +15,8 @@ importers:
         specifier: ^4.3.1
         version: 4.3.1(@types/node@24.5.2)(@types/react-dom@18.2.19)(@types/react@18.2.56)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.92.1)(terser@5.44.0)(yaml@2.8.1)
       '@directus/sdk':
-        specifier: ^20.0.3
-        version: 20.0.3
+        specifier: ^20.1.0
+        version: 20.1.0
       '@uidotdev/usehooks':
         specifier: ^2.4.1
         version: 2.4.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -796,8 +796,8 @@ packages:
   '@capsizecss/unpack@2.4.0':
     resolution: {integrity: sha512-GrSU71meACqcmIUxPYOJvGKF0yryjN/L1aCuE9DViCTJI7bfkjgYDPD1zbNDcINJwSSP6UaBZY9GAbYDO7re0Q==}
 
-  '@directus/sdk@20.0.3':
-    resolution: {integrity: sha512-PFTYx8QxYi36L9zjOVldwZ88Iln9pBGtEamEjLGFuYqy1jk5jKJ7qA7827KfeZJkz3EtNNZM6J605I7s/ayD2g==}
+  '@directus/sdk@20.1.0':
+    resolution: {integrity: sha512-EV2bwfiOXc1QFYAIqfGgyZ7JcKgHF43UVEYivUpMjOLiihI9tpmNfcz/qmOXju7LCZrBmSwTOHMRtOXPdZWiLQ==}
     engines: {node: '>=22'}
 
   '@emnapi/runtime@1.5.0':
@@ -5886,7 +5886,7 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@directus/sdk@20.0.3': {}
+  '@directus/sdk@20.1.0': {}
 
   '@emnapi/runtime@1.5.0':
     dependencies:
