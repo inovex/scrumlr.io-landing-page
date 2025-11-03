@@ -29,6 +29,6 @@
     "eslint-plugin-astro": "^1.4.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "prettier-plugin-astro": "^0.14.1",
-    "sass": "^1.93.2"
+    "sass": "^1.93.3"
   }
 }
