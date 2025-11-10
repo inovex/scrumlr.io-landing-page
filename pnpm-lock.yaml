@@ -15,8 +15,8 @@ importers:
         specifier: ^4.4.1
         version: 4.4.1(@types/node@24.10.0)(@types/react-dom@18.2.19)(@types/react@18.2.56)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.93.3)(terser@5.44.1)(yaml@2.8.1)
       '@directus/sdk':
-        specifier: ^20.1.0
-        version: 20.1.0
+        specifier: ^20.1.1
+        version: 20.1.1
       '@uidotdev/usehooks':
         specifier: ^2.4.1
         version: 2.4.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -797,8 +797,8 @@ packages:
     resolution: {integrity: sha512-+ntATQe1AlL7nTOYjwjj6w3299CgRot48wL761TUGYpYgAou3AaONZazp0PKZyCyWhudWsjhq1nvRHOvbMzhTA==}
     engines: {node: '>=18'}
 
-  '@directus/sdk@20.1.0':
-    resolution: {integrity: sha512-EV2bwfiOXc1QFYAIqfGgyZ7JcKgHF43UVEYivUpMjOLiihI9tpmNfcz/qmOXju7LCZrBmSwTOHMRtOXPdZWiLQ==}
+  '@directus/sdk@20.1.1':
+    resolution: {integrity: sha512-cCWvxDRKOygVHBkKA7l1I4O4niomK8SKR/+Ul1L9NFF1K2zAf3jRqhjc7JavCECOiiAWME/s2wYatNFqFFh0gQ==}
     engines: {node: '>=22'}
 
   '@emnapi/runtime@1.7.0':
@@ -5822,7 +5822,7 @@ snapshots:
     dependencies:
       fontkit: 2.0.4
 
-  '@directus/sdk@20.1.0': {}
+  '@directus/sdk@20.1.1': {}
 
   '@emnapi/runtime@1.7.0':
     dependencies:
