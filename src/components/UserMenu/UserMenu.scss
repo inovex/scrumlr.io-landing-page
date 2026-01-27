@@ -34,18 +34,24 @@
   }
 
   .user-menu__icon-container {
+    box-sizing: border-box;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     width: 56px;
     height: 56px;
     border-radius: 100%;
+    border: 4px solid var(--light-blue);
+
     background-color: var(--light-blue);
 
     transition: all 0.2s cubic-bezier(0.7, 0.53, 0.17, 0.99);
 
     @media (prefers-color-scheme: dark) {
-      background-color: var(--dark-blue-4);
+      border-color: var(--navy-200);
+      background-color: var(--navy-500);
     }
   }
 
