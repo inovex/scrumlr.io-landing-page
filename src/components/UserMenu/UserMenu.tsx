@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import classNames from "classnames";
+import ChangeLanguageIcon from "@icons/change-language.svg?react"
 import DE from "@icons/flags/DE.svg?react";
 import US from "@icons/flags/US.svg?react";
 import "./UserMenu.scss";
@@ -55,7 +56,9 @@ const UserMenu = ({
         className="user-menu__avatar"
         onClick={() => setIsActive((curr) => !curr)}
       >
-        <img src="/assets/images/Stan_Avatar_4light.png" alt="Stan Scrumlr" />
+        <div className="user-menu__icon-container">
+          <ChangeLanguageIcon className="user-menu__icon"/>
+        </div>
       </button>
       <div id="user-menu__dropdown" className="user-menu__dropdown">
         <ul>
