@@ -15,7 +15,7 @@
     }
   }
 
-  .user-menu__avatar {
+  .user-menu__change-language-button {
     height: 56px;
     width: 56px;
     border-radius: 999px;
@@ -32,14 +32,33 @@
       transition: all 0.2s cubic-bezier(0.7, 0.53, 0.17, 0.99);
     }
   }
-  @media (prefers-color-scheme: dark) {
-    .user-menu__avatar > img {
-      content: url(/assets/images/Stan_Avatar_4dark.png);
+
+  .user-menu--active {
+    .user-menu__icon-container {
+      transform: scale(0.8);
     }
   }
-  .user-menu--active {
-    .user-menu__avatar > img {
-      transform: scale(0.8);
+
+  .user-menu__icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+    background-color: var(--light-blue);
+
+    @media (prefers-color-scheme: dark) {
+      background-color: var(--dark-blue-4);
+    }
+  }
+
+  .user-menu__icon {
+    width: 32px;
+    height: 32px;
+
+    @media (prefers-color-scheme: dark) {
+      color: var(--white);
     }
   }
 
@@ -119,8 +138,7 @@
     }
   }
 
-  .user-menu__dropdown a svg,
-  .user-menu__dropdown button svg {
+  .user-menu__flag {
     height: 32px;
     width: 32px;
   }
@@ -130,4 +148,3 @@
     font-weight: bold;
     font-size: 16px;
   }
-

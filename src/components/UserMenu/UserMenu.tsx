@@ -52,8 +52,8 @@ const UserMenu = ({
   return (
     <div className={classNames("user-menu", { "user-menu--active": isActive })}>
       <button
-        id="user-menu__avatar"
-        className="user-menu__avatar"
+        id="user-menu__change-language-button"
+        className="user-menu__change-language-button"
         onClick={() => setIsActive((curr) => !curr)}
       >
         <div className="user-menu__icon-container">
