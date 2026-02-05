@@ -10,10 +10,10 @@ importers:
     dependencies:
       '@astrojs/node':
         specifier: ^9.5.2
-        version: 9.5.2(astro@5.16.15(@types/node@25.2.0)(rollup@4.57.1)(sass@1.97.2)(terser@5.46.0)(typescript@5.1.3)(yaml@2.8.2))
+        version: 9.5.2(astro@5.16.15(@types/node@25.2.0)(rollup@4.57.1)(sass@1.97.3)(terser@5.46.0)(typescript@5.1.3)(yaml@2.8.2))
       '@astrojs/react':
         specifier: ^4.4.2
-        version: 4.4.2(@types/node@25.2.0)(@types/react-dom@18.2.19)(@types/react@18.2.56)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.97.2)(terser@5.46.0)(yaml@2.8.2)
+        version: 4.4.2(@types/node@25.2.0)(@types/react-dom@18.2.19)(@types/react@18.2.56)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.97.3)(terser@5.46.0)(yaml@2.8.2)
       '@directus/sdk':
         specifier: ^21.0.0
         version: 21.0.0
@@ -22,7 +22,7 @@ importers:
         version: 2.4.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       astro:
         specifier: ^5.16.15
-        version: 5.16.15(@types/node@25.2.0)(rollup@4.57.1)(sass@1.97.2)(terser@5.46.0)(typescript@5.1.3)(yaml@2.8.2)
+        version: 5.16.15(@types/node@25.2.0)(rollup@4.57.1)(sass@1.97.3)(terser@5.46.0)(typescript@5.1.3)(yaml@2.8.2)
       classnames:
         specifier: ^2.5.1
         version: 2.5.1
@@ -58,8 +58,8 @@ importers:
         specifier: ^0.14.1
         version: 0.14.1
       sass:
-        specifier: ^1.97.2
-        version: 1.97.2
+        specifier: ^1.97.3
+        version: 1.97.3
 
 packages:
 
@@ -4170,8 +4170,8 @@ packages:
   sass-formatter@0.7.9:
     resolution: {integrity: sha512-CWZ8XiSim+fJVG0cFLStwDvft1VI7uvXdCNJYXhDvowiv+DsbD1nXLiQ4zrE5UBvj5DWZJ93cwN0NX5PMsr1Pw==}
 
-  sass@1.97.2:
-    resolution: {integrity: sha512-y5LWb0IlbO4e97Zr7c3mlpabcbBtS+ieiZ9iwDooShpFKWXf62zz5pEPdwrLYm+Bxn1fnbwFGzHuCLSA9tBmrw==}
+  sass@1.97.3:
+    resolution: {integrity: sha512-fDz1zJpd5GycprAbu4Q2PV/RprsRtKC/0z82z0JLgdytmcq0+ujJbJ/09bPGDxCLkKY3Np5cRAOcWiVkLXJURg==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -4981,10 +4981,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/node@9.5.2(astro@5.16.15(@types/node@25.2.0)(rollup@4.57.1)(sass@1.97.2)(terser@5.46.0)(typescript@5.1.3)(yaml@2.8.2))':
+  '@astrojs/node@9.5.2(astro@5.16.15(@types/node@25.2.0)(rollup@4.57.1)(sass@1.97.3)(terser@5.46.0)(typescript@5.1.3)(yaml@2.8.2))':
     dependencies:
       '@astrojs/internal-helpers': 0.7.5
-      astro: 5.16.15(@types/node@25.2.0)(rollup@4.57.1)(sass@1.97.2)(terser@5.46.0)(typescript@5.1.3)(yaml@2.8.2)
+      astro: 5.16.15(@types/node@25.2.0)(rollup@4.57.1)(sass@1.97.3)(terser@5.46.0)(typescript@5.1.3)(yaml@2.8.2)
       send: 1.2.1
       server-destroy: 1.0.1
     transitivePeerDependencies:
@@ -4994,15 +4994,15 @@ snapshots:
     dependencies:
       prismjs: 1.30.0
 
-  '@astrojs/react@4.4.2(@types/node@25.2.0)(@types/react-dom@18.2.19)(@types/react@18.2.56)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.97.2)(terser@5.46.0)(yaml@2.8.2)':
+  '@astrojs/react@4.4.2(@types/node@25.2.0)(@types/react-dom@18.2.19)(@types/react@18.2.56)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.97.3)(terser@5.46.0)(yaml@2.8.2)':
     dependencies:
       '@types/react': 18.2.56
       '@types/react-dom': 18.2.19
-      '@vitejs/plugin-react': 4.7.0(vite@6.4.1(@types/node@25.2.0)(sass@1.97.2)(terser@5.46.0)(yaml@2.8.2))
+      '@vitejs/plugin-react': 4.7.0(vite@6.4.1(@types/node@25.2.0)(sass@1.97.3)(terser@5.46.0)(yaml@2.8.2))
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       ultrahtml: 1.6.0
-      vite: 6.4.1(@types/node@25.2.0)(sass@1.97.2)(terser@5.46.0)(yaml@2.8.2)
+      vite: 6.4.1(@types/node@25.2.0)(sass@1.97.3)(terser@5.46.0)(yaml@2.8.2)
     transitivePeerDependencies:
       - '@types/node'
       - jiti
@@ -7379,7 +7379,7 @@ snapshots:
       '@use-gesture/core': 10.3.0
       react: 18.2.0
 
-  '@vitejs/plugin-react@4.7.0(vite@6.4.1(@types/node@25.2.0)(sass@1.97.2)(terser@5.46.0)(yaml@2.8.2))':
+  '@vitejs/plugin-react@4.7.0(vite@6.4.1(@types/node@25.2.0)(sass@1.97.3)(terser@5.46.0)(yaml@2.8.2))':
     dependencies:
       '@babel/core': 7.28.5
       '@babel/plugin-transform-react-jsx-self': 7.27.1(@babel/core@7.28.5)
@@ -7387,7 +7387,7 @@ snapshots:
       '@rolldown/pluginutils': 1.0.0-beta.27
       '@types/babel__core': 7.20.5
       react-refresh: 0.17.0
-      vite: 6.4.1(@types/node@25.2.0)(sass@1.97.2)(terser@5.46.0)(yaml@2.8.2)
+      vite: 6.4.1(@types/node@25.2.0)(sass@1.97.3)(terser@5.46.0)(yaml@2.8.2)
     transitivePeerDependencies:
       - supports-color
 
@@ -7525,7 +7525,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  astro@5.16.15(@types/node@25.2.0)(rollup@4.57.1)(sass@1.97.2)(terser@5.46.0)(typescript@5.1.3)(yaml@2.8.2):
+  astro@5.16.15(@types/node@25.2.0)(rollup@4.57.1)(sass@1.97.3)(terser@5.46.0)(typescript@5.1.3)(yaml@2.8.2):
     dependencies:
       '@astrojs/compiler': 2.13.0
       '@astrojs/internal-helpers': 0.7.5
@@ -7582,8 +7582,8 @@ snapshots:
       unist-util-visit: 5.1.0
       unstorage: 1.17.4
       vfile: 6.0.3
-      vite: 6.4.1(@types/node@25.2.0)(sass@1.97.2)(terser@5.46.0)(yaml@2.8.2)
-      vitefu: 1.1.1(vite@6.4.1(@types/node@25.2.0)(sass@1.97.2)(terser@5.46.0)(yaml@2.8.2))
+      vite: 6.4.1(@types/node@25.2.0)(sass@1.97.3)(terser@5.46.0)(yaml@2.8.2)
+      vitefu: 1.1.1(vite@6.4.1(@types/node@25.2.0)(sass@1.97.3)(terser@5.46.0)(yaml@2.8.2))
       xxhash-wasm: 1.1.0
       yargs-parser: 21.1.1
       yocto-spinner: 0.2.3
@@ -10615,7 +10615,7 @@ snapshots:
     dependencies:
       suf-log: 2.5.3
 
-  sass@1.97.2:
+  sass@1.97.3:
     dependencies:
       chokidar: 4.0.3
       immutable: 5.1.4
@@ -11195,7 +11195,7 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.3
 
-  vite@6.4.1(@types/node@25.2.0)(sass@1.97.2)(terser@5.46.0)(yaml@2.8.2):
+  vite@6.4.1(@types/node@25.2.0)(sass@1.97.3)(terser@5.46.0)(yaml@2.8.2):
     dependencies:
       esbuild: 0.25.12
       fdir: 6.5.0(picomatch@4.0.3)
@@ -11206,13 +11206,13 @@ snapshots:
     optionalDependencies:
       '@types/node': 25.2.0
       fsevents: 2.3.3
-      sass: 1.97.2
+      sass: 1.97.3
       terser: 5.46.0
       yaml: 2.8.2
 
-  vitefu@1.1.1(vite@6.4.1(@types/node@25.2.0)(sass@1.97.2)(terser@5.46.0)(yaml@2.8.2)):
+  vitefu@1.1.1(vite@6.4.1(@types/node@25.2.0)(sass@1.97.3)(terser@5.46.0)(yaml@2.8.2)):
     optionalDependencies:
-      vite: 6.4.1(@types/node@25.2.0)(sass@1.97.2)(terser@5.46.0)(yaml@2.8.2)
+      vite: 6.4.1(@types/node@25.2.0)(sass@1.97.3)(terser@5.46.0)(yaml@2.8.2)
 
   vlq@1.0.1: {}
 
