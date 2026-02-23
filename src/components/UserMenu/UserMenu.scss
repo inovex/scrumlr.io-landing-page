@@ -1,6 +1,4 @@
-$user-menu-border-radius: 0 16px 16px 16px;
-
-  .user-menu {
+ .user-menu {
     height: 56px;
     width: 56px;
     position: relative;
@@ -84,7 +82,7 @@ $user-menu-border-radius: 0 16px 16px 16px;
     position: absolute;
     left: 0;
     top: 65px;
-    border-radius: $user-menu-border-radius;
+    border-radius: 0 16px 16px 16px;
 
     transform: translateZ(0); // fix safari/webkit struggling with anti-aliasing shadows
 
