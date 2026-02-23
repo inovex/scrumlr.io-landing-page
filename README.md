@@ -21,32 +21,22 @@ See the [LICENSE](./LICENSE) file for licensing information.
 
 You can run this landing page by either using `pnpm` or Docker. 
 
+In any case, you fist need to create a `.env` file in the project root based on `.env.example` and fill in the required values.
+
 ### Run locally with pnpm
 
-Create a `.env` file in the project root based on `.env.example` and fill in the required values.
-
-Then run:
 
 ```bash
 pnpm install
 pnpm start
 ```
 
-For local build and preview, run:
+### Run with Docker
 
-```bash
-pnpm build
-pnpm preview
-```
-
-## Run with Docker
 Build the image:
 
 ```bash
-docker build \
-	--build-arg DIRECTUS_URL="https://your-directus-url" \
-	--build-arg DIRECTUS_TOKEN="your-directus-token" \
-	-t scrumlr-landing-page .
+docker build -t scrumlr-landing-page .
 ```
 
 Run the container:
@@ -55,4 +45,4 @@ Run the container:
 docker run --rm -p 8080:8080 scrumlr-landing-page
 ```
 
-Then open `http://localhost:8080`.
+Then open [localhost:8080](http://localhost:8080).
