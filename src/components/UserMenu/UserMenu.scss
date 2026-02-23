@@ -1,4 +1,4 @@
-
+$user-menu-border-radius: 0 16px 16px 16px;
 
   .user-menu {
     height: 56px;
@@ -84,10 +84,23 @@
     position: absolute;
     left: 0;
     top: 65px;
-    border-radius: 16px;
-    border-top-left-radius: 0;
+    border-radius: $user-menu-border-radius;
+    box-shadow: none;
+  }
+
+  // safari/webkit struggle with anti-aliasing shadows against a rounded clip on the same painted layer.
+  // thus, we split the shadow to a separate, dedicated layer (=::after) with the same radius
+  .user-menu__dropdown::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: $user-menu-border-radius;
+
+    pointer-events: none; // after=above, so we just go right through
+
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   }
+
   .user-menu--active {
     .user-menu__dropdown {
       display: block;
