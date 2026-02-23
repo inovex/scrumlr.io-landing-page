@@ -29,7 +29,7 @@
 
   .user-menu--active {
     .user-menu__icon-container {
-      transform: scale(0.8);
+      transform: translateZ(0) scale(0.8);
     }
   }
 
@@ -47,6 +47,7 @@
 
     background-color: var(--light-blue);
 
+    transform: translateZ(0) scale(1); // translateZ fixes Safari wobbling, as it apparently struggles with handling subpixels correctly
     transition: all 0.2s cubic-bezier(0.7, 0.53, 0.17, 0.99);
 
     @media (prefers-color-scheme: dark) {
