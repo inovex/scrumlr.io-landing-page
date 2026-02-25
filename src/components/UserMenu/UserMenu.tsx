@@ -2,17 +2,20 @@ import { useState, useEffect } from "react";
 import classNames from "classnames";
 import ChangeLanguageIcon from "@icons/change-language.svg?react"
 import DE from "@icons/flags/DE.svg?react";
+import FR from "@icons/flags/FR.svg?react";
 import US from "@icons/flags/US.svg?react";
 import "./UserMenu.scss";
 
 type UserMenuProps = {
   germanLabel: string;
   englishLabel: string;
+  frenchLabel: string;
 };
 
 const UserMenu = ({
   germanLabel,
-  englishLabel
+  englishLabel,
+  frenchLabel
 }: UserMenuProps) => {
   const [isActive, setIsActive] = useState(false);
 
@@ -47,6 +50,12 @@ const UserMenu = ({
             <a href="/">
               <US className="user-menu__flag" aria-label={englishLabel} />
               <span>{englishLabel}</span>
+            </a>
+          </li>
+          <li>
+            <a href="/fr">
+              <FR className="user-menu__flag" aria-label={frenchLabel} />
+              <span>{frenchLabel}</span>
             </a>
           </li>
         </ul>

@@ -1,0 +1,11 @@
+---
+import LegalLayout from "@layouts/LegalLayout.astro";
+import getTranslatedContent from "@utils/directus.ts";
+import "@styles/Legal.scss";
+
+const content = await getTranslatedContent("Legal_Notice", "fr");
+---
+
+<LegalLayout>
+  <section set:html={content.legal_notice} />
+</LegalLayout>
