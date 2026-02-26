@@ -1,133 +1,155 @@
+.user-menu {
+  height: 56px;
+  width: 56px;
+  position: relative;
 
-
+  --user-menu-bg: var(--white);
+  --user-menu-color: var(--lightmode-black);
+}
+@media (prefers-color-scheme: dark) {
   .user-menu {
-    height: 56px;
-    width: 56px;
-    position: relative;
-
-    --user-menu-bg: var(--white);
-    --user-menu-color: var(--lightmode-black);
+    --user-menu-bg: var(--dark-blue-4);
+    --user-menu-color: var(--white);
   }
+}
+
+.user-menu__change-language-button {
+  height: 56px;
+  width: 56px;
+  border-radius: 999px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  position: relative;
+  z-index: 100;
+}
+
+.user-menu--active {
+  .user-menu__icon-container {
+    transform: translateZ(0) scale(0.8);
+  }
+}
+
+.user-menu__icon-container {
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+  border: 4px solid var(--light-blue);
+
+  background-color: var(--light-blue);
+
+  transform: translateZ(0) scale(1); // translateZ fixes Safari wobbling, as it apparently struggles with handling subpixels correctly
+  transition: all 0.2s cubic-bezier(0.7, 0.53, 0.17, 0.99);
+
   @media (prefers-color-scheme: dark) {
-    .user-menu {
-      --user-menu-bg: var(--dark-blue-4);
-      --user-menu-color: var(--white);
-    }
+    border-color: var(--navy-200);
+    background-color: var(--navy-500);
   }
+}
 
-  .user-menu__avatar {
-    height: 56px;
-    width: 56px;
-    border-radius: 999px;
-    padding: 0;
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
-    position: relative;
-    z-index: 100;
+.user-menu__icon {
+  width: 32px;
+  height: 32px;
 
-    > img {
-      height: 100%;
-      width: 100%;
-      transition: all 0.2s cubic-bezier(0.7, 0.53, 0.17, 0.99);
-    }
-  }
   @media (prefers-color-scheme: dark) {
-    .user-menu__avatar > img {
-      content: url(/assets/images/Stan_Avatar_4dark.png);
-    }
+    color: var(--white);
   }
-  .user-menu--active {
-    .user-menu__avatar > img {
-      transform: scale(0.8);
-    }
-  }
+}
 
-  .user-menu__dropdown::before {
-    background-color: var(--user-menu-bg);
-    position: absolute;
-    content: "";
-    width: 56px;
-    height: 64px;
-    top: 0;
-    transform: translateY(-100%);
-    left: 0;
-    border-top-right-radius: 28px;
-    border-top-left-radius: 28px;
-  }
+.user-menu__dropdown::before {
+  background-color: var(--user-menu-bg);
+  position: absolute;
+  content: "";
+  width: 56px;
+  height: 64px;
+  top: 0;
+  transform: translateY(-100%);
+  left: 0;
+  border-top-right-radius: 28px;
+  border-top-left-radius: 28px;
+}
 
+.user-menu__dropdown {
+  background-color: var(--user-menu-bg);
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 65px;
+  border-radius: 0 16px 16px 16px;
+
+  transform: translateZ(0); // fix safari/webkit struggling with anti-aliasing shadows
+
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.user-menu--active {
   .user-menu__dropdown {
-    background-color: var(--user-menu-bg);
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 65px;
-    border-radius: 16px;
-    border-top-left-radius: 0;
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    display: block;
   }
-  .user-menu--active {
-    .user-menu__dropdown {
-      display: block;
-    }
+}
+
+.user-menu__dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-menu__dropdown li {
+  box-sizing: border-box;
+  width: 210px;
+  height: auto;
+  margin: 0;
+}
+
+.user-menu__dropdown li:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.user-menu__dropdown li:first-of-type a,
+.user-menu__dropdown li:first-of-type button {
+  border-top-right-radius: 16px;
+}
+
+.user-menu__dropdown li:last-of-type a,
+.user-menu__dropdown li:last-of-type button {
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.user-menu__dropdown a,
+.user-menu__dropdown button {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  padding: 12px 24px 12px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--user-menu-color);
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.08);
   }
+}
 
-  .user-menu__dropdown ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+.user-menu__flag {
+  height: 32px;
+  width: 32px;
+}
 
-  .user-menu__dropdown li {
-    box-sizing: border-box;
-    width: 210px;
-    height: auto;
-  }
-
-  .user-menu__dropdown li:not(:last-child) {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-
-  .user-menu__dropdown li:first-of-type a,
-  .user-menu__dropdown li:first-of-type button {
-    border-top-right-radius: 16px;
-  }
-
-  .user-menu__dropdown li:last-of-type a,
-  .user-menu__dropdown li:last-of-type button {
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
-  }
-
-  .user-menu__dropdown a,
-  .user-menu__dropdown button {
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    height: 100%;
-    width: 100%;
-    text-decoration: none;
-    padding: 12px 24px 12px 20px;
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
-    color: var(--user-menu-color);
-
-    &:hover {
-      background-color: rgba(0, 0, 0, 0.08);
-    }
-  }
-
-  .user-menu__dropdown a svg,
-  .user-menu__dropdown button svg {
-    height: 32px;
-    width: 32px;
-  }
-
-  .user-menu__dropdown a span,
-  .user-menu__dropdown button span {
-    font-weight: bold;
-    font-size: 16px;
-  }
-
+.user-menu__dropdown a span,
+.user-menu__dropdown button span {
+  font-weight: bold;
+  font-size: 16px;
+}
