@@ -36,7 +36,10 @@ pnpm start
 Build the image:
 
 ```bash
-docker build -t scrumlr-landing-page .
+DIRECTUS_URL="<directusUrl>" DIRECTUS_TOKEN="<directusToken>" docker build \
+  --secret id=directus_url,env=DIRECTUS_URL \
+  --secret id=directus_token,env=DIRECTUS_TOKEN \
+  -t scrumlr-landing-page .
 ```
 
 Run the container:
