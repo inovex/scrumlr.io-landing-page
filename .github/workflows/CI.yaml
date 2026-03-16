@@ -74,6 +74,5 @@ jobs:
           labels: ${{ steps.meta-landing-page.outputs.labels }}
           build-args: |
             DIRECTUS_URL=${{ secrets.DIRECTUS_URL }}
-            PUBLIC_SCRUMLR_SERVER_URL=https://development.scrumlr.fra.ics.inovex.io/api
           secrets: |
             directus_token=${{ secrets.DIRECTUS_TOKEN }}

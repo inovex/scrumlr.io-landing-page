@@ -37,6 +37,7 @@ Build the image:
 
 ```bash
 ❯ DIRECTUS_TOKEN='your-directus-token' docker build \
+-t scrumlr-landing-page \
   --build-arg DIRECTUS_URL='https://your-directus-url' \
   --secret id=directus_token,env=DIRECTUS_TOKEN \
   .
