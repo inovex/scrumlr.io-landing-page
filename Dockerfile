@@ -1,17 +1,22 @@
 FROM node:24 AS build
 WORKDIR /app
+
 ARG DIRECTUS_URL
-ARG DIRECTUS_TOKEN
 ARG PUBLIC_SCRUMLR_SERVER_URL
+
 COPY package*.json ./
 RUN npm install -g pnpm
 RUN pnpm install
 COPY . .
-RUN echo "DIRECTUS_URL = ${DIRECTUS_URL}" >> .env
-RUN echo "DIRECTUS_TOKEN = ${DIRECTUS_TOKEN}" >> .env
-RUN echo "PUBLIC_SCRUMLR_SERVER_URL" = ${PUBLIC_SCRUMLR_SERVER_URL} >> .env
-RUN pnpm run build
-RUN rm -rf .env
+
+RUN --mount=type=secret,id=directus_token,required=true sh -c '\
+  DIRECTUS_TOKEN_CLEAN="$(tr -d "\r\n" < /run/secrets/directus_token)" && \
+  printf "DIRECTUS_URL=%s\n" "$DIRECTUS_URL" > .env && \
+  printf "DIRECTUS_TOKEN=%s\n" "$DIRECTUS_TOKEN_CLEAN" >> .env && \
+  printf "PUBLIC_SCRUMLR_SERVER_URL=%s\n" "$PUBLIC_SCRUMLR_SERVER_URL" >> .env && \
+  pnpm run build && \
+  rm -f .env \
+'
 
 FROM nginx:alpine AS runtime
 COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
