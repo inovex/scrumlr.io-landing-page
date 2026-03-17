@@ -10,8 +10,8 @@ COPY . .
 
 RUN --mount=type=secret,id=directus_token,required=true sh -c '\
   DIRECTUS_TOKEN_CLEAN="$(tr -d "\r\n" < /run/secrets/directus_token)" && \
-  printf "DIRECTUS_URL=%s\n" "$DIRECTUS_URL" > .env && \
-  printf "DIRECTUS_TOKEN=%s\n" "$DIRECTUS_TOKEN_CLEAN" >> .env && \
+  echo "DIRECTUS_URL=$DIRECTUS_URL" > .env && \
+  echo "DIRECTUS_TOKEN=$DIRECTUS_TOKEN_CLEAN" >> .env && \
   pnpm run build && \
   rm -f .env \
 '
