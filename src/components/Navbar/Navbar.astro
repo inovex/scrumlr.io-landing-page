@@ -1,6 +1,6 @@
 ---
 import getTranslatedContent from "@utils/directus";
-import { getLangFromUrl, getPathForLanguage } from '../../i18n/utils';
+import { getAppPathWithLanguage, getLangFromUrl, getPathForLanguage } from '../../i18n/utils';
 import { Logo } from "../Logo";
 import { Plus } from "../../icons/Plus";
 import { Link } from "../Link/Link";
@@ -36,7 +36,7 @@ const userMenuLabels = {
     <li>
       <UserMenu client:load {...userMenuLabels} />
       <Link
-        href="/new"
+        href={getAppPathWithLanguage(lang, "/new")}
         className="navbar__link"
       >
         <span>{content.createBoard}</span>
