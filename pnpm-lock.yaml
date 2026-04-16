@@ -15,8 +15,8 @@ importers:
         specifier: ^5.0.1
         version: 5.0.1(@types/node@25.5.2)(@types/react-dom@18.2.19)(@types/react@18.2.56)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(sass@1.98.0)(terser@5.46.1)(yaml@2.8.3)
       '@directus/sdk':
-        specifier: ^21.2.0
-        version: 21.2.0
+        specifier: ^21.2.1
+        version: 21.2.1
       '@uidotdev/usehooks':
         specifier: ^2.4.1
         version: 2.4.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -803,8 +803,8 @@ packages:
     resolution: {integrity: sha512-VERIM64vtTP1C4mxQ5thVT9fK0apjPFobqybMtA1UdUujWka24ERHbRHFGmpbbhp73MhV+KSsHQH9C6uOTdEQA==}
     engines: {node: '>=18'}
 
-  '@directus/sdk@21.2.0':
-    resolution: {integrity: sha512-IrP6vpXqW0WYuwMcKa19odYZDVdTtBL4+0TaZeUGoNWgvncPcuTYVEtX4z93TEPfbFoSD0IwPx0gbhQ7YNbTGg==}
+  '@directus/sdk@21.2.1':
+    resolution: {integrity: sha512-eXLOwj9Y/+JgNJmGMNLAwlaj7C2TMuKaQNrAjis/WjFTYuR1frSFJOsZhvXPTaoOQ5F+vDBAr3ZGSG3QfKeCnA==}
     engines: {node: '>=22'}
 
   '@emnapi/runtime@1.9.1':
@@ -6364,7 +6364,7 @@ snapshots:
     dependencies:
       fontkitten: 1.0.3
 
-  '@directus/sdk@21.2.0': {}
+  '@directus/sdk@21.2.1': {}
 
   '@emnapi/runtime@1.9.1':
     dependencies:
