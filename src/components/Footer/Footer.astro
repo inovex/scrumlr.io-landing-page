@@ -1,6 +1,6 @@
 ---
 import getTranslatedContent from "@utils/directus";
-import { getLangFromUrl, getPathForLanguage } from "../../i18n/utils";
+import { getAppPathWithLanguage, getLangFromUrl, getPathForLanguage } from "../../i18n/utils";
 import { Github } from "@icons/Github";
 import { Instagram } from "@icons/Instagram";
 import { Linkedin } from "@icons/Linkedin";
@@ -89,7 +89,7 @@ const content = await getTranslatedContent("Footer", lang);
           <a href={getPathForLanguage(lang, "#about")}>{content.about}</a>
         </li>
         <li>
-          <a href=`/new`>{content.getStarted}</a>
+          <a href={getAppPathWithLanguage(lang, "/new")}>{content.getStarted}</a>
         </li>
       </ul>
     </nav>

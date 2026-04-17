@@ -1,5 +1,5 @@
 ---
-import { getLangFromUrl } from "src/i18n/utils";
+import { getAppPathWithLanguage, getLangFromUrl } from "src/i18n/utils";
 import { Link } from "@components/Link/Link";
 import ArrowRight from "@icons/ArrowRight";
 import getTranslatedContent from "@utils/directus";
@@ -18,7 +18,7 @@ const content = await getTranslatedContent("Hero_Section", lang);
         <p>{content.paragraph}</p>
       </div>
       <div class="reach-new-heights__buttons">
-        <Link href="/new">{content.cta}</Link>
+        <Link href={getAppPathWithLanguage(lang, "/new")}>{content.cta}</Link>
         <Link href="#choices" tertiary>
           <span>{content.detailsButton}</span>
           <ArrowRight />

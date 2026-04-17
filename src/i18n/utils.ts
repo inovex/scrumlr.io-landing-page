@@ -5,6 +5,7 @@ const languages = {
 };
 
 const defaultLang = 'en';
+export type SupportedLanguage = keyof typeof languages;
 
 export function getLangFromUrl(url: URL) {
   const [, lang] = url.pathname.split('/');
@@ -12,7 +13,7 @@ export function getLangFromUrl(url: URL) {
   return defaultLang;
 }
 
-export function getPathForLanguage(lang: keyof typeof languages, path: string) {
+export function getPathForLanguage(lang: SupportedLanguage, path: string) {
   if (path.startsWith("#")) {
     return lang === defaultLang ? `/${path}` : `/${lang}${path}`;
   }
@@ -20,3 +21,8 @@ export function getPathForLanguage(lang: keyof typeof languages, path: string) {
   return lang === defaultLang ? path : `/${lang}${path}`;
 }
 
+export function getAppPathWithLanguage(lang: SupportedLanguage, appPath: string) {
+  const url = new URL(appPath, 'https://temporary-base.com');
+  url.searchParams.set('lng', lang);
+  return url.pathname + url.search + url.hash;
+}
