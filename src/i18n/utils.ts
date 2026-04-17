@@ -22,7 +22,7 @@ export function getPathForLanguage(lang: SupportedLanguage, path: string) {
 }
 
 export function getAppPathWithLanguage(lang: SupportedLanguage, appPath: string) {
-  const separator = appPath.includes("?") ? "&" : "?";
-  return `${appPath}${separator}lng=${lang}`;
+  const url = new URL(appPath, 'https://temporary-base.com');
+  url.searchParams.set('lng', lang);
+  return url.pathname + url.search + url.hash;
 }
-
