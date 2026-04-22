@@ -1,3 +1,7 @@
+const TEMPORARY_BASE_URL = "https://temporary-base.com";
+const ABSOLUTE_URL_PATTERN = /^[a-zA-Z][a-zA-Z\d+.-]*:/;
+const LANGUAGE_QUERY_PARAM = "lng" // language query parameter for the search string in the url
+
 const languages = {
   en: 'English',
   de: 'German',
@@ -22,7 +26,12 @@ export function getPathForLanguage(lang: SupportedLanguage, path: string) {
 }
 
 export function getAppPathWithLanguage(lang: SupportedLanguage, appPath: string) {
-  const url = new URL(appPath, 'https://temporary-base.com');
-  url.searchParams.set('lng', lang);
-  return url.pathname + url.search + url.hash;
+  const url = new URL(appPath, TEMPORARY_BASE_URL);
+  url.searchParams.set(LANGUAGE_QUERY_PARAM, lang);
+
+  if (ABSOLUTE_URL_PATTERN.test(appPath)) {
+    return url.toString(); 
+  }
+
+  return url.pathname + url.search + url.hash; 
 }
