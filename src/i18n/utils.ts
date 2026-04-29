@@ -1,28 +1,31 @@
-const TEMPORARY_BASE_URL = "https://temporary-base.com";
+const TEMPORARY_BASE_URL = "https://scrumlr.io";
 const ABSOLUTE_URL_PATTERN = /^[a-zA-Z][a-zA-Z\d+.-]*:/;
-const LANGUAGE_QUERY_PARAM = "lng" // language query parameter for the search string in the url
-
-const languages = {
+export const LANGUAGE_QUERY_PARAM = "lng";
+export const SUPPORTED_LANGUAGES = {
   en: 'English',
   de: 'German',
   fr: 'French',
 };
+export const DEFAULT_LANGUAGE: keyof typeof SUPPORTED_LANGUAGES = "en";
 
-const defaultLang = 'en';
-export type SupportedLanguage = keyof typeof languages;
+
+export type SupportedLanguage = keyof typeof SUPPORTED_LANGUAGES;
+export const SUPPORTED_LANGUAGE_CODES = Object.keys(
+  SUPPORTED_LANGUAGES,
+) as SupportedLanguage[];
 
 export function getLangFromUrl(url: URL) {
   const [, lang] = url.pathname.split('/');
-  if (lang in languages) return lang as keyof typeof languages;
-  return defaultLang;
+  if (lang in SUPPORTED_LANGUAGES) return lang as keyof typeof SUPPORTED_LANGUAGES;
+  return DEFAULT_LANGUAGE;
 }
 
 export function getPathForLanguage(lang: SupportedLanguage, path: string) {
   if (path.startsWith("#")) {
-    return lang === defaultLang ? `/${path}` : `/${lang}${path}`;
+    return lang === DEFAULT_LANGUAGE ? `/${path}` : `/${lang}${path}`;
   }
 
-  return lang === defaultLang ? path : `/${lang}${path}`;
+  return lang === DEFAULT_LANGUAGE ? path : `/${lang}${path}`;
 }
 
 export function getAppPathWithLanguage(lang: SupportedLanguage, appPath: string) {

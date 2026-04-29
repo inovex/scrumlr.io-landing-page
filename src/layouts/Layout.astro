@@ -1,5 +1,10 @@
 ---
-import { getLangFromUrl } from "src/i18n/utils";
+import {
+  DEFAULT_LANGUAGE,
+  LANGUAGE_QUERY_PARAM,
+  SUPPORTED_LANGUAGE_CODES,
+  getLangFromUrl,
+} from "src/i18n/utils";
 import Navbar from "../components/Navbar/Navbar.astro";
 import Footer from "../components/Footer/Footer.astro";
 
@@ -26,6 +31,13 @@ const lang = getLangFromUrl(Astro.url);
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <script
+      is:inline
+      src="/scripts/language-redirect.js"
+      data-default-language={DEFAULT_LANGUAGE}
+      data-language-query-param={LANGUAGE_QUERY_PARAM}
+      data-supported-languages={SUPPORTED_LANGUAGE_CODES.join(",")}
+    ></script>
     <script
       defer
       data-domain="scrumlr.io"
