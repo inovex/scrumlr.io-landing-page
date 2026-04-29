@@ -1,13 +1,13 @@
 ---
 import getTranslatedContent from "@utils/directus";
-import { getAppPathWithLanguage, getLangFromUrl, getPathForLanguage } from '../../i18n/utils';
+import { withLanguageQueryForApp, detectLanguageFromUrl, localizePath } from '../../i18n/utils';
 import { Logo } from "../Logo";
 import { Plus } from "../../icons/Plus";
 import { Link } from "../Link/Link";
 import UserMenu from "@components/UserMenu/UserMenu";
 import "./Navbar.scss";
 
-const lang = getLangFromUrl(Astro.url);
+const lang = detectLanguageFromUrl(Astro.url);
 const content = await getTranslatedContent("Header", lang);
 
 const userMenuLabels = {
@@ -20,23 +20,23 @@ const userMenuLabels = {
 <nav id="navbar" class="navbar">
   <ul>
     <li>
-      <a aria-label={content.home} href={getPathForLanguage(lang, "/")}>
+      <a aria-label={content.home} href={localizePath(lang, "/")}>
         <Logo />
       </a>
     </li>
     <li>
-      <a href={getPathForLanguage(lang, "#home")}>{content.home}</a>
+      <a href={localizePath(lang, "#home")}>{content.home}</a>
     </li>
     <li>
-      <a href={getPathForLanguage(lang, "#features")}>{content.features}</a>
+      <a href={localizePath(lang, "#features")}>{content.features}</a>
     </li>
     <li>
-      <a href={getPathForLanguage(lang, "#about")}>{content.aboutUs}</a>
+      <a href={localizePath(lang, "#about")}>{content.aboutUs}</a>
     </li>
     <li>
       <UserMenu client:load {...userMenuLabels} />
       <Link
-        href={getAppPathWithLanguage(lang, "/new")}
+        href={withLanguageQueryForApp(lang, "/new")}
         className="navbar__link"
       >
         <span>{content.createBoard}</span>

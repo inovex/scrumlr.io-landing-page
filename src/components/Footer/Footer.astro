@@ -1,6 +1,6 @@
 ---
 import getTranslatedContent from "@utils/directus";
-import { getAppPathWithLanguage, getLangFromUrl, getPathForLanguage } from "../../i18n/utils";
+import { withLanguageQueryForApp, detectLanguageFromUrl, localizePath } from "../../i18n/utils";
 import { Github } from "@icons/Github";
 import { Instagram } from "@icons/Instagram";
 import { Linkedin } from "@icons/Linkedin";
@@ -9,7 +9,7 @@ import { Xing } from "@icons/Xing";
 import { Inovex } from "@icons/Inovex";
 import "./Footer.scss";
 
-const lang = getLangFromUrl(Astro.url);
+const lang = detectLanguageFromUrl(Astro.url);
 const content = await getTranslatedContent("Footer", lang);
 ---
 
@@ -78,18 +78,18 @@ const content = await getTranslatedContent("Footer", lang);
     <nav class="footer__right">
       <ul class="footer__internal-links">
         <li>
-          <a href={getPathForLanguage(lang, "#home")}>{content.home}</a>
+          <a href={localizePath(lang, "#home")}>{content.home}</a>
         </li>
         <li>
-          <a href={getPathForLanguage(lang, "#features")}>
+          <a href={localizePath(lang, "#features")}>
             {content.features}
           </a>
         </li>
         <li>
-          <a href={getPathForLanguage(lang, "#about")}>{content.about}</a>
+          <a href={localizePath(lang, "#about")}>{content.about}</a>
         </li>
         <li>
-          <a href={getAppPathWithLanguage(lang, "/new")}>{content.getStarted}</a>
+          <a href={withLanguageQueryForApp(lang, "/new")}>{content.getStarted}</a>
         </li>
       </ul>
     </nav>
@@ -98,20 +98,20 @@ const content = await getTranslatedContent("Footer", lang);
     <div class="footer__bottom-content">
       <ul class="footer__legal-links">
         <li>
-          <a href={getPathForLanguage(lang, "/data-protection")}>
+          <a href={localizePath(lang, "/data-protection")}>
             {content.privacy}
           </a>
         </li>
         <li>
-          <a href={getPathForLanguage(lang, "/cookie-policy")}>
+          <a href={localizePath(lang, "/cookie-policy")}>
             {content.cookies}
           </a>
         </li>
         <li>
-          <a href={getPathForLanguage(lang, "/terms")}>{content.terms}</a>
+          <a href={localizePath(lang, "/terms")}>{content.terms}</a>
         </li>
         <li>
-          <a href={getPathForLanguage(lang, "/legal-notice")}>
+          <a href={localizePath(lang, "/legal-notice")}>
             {content.legal_notice}
           </a>
         </li>

@@ -1,5 +1,5 @@
 ---
-import { getAppPathWithLanguage, getLangFromUrl } from "src/i18n/utils";
+import { withLanguageQueryForApp, detectLanguageFromUrl } from "src/i18n/utils";
 import "./Features.scss";
 import { Link } from "../../components/Link/Link";
 import Features_light_0 from "./images/Features_light_0.tsx";
@@ -10,7 +10,7 @@ import Features_dark_1 from "./images/Features_dark_1.tsx";
 import Features_dark_2 from "./images/Features_dark_2.tsx";
 import getTranslatedContent from "../../utils/directus";
 
-const lang = getLangFromUrl(Astro.url);
+const lang = detectLanguageFromUrl(Astro.url);
 const content = await getTranslatedContent("Features_Section", lang);
 ---
 
@@ -45,7 +45,7 @@ const content = await getTranslatedContent("Features_Section", lang);
           <p>{content.details3}</p>
       </div>
     </div>
-    <Link href={getAppPathWithLanguage(lang, "/new")} ariaLabel={content.cta} className="features__cta-button">{content.cta}</Link>
+    <Link href={withLanguageQueryForApp(lang, "/new")} ariaLabel={content.cta} className="features__cta-button">{content.cta}</Link>
     <img
       class="features__bg-line"
       src="/assets/features/features_line-bg_light.svg"

@@ -1,30 +1,30 @@
 ---
-import { getLangFromUrl, getPathForLanguage } from "src/i18n/utils";
+import { detectLanguageFromUrl, localizePath } from "src/i18n/utils";
 import getTranslatedContent from "@utils/directus";
 import { ViewTransitions } from "astro:transitions";
 import Layout from "./Layout.astro";
 import "./LegalLayout.scss";
 
-const lang = getLangFromUrl(Astro.url);
+const lang = detectLanguageFromUrl(Astro.url);
 const content = await getTranslatedContent("Legal_Menu", lang);
 
 const pathname = new URL(Astro.request.url).pathname;
 
 const navItems = [
   {
-    href: getPathForLanguage(lang, "/data-protection"),
+    href: localizePath(lang, "/data-protection"),
     name: content.privacy,
   },
   {
-    href: getPathForLanguage(lang, "/cookie-policy"),
+    href: localizePath(lang, "/cookie-policy"),
     name: content.cookies,
   },
   {
-    href: getPathForLanguage(lang, "/terms"),
+    href: localizePath(lang, "/terms"),
     name: content.terms,
   },
   {
-    href: getPathForLanguage(lang, "/legal-notice"),
+    href: localizePath(lang, "/legal-notice"),
     name: content.legal_notice,
   },
 ];

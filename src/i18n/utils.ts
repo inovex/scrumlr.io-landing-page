@@ -8,19 +8,17 @@ export const SUPPORTED_LANGUAGES = {
 };
 export const DEFAULT_LANGUAGE: keyof typeof SUPPORTED_LANGUAGES = "en";
 
-
-export type SupportedLanguage = keyof typeof SUPPORTED_LANGUAGES;
 export const SUPPORTED_LANGUAGE_CODES = Object.keys(
   SUPPORTED_LANGUAGES,
-) as SupportedLanguage[];
+) as Array<keyof typeof SUPPORTED_LANGUAGES>;
 
-export function getLangFromUrl(url: URL) {
+export function detectLanguageFromUrl(url: URL) {
   const [, lang] = url.pathname.split('/');
   if (lang in SUPPORTED_LANGUAGES) return lang as keyof typeof SUPPORTED_LANGUAGES;
   return DEFAULT_LANGUAGE;
 }
 
-export function getPathForLanguage(lang: SupportedLanguage, path: string) {
+export function localizePath(lang: keyof typeof SUPPORTED_LANGUAGES, path: string) {
   if (path.startsWith("#")) {
     return lang === DEFAULT_LANGUAGE ? `/${path}` : `/${lang}${path}`;
   }
@@ -28,7 +26,7 @@ export function getPathForLanguage(lang: SupportedLanguage, path: string) {
   return lang === DEFAULT_LANGUAGE ? path : `/${lang}${path}`;
 }
 
-export function getAppPathWithLanguage(lang: SupportedLanguage, appPath: string) {
+export function withLanguageQueryForApp(lang: keyof typeof SUPPORTED_LANGUAGES, appPath: string) {
   const url = new URL(appPath, TEMPORARY_BASE_URL);
   url.searchParams.set(LANGUAGE_QUERY_PARAM, lang);
 
