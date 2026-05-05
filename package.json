@@ -11,11 +11,11 @@
     "lint": "eslint . --ext .js,.ts,.astro"
   },
   "dependencies": {
-    "@astrojs/node": "^9.5.5",
+    "@astrojs/node": "^10.0.6",
     "@astrojs/react": "^5.0.4",
     "@directus/sdk": "^21.2.1",
     "@uidotdev/usehooks": "^2.4.1",
-    "astro": "^5.18.1",
+    "astro": "^6.1.9",
     "classnames": "^2.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
