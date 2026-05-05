@@ -1,7 +1,7 @@
 ---
-import { getLangFromUrl } from "src/i18n/utils";
+import { getLangFromUrl } from "@i18n/utils";
 import FeedbackCarousel from "./FeedbackCarousel.tsx";
-import getTranslatedContent, { getContent } from "../../utils/directus";
+import getTranslatedContent, { getContent } from "@utils/directus";
 import type { FileMetadata } from "src/types/directus.types";
 
 const lang = getLangFromUrl(Astro.url);
