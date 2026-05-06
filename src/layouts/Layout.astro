@@ -32,13 +32,6 @@ const lang = detectLanguageFromUrl(Astro.url);
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <script
-      is:inline
-      src="/scripts/language-redirect.js"
-      data-default-language={DEFAULT_LANGUAGE}
-      data-language-query-param={LANGUAGE_QUERY_PARAM}
-      data-supported-languages={SUPPORTED_LANGUAGE_CODES.join(",")}
-    ></script>
-    <script
       defer
       data-domain="scrumlr.io"
       src="https://inolytics.inovex-gpt.fra.ics.inovex.io/js/script.js"
