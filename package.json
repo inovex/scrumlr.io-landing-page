@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@astrojs/node": "^9.5.5",
-    "@astrojs/react": "^5.0.1",
+    "@astrojs/react": "^5.0.4",
     "@directus/sdk": "^21.2.1",
     "@uidotdev/usehooks": "^2.4.1",
     "astro": "^5.18.1",
@@ -24,12 +24,12 @@
   "devDependencies": {
     "@types/react": "^18.2.56",
     "@types/react-dom": "^18.2.19",
-    "@typescript-eslint/parser": "^8.57.2",
+    "@typescript-eslint/parser": "^8.59.0",
     "eslint": "^9.39.2",
     "eslint-plugin-astro": "^1.6.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "prettier-plugin-astro": "^0.14.1",
-    "sass": "^1.98.0",
+    "sass": "^1.99.0",
     "vite-plugin-svgr": "^4.5.0"
   },
   "packageManager": "pnpm@9.5.0+sha512.140036830124618d624a2187b50d04289d5a087f326c9edfc0ccd733d76c4f52c3a313d4fc148794a2a9d81553016004e6742e8cf850670268a7387fc220c903"
