@@ -1,5 +1,5 @@
 ---
-import { getLangFromUrl } from "src/i18n/utils";
+import {detectLanguageFromUrl} from "src/i18n/utils";
 import Navbar from "../components/Navbar/Navbar.astro";
 import Footer from "../components/Footer/Footer.astro";
 
@@ -8,7 +8,7 @@ export interface Props {
 }
 
 const { title } = Astro.props;
-const lang = getLangFromUrl(Astro.url);
+const lang = detectLanguageFromUrl(Astro.url);
 ---
 
 <!doctype html>

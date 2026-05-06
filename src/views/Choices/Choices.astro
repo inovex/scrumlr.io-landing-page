@@ -1,10 +1,10 @@
 ---
-import { getLangFromUrl } from "src/i18n/utils";
+import { detectLanguageFromUrl } from "src/i18n/utils";
 import VideoPlayer from "../../components/VideoPlayer";
 import getTranslatedContent from "../../utils/directus";
 import "./Choices.scss";
 
-const lang = getLangFromUrl(Astro.url);
+const lang = detectLanguageFromUrl(Astro.url);
 const content = await getTranslatedContent("Choices_Section", lang);
 ---
 
