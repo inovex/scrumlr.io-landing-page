@@ -1,9 +1,9 @@
 import { useMemo, useState } from "react";
 import { useSpringCarousel } from "react-spring-carousel";
 import type { FeedbackItem } from "./Feedback.astro";
-import useElementSize from "../../hooks/useElementSize";
+import useElementSize from "@hooks/useElementSize";
 import "./FeedbackCarousel.scss";
-import { useInterval } from "../../hooks/useInterval";
+import { useInterval } from "@hooks/useInterval";
 import FeedbackCard from "./FeedbackCard";
 import { useIntersectionObserver } from "@uidotdev/usehooks";
 
