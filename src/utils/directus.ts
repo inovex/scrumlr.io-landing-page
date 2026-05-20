@@ -1,6 +1,5 @@
 import {
   createDirectus,
-  readFile,
   readItems,
   rest,
   staticToken,

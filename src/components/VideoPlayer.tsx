@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { useIntersectionObserver } from "@uidotdev/usehooks";
 import ProgressButton from "./ProgressButton";
-import useMediaQuery from "../hooks/useMediaQuery";
+import useMediaQuery from "@hooks/useMediaQuery";
 import Video from "./Video";
 import Icon from "./Icon";
-import "../views/Choices/Choices.scss";
+import "@views/Choices/Choices.scss";
 
 type Props = {
   textContent: {
