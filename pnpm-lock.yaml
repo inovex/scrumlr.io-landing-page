@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@astrojs/node':
-        specifier: ^10.1.0
-        version: 10.1.0(astro@6.3.1(@types/node@25.9.1)(rollup@4.60.4)(sass@1.99.0)(terser@5.48.0)(yaml@2.9.0))
+        specifier: ^10.1.1
+        version: 10.1.1(astro@6.3.1(@types/node@25.9.1)(rollup@4.60.4)(sass@1.99.0)(terser@5.48.0)(yaml@2.9.0))
       '@astrojs/react':
         specifier: ^5.0.5
         version: 5.0.5(@types/node@25.9.1)(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.99.0)(terser@5.48.0)(yaml@2.9.0)
@@ -84,8 +84,8 @@ packages:
   '@astrojs/markdown-remark@7.1.1':
     resolution: {integrity: sha512-C6e9BnLGlbdv6bV8MYGeHpHxsUHrCrB4OuRLqi5LI7oiBVcBcqfUN06zpwFQdHgV48QCCrMmLpyqBr7VqC+swA==}
 
-  '@astrojs/node@10.1.0':
-    resolution: {integrity: sha512-4/2oqUTQ71UQ8+xX249T4l/d0/YkC5ssOVl4R2yQO7Wg4mOnvsq9Z9iaTkWAyElg3lqZq7XRNCEXCmDNiYcW1A==}
+  '@astrojs/node@10.1.1':
+    resolution: {integrity: sha512-kCRbxconkgPpY4vR0GS7exovWEiCbxXLarsp+JeKixyDNf+fKN6v7jXDL8KdQgrzjhy131Kvl+GGGX8jGd8adA==}
     peerDependencies:
       astro: ^6.3.0
 
@@ -5155,9 +5155,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/node@10.1.0(astro@6.3.1(@types/node@25.9.1)(rollup@4.60.4)(sass@1.99.0)(terser@5.48.0)(yaml@2.9.0))':
+  '@astrojs/node@10.1.1(astro@6.3.1(@types/node@25.9.1)(rollup@4.60.4)(sass@1.99.0)(terser@5.48.0)(yaml@2.9.0))':
     dependencies:
-      '@astrojs/internal-helpers': 0.9.0
+      '@astrojs/internal-helpers': 0.9.1
       astro: 6.3.1(@types/node@25.9.1)(rollup@4.60.4)(sass@1.99.0)(terser@5.48.0)(yaml@2.9.0)
       send: 1.2.1
       server-destroy: 1.0.1
