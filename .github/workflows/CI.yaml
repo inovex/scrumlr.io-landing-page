@@ -35,6 +35,8 @@ jobs:
 
       - name: Build
         run: pnpm build
+        env:
+          DIRECTUS_URL: ${{ secrets.DIRECTUS_URL }}
 
 
   publish:
