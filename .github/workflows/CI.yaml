@@ -7,7 +7,7 @@ env:
 
 jobs:
   validate:
-    name: Validate
+    name: Validate and build
     runs-on: ubuntu-latest
     steps:
       - name: Code Checkout
@@ -36,8 +36,8 @@ jobs:
       - name: Code Linting
         run: pnpm run lint
 
-  deploy:
-    name: Deploy
+  publish:
+    name: Publish image
     if: github.ref == 'refs/heads/main' && success()
     needs: validate
     runs-on: ubuntu-latest
