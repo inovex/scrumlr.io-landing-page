@@ -3,31 +3,47 @@ name: CI
 on: [push, workflow_dispatch]
 
 env:
-  NODE_VERSION: 24
+  NODE_VERSION: 26
 
 jobs:
-  linting:
-    name: Linting
+  validate:
+    name: Validate and build
     runs-on: ubuntu-latest
     steps:
-      - name: Install NodeJS
-        uses: actions/setup-node@v5
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-
       - name: Code Checkout
         uses: actions/checkout@v5
 
+      - name: Install Corepack # for pnpm
+        run: |
+          npm install -g corepack@0.34.7 --ignore-scripts
+          corepack enable
+          corepack install
+
+      - name: Install NodeJS
+        uses: actions/setup-node@v6
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'pnpm'
+          cache-dependency-path: 'pnpm-lock.yaml'
+          package-manager-cache: true
+
       - name: Install Dependencies
-        run: npm install
+        run: pnpm install
 
       - name: Code Linting
-        run: npm run lint
+        run: pnpm run lint
 
-  build:
-    name: Build
+      - name: Build
+        run: pnpm build
+        env:
+          DIRECTUS_URL: ${{ secrets.DIRECTUS_URL }}
+          DIRECTUS_TOKEN: ${{ secrets.DIRECTUS_TOKEN }}
+
+
+  publish:
+    name: Publish image
     if: github.ref == 'refs/heads/main' && success()
-    needs: linting
+    needs: validate
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -60,7 +76,7 @@ jobs:
             org.opencontainers.image.licenses=MIT
             org.opencontainers.image.title=scrumlr.io - Landing Page
             org.opencontainers.image.description=The landing page of scrumlr.io
-            
+
       - name: Set up Docker buildx
         uses: docker/setup-buildx-action@v3
 
