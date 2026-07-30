@@ -13,7 +13,7 @@
   "dependencies": {
     "@astrojs/node": "^10.1.4",
     "@astrojs/react": "^6.0.1",
-    "@directus/sdk": "^21.2.1",
+    "@directus/sdk": "^23.0.0",
     "@uidotdev/usehooks": "^2.4.1",
     "astro": "^7.1.6",
     "classnames": "^2.5.1",
