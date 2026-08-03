@@ -2,6 +2,7 @@
 import { detectLanguageFromUrl } from "@i18n/utils";
 import Navbar from "@components/Navbar/Navbar.astro";
 import Footer from "@components/Footer/Footer.astro";
+import MaintenanceBanner from "@components/MaintenanceBanner/MaintenanceBanner.astro";
 
 export interface Props {
   title: string;
@@ -34,7 +35,10 @@ const lang = detectLanguageFromUrl(Astro.url);
   </head>
   <body>
     <div class="body_wrapper">
-      <Navbar lang={lang} />
+      <header class="header_wrapper">
+        <MaintenanceBanner lang={lang} />
+        <Navbar lang={lang} />
+      </header>
       <main>
         <slot />
       </main>
@@ -113,6 +117,17 @@ const lang = detectLanguageFromUrl(Astro.url);
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
+  }
+
+  .header_wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 
   main {
