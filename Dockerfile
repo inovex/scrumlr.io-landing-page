@@ -2,9 +2,6 @@ FROM node:26 AS build
 
 WORKDIR /app
 
-ARG DIRECTUS_URL
-ARG PUBLIC_SCRUMLR_SERVER_URL
-
 COPY package*.json ./
 COPY pnpm-workspace.yaml ./
 COPY pnpm-lock.yaml ./
@@ -13,6 +10,9 @@ RUN npm install -g pnpm
 RUN pnpm install
 
 COPY . .
+
+ARG DIRECTUS_URL
+ARG PUBLIC_SCRUMLR_SERVER_URL
 
 RUN --mount=type=secret,id=directus_token,required=true sh -c '\
   DIRECTUS_TOKEN_CLEAN="$(tr -d "\r\n" < /run/secrets/directus_token)" && \
