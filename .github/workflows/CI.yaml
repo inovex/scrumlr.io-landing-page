@@ -3,38 +3,54 @@ name: CI
 on: [push, workflow_dispatch]
 
 env:
-  NODE_VERSION: 24
+  NODE_VERSION: 26
 
 jobs:
-  linting:
-    name: Linting
+  validate:
+    name: Validate and build
     runs-on: ubuntu-latest
     steps:
+      - name: Code Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Install Corepack # for pnpm
+        run: |
+          npm install -g corepack@0.34.7 --ignore-scripts
+          corepack enable
+          corepack install
+
       - name: Install NodeJS
-        uses: actions/setup-node@v5
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           node-version: ${{ env.NODE_VERSION }}
-
-      - name: Code Checkout
-        uses: actions/checkout@v5
+          cache: 'pnpm'
+          cache-dependency-path: 'pnpm-lock.yaml'
+          package-manager-cache: true
 
       - name: Install Dependencies
-        run: npm install
+        run: pnpm install
 
       - name: Code Linting
-        run: npm run lint
+        run: pnpm run lint
 
-  build:
-    name: Build
+      - name: Build
+        run: pnpm build
+        env:
+          DIRECTUS_URL: ${{ secrets.DIRECTUS_URL }}
+          DIRECTUS_TOKEN: ${{ secrets.DIRECTUS_TOKEN }}
+
+
+  publish:
+    name: Publish image
     if: github.ref == 'refs/heads/main' && success()
-    needs: linting
+    needs: validate
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Login Github Container Registry
-        uses: docker/login-action@v3
+        uses: docker/login-action@af1e73f918a031802d376d3c8bbc3fe56130a9b0 # v4.4.0
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
@@ -42,7 +58,7 @@ jobs:
 
       - name: scrumlr.io - Landing Page - Build
         id: meta-landing-page
-        uses: docker/metadata-action@v5
+        uses: docker/metadata-action@dc802804100637a589fabce1cb79ff13a1411302 # v6.2.0
         with:
           images: |
             ghcr.io/inovex/scrumlr.io-landing-page/image
@@ -60,13 +76,13 @@ jobs:
             org.opencontainers.image.licenses=MIT
             org.opencontainers.image.title=scrumlr.io - Landing Page
             org.opencontainers.image.description=The landing page of scrumlr.io
-            
+
       - name: Set up Docker buildx
-        uses: docker/setup-buildx-action@v3
+        uses: docker/setup-buildx-action@bb05f3f5519dd87d3ba754cc423b652a5edd6d2c # v4.2.0
 
       - name: Push landing page image
         id: push-landing-page
-        uses: docker/build-push-action@v6
+        uses: docker/build-push-action@53b7df96c91f9c12dcc8a07bcb9ccacbed38856a # v7.3.0
         with:
           push: true
           platforms: linux/amd64,linux/arm64
