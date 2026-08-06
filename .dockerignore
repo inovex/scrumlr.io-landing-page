@@ -1,1 +1,24 @@
+# Dependencies
 node_modules
+
+# Local build/cache artifacts
+.astro
+dist
+
+# Environment files
+.env
+.env.*
+
+# Repository/editor metadata
+.git
+.github
+.vscode
+.idea
+
+# Documentation
+CODE_OF_CONDUCT.md
+README.md
+LICENSE
+
+# Local development / CI helpers
+docker-compose.yml

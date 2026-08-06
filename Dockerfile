@@ -1,4 +1,4 @@
-FROM node:26 AS build
+FROM node:26-slim AS build
 
 WORKDIR /app
 
@@ -14,14 +14,12 @@ COPY . .
 ARG DIRECTUS_URL
 ARG PUBLIC_SCRUMLR_SERVER_URL
 
-RUN --mount=type=secret,id=directus_token,required=true sh -c '\
-  DIRECTUS_TOKEN_CLEAN="$(tr -d "\r\n" < /run/secrets/directus_token)" && \
-  env \
-    DIRECTUS_URL="$DIRECTUS_URL" \
-    DIRECTUS_TOKEN="$DIRECTUS_TOKEN_CLEAN" \
-    PUBLIC_SCRUMLR_SERVER_URL="$PUBLIC_SCRUMLR_SERVER_URL" \
-    pnpm run build \
-'
+RUN --mount=type=secret,id=directus_token,required=true \
+  DIRECTUS_URL="$DIRECTUS_URL" \
+  DIRECTUS_TOKEN="$(tr -d "\r\n" < /run/secrets/directus_token)" \
+  PUBLIC_SCRUMLR_SERVER_URL="$PUBLIC_SCRUMLR_SERVER_URL" \
+  pnpm run build
+
 
 FROM nginx:alpine AS runtime
 
