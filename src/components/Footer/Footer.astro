@@ -1,6 +1,6 @@
 ---
 import getTranslatedContent from "@utils/directus";
-import { withLanguageQueryForApp, detectLanguageFromUrl, localizePath } from "@i18n/utils";
+import { withLanguageQueryForApp, localizePath } from "@i18n/utils";
 import { Github } from "@icons/Github";
 import { Instagram } from "@icons/Instagram";
 import { Linkedin } from "@icons/Linkedin";
@@ -9,7 +9,7 @@ import { Xing } from "@icons/Xing";
 import { Inovex } from "@icons/Inovex";
 import "./Footer.scss";
 
-const lang = detectLanguageFromUrl(Astro.url);
+const { lang } = Astro.props;
 const content = await getTranslatedContent("Footer", lang);
 ---
 
