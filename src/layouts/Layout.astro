@@ -2,6 +2,8 @@
 import { detectLanguageFromUrl } from "@i18n/utils";
 import Navbar from "@components/Navbar/Navbar.astro";
 import Footer from "@components/Footer/Footer.astro";
+import MaintenanceBanner from "@components/MaintenanceBanner/MaintenanceBanner.astro";
+import "./Layout.scss"
 
 export interface Props {
   title: string;
@@ -34,7 +36,10 @@ const lang = detectLanguageFromUrl(Astro.url);
   </head>
   <body>
     <div class="body_wrapper">
-      <Navbar lang={lang} />
+      <header class="header_wrapper">
+        <MaintenanceBanner lang={lang} />
+        <Navbar lang={lang} />
+      </header>
       <main>
         <slot />
       </main>
@@ -42,125 +47,3 @@ const lang = detectLanguageFromUrl(Astro.url);
     </div>
   </body>
 </html>
-<style is:global lang="scss">
-  @font-face {
-    font-family: "Raleway";
-    font-weight: 100 900;
-    src:
-      local("Pacifico Regular"),
-      url("/fonts/Raleway-VariableFont_wght.ttf") format("truetype");
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "Raleway";
-    font-style: italic;
-    font-weight: 100 900;
-    src:
-      local("Pacifico Regular"),
-      url("/fonts/Raleway-Italic-VariableFont_wght.ttf") format("truetype");
-    font-display: swap;
-  }
-
-  html {
-    font-family: "Raleway", sans-serif;
-    box-sizing: border-box;
-    scroll-padding-top: 64px;
-    scroll-behavior: smooth;
-
-    --white: #ffffff;
-    --lightmode-black: #111111;
-    --lightmode-background: #ffffff;
-    --lightmode-blue: #0057ff;
-    --lightmode-blue-link-pressed: #0044c6;
-    --lightmode-pink: #ff0069;
-    --lightmode-pink-link-pressed: #da005a;
-    --lightmode-pink--desaturated: #ffe6f0;
-
-    --shadow: drop-shadow(0px 2px 32px rgba(0, 0, 0, 0.2));
-
-    --darkmode-background: #242c3d;
-    --darkmode-blue: #6b9cff;
-    --darkmode-pink: #ff529a;
-    --darkmode-pink--desaturated: #353044;
-
-    --darkmode-shadow: 0 2px 32px -12px #0f131b;
-
-    --light-blue: #e4e8f6;
-    --dark-blue-4: #5a647d;
-
-    --light-grey-3: #edeff2;
-    --dark-grey: #939daa;
-
-    --navy-200: #586073;
-    --navy-500: #303745;
-
-    color: var(--lightmode-black);
-    background: var(--lightmode-background);
-  }
-  body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-  }
-
-  section {
-    overflow-x: clip;
-  }
-
-  .body_wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-  }
-
-  main {
-    width: 100vw;
-    min-width: 320px;
-  }
-
-  h1 {
-    font-size: 40px;
-    line-height: 48px;
-  }
-
-  h2 {
-    font-size: 32px;
-    line-height: normal;
-  }
-
-  h3 {
-    font-size: 24px;
-    line-height: normal;
-  }
-
-  p {
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  @media screen and (min-width: 992px) {
-    h2 {
-      font-size: 40px;
-      line-height: 48px;
-    }
-
-    h3 {
-      font-size: 32px;
-      line-height: 40px;
-    }
-
-    p {
-      font-size: 20px;
-      line-height: 28px;
-    }
-  }
-
-  @media (prefers-color-scheme: dark) {
-    html {
-      color: var(--white);
-      background: var(--darkmode-background);
-    }
-  }
-</style>
