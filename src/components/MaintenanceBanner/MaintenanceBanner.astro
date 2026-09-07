@@ -1,0 +1,34 @@
+---
+import getTranslatedContent from "@utils/directus";
+import WarningIcon from "@icons/warning.svg?react";
+import "./MaintenanceBanner.scss";
+
+const { lang } = Astro.props
+
+let message: string | null = null;
+
+const content = await getTranslatedContent("Maintenance", lang);
+if (content) {
+  message = content.message || null;
+}
+
+if (typeof message === "string") {
+  message = message.trim();
+  if (message.length === 0) {
+    message = null;
+  }
+} else {
+  message = null;
+}
+---
+
+{
+  message && (
+    <aside class="maintenance-banner" role="alert">
+      <div class="maintenance-banner__content">
+        <WarningIcon className="maintenance-banner__icon" />
+        <span class="maintenance-banner__text">{message}</span>
+      </div>
+    </aside>
+  )
+}
