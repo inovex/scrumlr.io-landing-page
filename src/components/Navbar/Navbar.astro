@@ -1,6 +1,10 @@
 ---
 import getTranslatedContent from "@utils/directus";
-import { withLanguageQueryForApp, detectLanguageFromUrl, localizePath } from '@i18n/utils';
+import {
+  withLanguageQueryForApp,
+  detectLanguageFromUrl,
+  localizePath,
+} from "@i18n/utils";
 import { Logo } from "../Logo";
 import { Plus } from "@icons/Plus";
 import { Link } from "../Link/Link";
@@ -14,7 +18,8 @@ const userMenuLabels = {
   germanLabel: content.german,
   englishLabel: content.english,
   frenchLabel: content.french,
-  };
+  spanishLabel: content.spanish,
+};
 ---
 
 <nav id="navbar" class="navbar">
@@ -47,15 +52,15 @@ const userMenuLabels = {
 </nav>
 
 <script>
-    function handleScroll() {
-      const navbar = document.querySelector("#navbar");
-      const scrollPosition = window.scrollY;
-      if (scrollPosition > 0) {
-        navbar?.classList.add("navbar--opaque");
-      } else {
-        navbar?.classList.remove("navbar--opaque");
-      }
+  function handleScroll() {
+    const navbar = document.querySelector("#navbar");
+    const scrollPosition = window.scrollY;
+    if (scrollPosition > 0) {
+      navbar?.classList.add("navbar--opaque");
+    } else {
+      navbar?.classList.remove("navbar--opaque");
     }
+  }
 
-    window.addEventListener("scroll", handleScroll);
+  window.addEventListener("scroll", handleScroll);
 </script>
