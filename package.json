@@ -11,7 +11,7 @@
     "lint": "eslint . --ext .js,.ts,.astro"
   },
   "dependencies": {
-    "@astrojs/node": "^11.1.4",
+    "@astrojs/node": "^11.1.5",
     "@astrojs/react": "^6.0.4",
     "@directus/sdk": "^25.0.1",
     "@uidotdev/usehooks": "^2.4.1",
@@ -29,7 +29,7 @@
     "eslint-plugin-astro": "^1.6.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "prettier-plugin-astro": "^0.14.1",
-    "sass": "^1.103.1",
+    "sass": "^1.104.0",
     "vite-plugin-svgr": "^5.2.0"
   },
   "packageManager": "pnpm@11.24.0"
