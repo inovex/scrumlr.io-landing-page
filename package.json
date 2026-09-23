@@ -17,13 +17,13 @@
     "@uidotdev/usehooks": "^2.4.1",
     "astro": "^7.3.1",
     "classnames": "^2.5.1",
-    "react": "^19.2.8",
-    "react-dom": "^19.2.8",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
     "react-spring-carousel": "^2.0.19"
   },
   "devDependencies": {
-    "@types/react": "^19.2.18",
-    "@types/react-dom": "^19.2.7",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
     "@typescript-eslint/parser": "^8.69.0",
     "eslint": "^9.39.2",
     "eslint-plugin-astro": "^1.6.0",
