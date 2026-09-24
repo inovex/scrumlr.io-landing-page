@@ -11,25 +11,25 @@
     "lint": "eslint . --ext .js,.ts,.astro"
   },
   "dependencies": {
-    "@astrojs/node": "^11.1.4",
+    "@astrojs/node": "^11.1.5",
     "@astrojs/react": "^6.0.4",
     "@directus/sdk": "^25.0.1",
     "@uidotdev/usehooks": "^2.4.1",
-    "astro": "^7.2.9",
+    "astro": "^7.3.2",
     "classnames": "^2.5.1",
-    "react": "^19.2.8",
-    "react-dom": "^19.2.8",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
     "react-spring-carousel": "^2.0.19"
   },
   "devDependencies": {
-    "@types/react": "^19.2.18",
-    "@types/react-dom": "^19.2.5",
-    "@typescript-eslint/parser": "^8.68.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@typescript-eslint/parser": "^8.70.0",
     "eslint": "^9.39.2",
     "eslint-plugin-astro": "^1.6.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "prettier-plugin-astro": "^0.14.1",
-    "sass": "^1.103.1",
+    "sass": "^1.104.1",
     "vite-plugin-svgr": "^5.2.0"
   },
   "packageManager": "pnpm@11.0.8"
