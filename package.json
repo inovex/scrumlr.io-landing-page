@@ -28,7 +28,7 @@
     "eslint": "^9.39.2",
     "eslint-plugin-astro": "^1.6.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
-    "prettier-plugin-astro": "^0.14.1",
+    "prettier-plugin-astro": "^1.0.0",
     "sass": "^1.104.1",
     "vite-plugin-svgr": "^5.2.0"
   },
