@@ -173,8 +173,8 @@ importers:
         specifier: ^7.0.0
         version: 7.0.0(@types/node@26.6.3)(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(esbuild@0.28.2)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(sass@1.105.0)(terser@5.51.2)(yaml@2.9.1)
       '@directus/sdk':
-        specifier: ^25.0.1
-        version: 25.0.1
+        specifier: ^26.0.0
+        version: 26.0.0
       '@uidotdev/usehooks':
         specifier: ^2.4.1
         version: 2.4.1(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
@@ -1208,8 +1208,8 @@ packages:
     resolution: {integrity: sha512-dlT1m5e/0yUL0kRNcQn7yGLVThkgbB0Ga/1AmfDDC/8ik6AIiSf2QLQO2zPYvefsHP0aFgxO93cVLCCfDp7kzQ==}
     engines: {node: '>= 20.12.0'}
 
-  '@directus/sdk@25.0.1':
-    resolution: {integrity: sha512-7YatQh8aKDN6iIPyXmbUc3HW/jdKveiwFP+oFSKs0/W/IKX+ZpnwsN1NQLI6PpcmU2/rLuYK8knQaQr5F0gKNw==}
+  '@directus/sdk@26.0.0':
+    resolution: {integrity: sha512-t6G900Rx43bTPPFtSrIX0EE6awIeJSoLbictRAVC0P/Eh4Nmud9lLfFodMAikFWe5IbocJ33Y3eio+hLZMqLTA==}
     engines: {node: '>=22'}
 
   '@emnapi/core@1.11.1':
@@ -6957,7 +6957,7 @@ snapshots:
       fast-wrap-ansi: 0.2.2
       sisteransi: 1.0.5
 
-  '@directus/sdk@25.0.1': {}
+  '@directus/sdk@26.0.0': {}
 
   '@emnapi/core@1.11.1':
     dependencies:
