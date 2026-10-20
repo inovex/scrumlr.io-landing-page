@@ -58,11 +58,6 @@ section {
     min-height: 100vh;
 }
 .header_wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
     display: flex;
     flex-direction: column;
     width: 100%;
