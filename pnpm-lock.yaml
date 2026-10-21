@@ -167,8 +167,8 @@ importers:
   .:
     dependencies:
       '@astrojs/node':
-        specifier: ^11.1.6
-        version: 11.1.6(astro@7.3.5(@types/node@26.6.3)(sass@1.105.1)(terser@5.51.2)(yaml@2.9.1))(supports-color@8.1.1)
+        specifier: ^11.1.7
+        version: 11.1.7(astro@7.3.5(@types/node@26.6.3)(sass@1.105.1)(terser@5.51.2)(yaml@2.9.1))(supports-color@8.1.1)
       '@astrojs/react':
         specifier: ^7.0.1
         version: 7.0.1(@types/node@26.6.3)(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(esbuild@0.28.2)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(sass@1.105.1)(terser@5.51.2)(yaml@2.9.1)
@@ -378,8 +378,8 @@ packages:
   '@astrojs/markdown-satteri@0.4.2':
     resolution: {integrity: sha512-g4QehXnB/MzxQWnSf17NciFInMqEJy9948p8cc7zGg/r7995m0Ln5PMr3Xlnj24iey1LchaoZ3SzTOa3D4P/3w==}
 
-  '@astrojs/node@11.1.6':
-    resolution: {integrity: sha512-jNZ10/vAT+HuXkX0E/tITsIYCSn3BmAvsooVAN1OjagG+FEzelpUWToy1bA3x6Irmu0VaknWRfReY+1twd35sQ==}
+  '@astrojs/node@11.1.7':
+    resolution: {integrity: sha512-IXmBthgAMuYSTcOeIM20CpHrUkYxYhI3uJW0b9jOiaZtCXquFinstQ0WWZnYaA1kzCfgSkjmISKkEH6fwDPmbg==}
     peerDependencies:
       astro: ^7.2.1
 
@@ -5484,9 +5484,9 @@ snapshots:
       github-slugger: 2.0.0
       satteri: 0.10.5
 
-  '@astrojs/node@11.1.6(astro@7.3.5(@types/node@26.6.3)(sass@1.105.1)(terser@5.51.2)(yaml@2.9.1))(supports-color@8.1.1)':
+  '@astrojs/node@11.1.7(astro@7.3.5(@types/node@26.6.3)(sass@1.105.1)(terser@5.51.2)(yaml@2.9.1))(supports-color@8.1.1)':
     dependencies:
-      '@astrojs/internal-helpers': 0.11.0
+      '@astrojs/internal-helpers': 0.12.0
       astro: 7.3.5(@types/node@26.6.3)(sass@1.105.1)(terser@5.51.2)(yaml@2.9.1)
       send: 1.2.1(supports-color@8.1.1)
       server-destroy: 1.0.1
