@@ -1,0 +1,11 @@
+---
+import LegalLayout from "@layouts/LegalLayout.astro";
+import getTranslatedContent from "@utils/directus.ts";
+import "@styles/Legal.scss";
+
+const content = await getTranslatedContent("Privacy_Policy", "es");
+---
+
+<LegalLayout>
+  <section class="legal__content" set:html={content.Privacy_Policy} />
+</LegalLayout>

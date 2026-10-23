@@ -5,6 +5,7 @@ export const SUPPORTED_LANGUAGES = {
   en: 'English',
   de: 'German',
   fr: 'French',
+  es: 'Spanish',
 };
 export const DEFAULT_LANGUAGE: keyof typeof SUPPORTED_LANGUAGES = "en";
 
@@ -31,8 +32,8 @@ export function withLanguageQueryForApp(lang: keyof typeof SUPPORTED_LANGUAGES, 
   url.searchParams.set(LANGUAGE_QUERY_PARAM, lang);
 
   if (ABSOLUTE_URL_PATTERN.test(appPath)) {
-    return url.toString(); 
+    return url.toString();
   }
 
-  return url.pathname + url.search + url.hash; 
+  return url.pathname + url.search + url.hash;
 }
