@@ -11,7 +11,7 @@ import { Link } from "../Link/Link";
 import UserMenu from "@components/UserMenu/UserMenu";
 import "./Navbar.scss";
 
-const lang = detectLanguageFromUrl(Astro.url);
+const { lang } = Astro.props
 const content = await getTranslatedContent("Header", lang);
 
 const userMenuLabels = {
