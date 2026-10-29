@@ -17,8 +17,8 @@
     "@uidotdev/usehooks": "^2.4.1",
     "astro": "^7.3.5",
     "classnames": "^2.5.1",
-    "react": "^19.3.0",
-    "react-dom": "^19.3.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
     "react-spring-carousel": "^2.0.19"
   },
   "devDependencies": {
