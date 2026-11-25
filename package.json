@@ -15,7 +15,7 @@
     "@astrojs/react": "^7.1.4",
     "@directus/sdk": "^27.1.0",
     "@uidotdev/usehooks": "^2.4.1",
-    "astro": "^7.4.4",
+    "astro": "^7.4.12",
     "classnames": "^2.5.1",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
